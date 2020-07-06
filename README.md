@@ -1,2 +1,2 @@
 # Bless-n-Bliss
-Bless 'n' Bliss official websitre
+Bless 'n' Bliss official website
