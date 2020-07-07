@@ -1,0 +1,18 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "Bless-n-Bliss",  //works on liveserver vscode extension (by ritwick Dey)
+    "liveServer.settings.port": 8888,
+    "liveSassCompile.settings.showOutputWindow": false, ////works on live sass compile vscode extension (by ritwick Dey)
+
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/public/css"
+        },
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/public/css"
+        },
+    ]
+}

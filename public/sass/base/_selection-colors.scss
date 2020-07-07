@@ -1,0 +1,23 @@
+// These are the colors that appear on the selection when you highlight some text in the website
+
+::selection{
+  background: transparent
+}
+
+::-moz-selection{
+  background: transparent
+}
+
+body{
+  -webkit-tap-highlight-color: transparent
+}
+
+//Do change the img::selection properties
+img::selection{
+  background: transparent
+}
+
+img::-moz-selection{
+  background: transparent
+}
+
