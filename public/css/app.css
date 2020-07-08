@@ -280,6 +280,7 @@ li {
   height: 44px;
   display: block;
   position: relative;
+  cursor: pointer;
   top: 15%;
   left: 35%;
   background: rgba(158, 51, 137, 0);
