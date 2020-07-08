@@ -1,6 +1,6 @@
 //Put all your preferred defaults for html-tags here 
 body{
-    background-color: $white;
+    background-color: grey;
     font-size: 14px;
     line-height: 1.6;
     font-family: 'Raleway', sans-serif;
@@ -10,4 +10,5 @@ body{
 }
 li{
     list-style: none;
+    text-align: left;
 }

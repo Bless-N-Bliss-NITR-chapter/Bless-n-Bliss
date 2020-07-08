@@ -1,0 +1,136 @@
+.navbar {
+    width: 100px;
+    height: 100vh;
+    display: block;
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0% 50% 450% 0%; 
+    transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+
+    .logo {
+        img {
+            width: 70px;
+            display: block;
+            position: absolute;
+            top: 5%;
+            left: -20%;
+            transform: rotateY(-90deg);
+            transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+        }
+    }
+    .hamburger {
+        width: 55px;
+        height: 44px;
+        display: block;
+        position: relative;
+        top: 15%;
+        left: 35%;
+        background: rgba(158, 51, 137, 0);
+        transition: all 0.9s cubic-bezier(0.9, 0.9, 0.33, 1);
+        
+        .bar {
+            height: 2px;
+            background: $black;
+            display: block;
+            position: absolute;
+            transform: rotate(0);
+            transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+        }
+        .top-bar{
+            top: 10px;
+            width: 55px;
+        }
+        .middle-bar{
+            top: 20px;
+            width: 55px;
+        }
+        .bottom-bar{
+            top: 30px;
+            width: 35px;
+        }
+        
+    }
+    .menu {
+        float: right;
+        margin-top: 20vh;
+        opacity: 0;
+        visibility: hidden;
+        transform: rotateY(-90deg) translateX(-300px);
+        transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+        li {
+            a {
+                display: block;
+                font-size: 25px;
+                font-weight: 800;
+                text-decoration: none;
+                color: black;
+                margin-bottom: 5px;
+                &:hover{
+                    color: rgb(216, 97, 0);
+                    transition: all 0.4s cubic-bezier(0.9, 0.9, 0.33, 1);
+                }
+                &:not(hover){
+                    transition: all 0.4s cubic-bezier(0.9, 0.9, 0.33, 1);
+                }
+            }
+        }
+    }
+}
+.navbar-open {
+    width: 350px;
+    border-radius: 0% 1% 1% 0%;
+    .logo {
+        img {
+            left: 32%;
+            transform: rotateY(0);
+        }
+    }
+    .hamburger {
+        left: 61%;
+        
+        .bar {
+            top: 20px;
+        }
+        .top-bar{
+            transform: rotate(45deg);
+        }
+        .middle-bar{
+            transform: rotateY(-90deg);
+        }
+        .bottom-bar{
+            width: 55px;
+            transform: rotate(-45deg);
+        }
+    }
+    .menu {
+        opacity: 1;
+        visibility: visible;
+        transform: rotateY(0deg) translateX(-50px);
+        li {
+            a {
+                
+            }
+        }
+    }
+}
+@media (max-width: 920px) {
+    .navbar {
+        .logo {
+            img {
+            }
+        }
+        .hamburger {
+            .bar {
+            }
+        }
+        .menu {
+            li {
+                a {
+                    
+                }
+            }
+        }
+    }
+}

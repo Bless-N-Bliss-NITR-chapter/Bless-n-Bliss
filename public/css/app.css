@@ -239,7 +239,7 @@ img::-moz-selection {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: grey;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Raleway', sans-serif;
@@ -250,6 +250,128 @@ body {
 
 li {
   list-style: none;
+  text-align: left;
+}
+
+.navbar {
+  width: 100px;
+  height: 100vh;
+  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0% 50% 450% 0%;
+  transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.navbar .logo img {
+  width: 70px;
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: -20%;
+  transform: rotateY(-90deg);
+  transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.navbar .hamburger {
+  width: 55px;
+  height: 44px;
+  display: block;
+  position: relative;
+  top: 15%;
+  left: 35%;
+  background: rgba(158, 51, 137, 0);
+  transition: all 0.9s cubic-bezier(0.9, 0.9, 0.33, 1);
+}
+
+.navbar .hamburger .bar {
+  height: 2px;
+  background: #000000;
+  display: block;
+  position: absolute;
+  transform: rotate(0);
+  transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.navbar .hamburger .top-bar {
+  top: 10px;
+  width: 55px;
+}
+
+.navbar .hamburger .middle-bar {
+  top: 20px;
+  width: 55px;
+}
+
+.navbar .hamburger .bottom-bar {
+  top: 30px;
+  width: 35px;
+}
+
+.navbar .menu {
+  float: right;
+  margin-top: 20vh;
+  opacity: 0;
+  visibility: hidden;
+  transform: rotateY(-90deg) translateX(-300px);
+  transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.navbar .menu li a {
+  display: block;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.navbar .menu li a:hover {
+  color: #d86100;
+  transition: all 0.4s cubic-bezier(0.9, 0.9, 0.33, 1);
+}
+
+.navbar .menu li a:not(hover) {
+  transition: all 0.4s cubic-bezier(0.9, 0.9, 0.33, 1);
+}
+
+.navbar-open {
+  width: 350px;
+  border-radius: 0% 1% 1% 0%;
+}
+
+.navbar-open .logo img {
+  left: 32%;
+  transform: rotateY(0);
+}
+
+.navbar-open .hamburger {
+  left: 61%;
+}
+
+.navbar-open .hamburger .bar {
+  top: 20px;
+}
+
+.navbar-open .hamburger .top-bar {
+  transform: rotate(45deg);
+}
+
+.navbar-open .hamburger .middle-bar {
+  transform: rotateY(-90deg);
+}
+
+.navbar-open .hamburger .bottom-bar {
+  width: 55px;
+  transform: rotate(-45deg);
+}
+
+.navbar-open .menu {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateY(0deg) translateX(-50px);
 }
 
 .hamburger {
