@@ -243,7 +243,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Muli', sans-serif;
-  color: white;
+  color: #000000;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
@@ -251,6 +251,105 @@ body {
 li {
   list-style: none;
   text-align: left;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .logo img {
+  width: 50px;
+  margin-left: 30px;
+}
+
+.navbar .menu-ul {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.navbar .menu-ul .list-item {
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .menu-ul .list-item .list-anchor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .menu-ul .list-item .list-anchor::after {
+  content: '';
+  display: block;
+  background-color: #f9b31c;
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.navbar .menu-ul .list-item .list-anchor:hover::after {
+  width: 110%;
+}
+
+.navbar .menu-ul .list-item .active-anchor {
+  pointer-events: none;
+}
+
+.navbar .menu-ul .list-item .active-anchor::after {
+  content: '';
+  display: block;
+  background-color: #f9b31c;
+  height: 2px;
+  width: 110%;
+  position: absolute;
+  bottom: 0;
+}
+
+.navbar .menu-ul .dropdown-toggler {
+  position: relative;
+}
+
+.navbar .menu-ul .dropdown-toggler .dropdown-menu-ul {
+  position: absolute;
+  top: 50px;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.navbar .menu-ul .dropdown-toggler .dropdown-menu-ul .drop-item {
+  padding: .625rem 2.3125rem 1.25rem;
+  width: max-content;
+  background-color: #ffffff;
+}
+
+.navbar .menu-ul .dropdown-toggler .dropdown-menu-ul .drop-item a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.6s cubic-bezier(0.9, 0, 0.33, 1);
+  position: relative;
+  left: 0;
+}
+
+.navbar .menu-ul .dropdown-toggler .dropdown-menu-ul .drop-item a:hover {
+  position: relative;
+  left: 8px;
+  color: #f9b31c;
+}
+
+.navbar .menu-ul .dropdown-toggler .dropdown-menu-ul--hide {
+  opacity: 0;
+  top: 45px;
+  visibility: hidden;
 }
 
 .hamburger {
