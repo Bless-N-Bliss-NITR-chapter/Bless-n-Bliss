@@ -239,10 +239,10 @@ img::-moz-selection {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: grey;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Muli', sans-serif;
   color: white;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -250,6 +250,7 @@ body {
 
 li {
   list-style: none;
+  text-align: left;
 }
 
 .hamburger {
