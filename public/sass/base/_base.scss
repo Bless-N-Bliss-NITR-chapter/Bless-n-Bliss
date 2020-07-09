@@ -3,16 +3,12 @@ body{
     background-color: grey;
     font-size: 14px;
     line-height: 1.6;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Muli', sans-serif;
     color: white;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
 }
-@media (min-width: 767px){
-    body{
-        margin-left: 105px;
-    }
-}
+
 li{
     list-style: none;
     text-align: left;
