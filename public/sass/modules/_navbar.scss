@@ -2,17 +2,13 @@
     .mobile-logo {
         position: absolute;
         visibility: hidden;
-        img {
-            width: 50px;
-            margin-left: 30px;
-        }
     }
     .navbar {
         display: flex;
         justify-content: space-between;
         .logo {
+            
             img {
-                width: 50px;
                 margin-left: 30px;
             }
         }

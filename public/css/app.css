@@ -253,21 +253,54 @@ li {
   text-align: left;
 }
 
+section#navbar {
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+@media (min-width: 767px) {
+  section#navbar {
+    padding-top: 15px;
+  }
+}
+
+section#navbar .logo,
+section#navbar .mobile-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#navbar .logo img,
+section#navbar .mobile-logo img {
+  display: block;
+  height: 35px;
+}
+
+section#navbar .logo .title,
+section#navbar .mobile-logo .title {
+  margin-left: 5px;
+}
+
+section#navbar .logo .title .brand-name,
+section#navbar .mobile-logo .title .brand-name {
+  margin-top: 7px;
+  line-height: 1.1;
+}
+
 @media (min-width: 768px) {
   .mobile-logo {
     position: absolute;
     visibility: hidden;
-  }
-  .mobile-logo img {
-    width: 50px;
-    margin-left: 30px;
   }
   .navbar {
     display: flex;
     justify-content: space-between;
   }
   .navbar .logo img {
-    width: 50px;
     margin-left: 30px;
   }
   .navbar .hamburger {
@@ -362,22 +395,19 @@ li {
 
 @media (max-width: 767px) {
   .mobile-logo {
-    position: fixed;
-    top: 10px;
-    right: 40px;
-    transform: translateX(-50%);
+    position: absolute;
+    right: 15px;
     transition: all 1s cubic-bezier(0.9, 0, 0.33, 1);
-    height: 70px;
+    height: 75px;
+    display: flex;
+    align-items: center;
   }
   .mobile-logo img {
-    width: 60px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 35px;
   }
   .mobile-logo--hide {
-    transform: translateX(-500px);
-    transition: all 0.2s cubic-bezier(0.9, 0, 0.33, 1);
+    transform: translateX(-800px);
+    transition: all 0.4s cubic-bezier(0.9, 0, 0.33, 1);
   }
   .navbar {
     width: 0;
@@ -395,16 +425,15 @@ li {
     height: 80px;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     background-color: #ffffff;
     box-shadow: 0 1px 5px #3f3f3e;
   }
   .navbar .logo img {
-    width: 70px;
-    display: block;
-    position: absolute;
-    top: 5%;
-    left: -200%;
+    transform: rotateY(-90deg);
+    transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+  }
+  .navbar .logo .title {
     transform: rotateY(-90deg);
     transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
   }
@@ -533,8 +562,10 @@ li {
     overflow-y: scroll;
   }
   .navbar-open .logo img {
-    left: 40%;
     transform: rotateY(0);
+  }
+  .navbar-open .logo .title {
+    transform: rotateY(0deg);
   }
   .navbar-open .hamburger {
     width: 40px;
