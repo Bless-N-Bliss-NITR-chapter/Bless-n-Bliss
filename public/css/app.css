@@ -246,7 +246,6 @@ body {
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  width: 100%;
 }
 
 li {
@@ -442,7 +441,7 @@ li {
     transform: rotateY(-90deg) translateX(-300px);
     transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
     position: absolute;
-    left: clamp(130px, 50vw, 200px);
+    left: 140px;
     margin-top: 60px;
     padding-left: 10px;
     border-left: solid 2px #aaaaaa;
