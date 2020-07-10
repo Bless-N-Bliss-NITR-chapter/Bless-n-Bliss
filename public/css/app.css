@@ -363,8 +363,8 @@ li {
 @media (max-width: 767px) {
   .mobile-logo {
     position: fixed;
-    top: 0;
-    left: 50%;
+    top: 10px;
+    right: 40px;
     transform: translateX(-50%);
     transition: all 1s cubic-bezier(0.9, 0, 0.33, 1);
     height: 70px;
