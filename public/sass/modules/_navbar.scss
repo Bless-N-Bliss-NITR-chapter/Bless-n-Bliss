@@ -63,6 +63,16 @@
 
             .dropdown-toggler {
                 position: relative;
+
+                .list-anchor::before{
+                    content: "\f078";
+                    font-family: FontAwesome;
+                    font-weight: normal;
+                    font-style: normal;
+                    color:$light-grey;
+                    margin-right: 5px;
+                    text-decoration:none;
+                }
                 .dropdown-menu-ul {
                     position: absolute;
                     top: 50px;

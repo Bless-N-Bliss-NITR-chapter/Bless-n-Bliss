@@ -321,6 +321,15 @@ li {
   .navbar .menu-ul .dropdown-toggler {
     position: relative;
   }
+  .navbar .menu-ul .dropdown-toggler .list-anchor::before {
+    content: "\f078";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    color: #aaaaaa;
+    margin-right: 5px;
+    text-decoration: none;
+  }
   .navbar .menu-ul .dropdown-toggler .dropdown-menu-ul {
     position: absolute;
     top: 50px;
@@ -354,8 +363,8 @@ li {
 @media (max-width: 767px) {
   .mobile-logo {
     position: fixed;
-    top: 0;
-    left: 50%;
+    top: 10px;
+    right: 40px;
     transform: translateX(-50%);
     transition: all 1s cubic-bezier(0.9, 0, 0.33, 1);
     height: 70px;
@@ -465,7 +474,7 @@ li {
   .navbar .menu-ul .list-item .list-anchor:not(hover) {
     transition: all 0.4s cubic-bezier(0.9, 0.9, 0.33, 1);
   }
-  .navbar .menu-ul .list-item .list-anchor::before {
+  .navbar .menu-ul .list-item .list-anchor::before, .navbar .menu-ul .list-item .active-anchor::before {
     content: '';
     display: block;
     height: 0px;
@@ -475,7 +484,7 @@ li {
     left: 0;
     transition: all 0.1s cubic-bezier(0.9, 0.9, 0.33, 1);
   }
-  .navbar .menu-ul .list-item .list-anchor:hover::before {
+  .navbar .menu-ul .list-item .list-anchor:hover::before, .navbar .menu-ul .list-item .active-anchor::before {
     height: 24px;
   }
   .navbar .menu-ul .dropdown-toggler .list-anchor::after {

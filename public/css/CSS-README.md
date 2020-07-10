@@ -1,6 +1,6 @@
 # Important info about CSS
 
-- These css files must not be modified explicitly in any case
+- These css files must not be modified explicitly in any case. (not applicable to style.css)
 
 - If you wish to add/modify css. Make changes to the SASS and compile it with the Live SASS Compiler (by Ritwick Dey) in VS Code.
   - make sure to make changes in you settings.json as follows:
