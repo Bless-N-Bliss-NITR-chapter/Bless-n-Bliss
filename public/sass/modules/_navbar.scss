@@ -1,84 +1,96 @@
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    .logo{
-        img{
+@media (min-width: 768px) {
+    .mobile-logo {
+        position: absolute;
+        visibility: hidden;
+        img {
             width: 50px;
             margin-left: 30px;
         }
     }
-    .menu-ul{
+    .navbar {
         display: flex;
-        justify-content: space-around;
-        width: 500px;
-
-        .list-item{
-            position: relative;
-            height: 50px;
-            @include flex-center;
-            .list-anchor{  
-                @include flex-center;
-                color: $white;
-                font-weight: 600;
-                text-decoration: none;
-            }
-            .list-anchor::after{
-                content: '';
-                display: block;
-                background-color: $orange;
-                height: 2px;
-                width: 0%;
-                position: absolute;
-                bottom: 0;
-                transition: all 0.3s cubic-bezier(0.9, 0, 0.33, 1);
-            }
-            .list-anchor:hover::after{
-                width: 110%;
-            }
-            .active-anchor{
-                pointer-events: none;
-            }
-            .active-anchor::after{
-                content: '';
-                display: block;
-                background-color: $orange;
-                height: 2px;
-                width: 110%;
-                position: absolute;
-                bottom: 0;
+        justify-content: space-between;
+        .logo {
+            img {
+                width: 50px;
+                margin-left: 30px;
             }
         }
-        
-        .dropdown-toggler{
-            position: relative;
-            .dropdown-menu-ul{
-                position: absolute;
-                top: 50px;
-                opacity: 1;
-                transition: all 0.3s cubic-bezier(0.9, 0, 0.33, 1);
-                .drop-item{
-                    padding: .625rem 2.3125rem 1.25rem;
-                    width: max-content;
-                    background-color: $white;
-                    a{
-                        color: $black;
-                        text-decoration: none;
-                        transition: all 0.6s cubic-bezier(0.9, 0, 0.33, 1);
-                        position: relative;
-                        left: 0;
-                    }
-                    a:hover{
-                        position: relative;
-                        left: 8px;
-                        color: $orange;
-                        
-                    }
+        .hamburger {
+            display: none;
+        }
+        .menu-ul {
+            display: flex;
+            justify-content: space-around;
+            width: 500px;
+
+            .list-item {
+                position: relative;
+                height: 50px;
+                @include flex-center;
+                .list-anchor {
+                    @include flex-center;
+                    color: $white;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+                .list-anchor::after {
+                    content: "";
+                    display: block;
+                    background-color: $orange;
+                    height: 2px;
+                    width: 0%;
+                    position: absolute;
+                    bottom: 0;
+                    transition: all 0.3s cubic-bezier(0.9, 0, 0.33, 1);
+                }
+                .list-anchor:hover::after {
+                    width: 110%;
+                }
+                .active-anchor {
+                    pointer-events: none;
+                }
+                .active-anchor::after {
+                    content: "";
+                    display: block;
+                    background-color: $orange;
+                    height: 2px;
+                    width: 110%;
+                    position: absolute;
+                    bottom: 0;
                 }
             }
-            .dropdown-menu-ul--hide{
-                opacity: 0;
-                top: 45px;
-                visibility: hidden;
+
+            .dropdown-toggler {
+                position: relative;
+                .dropdown-menu-ul {
+                    position: absolute;
+                    top: 50px;
+                    opacity: 1;
+                    transition: all 0.3s cubic-bezier(0.9, 0, 0.33, 1);
+                    .drop-item {
+                        padding: 0.625rem 2.3125rem 1.25rem;
+                        width: max-content;
+                        background-color: $white;
+                        a {
+                            color: $black;
+                            text-decoration: none;
+                            transition: all 0.6s cubic-bezier(0.9, 0, 0.33, 1);
+                            position: relative;
+                            left: 0;
+                        }
+                        a:hover {
+                            position: relative;
+                            left: 8px;
+                            color: $orange;
+                        }
+                    }
+                }
+                .dropdown-menu-ul--hide {
+                    opacity: 0;
+                    top: 45px;
+                    visibility: hidden;
+                }
             }
         }
     }

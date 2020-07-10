@@ -1,0 +1,222 @@
+@media (max-width: 767px) {
+    .mobile-logo{
+        position: fixed;
+        top :0;
+        left:50%;
+        transform:translateX(-50%);
+        transition: all 1.0s cubic-bezier(0.9, 0, 0.33, 1);
+        height:70px;
+        img{
+            width: 60px;
+            position: absolute;
+            left:50%;
+            transform:translateX(-50%);
+        }
+    }
+    .mobile-logo--hide{
+        transform :translateX(-500px);
+        transition: all 0.2s cubic-bezier(0.9, 0, 0.33, 1);
+    }
+    .navbar {
+        width: 0;
+        height: 100vh;
+        display: block;
+        background-color: $white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-radius: 0% 50% 450% 0%;
+        transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+
+        .logo {
+            width: 100%;
+            height:  80px;
+            position: sticky;
+            top: 0;
+            z-index:100;
+            background-color: $white;
+            box-shadow: 0 1px 5px $grey;
+            img{
+                width: 70px;
+                display: block;
+                position: absolute;
+                top: 5%;
+                left: -200%;
+                transform: rotateY(-90deg);
+                transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+            }
+        }
+        .hamburger {
+            height: 40px;
+            width: 40px;
+            padding: 30px 10px 10px 40px ;
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            top: 25px;
+            left: -15px;
+            transition: all 0.9s cubic-bezier(0.9, 0.9, 0.33, 1);
+            transform: translateY(-50%);
+            background-color: $white;
+            box-sizing: content-box;
+            border-radius: 0 0 50% 0  ;
+            box-shadow: 0 0 15px $grey;
+
+            .bar {
+                height: 2px;
+                background: $black;
+                display: block;
+                position: absolute;
+                transform: rotate(0);
+                transition: all 1.5s cubic-bezier(0.9, 0, 0.33, 1);
+            }
+            .top-bar {
+                width: 30px;
+                top: 50%;
+            }
+            .middle-bar {
+                width: 30px;
+                top: 60%;
+            }
+            .bottom-bar {
+                width: 15px;
+                top: 70%;
+            }
+        }
+        .menu-ul {            
+            opacity: 0;
+            visibility: hidden;
+            transform: rotateY(-90deg) translateX(-300px);
+            transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+
+            position: absolute;
+            left: clamp(130px, 50vw, 200px);
+            margin-top: 60px;
+            padding-left: 10px;
+            border-left: solid 2px $light-grey;
+            .list-item {
+                margin-bottom: 15px;
+                width: 100%;
+                .list-anchor {
+                    display: block;
+                    font-size: .875rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: $black;
+                    margin-bottom: 5px;
+                    &:hover {
+                        color: $orange;
+                        transition: all 0.4s cubic-bezier(0.9, 0.9, 0.33, 1);
+                    }
+                    &:not(hover) {
+                        transition: all 0.4s cubic-bezier(0.9, 0.9, 0.33, 1);
+                    }
+                }
+                .list-anchor::before{
+                    content: '';
+                    display:block;
+                    height: 0px;
+                    width: 3px;
+                    background-color: $orange;
+                    position: absolute;
+                    left: 0;
+                    transition: all 0.1s cubic-bezier(0.9, 0.9, 0.33, 1);
+                }
+                .list-anchor:hover::before{
+                    height: 24px;
+                }
+            }
+            
+            .dropdown-toggler{
+                
+                .list-anchor::after {
+                    content: "\f078";
+                    font-family: FontAwesome;
+                    font-weight: normal;
+                    font-style: normal;
+                    color:$light-grey;
+                    position: absolute;
+                    right: 0;
+                    text-decoration:none;
+                }
+                
+                .dropdown-menu-ul{
+                    margin-left: 20px;
+                    .drop-item{
+                        opacity: 1;
+                        margin-bottom: 3px;
+                        width:80%;
+                        height: 22.4px;
+                        transition: all 0.3s cubic-bezier(0.9, 0, 0.33, 1);
+                        a{
+                            color: $black;
+                            text-decoration: none;
+                            transition: all 0.3s cubic-bezier(0.9, 0, 0.33, 1);
+                            position: relative;
+                            left: 0;
+                            display:block;
+                            width: 100%;
+                        }
+                        a:hover{
+                            position: relative;
+                            left: 8px;
+                            color: $orange;
+                        }
+                    }
+                }
+                .dropdown-menu-ul--hide{
+                    .drop-item{
+                        opacity: 0;
+                        margin:0;
+                        height: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-open {
+        width: 100%;
+        border-radius: 0% 1% 1% 0%;
+        overflow-y: scroll;
+        .logo {
+            img {
+                left: 40%;
+                transform: rotateY(0);
+            }
+        }
+        .hamburger {
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            top: 230px;
+            left: 5vw;
+            background-color: rgb(241, 241, 241);
+            box-shadow: 0 0px 40px rgb(218, 218, 218);
+            box-sizing: content-box;
+            border-radius: 50%;
+            position: fixed;
+            .bar {
+                top: 50%;
+                left: calc(50% - 15px);
+                width: 30px;
+            }
+            .top-bar {
+                transform: rotate(405deg);
+            }
+            .middle-bar {
+                transform: rotateY(-90deg);
+            }
+            .bottom-bar {
+                transform: rotate(135deg);
+            }
+        }
+        .menu-ul {
+            width: 50vw;
+            opacity: 1;
+            visibility: visible;
+            transform: rotateY(0deg) translateX(-50px);
+        }
+    }
+}
