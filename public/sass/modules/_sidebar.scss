@@ -1,21 +1,18 @@
 @media (max-width: 767px) {
     .mobile-logo{
-        position: fixed;
-        top :10px;
-        right:40px;
-        transform:translateX(-50%);
+        position: absolute;
+        right:15px;
         transition: all 1.0s cubic-bezier(0.9, 0, 0.33, 1);
-        height:70px;
+        height:75px;
+        display: flex;
+        align-items: center;
         img{
-            width: 60px;
-            position: absolute;
-            left:50%;
-            transform:translateX(-50%);
+            height: 35px;
         }
     }
     .mobile-logo--hide{
-        transform :translateX(-500px);
-        transition: all 0.2s cubic-bezier(0.9, 0, 0.33, 1);
+        transform :translateX(-800px);
+        transition: all 0.4s cubic-bezier(0.9, 0, 0.33, 1);
     }
     .navbar {
         width: 0;
@@ -33,15 +30,14 @@
             height:  80px;
             position: sticky;
             top: 0;
-            z-index:100;
+            z-index:1000;
             background-color: $white;
             box-shadow: 0 1px 5px $grey;
-            img{
-                width: 70px;
-                display: block;
-                position: absolute;
-                top: 5%;
-                left: -200%;
+            img{ 
+                transform: rotateY(-90deg);
+                transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
+            }
+            .title{
                 transform: rotateY(-90deg);
                 transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
             }
@@ -182,9 +178,11 @@
         border-radius: 0% 1% 1% 0%;
         overflow-y: scroll;
         .logo {
-            img {
-                left: 40%;
+            img {    
                 transform: rotateY(0);
+            }
+            .title{
+                transform: rotateY(0deg);   
             }
         }
         .hamburger {
