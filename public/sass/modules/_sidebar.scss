@@ -90,8 +90,8 @@
             transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
 
             position: absolute;
-            //left: clamp(130px, 50vw, 200px);  //clamp is not widely supported on mobile
-            left: 140px;
+            //left: clamp(130px, 50vw, 200px);  //clamp is not widely supported on all mobile browsers
+            left: 140px;    //alternative option😑😑
             margin-top: 60px;
             padding-left: 10px;
             border-left: solid 2px $light-grey;
@@ -113,7 +113,7 @@
                         transition: all 0.4s cubic-bezier(0.9, 0.9, 0.33, 1);
                     }
                 }
-                .list-anchor::before{
+                .list-anchor::before, .active-anchor::before{
                     content: '';
                     display:block;
                     height: 0px;
@@ -123,7 +123,7 @@
                     left: 0;
                     transition: all 0.1s cubic-bezier(0.9, 0.9, 0.33, 1);
                 }
-                .list-anchor:hover::before{
+                .list-anchor:hover::before, .active-anchor::before{
                     height: 24px;
                 }
             }
