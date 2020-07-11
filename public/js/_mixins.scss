@@ -1,0 +1,68 @@
+@mixin flex-center(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin circular-button($bg-color, $margin, $dia){
+    background-color: $bg-color;
+    margin:0px $margin;
+    width: $dia;
+    height: $dia;
+    border-radius: 100%;
+    outline: none;//to remove the outline when you touch the key in mobile
+}
+
+@mixin statement-quotes($top, $left){
+    .statement::before{
+        position: absolute;
+        top: $top;
+        left: $left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        content: ",,";
+        font-size: 19vw;
+        display: block;
+        transform: rotateZ(180deg);
+    }
+}
+
+@mixin from-bottom($translateY:150px){
+    .from-bottom{
+        opacity: 0;
+        transform: translateY($translateY);
+        transition: 
+            opacity 0.3s ease-in,
+            transform  0.7s ease-in,
+    }
+    .from-bottom.appear{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@mixin from-left(){
+    .from-left{
+        opacity: 0;
+        transform: translateX(-150px);
+        transition: 
+            opacity 0.3s ease-in,
+            transform  0.7s ease-in,
+    }
+    .from-left.appear{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@mixin logo-div(){
+    .logo-div{
+        transition: ease-in-out 0.3s;
+        width: 220px;
+        @include flex-center();
+        line-height: 0px;   
+        .logo{
+            width:40px;
+            margin:10px;
+        } 
+    }
+}

@@ -7,7 +7,6 @@
         display: flex;
         justify-content: space-between;
         .logo {
-            
             img {
                 margin-left: 30px;
             }
@@ -26,7 +25,6 @@
                 @include flex-center;
                 .list-anchor {
                     @include flex-center;
-                    color: $white;
                     font-weight: 600;
                     text-decoration: none;
                 }
@@ -60,14 +58,14 @@
             .dropdown-toggler {
                 position: relative;
 
-                .list-anchor::before{
+                .list-anchor::before {
                     content: "\f078";
                     font-family: FontAwesome;
                     font-weight: normal;
                     font-style: normal;
-                    color:$light-grey;
+                    color: $light-grey;
                     margin-right: 5px;
-                    text-decoration:none;
+                    text-decoration: none;
                 }
                 .dropdown-menu-ul {
                     position: absolute;
