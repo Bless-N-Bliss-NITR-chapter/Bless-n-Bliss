@@ -253,6 +253,35 @@ li {
   text-align: left;
 }
 
+section .logo,
+section .mobile-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .logo img,
+section .mobile-logo img {
+  display: block;
+  height: 25px;
+}
+
+section .logo .title,
+section .mobile-logo .title {
+  margin-left: 5px;
+}
+
+section .logo .title .brand-name,
+section .mobile-logo .title .brand-name {
+  margin-top: 7px;
+  line-height: 0.8;
+}
+
+section .logo .title .motto,
+section .mobile-logo .title .motto {
+  font-size: 12px;
+}
+
 section#navbar {
   height: 75px;
   width: 100%;
@@ -265,30 +294,6 @@ section#navbar {
   section#navbar {
     padding-top: 15px;
   }
-}
-
-section#navbar .logo,
-section#navbar .mobile-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section#navbar .logo img,
-section#navbar .mobile-logo img {
-  display: block;
-  height: 35px;
-}
-
-section#navbar .logo .title,
-section#navbar .mobile-logo .title {
-  margin-left: 5px;
-}
-
-section#navbar .logo .title .brand-name,
-section#navbar .mobile-logo .title .brand-name {
-  margin-top: 7px;
-  line-height: 1.1;
 }
 
 section.navbar-initial {
@@ -319,6 +324,216 @@ section.navbar-after .mobile-logo {
 
 section.navbar-after .menu-ul .list-item .list-anchor {
   color: #000000;
+}
+
+section#footer {
+  background-color: #FAFAFB;
+  display: flex;
+  flex-direction: column;
+}
+
+section#footer .footer-top, section#footer .footer-bottom {
+  margin: 0 auto;
+  width: 95vw;
+}
+
+section#footer .footer-top {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-rows: auto;
+}
+
+@media (min-width: 767px) {
+  section#footer .footer-top {
+    grid-template-columns: 280px auto;
+  }
+}
+
+section#footer .footer-top .footer-head, section#footer .footer-top .footer-content {
+  padding: 15px;
+}
+
+section#footer .footer-top .footer-head .logo {
+  justify-content: left;
+}
+
+section#footer .footer-top .footer-head .little-about-us p {
+  padding: 20px 0;
+  font-size: 12px;
+  width: 220px;
+}
+
+section#footer .footer-top .footer-head .social-media-list .social-menu-links .menu-icon {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #3f3f3e;
+  text-align: center;
+  margin-right: 0.5rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  transition: all 0.2s ease-in-out;
+}
+
+section#footer .footer-top .footer-head .social-media-list .social-menu-links .menu-icon a {
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  color: #3f3f3e;
+  font-family: FontAwesome;
+  font-size: 0;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+section#footer .footer-top .footer-head .social-media-list .social-menu-links .menu-icon a::before {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+section#footer .footer-top .footer-head .social-media-list .social-menu-links .menu-icon a:hover {
+  color: #ffffff;
+}
+
+section#footer .footer-top .footer-head .social-media-list .social-menu-links .menu-icon:hover {
+  border: 1px solid #FAFAFB;
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-l a::before {
+  content: "\f0e1";
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-l a:hover {
+  background-color: #0090c4;
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-t a::before {
+  content: "\f099";
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-t a:hover {
+  background-color: #458499;
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-y a::before {
+  content: "\f16a";
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-y a:hover {
+  background-color: #9a4443;
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-i a::before {
+  content: "\f16d";
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-i a:hover {
+  background-color: #eb6daa;
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-f a::before {
+  content: "\f09a";
+}
+
+section#footer .footer-top .footer-head .social-media-list .menu-f a:hover {
+  background-color: #39537b;
+}
+
+section#footer .footer-top .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+section#footer .footer-top .footer-content .locations {
+  margin-left: 13vw;
+  margin-right: 30px;
+}
+
+section#footer .footer-top .footer-content .locations h3 {
+  margin-bottom: 20px;
+}
+
+section#footer .footer-top .footer-content .locations .location-list > li {
+  list-style: inside;
+  margin-bottom: 10px;
+  transform: translateX(15px);
+}
+
+section#footer .footer-top .footer-content .contact-us {
+  margin-right: 20px;
+}
+
+section#footer .footer-top .footer-content .contact-us h3 {
+  margin-bottom: 20px;
+}
+
+section#footer .footer-top .footer-content .contact-us .contact-us-body {
+  transform: translateX(15px);
+}
+
+section#footer .footer-top .footer-content .contact-us .address, section#footer .footer-top .footer-content .contact-us .phone, section#footer .footer-top .footer-content .contact-us .email {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  section#footer .footer-top .footer-content {
+    flex-direction: column;
+  }
+  section#footer .footer-top .footer-content .locations, section#footer .footer-top .footer-content .contact-us {
+    margin: 0 0 20px;
+  }
+  section#footer .footer-top .footer-content .locations .location-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section#footer .footer-top .footer-content .locations .location-list li {
+    margin-right: 40px;
+  }
+}
+
+section#footer .footer-bottom {
+  background-color: #ffffff;
+  display: flex;
+}
+
+section#footer .footer-bottom .copyright {
+  font-size: 13px;
+  margin: 5px auto;
+}
+
+section#footer .footer-bottom .copyright a {
+  color: #D384A3;
+  text-decoration: none;
+}
+
+section#footer .footer-bottom .copyright a:hover {
+  text-decoration: underline;
+}
+
+section#footer .dev-section {
+  margin-top: 10px;
+  color: #D384A3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#footer .dev-section .maintainer, section#footer .dev-section .developers {
+  text-align: center;
+  margin: 15px auto;
+}
+
+section#footer .dev-section .maintainer h3, section#footer .dev-section .developers h3 {
+  margin-bottom: px;
+}
+
+section#footer .dev-section .maintainer a, section#footer .dev-section .developers a {
+  text-decoration: none;
+  color: #3f3f3e;
+}
+
+section#footer .dev-section .maintainer a:hover, section#footer .dev-section .developers a:hover {
+  text-decoration: underline;
+  color: #D384A3;
 }
 
 @media (min-width: 768px) {
