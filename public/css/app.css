@@ -340,18 +340,19 @@ section#footer .footer-top, section#footer .footer-bottom {
 
 section#footer .footer-top {
   display: grid;
-  gap: 0.3rem;
+  gap: 0rem;
   grid-template-rows: auto;
 }
 
 @media (min-width: 767px) {
   section#footer .footer-top {
-    grid-template-columns: 280px auto;
+    grid-template-columns: 260px auto;
   }
 }
 
 section#footer .footer-top .footer-head, section#footer .footer-top .footer-content {
   padding: 15px;
+  padding-right: 0;
 }
 
 section#footer .footer-top .footer-head .logo {
@@ -445,15 +446,31 @@ section#footer .footer-top .footer-content {
   justify-content: space-between;
 }
 
-section#footer .footer-top .footer-content .locations {
-  margin-left: 13vw;
+section#footer .footer-top .footer-content .blogs, section#footer .footer-top .footer-content .locations {
   margin-right: 30px;
 }
 
-section#footer .footer-top .footer-content .locations .location-list > li {
+section#footer .footer-top .footer-content .blogs .blog-list > li, section#footer .footer-top .footer-content .blogs .location-list > li, section#footer .footer-top .footer-content .locations .blog-list > li, section#footer .footer-top .footer-content .locations .location-list > li {
   list-style: inside;
   margin-bottom: 10px;
   transform: translateX(15px);
+}
+
+section#footer .footer-top .footer-content .locations {
+  margin-left: 0;
+}
+
+section#footer .footer-top .footer-content .blogs .blog-list li {
+  list-style: circle;
+}
+
+section#footer .footer-top .footer-content .blogs .blog-list li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+section#footer .footer-top .footer-content .blogs .blog-list li a:hover {
+  color: #D384A3;
 }
 
 section#footer .footer-top .footer-content .contact-us {
@@ -468,9 +485,20 @@ section#footer .footer-top .footer-content .contact-us .address, section#footer 
   margin-bottom: 10px;
 }
 
-section#footer .footer-top .footer-content .locations h3, section#footer .footer-top .footer-content .contact-us h3 {
+section#footer .footer-top .footer-content .locations, section#footer .footer-top .footer-content .contact-us, section#footer .footer-top .footer-content .blogs {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section#footer .footer-top .footer-content .locations h3, section#footer .footer-top .footer-content .contact-us h3, section#footer .footer-top .footer-content .blogs h3 {
   margin-bottom: 20px;
   color: #D384A3;
+}
+
+@media (min-width: 1060px) {
+  section#footer .footer-top .footer-content {
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 767px) {
@@ -480,11 +508,11 @@ section#footer .footer-top .footer-content .locations h3, section#footer .footer
   section#footer .footer-top .footer-content .locations, section#footer .footer-top .footer-content .contact-us {
     margin: 0 0 20px;
   }
-  section#footer .footer-top .footer-content .locations .location-list {
+  section#footer .footer-top .footer-content .locations .location-list, section#footer .footer-top .footer-content .locations .blog-list, section#footer .footer-top .footer-content .blogs .location-list, section#footer .footer-top .footer-content .blogs .blog-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  section#footer .footer-top .footer-content .locations .location-list li {
+  section#footer .footer-top .footer-content .locations .location-list li, section#footer .footer-top .footer-content .locations .blog-list li, section#footer .footer-top .footer-content .blogs .location-list li, section#footer .footer-top .footer-content .blogs .blog-list li {
     margin-right: 40px;
   }
 }
