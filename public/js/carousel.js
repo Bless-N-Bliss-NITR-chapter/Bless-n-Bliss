@@ -1,7 +1,7 @@
-const tracksContainers = document.querySelectorAll('.carousel');
+const tracksContainers = document.querySelectorAll('.carousel-container');  //select all carousels present in the page
 
 tracksContainers.forEach(trackContainer => {
-    const tracks = trackContainer.querySelector(".tracks");
+    const tracks = trackContainer.querySelector(".tracks-ul");
     const slidesArray = Array.from(tracks.children);
 
     const tracksNavbar = trackContainer.querySelector('.tracks-navbar');

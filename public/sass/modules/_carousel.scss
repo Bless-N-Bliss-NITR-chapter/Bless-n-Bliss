@@ -1,20 +1,25 @@
-.carousel {
+.carousel {//do not change any contents/property of this class. make a separate class to overwrite the properties of this class.
     --carousel-height: auto;
     //--carousel-max-height: 100vh;
     --carousel-min-height: 100vh;
     --carousel-width: 100%;
 
     overflow: hidden;
-    display: block;
     min-height: var(--carousel-min-height);
-    //max-height: var(--carousel-max-height);
+    background-color:$grey;
     height: var(--carousel-height);
     width: var(--carousel-width);
+    //max-height: var(--carousel-max-height);
     .carousel-container {
+        min-height: var(--carousel-min-height);  
+        position: relative;
         .tracks-container {
+            min-height: var(--carousel-min-height);
             .tracks-ul {
+                min-height: var(--carousel-min-height);
                 position: relative;
                 .carousel-slide {
+                    min-height: var(--carousel-min-height);
                     position: absolute;
                     top: 0;
                     bottom: 0;
@@ -38,9 +43,21 @@
             }
         }
         .tracks-navbar {
+            position: absolute;
+            left: 5vw;
+            bottom: 20px;
+            z-index: 11;
             .indicator {
+                @include circular-button(
+                rgba($color: #000000, $alpha: 0.3),
+                5px,
+                20px
+            );
+            border: solid 2px $pink;
             }
             .active-dot {
+                transition: ease-in 0.5s;
+                background-color: $light-pink;
             }
         }
     }
@@ -49,4 +66,22 @@
     --carousel-height: auto;
     --carousel-min-height: 100vh;
     --carousel-width: 100%;
+    .carousel-container{
+        .tracks-container{
+            .tracks-ul{
+                .carousel-slide{
+                    .bg-img{
+                        object-fit: cover;
+                        object-position: 40% 0%;
+                    }
+                    .random-thought{
+                        position: absolute;
+                        top: 50%;
+                        left: 5vw;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
 }
