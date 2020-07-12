@@ -67,3 +67,16 @@
         transform: translateX(0px);
     }
 }
+
+@mixin statement-quotes($top, $left){
+    .statement::before{
+        position: absolute;
+        top: $top;
+        left: $left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        content: ",,";
+        font-size: 19vw;
+        display: block;
+        transform: rotateZ(180deg);
+    }
+}
