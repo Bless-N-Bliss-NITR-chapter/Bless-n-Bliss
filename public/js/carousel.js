@@ -23,7 +23,7 @@ tracksContainers.forEach(trackContainer => {
         });
     }
 
-    //automatically change slides
+    //automatically change slides and add a pause button feature
     function nextSlide() {
 
         const activeSlide = tracks.querySelector('.active-slide');
@@ -46,16 +46,20 @@ tracksContainers.forEach(trackContainer => {
         nextSiblingSlide.classList.add('active-slide');
     }
 
-    const pauseButton = document.querySelector('.pause-button');
+    const pauseButton = document.querySelector('.pause-n-play-btn');
     let inResumeMode = true;
     pauseButton.addEventListener('click', event => {
         if(inResumeMode){
             clearInterval(timerID);
             inResumeMode = false;
+            pauseButton.classList.add('play-button');
+            pauseButton.classList.remove('pause-button');
         }
         else{
             timerID = setInterval(() => nextSlide(), 3000);
             inResumeMode = true;
+            pauseButton.classList.add('pause-button');
+            pauseButton.classList.remove('play-button');
         }
     });
     
