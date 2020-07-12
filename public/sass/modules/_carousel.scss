@@ -1,0 +1,52 @@
+.carousel {
+    --carousel-height: auto;
+    //--carousel-max-height: 100vh;
+    --carousel-min-height: 100vh;
+    --carousel-width: 100%;
+
+    overflow: hidden;
+    display: block;
+    min-height: var(--carousel-min-height);
+    //max-height: var(--carousel-max-height);
+    height: var(--carousel-height);
+    width: var(--carousel-width);
+    .carousel-container {
+        .tracks-container {
+            .tracks-ul {
+                position: relative;
+                .carousel-slide {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    transition: opacity ease-out 1s;
+                    opacity: 0;
+                    .bg-img {
+                        min-height: var(--carousel-min-height);
+                        //max-height: var(--carousel-max-height);
+                        display: block;
+                        height: var(--carousel-height);
+                        width: var(--carousel-width);
+                        object-fit: cover;
+                        object-position: 40% 0%;
+                    }
+                    &.active-slide {
+                        z-index: 10;
+                        opacity: 1;
+                        transition: opacity ease-in 1s;
+                    }
+                }
+            }
+        }
+        .tracks-navbar {
+            .indicator {
+            }
+            .active-dot {
+            }
+        }
+    }
+}
+.photo-carousel {
+    --carousel-height: auto;
+    --carousel-min-height: 100vh;
+    --carousel-width: 100%;
+}
