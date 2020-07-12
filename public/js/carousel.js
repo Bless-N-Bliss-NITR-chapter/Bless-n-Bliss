@@ -44,9 +44,9 @@ tracksContainers.forEach(trackContainer => {
 
         nextSiblingDot.classList.add('active-dot');
         nextSiblingSlide.classList.add('active-slide');
-
-        setTimeout(nextSlide, 7000);
     }
 
-    nextSlide();
+    setInterval(() => nextSlide(), 6000);
+
+
 })
