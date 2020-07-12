@@ -486,6 +486,7 @@ section#footer .footer-top .footer-content .contact-us .address, section#footer 
 }
 
 section#footer .footer-top .footer-content .locations, section#footer .footer-top .footer-content .contact-us, section#footer .footer-top .footer-content .blogs {
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
