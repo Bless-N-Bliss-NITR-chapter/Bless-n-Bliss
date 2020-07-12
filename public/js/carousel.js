@@ -46,7 +46,20 @@ tracksContainers.forEach(trackContainer => {
         nextSiblingSlide.classList.add('active-slide');
     }
 
-    setInterval(() => nextSlide(), 6000);
+    const pauseButton = document.querySelector('.pause-button');
+    let inResumeMode = true;
+    pauseButton.addEventListener('click', event => {
+        if(inResumeMode){
+            clearInterval(timerID);
+            inResumeMode = false;
+        }
+        else{
+            timerID = setInterval(() => nextSlide(), 3000);
+            inResumeMode = true;
+        }
+    });
+    
+    let timerID = setInterval(() => nextSlide(), 3000);
 
 
 })
