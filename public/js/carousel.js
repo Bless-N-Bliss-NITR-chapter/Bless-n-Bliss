@@ -16,14 +16,14 @@ tracksContainers.forEach(trackContainer => {
             activeSlide.classList.remove('active-slide');
             activeDot.classList.remove('active-dot');
 
-            // add active class to the current clicked sot and its corresponding slide
+            // add active class to the current clicked dot and its corresponding slide
             slidesArray[index].classList.add('active-slide');
             navDotsArray[index].classList.add('active-dot');
 
         });
     }
 
-    //automatically change slide
+    //automatically change slides
     function nextSlide() {
 
         const activeSlide = tracks.querySelector('.active-slide');
