@@ -443,7 +443,7 @@ section#footer .footer-top .footer-head .social-media-list .menu-f a:hover {
 
 section#footer .footer-top .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 section#footer .footer-top .footer-content .blogs, section#footer .footer-top .footer-content .locations {
@@ -454,10 +454,6 @@ section#footer .footer-top .footer-content .blogs .blog-list > li, section#foote
   list-style: inside;
   margin-bottom: 10px;
   transform: translateX(15px);
-}
-
-section#footer .footer-top .footer-content .locations {
-  margin-left: 0;
 }
 
 section#footer .footer-top .footer-content .blogs .blog-list li {
@@ -495,12 +491,6 @@ section#footer .footer-top .footer-content .locations h3, section#footer .footer
   color: #D384A3;
 }
 
-@media (min-width: 1060px) {
-  section#footer .footer-top .footer-content {
-    justify-content: space-around;
-  }
-}
-
 @media (max-width: 767px) {
   section#footer .footer-top .footer-content {
     flex-direction: column;
@@ -512,8 +502,8 @@ section#footer .footer-top .footer-content .locations h3, section#footer .footer
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  section#footer .footer-top .footer-content .locations .location-list li, section#footer .footer-top .footer-content .locations .blog-list li, section#footer .footer-top .footer-content .blogs .location-list li, section#footer .footer-top .footer-content .blogs .blog-list li {
-    margin-right: 40px;
+  section#footer .footer-top .footer-content .locations .location-list li:nth-of-type(2n-1), section#footer .footer-top .footer-content .locations .blog-list li:nth-of-type(2n-1), section#footer .footer-top .footer-content .blogs .location-list li:nth-of-type(2n-1), section#footer .footer-top .footer-content .blogs .blog-list li:nth-of-type(2n-1) {
+    margin-right: 20px;
   }
 }
 
