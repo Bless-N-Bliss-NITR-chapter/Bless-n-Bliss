@@ -327,6 +327,7 @@ section.navbar-after .menu-ul .list-item .list-anchor {
 }
 
 section#footer {
+  margin-top: 50px;
   background-color: #FAFAFB;
   display: flex;
   flex-direction: column;
