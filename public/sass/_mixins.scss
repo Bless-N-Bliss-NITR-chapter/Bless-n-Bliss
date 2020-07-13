@@ -12,3 +12,71 @@
     border-radius: 100%;
     outline: none;//to remove the outline when you touch the key in mobile browsers
 }
+
+
+@mixin from-top($translateY:-150px){
+    .from-top{
+        opacity: 0;
+        transform: translateY($translateY);
+        transition: 
+            opacity 0.3s cubic-bezier(0.9, 0, 0.33, 1),
+            transform  0.7s cubic-bezier(0.9, 0, 0.33, 1),
+    }
+    .from-top.appear{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@mixin from-right($translateX: 150px){
+    .from-right{
+        opacity: 0;
+        transform: translateX($translateX);
+        transition: 
+            opacity 0.3s cubic-bezier(0.9, 0, 0.33, 1),
+            transform  0.7s cubic-bezier(0.9, 0, 0.33, 1),
+    }
+    .from-right.appear{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@mixin from-bottom($translateY:150px){
+    .from-bottom{
+        opacity: 0;
+        transform: translateY($translateY);
+        transition: 
+            opacity 0.3s cubic-bezier(0.9, 0, 0.33, 1),
+            transform  0.7s cubic-bezier(0.9, 0, 0.33, 1),
+    }
+    .from-bottom.appear{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@mixin from-left($translateX: -150px){
+    .from-left{
+        opacity: 0;
+        transform: translateX($translateX);
+        transition: 
+            opacity 0.3s cubic-bezier(0.9, 0, 0.33, 1),
+            transform  0.7s cubic-bezier(0.9, 0, 0.33, 1),
+    }
+    .from-left.appear{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@mixin statement-quotes($top, $left){
+    .statement::before{
+        position: absolute;
+        top: $top;
+        left: $left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        content: ",,";
+        font-size: 19vw;
+        display: block;
+        transform: rotateZ(180deg);
+    }
+}

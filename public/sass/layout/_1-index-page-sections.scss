@@ -1,26 +1,276 @@
 section {
+    .logo,
+    .mobile-logo {
+        @include flex-center();
+        img {
+            display: block;
+            height: 25px;
+        }
+        .title {
+            margin-left: 5px;
+            .brand-name {
+                margin-top: 7px;
+                line-height: 0.8;
+            }
+            .motto{
+                font-size: 12px;
+            }
+        }
+    }
     &#navbar {
         height: 75px;
         width: 100%;
         position: fixed;
         top: 0;
         z-index: 100;
+
         @media (min-width: 767px) {
             padding-top: 15px;
         }
-
+    }
+    &.navbar-initial {
+        transition:all 0.2s ease-in;
+        background-color: transparent;
+        box-shadow: none;
         .logo,
         .mobile-logo {
-            @include flex-center();
-            img {
-                display: block;
-                height: 35px;
+            color: $light-pink;
+        }
+        .menu-ul {
+            .list-item {
+                .list-anchor {
+                    color: $white;
+                }
             }
-            .title {
-                margin-left: 5px;
-                .brand-name {
-                    margin-top: 7px;
-                    line-height: 1.1;
+        }
+    }
+    &.navbar-after {
+        transition: all 0.2s ease-in;
+        background-color: rgba($color: $light-pink, $alpha: 0.9);
+        box-shadow: 0px 1px 3px $grey;
+        .logo,
+        .mobile-logo {
+            color: $black;
+        }
+        .menu-ul {
+            .list-item {
+                .list-anchor {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    &#footer {
+        margin-top: 50px;
+        background-color: $light-pink;
+        display:flex;
+        flex-direction: column;
+        .footer-top, .footer-bottom{
+            margin: 0 auto;
+            width: 95vw;
+        }
+        .footer-top {
+            display: grid;
+            gap: 0rem;
+            @media (min-width: 767px) {
+                grid-template-columns: 260px auto;
+            }
+            grid-template-rows: auto;
+
+            .footer-head, .footer-content{
+                padding: 15px;
+                padding-right: 0;
+            }
+            .footer-head {
+                .logo{
+                    justify-content: left;
+                }
+                .little-about-us {
+                    p {
+                        padding: 20px 0;
+                        font-size: 12px;
+                        width  :220px
+                    }
+                }
+                .social-media-list {
+                    .social-menu-links {
+                        .menu-icon {
+                            display: inline-block;
+                            border-radius: 50%;
+                            border: 1px solid $grey;
+                            text-align: center;
+                            margin-right: 0.5rem;
+                            width: 1.875rem;
+                            height: 1.875rem;
+                            transition: all 0.2s ease-in-out;
+                            a {
+                                display: block;
+                                width: 1.875rem;
+                                height: 1.875rem;
+                                border-radius: 50%;
+                                color: $grey;
+                                font-family: FontAwesome;
+                                font-size: 0;
+                                text-decoration: none;
+                                background-color: rgba(0, 0, 0, 0);
+                            }
+                            a::before {
+                                font-size: 1rem;
+                                line-height: 1.8rem;
+                            }
+                            a:hover{
+                                color:$white;
+                            }
+                            &:hover{
+                                border: 1px solid $light-pink;
+                            }
+                        }
+                    }
+                    .menu-l {
+                        a::before {
+                            content: "\f0e1";
+                        }
+                        a:hover {
+                            background-color: $blue;
+                        }
+                    }
+                    .menu-t {
+                        a::before {
+                            content: "\f099";
+                        }
+                        a:hover {
+                            background-color: #458499;
+                        }
+                    }
+                    .menu-y {
+                        a::before {
+                            content: "\f16a";
+                        }
+                        a:hover {
+                            background-color: #9a4443;
+                        }
+                    }
+                    .menu-i {
+                        a::before {
+                            content: "\f16d";
+                        }
+                        a:hover {
+                            background-color: #eb6daa;
+                        }
+                    }
+                    .menu-f {
+                        a::before {
+                            content: "\f09a";
+                        }
+                        a:hover {
+                            background-color: #39537b;
+                        }
+                    }
+                }
+            }
+            .footer-content{
+                display: flex;
+                justify-content: space-between;
+                .blogs, .locations {
+                    margin-right: 30px;
+                    
+                    .blog-list > li , .location-list > li{
+                        list-style: inside;
+                        margin-bottom: 10px;
+                        transform: translateX(15px);
+                    }
+                }    
+                .locations{
+                    margin-left: 0;
+                }
+                .blogs{
+                    .blog-list li{
+                        list-style: circle;
+                        a{
+                            text-decoration: none;
+                            color: $black;
+                            &:hover{
+                                color: $pink;
+                            }
+                        }
+                    } 
+                }            
+                .contact-us{
+                    margin-right: 20px;
+
+                    .contact-us-body{
+                        transform: translateX(15px)
+                    }
+                    .address,.phone,.email{
+                        margin-bottom:10px;
+                    }
+                }
+                .locations, .contact-us, .blogs{
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    h3{
+                        margin-bottom: 20px;
+                        color:$pink;
+                    }
+                }
+            }
+            @media(min-width:1060px){
+                .footer-content{
+                    justify-content: space-around;
+                }
+            }
+            @media (max-width: 767px){
+                .footer-content{
+                    flex-direction: column;
+                    .locations, .contact-us{
+                        margin:0 0 20px;
+                    }
+                    .locations, .blogs{
+                        .location-list, .blog-list{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            li{
+                                margin-right: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom{
+            background-color: $white;
+            display: flex;
+            .copyright{
+                font-size: 13px;
+                margin : 5px auto;
+                a{
+                    color: $pink;
+                    text-decoration: none;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .dev-section{
+            margin-top: 10px;
+            color: $pink;
+            display: flex;
+            flex-wrap: wrap;
+            .maintainer, .developers{
+                text-align: center;
+                margin: 15px auto;
+                h3{
+                    margin-bottom: px;
+                }
+                a{
+                    text-decoration: none;
+                    color: $grey;
+                }
+                a:hover{
+                    text-decoration: underline;
+                    color: $pink;
                 }
             }
         }
