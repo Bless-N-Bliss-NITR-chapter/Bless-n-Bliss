@@ -253,6 +253,16 @@ li {
   text-align: left;
 }
 
+hr.big-dots {
+  width: 15%;
+  min-width: 150px;
+  margin: 50px auto;
+  border-style: none;
+  border-bottom: dotted;
+  border-width: 15px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
 section .logo,
 section .mobile-logo {
   display: flex;
@@ -327,7 +337,6 @@ section.navbar-after .menu-ul .list-item .list-anchor {
 }
 
 section#what-we-do {
-  position: relative;
   padding-top: 40px;
   display: flex;
   justify-content: center;
@@ -349,7 +358,7 @@ section#what-we-do .our-mission .head {
   height: 70px;
   width: 80vw;
   max-width: 400px;
-  margin: 20px auto;
+  margin: 30px auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -415,6 +424,78 @@ section#what-we-do .our-mission .body .card .detail {
 section#what-we-do .our-mission .body .knowledge {
   background-image: url(/public/img/background.png);
   color: white;
+}
+
+section#what-we-do .our-projects {
+  width: 97%;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 30px 0;
+}
+
+section#what-we-do .our-projects .title {
+  background-color: #3C39CC;
+  height: 70px;
+  width: 80vw;
+  max-width: 400px;
+  margin: 30px auto 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  position: relative;
+}
+
+section#what-we-do .our-projects .title h2 {
+  color: white;
+}
+
+section#events {
+  text-align: center;
+  margin-top: 50px;
+}
+
+section#events .container {
+  background-color: white;
+}
+
+section#events .container .head {
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  background-color: #0090c4;
+  width: 300px;
+  color: white;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+}
+
+section#events .container .body {
+  background-color: #0090c4;
+  padding-bottom: 20px;
+}
+
+section#events .container .body .events-ul {
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+section#events .container .body .events-ul .event {
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 280px;
+  max-width: 300px;
+  margin: 5px 10px;
+  border-style: none;
+  background-color: #f4f4ff;
+  min-height: 30px;
 }
 
 section#footer {
@@ -1087,7 +1168,8 @@ section#footer .dev-section .developers a:hover {
   text-align: center;
 }
 
-.carousel .carousel-container .pause-button-container .pause-button, .carousel .carousel-container .pause-button-container .play-button {
+.carousel .carousel-container .pause-button-container .pause-button,
+.carousel .carousel-container .pause-button-container .play-button {
   background-color: rgba(0, 0, 0, 0.3);
   margin: 0px 0px;
   width: 40px;
@@ -1099,7 +1181,8 @@ section#footer .dev-section .developers a:hover {
   position: relative;
 }
 
-.carousel .carousel-container .pause-button-container .pause-button::before, .carousel .carousel-container .pause-button-container .play-button::before {
+.carousel .carousel-container .pause-button-container .pause-button::before,
+.carousel .carousel-container .pause-button-container .play-button::before {
   content: "\f28b";
   font-family: FontAwesome;
   color: rgba(244, 244, 255, 0.7);
@@ -1130,5 +1213,68 @@ section#footer .dev-section .developers a:hover {
   top: 50%;
   left: 5vw;
   color: white;
+}
+
+.project-carousel {
+  --carousel-height: auto;
+  --carousel-min-height: 100vh;
+  --carousel-width: 100%;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+}
+
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img {
+  object-fit: cover;
+  object-position: 40% 0%;
+}
+
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, #ffffff00 100%);
+}
+
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about {
+  min-height: 120px;
+  min-width: 140px;
+  height: 15vw;
+  width: 30vw;
+  max-height: 120px;
+  max-width: 180px;
+  position: absolute;
+  top: 30%;
+  left: 5vw;
+  color: white;
+  background-color: rgba(60, 57, 204, 0.7);
+  box-sizing: content-box;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .head {
+  margin-bottom: 20px;
+}
+
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background-color: rgba(255, 165, 0, 0.7);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 25px 10px 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more:hover {
+  color: #3C39CC;
 }
 /*# sourceMappingURL=app.css.map */
