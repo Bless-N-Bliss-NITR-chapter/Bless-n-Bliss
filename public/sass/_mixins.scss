@@ -13,6 +13,19 @@
     outline: none;//to remove the outline when you touch the key in mobile browsers
 }
 
+@mixin pseudo-b-shadow($horizontal-length, $vertical-length, $blur, $color){
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display:block;             
+        z-index: -1;
+        box-shadow: $horizontal-length $vertical-length $blur $color;
+    }
+}
 
 @mixin from-top($translateY:-150px){
     .from-top{

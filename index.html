@@ -40,12 +40,12 @@
         <script defer src="public/js/sidebar.js"></script>
         <script defer src="public/js/intersectionObservers.js"></script>
         <script defer src="public/js/onscroll.js"></script>
-        <script defer src="public/js/carousel.js"></script>
+        <!-- <script defer src="public/js/carousel.js"></script> -->
     </head>
     <body>
-        <section id="navbar" class="navbar-initial /*navbar-after*/">
+        <section id="navbar" class="navbar-initial /*navbar-after*/" style="display:none">
             <!--* navbar-initial is to give a transparent background to navbar.
-                                                                                * navbar-after gives it a light-pink background-->
+                * navbar-after gives it a light-pink background-->
             <div class="mobile-logo">
                 <img src="public/img/logo.png" alt="logo" />
                 <div class="title">
@@ -157,8 +157,34 @@
             </div>            
         </section>
 
-        <section class="our-mission">
-            
+        <section id="what-we-do">
+            <h1 class="section-title">WHAT WE DO</h1>
+            <div class="our-mission">
+                <div class="head"><h2>OUR MISSION</h2></div>
+                <div class="body">
+                    <div class="knowledge card" >
+                        <img class="svg" src="public/img/gender-equality.svg" alt="svg1">
+                        <h3 class="title">Spread Knowledge</h3>
+                        <p class="detail">
+                            Time to change our perception from Ignorance is Bliss to Knowledge is Power.
+                        </p>
+                    </div>
+                    <div class="support card">
+                        <img class="svg" src="public/img/gender-equality.svg" alt="svg2">
+                        <h3 class="title">Support Fellow Brethren</h3>
+                        <p class="detail">
+                            A step taken by every individual is a billion steps forward for the mankind.
+                        </p>
+                    </div>
+                    <div class="equality card">
+                        <img class="svg" src="public/img/gender-equality.svg" alt="svg3">
+                        <h3 class="title">Gender Equality</h3>
+                        <p class="detail">
+                            Do not ostracize someone based on their appearance, character is what matters!
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="footer">
