@@ -1,3 +1,13 @@
+hr.big-dots {
+    width: 15%;
+    min-width: 150px;
+    margin: 70px auto;
+    border-style: none;
+    border-bottom: dotted;
+    border-width: 15px;
+    color: rgba($color: #000000, $alpha: 0.1);
+}
+
 section {
     .logo,
     .mobile-logo {
@@ -12,7 +22,7 @@ section {
                 margin-top: 7px;
                 line-height: 0.8;
             }
-            .motto{
+            .motto {
                 font-size: 12px;
             }
         }
@@ -29,7 +39,7 @@ section {
         }
     }
     &.navbar-initial {
-        transition:all 0.2s ease-in;
+        transition: all 0.2s ease-in;
         background-color: transparent;
         box-shadow: none;
         .logo,
@@ -61,12 +71,248 @@ section {
         }
     }
 
-    &#footer {
-        margin-top: 50px;
-        background-color: $light-pink;
-        display:flex;
+    &#what-we-do {
+        padding-top: 40px;
+        @include flex-center();
         flex-direction: column;
-        .footer-top, .footer-bottom{
+
+        .section-title {
+            font-size: 35px;
+            text-align: center;
+        }
+        .our-mission {
+            padding: 30px 0;
+            .head {
+                background-color: $blue2;
+                height: 70px;
+                width: 80vw;
+                max-width: 400px;
+                margin: 30px auto 20px;
+                @include flex-center();
+                border-radius: 45px;
+                position: relative;
+                @include from-y-axis(50px);
+                h2 {
+                    color: $white;
+                }
+            }
+            .body {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                @include from-x-axis(50px);
+                .card {
+                    min-height: 270px;
+
+                    background-color: $white;
+                    width: 200px;
+                    @include flex-center();
+                    flex-direction: column;
+                    text-align: center;
+                    position: relative;
+                    margin: 15px 15px 0;
+                    padding: 25px 15px;
+                    border-radius: 25px;
+                    //min-height: 400px;
+                    @include pseudo-b-shadow(
+                        5px,
+                        5px,
+                        50px,
+                        rgba(0, 0, 0, 0.2)
+                    );
+                    &::before {
+                        border-radius: 25px;
+                    }
+                    .svg {
+                        height: 100px;
+                        width: 100px;
+                        margin-bottom: 20px;
+                    }
+                    .title {
+                        margin: 10px 0;
+                    }
+                    .detail {
+                        margin-bottom: 10px;
+                    }
+                }
+                .knowledge {
+                    background-image: url(../img/background.png);
+                    //background-position: center bottom;
+                    color: $white;
+                   
+                }
+                .support{
+                    
+                        transition-delay: 0.3s;
+                    
+                }
+                .equality{
+                   
+                        transition-delay: 0.7s;
+                   
+                }
+            }
+        }
+
+        .our-projects {
+            width: 97%;
+            margin: 0 auto;
+            max-width: 700px;
+            padding: 30px 0;
+            .title {
+                background-color: $blue2;
+                height: 70px;
+                width: 80vw;
+                max-width: 400px;
+                margin: 30px auto 35px;
+                @include flex-center();
+                border-radius: 45px;
+                position: relative;
+                @include from-y-axis(40px);
+                h2 {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &#events {
+        text-align: center;
+        margin-top: 50px;
+        .container {
+            background-color: $white;
+            @include from-y-axis(50px);
+            .head {
+                box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+                padding: 25px;
+                background-color: $blue;
+                width: 300px;
+                color: white;
+                margin: 0 auto;
+                border-radius: 5px 5px 0 0;
+            }
+            .body {
+                background-color: $blue;
+                padding-bottom: 20px;
+
+                .events-ul {
+                    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+                    align-items: center;
+                    width: 300px;
+                    height: 400px;
+                    overflow-y: scroll;
+                    margin: 0 auto;
+                    background-color: $white;
+                    padding: 20px 5px;
+                    border-radius: 0 0 5px 5px;
+                    @include from-y-axis(50px);
+                    .date{
+                        padding-right: 5px;
+                        border-right: solid 3px $light-grey;
+                        margin: 5px 0;
+                        width: 70px;
+                    }
+                    .event {
+                        display: flex;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        width: 260px;
+                        max-width: 300px;
+                        margin: 5px 10px;
+                        border-style: none;
+                        background-color: $light-pink;
+                        min-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    &#thanks {
+        .thanks {
+            margin: 15px 10px 0;
+            padding: 25px 15px;
+            border-radius: 25px;
+            box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+            
+            h1 {
+                text-align: center;
+                font-size: 20px;
+                @include scale-up(1.3, 1);
+                .scale-up{
+                    color: $blue;
+                }
+            }
+            .donor-list {
+                padding: 20px 0;
+                .head {
+                    background-color: $blue2;
+                    height: 70px;
+                    width: 70vw;
+                    max-width: 400px;
+                    margin: 30px auto 20px;
+                    @include flex-center();
+                    border-radius: 45px;
+                    
+                    
+                    color: $white;
+                    
+                }
+                .body {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    .card {
+                        min-height: 170px;
+
+                        background-color: $white;
+                        width: 150px;
+                        @include flex-center();
+                        flex-direction: column;
+                        text-align: center;
+                        position: relative;
+                        margin: 15px 5px 0;
+                        padding: 25px 15px;
+                        border-radius: 25px;
+                        //min-height: 400px;
+                        @include pseudo-b-shadow(
+                            5px,
+                            5px,
+                            50px,
+                            rgba(0, 0, 0, 0.2)
+                        );
+                        &::before {
+                            border-radius: 25px;
+                        }
+                        .title {
+                            margin: 10px 0;
+                        }
+                        .location {
+                            color: $light-grey;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &#testimonials{
+        width: 97%;
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 30px 0;
+    }
+
+    &#footer {
+        overflow-x: hidden;
+        margin-top: 50px;
+        padding-top: 50px;
+        background-color: $light-pink;
+        display: flex;
+        flex-direction: column;
+        .footer-top,
+        .footer-bottom {
             margin: 0 auto;
             width: 95vw;
         }
@@ -78,19 +324,20 @@ section {
             }
             grid-template-rows: auto;
 
-            .footer-head, .footer-content{
+            .footer-head,
+            .footer-content {
                 padding: 15px;
                 padding-right: 0;
             }
             .footer-head {
-                .logo{
+                .logo {
                     justify-content: left;
                 }
                 .little-about-us {
                     p {
                         padding: 20px 0;
                         font-size: 12px;
-                        width  :220px
+                        width: 220px;
                     }
                 }
                 .social-media-list {
@@ -119,10 +366,10 @@ section {
                                 font-size: 1rem;
                                 line-height: 1.8rem;
                             }
-                            a:hover{
-                                color:$white;
+                            a:hover {
+                                color: $white;
                             }
-                            &:hover{
+                            &:hover {
                                 border: 1px solid $light-pink;
                             }
                         }
@@ -169,68 +416,77 @@ section {
                     }
                 }
             }
-            .footer-content{
+            .footer-content {
                 display: flex;
                 justify-content: space-between;
-                .blogs, .locations {
+                .blogs,
+                .locations {
                     margin-right: 30px;
-                    
-                    .blog-list > li , .location-list > li{
+
+                    .blog-list > li,
+                    .location-list > li {
                         list-style: inside;
                         margin-bottom: 10px;
                         transform: translateX(15px);
                     }
-                }    
-                .locations{
+                }
+                .locations {
                     margin-left: 0;
                 }
-                .blogs{
-                    .blog-list li{
+                .blogs {
+                    .blog-list li {
                         list-style: circle;
-                        a{
+                        a {
                             text-decoration: none;
                             color: $black;
-                            &:hover{
+                            &:hover {
                                 color: $pink;
                             }
                         }
-                    } 
-                }            
-                .contact-us{
-                    margin-right: 20px;
-
-                    .contact-us-body{
-                        transform: translateX(15px)
-                    }
-                    .address,.phone,.email{
-                        margin-bottom:10px;
                     }
                 }
-                .locations, .contact-us, .blogs{
+                .contact-us {
+                    margin-right: 20px;
+
+                    .contact-us-body {
+                        transform: translateX(15px);
+                    }
+                    .address,
+                    .phone,
+                    .email {
+                        margin-bottom: 10px;
+                    }
+                }
+                .locations,
+                .contact-us,
+                .blogs {
                     margin-top: 10px;
                     margin-bottom: 20px;
-                    h3{
+                    h3 {
                         margin-bottom: 20px;
-                        color:$pink;
+                        color: $pink;
                     }
                 }
             }
-            @media(min-width:1060px){
-                .footer-content{
+            @media (min-width: 1060px) {
+                .footer-content {
                     justify-content: space-around;
                 }
             }
-            @media (max-width: 767px){
-                .footer-content{
+            @media (max-width: 767px) {
+                .footer-content {
                     flex-direction: column;
-                    .locations, .contact-us{
-                        margin:0 0 20px;
+                    .locations,
+                    .contact-us {
+                        margin: 0 0 20px;
                     }
-                    .locations, .blogs{
-                        .location-list, .blog-list{
+                    .locations,
+                    .blogs {
+                        .location-list,
+                        .blog-list {
                             display: grid;
                             grid-template-columns: 1fr 1fr;
-                            li{
+                            li {
                                 margin-right: 40px;
                             }
                         }
@@ -238,37 +494,38 @@ section {
                 }
             }
         }
-        .footer-bottom{
+        .footer-bottom {
             background-color: $white;
             display: flex;
-            .copyright{
+            .copyright {
                 font-size: 13px;
-                margin : 5px auto;
-                a{
+                margin: 5px auto;
+                a {
                     color: $pink;
                     text-decoration: none;
                 }
-                a:hover{
+                a:hover {
                     text-decoration: underline;
                 }
             }
         }
-        .dev-section{
+        .dev-section {
             margin-top: 10px;
             color: $pink;
             display: flex;
             flex-wrap: wrap;
-            .maintainer, .developers{
+            .maintainer,
+            .developers {
                 text-align: center;
                 margin: 15px auto;
-                h3{
+                h3 {
                     margin-bottom: px;
                 }
-                a{
+                a {
                     text-decoration: none;
                     color: $grey;
                 }
-                a:hover{
+                a:hover {
                     text-decoration: underline;
                     color: $pink;
                 }

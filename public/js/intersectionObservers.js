@@ -1,18 +1,16 @@
-const fromBottoms = document.querySelectorAll('.from-bottom');
-const fromLefts = document.querySelectorAll('.from-left');
-const fromTops = document.querySelectorAll('.from-top');
-const fromRights = document.querySelectorAll('.from-right');
+const fromYAxis = document.querySelectorAll('.from-y-axis');
+const fromXAxis = document.querySelectorAll('.from-x-axis');
+const scaleUps = document.querySelectorAll('.scale-up');
 
-let slideIns  = [];
-slideIns.push.apply(slideIns, fromBottoms);//refer https://stackoverflow.com/questions/14665295/merging-two-object-nodelist-arrays-in-javascript to learn this method functionality
-slideIns.push.apply(slideIns, fromLefts);
-slideIns.push.apply(slideIns, fromTops);
-slideIns.push.apply(slideIns, fromRights);
-console.log(slideIns);
+let animationObjects  = [];
+animationObjects.push.apply(animationObjects, fromYAxis);//refer https://stackoverflow.com/questions/14665295/merging-two-object-nodelist-arrays-in-javascript to learn this method functionality
+animationObjects.push.apply(animationObjects, fromXAxis);
+animationObjects.push.apply(animationObjects, scaleUps);
+console.log(animationObjects);
 
 let observerOptions = {// refer https://youtu.be/huVJW23JHKQ for basics on intObs
     threshold  : 0,
-    rootMargin: "-200px 0px 0px 0px",
+    rootMargin: "-50px 0px 0px 0px",
 };
 const intObsObserver = new IntersectionObserver(
     (entries, intObsObserver) => {
@@ -21,7 +19,7 @@ const intObsObserver = new IntersectionObserver(
                 return; //The return exits the current function, but the iterations keeps on, so you get the "next" item
             }
             else{
-                //console.log(entry.target);
+                console.log(entry.target);
                 entry.target.classList.add("appear");
                 intObsObserver.unobserve(entry.target);
             }
@@ -30,6 +28,6 @@ const intObsObserver = new IntersectionObserver(
     observerOptions
 );
 
-slideIns.forEach(slideInEntry => {
-    intObsObserver.observe(slideInEntry);
+animationObjects.forEach(animationObjectEntry => {
+    intObsObserver.observe(animationObjectEntry);
 });

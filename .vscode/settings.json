@@ -1,6 +1,8 @@
 {
     "liveServer.settings.multiRootWorkspaceName": "Bless-n-Bliss",  //works on liveserver vscode extension (by ritwick Dey)
     "liveServer.settings.port": 8888,
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.NoBrowser": true,
     "liveSassCompile.settings.showOutputWindow": false, ////works on live sass compile vscode extension (by ritwick Dey)
 
     "liveSassCompile.settings.formats":[
