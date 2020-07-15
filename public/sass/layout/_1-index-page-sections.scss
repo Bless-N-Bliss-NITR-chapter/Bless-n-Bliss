@@ -1,7 +1,7 @@
-hr.big-dots{
-    width:15%;
+hr.big-dots {
+    width: 15%;
     min-width: 150px;
-    margin: 50px auto;
+    margin: 70px auto;
     border-style: none;
     border-bottom: dotted;
     border-width: 15px;
@@ -9,7 +9,6 @@ hr.big-dots{
 }
 
 section {
-
     .logo,
     .mobile-logo {
         @include flex-center();
@@ -163,39 +162,45 @@ section {
         }
     }
 
-    &#events{
+    &#events {
         text-align: center;
         margin-top: 50px;
         .container {
             background-color: $white;
             .head {
-                box-shadow: 5px 5px 50px rgba(0,0,0,0.2);
+                box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
                 padding: 25px;
                 background-color: $blue;
                 width: 300px;
                 color: white;
                 margin: 0 auto;
-                border-radius: 5px 5px 0 0
+                border-radius: 5px 5px 0 0;
             }
             .body {
                 background-color: $blue;
                 padding-bottom: 20px;
 
                 .events-ul {
-                    box-shadow: 5px 5px 50px rgba(0,0,0,0.2);
-                    display: flex;
-                    flex-direction: column;
+                    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
                     align-items: center;
                     width: 300px;
+                    height: 400px;
+                    overflow-y: scroll;
                     margin: 0 auto;
                     background-color: $white;
                     padding: 20px 5px;
                     border-radius: 0 0 5px 5px;
-                    .event{
+                    .date{
+                        padding-right: 5px;
+                        border-right: solid 3px $light-grey;
+                        margin: 5px 0;
+                        width: 70px;
+                    }
+                    .event {
                         display: flex;
                         padding: 5px 10px;
                         border-radius: 5px;
-                        width: 280px;
+                        width: 260px;
                         max-width: 300px;
                         margin: 5px 10px;
                         border-style: none;
@@ -205,6 +210,80 @@ section {
                 }
             }
         }
+    }
+
+    &#thanks {
+        .thanks {
+            margin: 15px 10px 0;
+            padding: 25px 15px;
+            border-radius: 25px;
+            box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+            
+            h1 {
+                text-align: center;
+                font-size: 20px;
+                span{
+                    color: $blue;
+                }
+            }
+            .donor-list {
+                padding: 20px 0;
+                .head {
+                    background-color: $blue2;
+                    height: 70px;
+                    width: 70vw;
+                    max-width: 400px;
+                    margin: 30px auto 20px;
+                    @include flex-center();
+                    border-radius: 45px;
+                    
+                    
+                    color: $white;
+                    
+                }
+                .body {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    .card {
+                        min-height: 170px;
+
+                        background-color: $white;
+                        width: 150px;
+                        @include flex-center();
+                        flex-direction: column;
+                        text-align: center;
+                        position: relative;
+                        margin: 15px 5px 0;
+                        padding: 25px 15px;
+                        border-radius: 25px;
+                        //min-height: 400px;
+                        @include pseudo-b-shadow(
+                            5px,
+                            5px,
+                            50px,
+                            rgba(0, 0, 0, 0.2)
+                        );
+                        &::before {
+                            border-radius: 25px;
+                        }
+                        .title {
+                            margin: 10px 0;
+                        }
+                        .location {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &#testimonials{
+        width: 97%;
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 30px 0;
     }
 
     &#footer {

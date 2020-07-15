@@ -37,10 +37,10 @@
         <script defer src="public/js/sidebar.js"></script>
         <script defer src="public/js/intersectionObservers.js"></script>
         <script defer src="public/js/onscroll.js"></script>
-        <!-- <script defer src="public/js/carousel.js"></script> -->
+        <script defer src="public/js/carousel.js"></script>
     </head>
     <body>
-        <section id="navbar" class="navbar-initial /*navbar-after*/" style="display:none">
+        <section id="navbar" class="navbar-initial /*navbar-after*/">
             <!--* navbar-initial is to give a transparent background to navbar.
                 * navbar-after gives it a light-pink background-->
             <div class="mobile-logo">
@@ -253,11 +253,15 @@
                     <h1>Upcoming Events</h1>
                 </div>
                 <div class="body">
-                    <ul class="events-ul">
+                    <div class="events-ul">
                         <div class="event">
                             <h3 class="date">1 JULY</h3>
                             <div class="event">Lorem ipsum dolor sit amet.</div>
                         </div>        
+                        <div class="event">
+                            <h3 class="date">2 JULY</h3>
+                            <div class="event">Lorem ipsum dolor sit amet.</div>
+                        </div>
                         <div class="event">
                             <h3 class="date">1 JULY</h3>
                             <div class="event">Lorem ipsum dolor sit amet.</div>
@@ -265,16 +269,16 @@
                         <div class="event">
                             <h3 class="date">1 JULY</h3>
                             <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div><div class="event">
+                        </div>
+                        <div class="event">
                             <h3 class="date">1 JULY</h3>
                             <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div><div class="event">
+                        </div>
+                        <div class="event">
                             <h3 class="date">1 JULY</h3>
                             <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div><div class="event">
-                            <h3 class="date">1 JULY</h3>
-                            <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div><div class="event">
+                        </div>
+                        <div class="event">
                             <h3 class="date">1 JULY</h3>
                             <div class="event">Lorem ipsum dolor sit amet.</div>
                         </div>
@@ -285,7 +289,79 @@
         
         <hr class="big-dots">
 
-        
+        <section id="thanks">
+            <div class="thanks">
+                <h1>WE ARE THANKS FOR <span>10,25,000₹</span> SO FAR!</h1>
+                <div class="donor-list">
+                    <h3 class="head">TOP DONATIONS:</h3>
+                    <div class="body">
+                        <div class="card">
+                            <h3 class="title">Ganesh Benzoplast Ltd.</h3>
+                            <p class="location">Mumbai, India</p>
+                            <p class="amount">04,00,000  ₹</p>                            
+                        </div>
+                        <div class="card">
+                            <h3 class="title">Pratikshya Panigrahi</h3>
+                            <p class="location">Bangalore, India</p>
+                            <p class="amount">20,000  ₹</p>                            
+                        </div>
+                        <div class="card">
+                            <h3 class="title">Samar Kumar Behera</h3>
+                            <p class="location">Bangalore, India</p>
+                            <p class="amount">04,00,000  ₹</p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="big-dots">
+
+        <section id="testimonials">
+            <div class="carousel testimonial-carousel">
+                <div class="carousel-container from-bottom">
+                    <div class="tracks-container">
+                        <ul class="tracks-ul">
+                            <li class="carousel-slide active-slide" >                 
+                                <div class="head">
+                                    <div><img class="profile-img" src="public/img/What-say1.jpg" alt="bg-img"></div>
+                                    <div class="details">
+                                        <h3 class="name">Prof. Sunil Kr Sarangi</h3>
+                                        <p class="post">Former Director</p>                                        
+                                        <p class="location">National Institute of Technology, Rourkela</p>
+                                    </div> 
+                                </div>      
+                                <hr>  
+                                <div class="body">
+                                    <p>"Education is a fundamental right of every child born on this planet. It is heartening to learn that four students of this institute have given concrete shape to the above thought by creating Bless ‘n’ Bliss, a truly egalitarian NGO that is focusing on primary education for the underprivileged. Their effort will certainly help thousands of underprivileged children attain their God-given potential through education. I wish Bless ‘n’ Bliss and its young, enthusiastic and selfless creators all success and rapid growth in fulfilling their mission."</p>
+                                </div>                           
+                            </li>
+                            <li class="carousel-slide" >
+                                <div class="head">
+                                    <div><img class="profile-img" src="public/img/What-say2.jpg" alt="bg-img"></div>
+                                    <div class="details">
+                                        <h3 class="name">Capt. Amit Kapoor</h3>
+                                        <p class="post">Deputy Conservator</p>                                        
+                                        <p class="location">Jawaharlal Nehru Port Trust, Navi Mumbai</p>
+                                    </div> 
+                                </div>      
+                                <hr>  
+                                <div class="body">
+                                    <p>"Bless ‘n’ Bliss – an unparalleled endeavour by young dedicated NIT Rourkela budding engineering professionals, providing necessities to the underprivileged. Pray for you success in this noble cause of nation-building and may your tribe increase… And yes, a very apt name chosen for serving humanity. All the best!"</p>
+                                </div>
+                            </li>       
+                        </ul>
+                    </div>
+                    <div class="tracks-navbar">
+                        <button class="indicator active-dot"></button>
+                        <button class="indicator"></button>
+                    </div>
+                    <div class="pause-button-container">
+                        <button class="pause-n-play-btn pause-button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="footer">
             <div class="footer-top">
