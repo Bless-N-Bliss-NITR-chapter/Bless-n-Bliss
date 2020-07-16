@@ -1478,7 +1478,7 @@ section#footer .dev-section .developers a:hover {
 }
 
 .testimonial-carousel {
-  --carousel-min-height: 85vh;
+  --carousel-min-height: 80vh;
   background-color: white;
 }
 
