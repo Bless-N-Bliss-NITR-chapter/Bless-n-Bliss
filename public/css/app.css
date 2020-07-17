@@ -430,8 +430,8 @@ section#what-we-do .our-mission .body .card::before {
 }
 
 section#what-we-do .our-mission .body .card .svg {
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 250px;
   margin-bottom: 20px;
 }
 
@@ -446,6 +446,11 @@ section#what-we-do .our-mission .body .card .detail {
 section#what-we-do .our-mission .body .knowledge {
   background-image: url(../img/background.png);
   color: white;
+}
+
+section#what-we-do .our-mission .body .knowledge .svg {
+  position: relative;
+  left: 15px;
 }
 
 section#what-we-do .our-mission .body .support {
@@ -511,11 +516,16 @@ section#events .container .from-y-axis.appear {
   transform: translateY(0px);
 }
 
+section#events .container .head, section#events .container .events-ul {
+  max-width: 400px;
+  width: 25vw;
+  min-width: 300px;
+}
+
 section#events .container .head {
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
   padding: 25px;
   background-color: #0090c4;
-  width: 300px;
   color: white;
   margin: 0 auto;
   border-radius: 5px 5px 0 0;
@@ -529,8 +539,7 @@ section#events .container .body {
 section#events .container .body .events-ul {
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
   align-items: center;
-  width: 300px;
-  height: 400px;
+  height: 500px;
   overflow-y: scroll;
   margin: 0 auto;
   background-color: white;
@@ -553,15 +562,14 @@ section#events .container .body .events-ul .date {
   padding-right: 5px;
   border-right: solid 3px #aaaaaa;
   margin: 5px 0;
-  width: 70px;
+  width: 50px;
 }
 
 section#events .container .body .events-ul .event {
   display: flex;
   padding: 5px 10px;
   border-radius: 5px;
-  width: 260px;
-  max-width: 300px;
+  width: auto;
   margin: 5px 10px;
   border-style: none;
   background-color: #f4f4ff;
@@ -1383,7 +1391,8 @@ section#footer .dev-section .developers a:hover {
 
 .photo-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img {
   object-fit: cover;
-  object-position: 40% 0%;
+  object-position: 55% 0%;
+  width: 100vw;
 }
 
 .photo-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .random-thought {
