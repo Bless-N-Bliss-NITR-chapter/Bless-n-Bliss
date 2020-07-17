@@ -107,7 +107,8 @@
                 .carousel-slide {
                     .bg-img {
                         object-fit: cover;
-                        object-position: 40% 0%;
+                        object-position: 55% 0%;
+                        width: 100vw;
                     }
                     .random-thought {
                         position: absolute;
@@ -190,7 +191,7 @@
 }
 
 .testimonial-carousel{
-    --carousel-min-height: 85vh;
+    --carousel-min-height: 80vh;
     
     background-color: $white;
     .carousel-container{
