@@ -13,58 +13,59 @@
     outline: none;//to remove the outline when you touch the key in mobile browsers
 }
 
+@mixin pseudo-b-shadow($horizontal-length, $vertical-length, $blur, $color){
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display:block;             
+        z-index: -1;
+        box-shadow: $horizontal-length $vertical-length $blur $color;
+    }
+}
 
-@mixin from-top($translateY:-150px){
-    .from-top{
+@mixin from-y-axis($translateY:-150px){
+    .from-y-axis{
         opacity: 0;
         transform: translateY($translateY);
         transition: 
-            opacity 0.3s cubic-bezier(0.9, 0, 0.33, 1),
-            transform  0.7s cubic-bezier(0.9, 0, 0.33, 1),
+            opacity 0.3s ease,
+            transform  0.7s ease,
     }
-    .from-top.appear{
+    .from-y-axis.appear{
         opacity: 1;
         transform: translateY(0px);
     }
 }
-@mixin from-right($translateX: 150px){
-    .from-right{
+@mixin from-x-axis($translateX: 150px){
+    .from-x-axis{
         opacity: 0;
         transform: translateX($translateX);
         transition: 
-            opacity 0.3s cubic-bezier(0.9, 0, 0.33, 1),
-            transform  0.7s cubic-bezier(0.9, 0, 0.33, 1),
+            opacity 0.3s ease,
+            transform  0.7s ease,
     }
-    .from-right.appear{
+    .from-x-axis.appear{
         opacity: 1;
         transform: translateX(0px);
     }
 }
-@mixin from-bottom($translateY:150px){
-    .from-bottom{
-        opacity: 0;
-        transform: translateY($translateY);
-        transition: 
-            opacity 0.3s cubic-bezier(0.9, 0, 0.33, 1),
-            transform  0.7s cubic-bezier(0.9, 0, 0.33, 1),
+@mixin scale-up($push-up-initial:1.1, $push-up-final:0){
+    .scale-up{        
+        display: inline-block;
+        animation: none;
     }
-    .from-bottom.appear{
-        opacity: 1;
-        transform: translateY(0px);
+    .scale-up.appear{
+        animation: scale-up-down 0.7s ease-in-out forwards;
+        animation-delay: 0.5s;
     }
-}
-
-@mixin from-left($translateX: -150px){
-    .from-left{
-        opacity: 0;
-        transform: translateX($translateX);
-        transition: 
-            opacity 0.3s cubic-bezier(0.9, 0, 0.33, 1),
-            transform  0.7s cubic-bezier(0.9, 0, 0.33, 1),
-    }
-    .from-left.appear{
-        opacity: 1;
-        transform: translateX(0px);
+    @keyframes scale-up-down{
+        0%{}
+        70%{transform: scale($push-up-initial);}
+        100%{transform: scale($push-up-final);}
     }
 }
 

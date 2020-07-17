@@ -1,7 +1,7 @@
-const tracksContainers = document.querySelectorAll('.carousel');
+const tracksContainers = document.querySelectorAll('.carousel-container');  //select all carousels present in the page
 
 tracksContainers.forEach(trackContainer => {
-    const tracks = trackContainer.querySelector(".tracks");
+    const tracks = trackContainer.querySelector(".tracks-ul");
     const slidesArray = Array.from(tracks.children);
 
     const tracksNavbar = trackContainer.querySelector('.tracks-navbar');
@@ -16,14 +16,14 @@ tracksContainers.forEach(trackContainer => {
             activeSlide.classList.remove('active-slide');
             activeDot.classList.remove('active-dot');
 
-            // add active class to the current clicked sot and its corresponding slide
+            // add active class to the current clicked dot and its corresponding slide
             slidesArray[index].classList.add('active-slide');
             navDotsArray[index].classList.add('active-dot');
 
         });
     }
 
-    //automatically change slide
+    //automatically change slides and add a pause button feature
     function nextSlide() {
 
         const activeSlide = tracks.querySelector('.active-slide');
@@ -44,9 +44,26 @@ tracksContainers.forEach(trackContainer => {
 
         nextSiblingDot.classList.add('active-dot');
         nextSiblingSlide.classList.add('active-slide');
-
-        setTimeout(nextSlide, 7000);
     }
 
-    nextSlide();
+    const pauseButton = document.querySelector('.pause-n-play-btn');
+    let inResumeMode = true;
+    pauseButton.addEventListener('click', event => {
+        if(inResumeMode){
+            clearInterval(timerID);
+            inResumeMode = false;
+            pauseButton.classList.add('play-button');
+            pauseButton.classList.remove('pause-button');
+        }
+        else{
+            timerID = setInterval(() => nextSlide(), 4000);
+            inResumeMode = true;
+            pauseButton.classList.add('pause-button');
+            pauseButton.classList.remove('play-button');
+        }
+    });
+    
+    let timerID = setInterval(() => nextSlide(), 4000);
+
+
 })

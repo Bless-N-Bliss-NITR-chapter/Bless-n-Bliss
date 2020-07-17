@@ -5,7 +5,7 @@ let previousScrollPosition = window.pageYOffset;
 window.onscroll = function() {
     let currentScrollPosition = window.pageYOffset;
 
-    if(currentScrollPosition > 180){    //180px
+    if(currentScrollPosition > 101){    //101px
         navbar.classList.add('navbar-after');
     }
     else{
