@@ -107,7 +107,8 @@
                 .carousel-slide {
                     .bg-img {
                         object-fit: cover;
-                        object-position: 40% 0%;
+                        object-position: 55% 0%;
+                        width: 100vw;
                     }
                     .random-thought {
                         position: absolute;
@@ -180,78 +181,6 @@
                             font-weight: 600;
                             &:hover{
                                 color: $blue2;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.testimonial-carousel{
-    --carousel-min-height: 85vh;
-    
-    background-color: $white;
-    .carousel-container{
-        .tracks-container{
-            .tracks-ul{
-                .carousel-slide{
-                    hr{
-                        width: 90%;
-                    }
-                    
-                    .head{
-                        display:flex;
-                        .profile-img{
-                            object-fit: cover;
-                            object-position: 50% 50%;
-                            height: 30vw;
-                            max-height:150px;
-                            width: 30vw;
-                            max-width:150px;
-                            transition: all 0.5s ease;
-                            margin-right:30px
-                        }
-                        @media (max-width:767px) {
-                            div{
-                                @include flex-center();
-                                .profile-img{
-                                    border-radius: 100%;
-                                    margin: 10px 0 10px 10px;
-                                }
-                            }
-                        }
-                        .details{
-                            display: flex;
-                            justify-content:center;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            margin: 10px 10px 0;
-                            .name{
-                                margin-bottom: 5px;
-                            }
-                            .post, .location{
-                                font-size: 13px;
-                                color: $light-grey;
-                            }
-                            .location::before{
-                                content: "\f041";
-                                font-family: FontAwesome;
-                                color: rgba($color: $grey, $alpha: 0.7);
-                                text-decoration: none;
-                                margin-right: 5px;
-                            }
-                        }
-                    }
-                    .body{
-                        p{
-                            font-size: 13px;
-                            margin: 15px 10px;
-                        }
-                        @media(min-width:440px){
-                            p{
-                                margin:30px;
                             }
                         }
                     }
