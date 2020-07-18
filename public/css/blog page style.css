@@ -9,8 +9,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background: fixed;
     background-color: #f1f1f1;
-    /*background-image: url(http://getwallpapers.com/wallpaper/full/9/f/2/99456.jpg);*/
-    background-repeat: no-repeat;
 }
 .logo{
     color: white;
@@ -26,12 +24,13 @@ body{
      width: 100% ;
      
  }
+
 .blog-banner-container h1{
 	position: absolute;
 	font-size: 7rem;
 	letter-spacing: 2VW;
 	color: #ffffff;
-      top: 25%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
@@ -80,17 +79,18 @@ body{
     }
 }
 /*<......end of style for social media icon........>*/
+
+/*<.....section for blogs-.....>*/
 .blog-container{
-    /*margin-left:100px;
-    margin-right:100px;*/
-    margin-top: 20px;
+    margin-top: 5em;
     background-color: rgba(255, 255, 255,0.6);
-   
-   height:auto;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
  }
  .blog-wrapper{
-    margin-left:15vw;
-    margin-right:15vw;
+    width: 70%;
+    margin: 0 auto;
  }
 
  .blogs{
@@ -99,6 +99,8 @@ body{
  .blog-container .blog-wrapper img{
      object-fit: cover;
      object-position: 50% 0% ;
+     width: 100%;
+     height: 500px;
  }
  .author{
    position:absolute;
@@ -108,9 +110,16 @@ body{
    text-align:center;
    bottom:0;
  }
+ .author a{
+     text-decoration: none;
+     color: black;
+ }
+ .author a:hover{
+    color: grey;
+ }
 .blog-container article{
-    font-size: 15px;
-    padding: 8px;
-    overflow-y: scroll;
+    font-size: 1.2em;
+    padding: 2em;
+    overflow-wrap: break-word;
 }
-
+/*<.....end section for blogs-.....>*/
