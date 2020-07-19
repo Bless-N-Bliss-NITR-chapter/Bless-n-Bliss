@@ -17,8 +17,8 @@
             href="public/img/favicon.png"
             type="image/x-icon"
         />
-        <link rel="stylesheet" href="public/css/app.min.css" /><!--css stylesheet: committed by @ashuvssut* -->
-        
+        <link rel="stylesheet" href="public/css/app.min.css" />
+        <!--css stylesheet: committed by @ashuvssut* -->
 
         <!--Fonts -->
         <link
@@ -41,6 +41,17 @@
         <script defer src="public/js/carousel.js"></script>
     </head>
     <body>
+        <!-- FB JS SDK -->
+        <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"
+            nonce="GtxMgJyw"
+        ></script>
+        <!-- FB JS SDK end-->
+
         <section id="navbar" class="navbar-initial /*navbar-after*/">
             <!--* navbar-initial is to give a transparent background to navbar.
                 * navbar-after gives it a light-pink background-->
@@ -70,7 +81,7 @@
                         <a class="list-anchor active-anchor" href="#">Home</a>
                     </li>
                     <li class="list-item">
-                        <a class="list-anchor " href="events.html">Events</a>
+                        <a class="list-anchor" href="events.html">Events</a>
                     </li>
                     <li class="list-item">
                         <a class="list-anchor" href="blog-page.html">Blogs</a>
@@ -114,39 +125,66 @@
                 </ul>
             </nav>
         </section>
-        
+
         <section id="carousel" class="carousel photo-carousel">
             <div class="carousel-container from-y-axis">
                 <div class="tracks-container">
                     <ul class="tracks-ul">
-                        <li class="carousel-slide active-slide" >                 
-                            <img class="bg-img" src="public/img/banner-1.png" alt="bg-img">
+                        <li class="carousel-slide active-slide">
+                            <img
+                                class="bg-img"
+                                src="public/img/banner-1.png"
+                                alt="bg-img"
+                            />
                             <div class="random-thought">
-                                <h2 class="head">WE CARE, WE SERVE</h3>
-                                <p class="body">Our motto, our mantra, our desire..</p>
-                            </div>                                    
-                        </li>
-                        <li class="carousel-slide" >
-                            <img class="bg-img" src="public/img/banner-2.png" alt="bg-img">
-                            <div class="random-thought">
-                                <h2 class="head">YOU HELP, THEY SMILE</h3>
-                                <p class="body">A helping hand can spread happiness galore.</p>
+                                <h2 class="head">WE CARE, WE SERVE</h2>
+                                <p class="body">
+                                    Our motto, our mantra, our desire..
+                                </p>
                             </div>
                         </li>
-                        <li class="carousel-slide" >
-                            <img class="bg-img" src="public/img/banner-3.png" alt="bg-img">
+                        <li class="carousel-slide">
+                            <img
+                                class="bg-img"
+                                src="public/img/banner-2.png"
+                                alt="bg-img"
+                            />
                             <div class="random-thought">
-                                <h2 class="head">GIVE A LITTLE. HELP A LOT.</h3>
-                                <p class="body">Be part of a change in the World.</p>
+                                <h2 class="head">YOU HELP, THEY SMILE</h2>
+                                <p class="body">
+                                    A helping hand can spread happiness galore.
+                                </p>
                             </div>
                         </li>
-                        <li class="carousel-slide" >
-                            <img class="bg-img" src="public/img/old-banner-4.png" alt="bg-img">
+                        <li class="carousel-slide">
+                            <img
+                                class="bg-img"
+                                src="public/img/banner-3.png"
+                                alt="bg-img"
+                            />
                             <div class="random-thought">
-                                <h2 class="head">YOUR CHANGE CAN MAKE A CHANGE.</h3>
-                                <p class="body">Your contribution can help achieve a solution.</p>
-                            </div>                            
-                        </li>                        
+                                <h2 class="head">GIVE A LITTLE. HELP A LOT.</h2>
+                                <p class="body">
+                                    Be part of a change in the World.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <img
+                                class="bg-img"
+                                src="public/img/old-banner-4.png"
+                                alt="bg-img"
+                            />
+                            <div class="random-thought">
+                                <h2 class="head">
+                                    YOUR CHANGE CAN MAKE A CHANGE.
+                                </h2>
+                                <p class="body">
+                                    Your contribution can help achieve a
+                                    solution.
+                                </p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="tracks-navbar">
@@ -158,84 +196,126 @@
                 <div class="pause-button-container">
                     <button class="pause-n-play-btn pause-button"></button>
                 </div>
-            </div>            
+            </div>
         </section>
 
         <section id="what-we-do">
-            <h1 class="section-title">WHAT WE DO</h1>
+            <!-- <h1 class="section-title">WHAT WE DO</h1> -->
             <div class="our-mission">
                 <div class="head"><h2 class="from-y-axis">OUR MISSION</h2></div>
                 <div class="body">
-                    <div class="knowledge card from-x-axis" >
-                        <img class="svg" src="public/img/learning_2q-new.svg" alt="svg1">
+                    <div class="knowledge card from-x-axis">
+                        <img
+                            class="svg"
+                            src="public/img/learning_2q-new.svg"
+                            alt="svg1"
+                        />
                         <h3 class="title">Spread Knowledge</h3>
                         <p class="detail">
-                            Time to change our perception from Ignorance is Bliss to Knowledge is Power.
+                            Time to change our perception from Ignorance is
+                            Bliss to Knowledge is Power.
                         </p>
                     </div>
                     <div class="support card from-x-axis">
-                        <img class="svg" src="public/img/fatherhood_7i19.svg" alt="svg2">
+                        <img
+                            class="svg"
+                            src="public/img/fatherhood_7i19.svg"
+                            alt="svg2"
+                        />
                         <h3 class="title">Support Fellow Brethren</h3>
                         <p class="detail">
-                            A step taken by every individual is a billion steps forward for the mankind.
+                            A step taken by every individual is a billion steps
+                            forward for the mankind.
                         </p>
                     </div>
                     <div class="equality card from-x-axis">
-                        <img class="svg" src="public/img/gender-equality.svg" alt="svg3">
+                        <img
+                            class="svg"
+                            src="public/img/gender-equality.svg"
+                            alt="svg3"
+                        />
                         <h3 class="title">Gender Equality</h3>
                         <p class="detail">
-                            Do not ostracize someone based on their appearance, character is what matters!
+                            Do not ostracize someone based on their appearance,
+                            character is what matters!
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="our-projects">
-                <div class="title"><h2 class="from-y-axis">OUR PROJECTS</h2></div>
+                <div class="title">
+                    <h2 class="from-y-axis">OUR PROJECTS</h2>
+                </div>
                 <div class="carousel project-carousel">
                     <div class="carousel-container from-y-axis">
                         <div class="tracks-container">
                             <ul class="tracks-ul">
-                                <li class="carousel-slide active-slide" >                 
-                                    <img class="bg-img" src="public/img/shikshalaya.jpg" alt="bg-img">
+                                <li class="carousel-slide active-slide">
+                                    <img
+                                        class="bg-img"
+                                        src="public/img/shikshalaya.jpg"
+                                        alt="bg-img"
+                                    />
                                     <div class="bg-img tint"></div>
                                     <div class="about">
-                                        <h2 class="head">SHIKSHALAYA</h3>
-                                        <p class="body">Raised: 02,50,000 ₹</p>                                        
+                                        <h2 class="head">SHIKSHALAYA</h2>
+                                        <p class="body">Raised: 02,50,000 ₹</p>
                                         <p class="body">Volunteers: 25</p>
-                                        <a href="#" class="learn-more scale-up">Learn more...</a>
-                                    </div>                                    
+                                        <a href="#" class="learn-more scale-up"
+                                            >Learn more...</a
+                                        >
+                                    </div>
                                 </li>
-                                <li class="carousel-slide" >
-                                    <img class="bg-img" src="public/img/samarthan.jpg" alt="bg-img">
+                                <li class="carousel-slide">
+                                    <img
+                                        class="bg-img"
+                                        src="public/img/samarthan.jpg"
+                                        alt="bg-img"
+                                    />
                                     <div class="bg-img tint"></div>
                                     <div class="about">
-                                        <h2 class="head">SAMARTHAN</h3>
+                                        <h2 class="head">SAMARTHAN</h2>
                                         <p class="body">Raised: 05,75,000 ₹</p>
                                         <p class="body">Volunteers: 12</p>
-                                        <a href="#" class="learn-more scale-up">Learn more...</a>
+                                        <a href="#" class="learn-more scale-up"
+                                            >Learn more...</a
+                                        >
                                     </div>
                                 </li>
-                                <li class="carousel-slide" >
-                                    <img class="bg-img" src="public/img/swabhimaan.jpg" alt="bg-img">
+                                <li class="carousel-slide">
+                                    <img
+                                        class="bg-img"
+                                        src="public/img/swabhimaan.jpg"
+                                        alt="bg-img"
+                                    />
                                     <div class="bg-img tint"></div>
                                     <div class="about">
-                                        <h2 class="head">SWABHIMAAN</h3>
-                                            <p class="body">Raised: 01,00,000 ₹</p>
+                                        <h2 class="head">SWABHIMAAN</h2>
+                                        <p class="body">Raised: 01,00,000 ₹</p>
                                         <p class="body">Volunteers: 08</p>
-                                        <a href="#" class="learn-more scale-up">Learn more...</a>
+                                        <a href="#" class="learn-more scale-up"
+                                            >Learn more...</a
+                                        >
                                     </div>
                                 </li>
-                                <li class="carousel-slide" >
-                                    <img class="bg-img" src="public/img/saksham.jpg" alt="bg-img" style="min-width: 700px;">
+                                <li class="carousel-slide">
+                                    <img
+                                        class="bg-img"
+                                        src="public/img/saksham.jpg"
+                                        alt="bg-img"
+                                        style="min-width: 700px;"
+                                    />
                                     <div class="bg-img tint"></div>
                                     <div class="about">
-                                        <h2 class="head">SAKSHAM</h3>
+                                        <h2 class="head">SAKSHAM</h2>
                                         <p class="body">Raised: 01,00,000 ₹</p>
                                         <p class="body">Volunteers: 15</p>
-                                        <a href="#" class="learn-more scale-up">Learn more...</a>
-                                    </div>                            
-                                </li>                        
+                                        <a href="#" class="learn-more scale-up"
+                                            >Learn more...</a
+                                        >
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                         <div class="tracks-navbar">
@@ -245,38 +325,116 @@
                             <button class="indicator"></button>
                         </div>
                         <div class="pause-button-container">
-                            <button class="pause-n-play-btn pause-button"></button>
+                            <button
+                                class="pause-n-play-btn pause-button"
+                            ></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        
-        
-        
-        
+        <section class="cyclothon">
+            <div class="title">
+                <h2 class="from-y-axis">CYCLOTHON 3.0</h2>
+            </div>
+            <div id="cyclothon">
+                <div
+                    class="fb-video"
+                    data-href="https://m.facebook.com/BnB.ngo/videos/481725212398771/"
+                    data-show-text="false"
+                    data-width="500px"
+                >
+                    <blockquote
+                        cite="https://developers.facebook.com/BnB.ngo/videos/481725212398771/"
+                        class="fb-xfbml-parse-ignore"
+                    >
+                        <a
+                            class="head"
+                            href="https://developers.facebook.com/BnB.ngo/videos/481725212398771/"
+                            >ETV Bharat Odisha broadcasting about Bless
+                            &#039;n&#039; Bliss Swabhimaan project</a
+                        >
+                        <p>
+                            Our deepest gratitude to ETV Bharat Odisha for showing
+                            about our #BnB #Swabhimaan project, #skill #training for
+                            #transgender and helping us to get more love and
+                            support.
+                        </p>
+                        Posted by
+                        <a href="https://www.facebook.com/BnB.ngo/"
+                            >Bless &#039;n&#039; Bliss</a
+                        >
+                        on Thursday, 18 July 2019
+
+                        <h3>Video Loading...</h3>
+                    </blockquote>
+                </div>
+    
+                <section id="carousel" class="carousel photo-carousel2">
+                    <div class="carousel-container from-y-axis">
+                        <div class="tracks-container">
+                            <ul class="tracks-ul">
+                                <li class="carousel-slide active-slide">
+                                    <img
+                                        class="bg-img"
+                                        src="public/img/Cyclothon.jpeg"
+                                        alt="bg-img"
+                                    />
+                                </li>
+                                <li class="carousel-slide">
+                                    <img
+                                        class="bg-img"
+                                        src="public/img/Cyclothon2.jpeg"
+                                        alt="bg-img"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tracks-navbar-container">
+                            <div class="tracks-navbar">
+                                <button class="indicator active-dot"></button>
+                                <button class="indicator"></button>
+                            </div>
+                            <div class="pause-button-container">
+                                <button
+                                    class="pause-n-play-btn pause-button"
+                                ></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
 
         <section id="thanks">
             <div class="thanks">
-                <h1>WE ARE THANKS FOR <span class="scale-up">10,25,000₹</span> SO FAR!</h1>
+                <h1>
+                    WE ARE THANKS FOR
+                    <span class="scale-up">10,25,000₹</span> SO FAR!
+                </h1>
                 <div class="donor-list">
                     <h3 class="head">TOP DONATIONS:</h3>
                     <div class="body">
                         <div class="card">
                             <h3 class="title">Ganesh Benzoplast Ltd.</h3>
                             <p class="location">Mumbai, India</p>
-                            <p class="amount">04,00,000  ₹</p>                            
+                            <p class="amount">04,00,000 ₹</p>
                         </div>
                         <div class="card">
                             <h3 class="title">Pratikshya Panigrahi</h3>
                             <p class="location">Bangalore, India</p>
-                            <p class="amount">20,000  ₹</p>                            
+                            <p class="amount">20,000 ₹</p>
                         </div>
                         <div class="card">
                             <h3 class="title">Samar Kumar Behera</h3>
                             <p class="location">Bangalore, India</p>
-                            <p class="amount">04,00,000  ₹</p>                            
+                            <p class="amount">04,00,000 ₹</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="title">Ganesh Benzoplast Ltd.</h3>
+                            <p class="location">Mumbai, India</p>
+                            <p class="amount">04,00,000 ₹</p>
                         </div>
                     </div>
                 </div>
@@ -295,7 +453,10 @@
                     </div>
                     <div class="little-about-us">
                         <p>
-                            We staunchly endeavour to eradicate ignorance and strive hard to attain gender equality by promoting symbiotic relationships and duly standing by our motto of "We Care, We Serve".
+                            We staunchly endeavour to eradicate ignorance and
+                            strive hard to attain gender equality by promoting
+                            symbiotic relationships and duly standing by our
+                            motto of "We Care, We Serve".
                         </p>
                     </div>
                     <div class="social-media-list">
@@ -371,26 +532,40 @@
                                 <p>Near Amrit Hospital, Ranchi,</p>
                                 <p>Jharkhand, 834002</p>
                             </div>
-                            <p class="phone"> <strong>Ph:</strong> +91 80181 32259</p>
-                            <p class="email"> <strong>Email:</strong> akram@blessnbliss.org</p>
+                            <p class="phone">
+                                <strong>Ph:</strong> +91 80181 32259
+                            </p>
+                            <p class="email">
+                                <strong>Email:</strong> akram@blessnbliss.org
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p class="copyright">
-                    © 2020 <a href="/"><strong>Bless 'n' Bliss</strong></a>. All rights reserved.
+                    © 2020 <a href="/"><strong>Bless 'n' Bliss</strong></a
+                    >. All rights reserved.
                 </p>
             </div>
             <div class="dev-section">
                 <div class="maintainer">
                     <h3>Website Maintainer</h3>
-                    <a href="https://www.linkedin.com/in/ansuman-nayak-02318a188">Ansuman Nayak</a>
+                    <a
+                        href="https://www.linkedin.com/in/ansuman-nayak-02318a188"
+                        >Ansuman Nayak</a
+                    >
                 </div>
                 <div class="developers">
                     <h3>Website Developers</h3>
-                    <a href="https://www.linkedin.com/in/ashutosh-khanduala-4b586b105/">Ashutosh Khanduala</a><br>
-                    <a href="https://www.linkedin.com/in/divya-sri-darimisetti-6166a8194">Divya Sri Darimisetti</a>
+                    <a
+                        href="https://www.linkedin.com/in/ashutosh-khanduala-4b586b105/"
+                        >Ashutosh Khanduala</a
+                    ><br />
+                    <a
+                        href="https://www.linkedin.com/in/divya-sri-darimisetti-6166a8194"
+                        >Divya Sri Darimisetti</a
+                    >
                 </div>
             </div>
         </section>

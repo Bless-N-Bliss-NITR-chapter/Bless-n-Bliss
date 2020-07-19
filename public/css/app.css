@@ -334,17 +334,12 @@ section#what-we-do {
   flex-direction: column;
 }
 
-section#what-we-do .section-title {
-  font-size: 35px;
-  text-align: center;
-}
-
 section#what-we-do .our-mission {
   padding: 30px 0;
 }
 
 section#what-we-do .our-mission .head {
-  background-color: #3C39CC;
+  background-color: rgba(60, 57, 204, 0.95);
   height: 70px;
   width: 80vw;
   max-width: 400px;
@@ -441,10 +436,14 @@ section#what-we-do .our-mission .body .knowledge .svg {
 }
 
 section#what-we-do .our-mission .body .support {
+  background-image: url(../img/background3.png);
+  background-position: 40% 0%;
   transition-delay: 0.3s;
 }
 
 section#what-we-do .our-mission .body .equality {
+  background-image: url(../img/background3.png);
+  background-position: 0% 25.5%;
   transition-delay: 0.5s;
 }
 
@@ -456,7 +455,7 @@ section#what-we-do .our-projects {
 }
 
 section#what-we-do .our-projects .title {
-  background-color: #3C39CC;
+  background-color: rgba(60, 57, 204, 0.95);
   height: 70px;
   width: 80vw;
   max-width: 400px;
@@ -481,6 +480,104 @@ section#what-we-do .our-projects .title .from-y-axis.appear {
 
 section#what-we-do .our-projects .title h2 {
   color: white;
+}
+
+section.cyclothon {
+  background-color: rgba(255, 192, 203, 0.7);
+  padding: 50px 0;
+}
+
+@media (max-width: 500px) {
+  section.cyclothon {
+    padding: 50px 0 0;
+  }
+}
+
+section.cyclothon .title {
+  background-color: rgba(60, 57, 204, 0.95);
+  height: 70px;
+  width: 80vw;
+  max-width: 400px;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  position: relative;
+}
+
+section.cyclothon .title .from-y-axis {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+section.cyclothon .title .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+section.cyclothon .title h2 {
+  color: white;
+}
+
+section.cyclothon div#cyclothon {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+}
+
+section.cyclothon div#cyclothon .fb-video {
+  height: 375px;
+  width: 500px;
+  margin-right: 20px;
+  background-color: lightgrey;
+  transition: all 0.5s ease;
+}
+
+section.cyclothon div#cyclothon .fb-video blockquote {
+  padding: 15px;
+}
+
+section.cyclothon div#cyclothon .fb-video blockquote .head {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+section.cyclothon div#cyclothon .photo-carousel2 {
+  --carousel-width: 600px;
+  --carousel-min-height: 375px;
+}
+
+@media (max-width: 1130px) {
+  section.cyclothon div#cyclothon .fb-video {
+    display: none;
+    margin-right: 0;
+  }
+  section.cyclothon div#cyclothon .photo-carousel2 {
+    --carousel-width: 100vw;
+    --carousel-min-height: 90vh;
+  }
+  section.cyclothon div#cyclothon .photo-carousel2 .tracks-container .bg-img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 500px) {
+  section.cyclothon div#cyclothon .fb-video {
+    display: none;
+  }
+  section.cyclothon div#cyclothon .photo-carousel2 {
+    --carousel-width: 100vw;
+    --carousel-min-height: 80vh;
+  }
+  section.cyclothon div#cyclothon .photo-carousel2 .bg-img {
+    object-fit: contain;
+  }
+}
+
+section#thanks {
+  margin-top: 50px;
 }
 
 section#thanks .thanks {
@@ -1285,7 +1382,7 @@ section#search-bar .filter-search-container .search-bar #search-input::selection
   position: absolute;
   left: 5vw;
   bottom: 20px;
-  z-index: 11;
+  z-index: 12;
 }
 
 .carousel .carousel-container .tracks-navbar .indicator {
@@ -1359,7 +1456,92 @@ section#search-bar .filter-search-container .search-bar #search-input::selection
   color: white;
 }
 
-.project-carousel, .testimonial-carousel {
+.photo-carousel2 {
+  --carousel-height: auto;
+  background-color: transparent;
+}
+
+.photo-carousel2 .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img {
+  object-fit: cover;
+  object-position: 50% 50px;
+  width: var(--carousel-width);
+}
+
+.photo-carousel2 .carousel-container .tracks-navbar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+@media (max-width: 767px) {
+  .photo-carousel2 .carousel-container .tracks-navbar-container {
+    background-color: rgba(255, 192, 203, 0.7);
+  }
+}
+
+.photo-carousel2 .carousel-container .tracks-navbar-container .tracks-navbar {
+  margin-left: 30px;
+  position: static;
+  z-index: 12;
+}
+
+.photo-carousel2 .carousel-container .tracks-navbar-container .tracks-navbar .indicator {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0px 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  outline: none;
+  border: solid 2px #D384A3;
+}
+
+.photo-carousel2 .carousel-container .tracks-navbar-container .tracks-navbar .active-dot {
+  transition: ease-in 0.5s;
+  background-color: #f4f4ff;
+}
+
+.photo-carousel2 .carousel-container .tracks-navbar-container .pause-button-container {
+  margin-right: 30px;
+  position: static;
+}
+
+.photo-carousel2 .carousel-container .tracks-navbar-container .pause-button-container .pause-button,
+.photo-carousel2 .carousel-container .tracks-navbar-container .pause-button-container .play-button {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0px 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  outline: none;
+  border-style: none;
+  font-size: 40px;
+  position: relative;
+}
+
+.photo-carousel2 .carousel-container .tracks-navbar-container .pause-button-container .pause-button::before,
+.photo-carousel2 .carousel-container .tracks-navbar-container .pause-button-container .play-button::before {
+  content: "\f28b";
+  font-family: FontAwesome;
+  color: rgba(244, 244, 255, 0.7);
+  text-decoration: none;
+  position: absolute;
+  font-size: 45px;
+  top: -17px;
+  left: 0;
+}
+
+.photo-carousel2 .carousel-container .tracks-navbar-container .pause-button-container .play-button::before {
+  content: "\f144";
+}
+
+.project-carousel,
+.testimonial-carousel {
   --carousel-height: auto;
   --carousel-min-height: 100vh;
   --carousel-width: 100%;
@@ -1368,19 +1550,22 @@ section#search-bar .filter-search-container .search-bar #search-input::selection
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
 }
 
-.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img, .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img {
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img,
+.testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img {
   object-fit: cover;
   object-position: 40% 0%;
 }
 
-.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .tint, .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .tint {
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .tint,
+.testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .tint {
   position: absolute;
   top: 0;
   left: 0;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, #ffffff00 100%);
 }
 
-.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about, .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about {
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about,
+.testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about {
   min-height: 120px;
   min-width: 140px;
   height: 15vw;
@@ -1397,16 +1582,19 @@ section#search-bar .filter-search-container .search-bar #search-input::selection
   border-radius: 25px;
 }
 
-.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .head, .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .head {
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .head,
+.testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .head {
   margin-bottom: 20px;
 }
 
-.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .scale-up, .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .scale-up {
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .scale-up,
+.testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .scale-up {
   display: inline-block;
   animation: none;
 }
 
-.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .scale-up.appear, .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .scale-up.appear {
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .scale-up.appear,
+.testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .scale-up.appear {
   animation: scale-up-down 0.7s ease-in-out forwards;
   animation-delay: 0.5s;
 }
@@ -1422,7 +1610,8 @@ section#search-bar .filter-search-container .search-bar #search-input::selection
   }
 }
 
-.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more, .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more {
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more,
+.testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more {
   display: block;
   position: absolute;
   bottom: -30px;
@@ -1439,7 +1628,8 @@ section#search-bar .filter-search-container .search-bar #search-input::selection
   font-weight: 600;
 }
 
-.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more:hover, .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more:hover {
+.project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more:hover,
+.testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more:hover {
   color: #3C39CC;
 }
 /*# sourceMappingURL=app.css.map */

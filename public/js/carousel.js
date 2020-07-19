@@ -46,23 +46,30 @@ tracksContainers.forEach(trackContainer => {
         nextSiblingSlide.classList.add('active-slide');
     }
 
-    const pauseButton = document.querySelector('.pause-n-play-btn');
-    let inResumeMode = true;
-    pauseButton.addEventListener('click', event => {
-        if(inResumeMode){
-            clearInterval(timerID);
-            inResumeMode = false;
-            pauseButton.classList.add('play-button');
-            pauseButton.classList.remove('pause-button');
-        }
-        else{
-            timerID = setInterval(() => nextSlide(), 4000);
-            inResumeMode = true;
-            pauseButton.classList.add('pause-button');
-            pauseButton.classList.remove('play-button');
-        }
-    });
-    
+    const pauseButtons = document.querySelectorAll('.pause-n-play-btn');
+    pauseButtons.forEach(pauseButton => {
+        let inResumeMode = true;
+        pauseButton.addEventListener('click', event => {
+            if (inResumeMode) {
+                clearInterval(timerID);
+                inResumeMode = false;
+                pauseButtons.forEach(pauseButton => {
+                    pauseButton.classList.add('play-button');
+                    pauseButton.classList.remove('pause-button');
+                });
+            }
+            else {
+                timerID = setInterval(() => nextSlide(), 4000);
+                inResumeMode = true;
+                pauseButtons.forEach(pauseButton => {
+                    pauseButton.classList.remove('play-button');
+                    pauseButton.classList.add('pause-button');
+                });
+            }
+        });
+    })
+
+
     let timerID = setInterval(() => nextSlide(), 4000);
 
 

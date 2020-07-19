@@ -66,14 +66,14 @@ section {
         @include flex-center();
         flex-direction: column;
 
-        .section-title {
-            font-size: 35px;
-            text-align: center;
-        }
+        // .section-title {
+        //     font-size: 35px;
+        //     text-align: center;
+        // }
         .our-mission {
             padding: 30px 0;
             .head {
-                background-color: $blue2;
+                background-color: rgba($color: $blue2, $alpha: 0.95);
                 height: 70px;
                 width: 80vw;
                 max-width: 400px;
@@ -126,15 +126,19 @@ section {
                     background-image: url(../img/background.png);
                     //background-position: center bottom;
                     color: $white;
-                    .svg{
+                    .svg {
                         position: relative;
                         left: 15px;
                     }
                 }
                 .support {
+                    background-image: url(../img/background3.png);
+                    background-position: 40% 0%;
                     transition-delay: 0.3s;
                 }
                 .equality {
+                    background-image: url(../img/background3.png);
+                    background-position: 0% 25.5%;
                     transition-delay: 0.5s;
                 }
             }
@@ -146,7 +150,7 @@ section {
             max-width: 700px;
             padding: 30px 0;
             .title {
-                background-color: $blue2;
+                background-color: rgba($color: $blue2, $alpha: 0.95);
                 height: 70px;
                 width: 80vw;
                 max-width: 400px;
@@ -162,7 +166,85 @@ section {
         }
     }
 
+    &.cyclothon {
+        background-color: rgba($color: pink, $alpha: 0.7);
+        padding: 50px 0;
+        @media(max-width:500px){
+            padding: 50px 0 0;
+        }
+        .title {
+            background-color: rgba($color: $blue2, $alpha: 0.95);
+            height: 70px;
+            width: 80vw;
+            max-width: 400px;
+            margin: 30px auto 0;
+            @include flex-center();
+            border-radius: 45px;
+            position: relative;
+            @include from-y-axis(40px);
+            h2 {
+                color: $white;
+            }
+        }
+        div {
+            &#cyclothon {
+                margin: 15px auto;
+                display: flex;
+                justify-content: center;
+                .fb-video {
+                    height: 375px;
+                    width: 500px;
+                    margin-right: 20px;
+                    background-color: lightgrey;
+                    transition: all 0.5s ease;
+                    blockquote{
+                        padding:15px;
+                        .head{
+                            font-size:20px;
+                            text-decoration:none;
+                        }
+                    }
+                }
+                .photo-carousel2 {
+                    --carousel-width: 600px;
+                    --carousel-min-height: 375px;
+                }
+            }
+            @media (max-width: 1130px) {
+                &#cyclothon {
+                    .fb-video {
+                        display: none;
+                        margin-right: 0;
+                    }
+                    .photo-carousel2 {
+                        --carousel-width: 100vw;
+                        --carousel-min-height: 90vh;
+                        .tracks-container {
+                            .bg-img {
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+            @media (max-width: 500px) {
+                &#cyclothon {
+                    .fb-video {
+                        display: none;
+                    }
+                    .photo-carousel2 {
+                        --carousel-width: 100vw;
+                        --carousel-min-height: 80vh;
+                        .bg-img {
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
     &#thanks {
+        margin-top:50px;
         .thanks {
             margin: 15px 10px 0;
             padding: 25px 15px;
