@@ -1472,17 +1472,13 @@ section#search-bar .filter-search-container .search-bar #search-input::selection
   top: 0;
   left: 0;
   right: 0;
+  background-color: rgba(255, 192, 203, 0.7);
   z-index: 11;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
-}
-
-@media (max-width: 767px) {
-  .photo-carousel2 .carousel-container .tracks-navbar-container {
-    background-color: rgba(255, 192, 203, 0.7);
-  }
+  border-radius: 0 25px 0 0;
 }
 
 .photo-carousel2 .carousel-container .tracks-navbar-container .tracks-navbar {
@@ -1507,7 +1503,8 @@ section#search-bar .filter-search-container .search-bar #search-input::selection
 }
 
 .photo-carousel2 .carousel-container .tracks-navbar-container .pause-button-container {
-  margin-right: 30px;
+  margin-top: 3px;
+  margin-right: 5px;
   position: static;
 }
 

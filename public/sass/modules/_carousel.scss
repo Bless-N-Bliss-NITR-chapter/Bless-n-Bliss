@@ -141,14 +141,13 @@
             top: 0;
             left: 0;
             right: 0;
+            background-color: rgba($color: pink, $alpha: 0.7);
             z-index: 11;
-            @media(max-width: 767px){
-                background-color: rgba($color: pink, $alpha: 0.7);
-            }
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 5px 0;
+            border-radius: 0 25px 0 0;
 
             .tracks-navbar {
                 margin-left: 30px;
@@ -168,8 +167,9 @@
                 }
             }
             .pause-button-container {
-                margin-right: 30px;
-                position:static;
+                margin-top: 3px;
+                margin-right: 5px;
+                position: static;
                 .pause-button,
                 .play-button {
                     @include circular-button(
