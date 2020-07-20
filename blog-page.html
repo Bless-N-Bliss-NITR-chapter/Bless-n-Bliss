@@ -1,58 +1,179 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <meta
-            name="description"
-            content="Spread Knowledge. Time to change our perception from Ignorance is Bliss to Knowledge is Power. Support Fellow Brethren. A step taken ..."
-        />
-        <meta name="keywords" content="Bless n Bliss, official, website, NGO" />
-        <meta name="author" content="@ansuman" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Blogs | Bless 'n' Bliss</title>
 
-        <link
-            rel="shortcut icon"
-            href="public/img/favicon.png"
-            type="image/x-icon"
-        />
-        <link rel="stylesheet" href="public/css/app.min.css" /><!--css stylesheet: committed by @ashuvssut* -->
-        <link rel="stylesheet" href="public/css/blog-page-style.css" /><!--css stylesheet: committed by @ansuman* -->
-        
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Spread Knowledge. Time to change our perception from Ignorance is Bliss to Knowledge is Power. Support Fellow Brethren. A step taken ..." />
+    <meta name="keywords" content="Bless n Bliss, official, website, NGO" />
+    <meta name="author" content="@ansuman" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs | Bless 'n' Bliss</title>
 
-        <!--Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&display=swap"
-            rel="stylesheet"
-        />
+    <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="public/css/app.min.css" />
+    <!--css stylesheet: committed by @ashuvssut* -->
+    <link rel="stylesheet" href="public/css/blog-page-style.css" />
+    <!--css stylesheet: committed by @ansuman* -->
 
-        <!--font-awesome -->
-        <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-        />
 
-        <!--js scripts-->
-        <script defer src="public/js/navbar.js"></script>
-        <script defer src="public/js/sidebar.js"></script>
-        <script defer src="public/js/intersectionObservers.js"></script>
-        <script defer src="public/js/onscroll.js"></script>
-        <script defer src="public/js/carousel.js"></script>
-        <script defer src="public/js/filter.js"></script>
-    </head>
+    <!--Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&display=swap" rel="stylesheet" />
 
-    <body>
-        <section id="navbar">
-            <div class="mobile-logo">
+    <!--font-awesome -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <!--js scripts-->
+    <script defer src="public/js/navbar.js"></script>
+    <script defer src="public/js/sidebar.js"></script>
+    <script defer src="public/js/intersectionObservers.js"></script>
+    <script defer src="public/js/onscroll.js"></script>
+    <script defer src="public/js/carousel.js"></script>
+    <script defer src="public/js/filter.js"></script>
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="mobile-logo">
+            <img src="public/img/logo.png" alt="logo" />
+            <div class="title">
+                <h3 class="brand-name">Bless 'n' Bliss</h3>
+                <p class="motto">We care, We serve</p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
                 <img src="public/img/logo.png" alt="logo" />
                 <div class="title">
                     <h3 class="brand-name">Bless 'n' Bliss</h3>
                     <p class="motto">We care, We serve</p>
                 </div>
             </div>
-            <nav class="navbar">
+            <div class="hamburger">
+                <div class="bar top-bar"></div>
+                <div class="bar middle-bar"></div>
+                <div class="bar bottom-bar"></div>
+            </div>
+            <ul class="menu-ul">
+                <li class="list-item">
+                    <!--generate more of them by just copying, no hassle! -->
+                    <a class="list-anchor" href="index.html">Home</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor" href="events.html">Events</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor active-anchor" href="#">Blogs</a>
+                </li>
+                <li class="list-item dropdown-toggler">
+                    <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
+                    <a class="list-anchor" href="#">List Item</a>
+                    <ul class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide">
+                        <li class="drop-item">
+                            <a href="">Drop Item</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="">Drop Item</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="">Drop Item</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor" href="about.html">About Us</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor" href="#">Donate Us</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="blog-banner-container">
+        <img src="public\img\blog-page-img\banner-photo.jpg" alt="banner-image" />
+        <h1>Blogs</h1>
+        <div class="social-media-list">
+            <ul class="social-menu-links">
+                <li class="menu-l menu-icon">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/13255668/">L</a>
+                </li>
+                <li class="menu-t menu-icon">
+                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/bless_n_bliss">T</a>
+                </li>
+                <li class="menu-y menu-icon">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCRXByLV9thNOHSZZoDYZmMg">Y</a>
+                </li>
+                <li class="menu-i menu-icon">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bless.n.bliss/">I</a>
+                </li>
+                <li class="menu-f menu-icon">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/BnB.ngo">F</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="search-bar">
+        <div class="container filter-search-container">
+            <div class="search-bar">
+                <form class="search-form" action="/" method="post">
+                    <!--'/' represents 'root' route. (required when get request is called upon root route) -->
+                    <input type="text" id="search-input" class="pseudo-b-shadow" name="searchInput" placeholder="Blog title or Author name..." onkeyup="filterList();">
+                    <!-- <button class="search-button" type="submit">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button> -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs">
+        <div class="blog-container">
+            <div class="blog-wrapper">
+                <div class="blogs">
+                    <img src="https://randomwordgenerator.com/img/picture-generator/54e6d1464e51aa14f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg" width="100%" height="500px" />
+                    <div class="author">
+                        <h1 class='s1'>KRIPA</h1>
+                        <h3 class="s2">Ansuman Nayak</h3>
+                        <data>11/12/2001</data>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <article>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sin ce the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the lea p into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Loreme years sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-wrapper">
+                <div class="blogs">
+                    <img src="https://randomwordgenerator.com/img/picture-generator/54e6d1464e51aa14f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg" width="100%" height="500px" />
+                    <div class="author">
+                        <h1 class='s1'>AKARAIAP</h1>
+                        <h3 class="s2">Nayak</h3>
+                        <data>11/12/2001</data>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <article>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sin ce the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the lea p into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Loreme years sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of section for blogs-->
+
+    <section id="footer">
+        <div class="footer-top">
+            <div class="footer-head">
                 <div class="logo">
                     <img src="public/img/logo.png" alt="logo" />
                     <div class="title">
@@ -60,324 +181,86 @@
                         <p class="motto">We care, We serve</p>
                     </div>
                 </div>
-                <div class="hamburger">
-                    <div class="bar top-bar"></div>
-                    <div class="bar middle-bar"></div>
-                    <div class="bar bottom-bar"></div>
+                <div class="little-about-us">
+                    <p>
+                        We staunchly endeavour to eradicate ignorance and strive hard to attain gender equality by promoting symbiotic relationships and duly standing by our motto of "We Care, We Serve".
+                    </p>
                 </div>
-                <ul class="menu-ul">
-                    <li class="list-item">
-                        <!--generate more of them by just copying, no hassle! -->
-                        <a class="list-anchor" href="index.html">Home</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-anchor" href="events.html">Events</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-anchor active-anchor" href="#">Blogs</a>
-                    </li>
-                    <li class="list-item dropdown-toggler">
-                        <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
-                        <a class="list-anchor" href="#">List Item</a>
-                        <ul
-                            class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide"
-                        >
-                            <li class="drop-item">
-                                <a href="">Drop Item</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="">Drop Item</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="">Drop Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list-item dropdown-toggler">
-                        <a class="list-anchor" href="#">List Item</a>
-                        <ul
-                            class="dropdown-menu-ul dropdown-menu-ul-index-1 dropdown-menu-ul--hide"
-                        >
-                            <li class="drop-item">
-                                <a href="">Drop Item2</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="">Drop Item2</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="">Drop Item2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-anchor" href="#">Donate Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
-        <section class="blog-banner-container">
-            <img
-                src="public\img\blog-page-img\banner-photo.jpg"
-                alt="banner-image"
-            />
-            <h1>Blogs</h1>
-            <div class="social-media-list">
-                <ul class="social-menu-links">
-                    <li class="menu-l menu-icon">
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.linkedin.com/company/13255668/"
-                            >L</a
-                        >
-                    </li>
-                    <li class="menu-t menu-icon">
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://twitter.com/bless_n_bliss"
-                            >T</a
-                        >
-                    </li>
-                    <li class="menu-y menu-icon">
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.youtube.com/channel/UCRXByLV9thNOHSZZoDYZmMg"
-                            >Y</a
-                        >
-                    </li>
-                    <li class="menu-i menu-icon">
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.instagram.com/bless.n.bliss/"
-                            >I</a
-                        >
-                    </li>
-                    <li class="menu-f menu-icon">
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.facebook.com/BnB.ngo"
-                            >F</a
-                        >
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="search-bar">
-            <div class="container filter-search-container">
-                <div class="search-bar">
-                    <form class="search-form" action="/" method="post">   <!--'/' represents 'root' route. (required when get request is called upon root route) -->
-                        <input type="text" id="search-input" class="pseudo-b-shadow" name="searchInput" placeholder="Blog title or Author name..." onkeyup="filterList();">
-                        <!-- <button class="search-button" type="submit">
-                            <i class="fas fa-search" aria-hidden="true"></i>
-                        </button> -->
-                    </form>
-                </div>  
-            </div>
-        </section>
-
-        <section id="blogs">
-            <div class="blog-container">
-                <div class="blog-wrapper">
-                    <div class="blogs">
-                        <img
-                            src="https://randomwordgenerator.com/img/picture-generator/54e6d1464e51aa14f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg"
-                            width="100%"
-                            height="500px"
-                        />
-                        <div class="author">
-                            <h1  class='s1'>KRIPA</h1>
-                            <h3 class="s2">Ansuman Nayak</h3>
-                            <data>11/12/2001</data>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <article>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever sin ce the
-                            1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. It
-                            has survived not only five centuries, but also the
-                            lea p into electronic typesetting, remaining
-                            essentially unchanged. It was popularised in the
-                            1960s with the release of Letraset sheets containing
-                            Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including
-                            versions of Loreme years sometimes by accident,
-                            sometimes on purpose (injected humour and the like).
-                        </article>
-                    </div>
+                <div class="social-media-list">
+                    <ul class="social-menu-links">
+                        <li class="menu-l menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/13255668/">L</a>
+                        </li>
+                        <li class="menu-t menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/bless_n_bliss">T</a>
+                        </li>
+                        <li class="menu-y menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCRXByLV9thNOHSZZoDYZmMg">Y</a>
+                        </li>
+                        <li class="menu-i menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bless.n.bliss/">I</a>
+                        </li>
+                        <li class="menu-f menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/BnB.ngo">F</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="blog-container">
-                <div class="blog-wrapper">
-                    <div class="blogs">
-                        <img
-                            src="https://randomwordgenerator.com/img/picture-generator/54e6d1464e51aa14f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg"
-                            width="100%"
-                            height="500px"
-                        />
-                        <div class="author">
-                            <h1 class='s1'>AKARAIAP</h1>
-                            <h3 class="s2">Nayak</h3>
-                            <data>11/12/2001</data>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <article>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever sin ce the
-                            1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. It
-                            has survived not only five centuries, but also the
-                            lea p into electronic typesetting, remaining
-                            essentially unchanged. It was popularised in the
-                            1960s with the release of Letraset sheets containing
-                            Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including
-                            versions of Loreme years sometimes by accident,
-                            sometimes on purpose (injected humour and the like).
-                        </article>
-                    </div>
+            <div class="footer-content">
+                <div class="locations">
+                    <h3>Locations</h3>
+                    <ul class="location-list">
+                        <li>Ranchi</li>
+                        <li>Rourkela</li>
+                        <li>Jajpur</li>
+                        <li>Bangalore</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <!--end of section for blogs-->
-
-        <section id="footer">
-            <div class="footer-top">
-                <div class="footer-head">
-                    <div class="logo">
-                        <img src="public/img/logo.png" alt="logo" />
-                        <div class="title">
-                            <h3 class="brand-name">Bless 'n' Bliss</h3>
-                            <p class="motto">We care, We serve</p>
+                <div class="blogs">
+                    <h3>Latest Blogs</h3>
+                    <ul class="blog-list">
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <h3>Contact us</h3>
+                    <div class="contact-us-body">
+                        <div class="address">
+                            <h4>Address</h4>
+                            <p>Shivdayal Nagar, Argora Bypass Road,</p>
+                            <p>Near Amrit Hospital, Ranchi,</p>
+                            <p>Jharkhand, 834002</p>
                         </div>
-                    </div>
-                    <div class="little-about-us">
-                        <p>
-                            We staunchly endeavour to eradicate ignorance and
-                            strive hard to attain gender equality by promoting
-                            symbiotic relationships and duly standing by our
-                            motto of "We Care, We Serve".
+                        <p class="phone">
+                            <strong>Ph:</strong> +91 80181 32259
+                        </p>
+                        <p class="email">
+                            <strong>Email:</strong> akram@blessnbliss.org
                         </p>
                     </div>
-                    <div class="social-media-list">
-                        <ul class="social-menu-links">
-                            <li class="menu-l menu-icon">
-                                <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://www.linkedin.com/company/13255668/"
-                                    >L</a
-                                >
-                            </li>
-                            <li class="menu-t menu-icon">
-                                <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://twitter.com/bless_n_bliss"
-                                    >T</a
-                                >
-                            </li>
-                            <li class="menu-y menu-icon">
-                                <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://www.youtube.com/channel/UCRXByLV9thNOHSZZoDYZmMg"
-                                    >Y</a
-                                >
-                            </li>
-                            <li class="menu-i menu-icon">
-                                <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://www.instagram.com/bless.n.bliss/"
-                                    >I</a
-                                >
-                            </li>
-                            <li class="menu-f menu-icon">
-                                <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://www.facebook.com/BnB.ngo"
-                                    >F</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-content">
-                    <div class="locations">
-                        <h3>Locations</h3>
-                        <ul class="location-list">
-                            <li>Ranchi</li>
-                            <li>Rourkela</li>
-                            <li>Jajpur</li>
-                            <li>Bangalore</li>
-                        </ul>
-                    </div>
-                    <div class="blogs">
-                        <h3>Latest Blogs</h3>
-                        <ul class="blog-list">
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                        </ul>
-                    </div>
-                    <div class="contact-us">
-                        <h3>Contact us</h3>
-                        <div class="contact-us-body">
-                            <div class="address">
-                                <h4>Address</h4>
-                                <p>Shivdayal Nagar, Argora Bypass Road,</p>
-                                <p>Near Amrit Hospital, Ranchi,</p>
-                                <p>Jharkhand, 834002</p>
-                            </div>
-                            <p class="phone">
-                                <strong>Ph:</strong> +91 80181 32259
-                            </p>
-                            <p class="email">
-                                <strong>Email:</strong> akram@blessnbliss.org
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright">
-                    © 2020 <a href="/"><strong>Bless 'n' Bliss</strong></a
-                    >. All rights reserved.
-                </p>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">
+                © 2020 <a href="/"><strong>Bless 'n' Bliss</strong></a>. All rights reserved.
+            </p>
+        </div>
+        <div class="dev-section">
+            <div class="maintainer">
+                <h3>Website Maintainer</h3>
+                <a href="https://www.linkedin.com/in/ansuman-nayak-02318a188">Ansuman Nayak</a>
             </div>
-            <div class="dev-section">
-                <div class="maintainer">
-                    <h3>Website Maintainer</h3>
-                    <a
-                        href="https://www.linkedin.com/in/ansuman-nayak-02318a188"
-                        >Ansuman Nayak</a
-                    >
-                </div>
-                <div class="developers">
-                    <h3>Website Developers</h3>
-                    <a
-                        href="https://www.linkedin.com/in/ashutosh-khanduala-4b586b105/"
-                        >Ashutosh Khanduala</a
-                    ><br />
-                    <a
-                        href="https://www.linkedin.com/in/divya-sri-darimisetti-6166a8194"
-                        >Divya Sri Darimisetti</a
-                    >
-                </div>
+            <div class="developers">
+                <h3>Website Developers</h3>
+                <a href="https://www.linkedin.com/in/ashutosh-khanduala-4b586b105/">Ashutosh Khanduala</a><br />
+                <a href="https://www.linkedin.com/in/divya-sri-darimisetti-6166a8194">Divya Sri Darimisetti</a>
             </div>
-        </section> 
-    </body>
+        </div>
+    </section>
+</body>
+
 </html>

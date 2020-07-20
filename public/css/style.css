@@ -1,5 +1,6 @@
 /*@anonymous-coder-its-me */
 
+
 /* 
     >>main colors
     orange: #f9b31c
@@ -10,3 +11,98 @@
     pink: #D384A3;
     light-pink: #FAFAFB;
 */
+
+#about-header {
+    width: 100%;
+    height: 350px;
+    background: url('../img/about-header.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+
+#about-header .header-content {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about-header .header-content .subtitle {
+    display: flex;
+}
+
+#carouselExampleControls {
+    min-height: 300px;
+}
+
+#how-we-started {
+    margin-top: 100px;
+}
+
+.card {
+    -webkit-box-shadow: 0px 11px 24px -12px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 0px 11px 24px -12px rgba(0, 0, 0, 0.73);
+    box-shadow: 0px 11px 24px -12px rgba(0, 0, 0, 0.6);
+}
+
+#board {
+    margin: 1em 1.3em;
+}
+
+.co-ordinators-container {
+    background-color: #f1f1f1;
+}
+
+.bright {
+    background-color: aqua;
+}
+
+#how-we-started img {
+    width: 120px;
+    height: 120px;
+}
+
+.about-carousel {
+    height: 45vh !important;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 40px;
+}
+
+.carousel-about-slide {
+    height: 45vh !important;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 40px;
+}
+
+
+/* overriding the padding property to make image full covered in background */
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0 !important;
+    }
+    #central-co-ordinators h5 {
+        font-size: 14px;
+    }
+    #central-co-ordinators p {
+        font-size: 14px;
+    }
+    #how-we-started img {
+        width: 100px;
+        height: 100px;
+    }
+}
