@@ -29,7 +29,7 @@
     font-size: 7rem;
     letter-spacing: 2vw;
     color: #ffffff;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -49,8 +49,9 @@
     height: auto;
 }
 .blog-wrapper {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+    min-width: 340px;
 }
 .blogs {
     position: relative;
@@ -58,7 +59,7 @@
 .blog-container .blog-wrapper img {
     object-fit: cover;
     object-position: 50% 30%;
-    height: 350px;
+    height: 450px;
 }
 .author {
     position: absolute;
@@ -89,10 +90,15 @@
      margin-top: 1em;
      font-weight: 650;
 }
-.blog-container .blogs .author .name{
-    
-}
 .blog-container .blogs .author .Date-of-publish{
      margin-top: 0.5em;
+}
+@media screen and (max-width: 767px){
+ .author {
+     bottom: -10em;
+ }
+ .blog-container .blog-wrapper .blog-content  article{
+     margin-top: 10em;
+ }
 }
 /* end Blogs Section */
