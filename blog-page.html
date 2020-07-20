@@ -50,10 +50,140 @@
                     <p class="motto">We care, We serve</p>
                 </div>
             </div>
+
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="public/img/logo.png" alt="logo" />
+                    <div class="title">
+                        <h3 class="brand-name">Bless 'n' Bliss</h3>
+                        <p class="motto">We care, We serve</p>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <div class="bar top-bar"></div>
+                    <div class="bar middle-bar"></div>
+                    <div class="bar bottom-bar"></div>
+                </div>
+                <ul class="menu-ul">
+                    <li class="list-item">
+                        <!--generate more of them by just copying, no hassle! -->
+                        <a class="list-anchor" href="index.html">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-anchor" href="events.html">Events</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-anchor active-anchor" href="#">Blogs</a>
+                    </li>
+                    <li class="list-item dropdown-toggler">
+                        <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
+                        <a class="list-anchor" href="#">List Item</a>
+                        <ul
+                            class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide"
+                        >
+                            <li class="drop-item">
+                                <a href="">Drop Item</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="">Drop Item</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="">Drop Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown-toggler">
+                        <a class="list-anchor" href="#">List Item</a>
+                        <ul
+                            class="dropdown-menu-ul dropdown-menu-ul-index-1 dropdown-menu-ul--hide"
+                        >
+                            <li class="drop-item">
+                                <a href="">Drop Item2</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="">Drop Item2</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="">Drop Item2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-anchor" href="#">Donate Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="blog-banner-container">
+            <img
+                src="public\img\blog-page-img\banner-photo.jpg"
+                alt="banner-image"
+            />
+            <h1>Blogs</h1>
+
+        <section id="search-bar">
+                <div class="container filter-search-container">
+                    <div class="search-bar">
+                        <form class="search-form" action="/" method="post">   <!--'/' represents 'root' route. (required when get request is called upon root route) -->
+                            <input type="text" id="search-input" class="pseudo-b-shadow" name="searchInput" placeholder="Blog title or Author name..." onkeyup="filterList();">
+                            <!-- <button class="search-button" type="submit">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button> -->
+                        </form>
+                    </div>  
+                </div>
+        </section>
+
+            <div class="social-media-list">
+                <ul class="social-menu-links">
+                    <li class="menu-l menu-icon">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.linkedin.com/company/13255668/"
+                            >L</a
+                        >
+                    </li>
+                    <li class="menu-t menu-icon">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://twitter.com/bless_n_bliss"
+                            >T</a
+                        >
+                    </li>
+                    <li class="menu-y menu-icon">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.youtube.com/channel/UCRXByLV9thNOHSZZoDYZmMg"
+                            >Y</a
+                        >
+                    </li>
+                    <li class="menu-i menu-icon">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.instagram.com/bless.n.bliss/"
+                            >I</a
+                        >
+                    </li>
+                    <li class="menu-f menu-icon">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.facebook.com/BnB.ngo"
+                            >F</a
+                        >
+                    </li>
+                </ul>
+
             <div class="hamburger">
                 <div class="bar top-bar"></div>
                 <div class="bar middle-bar"></div>
                 <div class="bar bottom-bar"></div>
+
             </div>
             <ul class="menu-ul">
                 <li class="list-item">
@@ -115,29 +245,38 @@
         </div>
     </section>
 
-    <section id="search-bar">
-        <div class="container filter-search-container">
-            <div class="search-bar">
-                <form class="search-form" action="/" method="post">
-                    <!--'/' represents 'root' route. (required when get request is called upon root route) -->
-                    <input type="text" id="search-input" class="pseudo-b-shadow" name="searchInput" placeholder="Blog title or Author name..." onkeyup="filterList();">
-                    <!-- <button class="search-button" type="submit">
-                            <i class="fas fa-search" aria-hidden="true"></i>
-                        </button> -->
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <section id="blogs">
-        <div class="blog-container">
-            <div class="blog-wrapper">
-                <div class="blogs">
-                    <img src="https://randomwordgenerator.com/img/picture-generator/54e6d1464e51aa14f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg" width="100%" height="500px" />
-                    <div class="author">
-                        <h1 class='s1'>KRIPA</h1>
-                        <h3 class="s2">Ansuman Nayak</h3>
-                        <data>11/12/2001</data>
+        <section id="blogs">
+            <div class="blog-container">
+                <div class="blog-wrapper">
+                    <div class="blogs">
+                        <img
+                            src="public\img\samarthan.jpg"
+                            width="100%"
+                            
+                        >
+                        <div class="author">
+                            <h2  class='s1'>UNDER THE MIGHTY DARK SKY</h2>
+                            <h3 class="s2">Author:<i class="name">Ansuman Nayak</i></h3>
+                            <p class="Date-of-publish">Date of publish:17th.june.2020</p>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <article>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever sin ce the
+                            1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. It
+                            has survived not only five centuries, but also the
+                            lea p into electronic typesetting, remaining
+                            essentially unchanged. It was popularised in the
+                            1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop
+                            publishing software like Aldus PageMaker including
+                            versions of Loreme years sometimes by accident,
+                            sometimes on purpose (injected humour and the like).
+                        </article>
                     </div>
                 </div>
                 <div class="blog-content">
@@ -148,15 +287,36 @@
                     </article>
                 </div>
             </div>
-        </div>
-        <div class="blog-container">
-            <div class="blog-wrapper">
-                <div class="blogs">
-                    <img src="https://randomwordgenerator.com/img/picture-generator/54e6d1464e51aa14f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg" width="100%" height="500px" />
-                    <div class="author">
-                        <h1 class='s1'>AKARAIAP</h1>
-                        <h3 class="s2">Nayak</h3>
-                        <data>11/12/2001</data>
+            <div class="blog-container">
+                <div class="blog-wrapper">
+                    <div class="blogs">
+                        <img
+                            src="https://randomwordgenerator.com/img/picture-generator/54e6d1464e51aa14f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg"
+                            width="100%"
+                            height="500px"
+                        />
+                        <div class="author">
+                            <h2 class='s1'>UNDER THE MIGHTY DARK SKY</h2>
+                            <h3 class="s2">Author:<i class="name">Ansuman Nayak</i></h3>
+                            <p class="Date-of-publish">Date of publish:17th.june.2020</p>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <article>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever sin ce the
+                            1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. It
+                            has survived not only five centuries, but also the
+                            lea p into electronic typesetting, remaining
+                            essentially unchanged. It was popularised in the
+                            1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop
+                            publishing software like Aldus PageMaker including
+                            versions of Loreme years sometimes by accident,
+                            sometimes on purpose (injected humour and the like).
+                        </article>
                     </div>
                 </div>
                 <div class="blog-content">
@@ -167,9 +327,8 @@
                     </article>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--end of section for blogs-->
+        </section>
+
 
     <section id="footer">
         <div class="footer-top">
