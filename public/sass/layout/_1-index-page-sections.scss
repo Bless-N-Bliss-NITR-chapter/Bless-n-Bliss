@@ -87,10 +87,11 @@ section {
                 }
             }
             .body {
+                overflow-x: hidden;
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
-                @include from-x-axis(150px);
+                @include from-x-axis(+150px);
                 .card {
                     min-height: 270px;
 
@@ -134,12 +135,12 @@ section {
                 .support {
                     background-image: url(../img/background3.png);
                     background-position: 40% 0%;
-                    transition-delay: 0.3s;
+                    transition-delay: 0.2s;
                 }
                 .equality {
                     background-image: url(../img/background3.png);
                     background-position: 0% 25.5%;
-                    transition-delay: 0.5s;
+                    transition-delay: 0.4s;
                 }
             }
         }
@@ -148,7 +149,7 @@ section {
             width: 97%;
             margin: 0 auto;
             max-width: 700px;
-            padding: 30px 0 80px;
+            padding: 30px 0 70px;
             .title {
                 background-color: rgba($color: $blue2, $alpha: 0.95);
                 height: 70px;
@@ -168,9 +169,9 @@ section {
 
     &.cyclothon {
         background-color: rgba($color: $light-pink, $alpha: 0.9);
-        padding: 50px 0;
+        padding: 20px 0;
         @media(max-width:500px){
-            padding: 50px 0 0;
+            padding: 20px 0 0;
         }
         .title {
             background-color: rgba($color: $blue2, $alpha: 1);

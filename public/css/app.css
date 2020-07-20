@@ -367,6 +367,7 @@ section#what-we-do .our-mission .head h2 {
 }
 
 section#what-we-do .our-mission .body {
+  overflow-x: hidden;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -438,20 +439,20 @@ section#what-we-do .our-mission .body .knowledge .svg {
 section#what-we-do .our-mission .body .support {
   background-image: url(../img/background3.png);
   background-position: 40% 0%;
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 
 section#what-we-do .our-mission .body .equality {
   background-image: url(../img/background3.png);
   background-position: 0% 25.5%;
-  transition-delay: 0.5s;
+  transition-delay: 0.4s;
 }
 
 section#what-we-do .our-projects {
   width: 97%;
   margin: 0 auto;
   max-width: 700px;
-  padding: 30px 0 80px;
+  padding: 30px 0 70px;
 }
 
 section#what-we-do .our-projects .title {
@@ -484,12 +485,12 @@ section#what-we-do .our-projects .title h2 {
 
 section.cyclothon {
   background-color: rgba(244, 244, 255, 0.9);
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 @media (max-width: 500px) {
   section.cyclothon {
-    padding: 50px 0 0;
+    padding: 20px 0 0;
   }
 }
 
