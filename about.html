@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Spread Knowledge. Time to change our perception from Ignorance is Bliss to Knowledge is Power. Support Fellow Brethren. A step taken ..." />
+    <meta name="keywords" content="Bless n Bliss, official, website, NGO" />
+    <meta name="author" content="@ashuvssut" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bless 'n' Bliss - We care, We serve</title>
+
+    <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="public/css/app.min.css" />
+    <!--css stylesheet: committed by @ashuvssut* -->
+    <link rel="stylesheet" href="public/css/style.css">
+    <!--Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--font-awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <!--js scripts-->
+    <script defer src="public/js/navbar.js"></script>
+    <script defer src="public/js/sidebar.js"></script>
+    <script defer src="public/js/intersectionObservers.js"></script>
+    <script defer src="public/js/onscroll.js"></script>
+    <script defer src="public/js/carousel.js"></script>
+</head>
+
+<body>
+    <section id="navbar" class="navbar-initial /*navbar-after*/">
+        <!--* navbar-initial is to give a transparent background to navbar.
+                * navbar-after gives it a light-pink background-->
+        <div class="mobile-logo">
+            <img src="public/img/logo.png" alt="logo" />
+            <div class="title">
+                <h4 class="brand-name">Bless 'n' Bliss</h4>
+                <p class="motto">We care, We serve</p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="public/img/logo.png" alt="logo" />
+                <div class="title">
+                    <h3 class="brand-name">Bless 'n' Bliss</h3>
+                    <p class="motto">We care, We serve</p>
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="bar top-bar"></div>
+                <div class="bar middle-bar"></div>
+                <div class="bar bottom-bar"></div>
+            </div>
+            <ul class="menu-ul">
+                <li class="list-item">
+                    <!--generate more of them by just copying, no hassle! -->
+                    <a class="list-anchor" href="index.html">Home</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor " href="events.html">Events</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor" href="blog-page.html">Blogs</a>
+                </li>
+                <li class="list-item dropdown-toggler">
+                    <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
+                    <a class="list-anchor" href="#">List Item</a>
+                    <ul class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide">
+                        <li class="drop-item">
+                            <a href="">Drop Item</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="">Drop Item</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="">Drop Item</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor active-anchor" href="#">About Us</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor" href="#">Donate Us</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section id="about-header">
+        <div class="header-content">
+            <h2 class="mb-3">KNOW ABOUT US</h2>
+            <div class="subtitle d-flex justify-content-between p-0 m-0">
+                <p class="mr-1">Helping</p>
+                <i class="fas fa-hands-helping mt-1"></i>
+                <p class="mx-1">Healing</p>
+                <i class="fas fa-heartbeat mt-1"></i>
+                <p class="ml-1">Caring</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-lg-5">
+        <div class="row">
+            <div class="col-lg-4 mt-lg-5 pr-lg-5">
+                <section class="carousel about-carousel">
+                    <div class="carousel-container from-y-axis">
+                        <div class="tracks-container">
+                            <ul class="tracks-ul">
+                                <li class="carousel-about-slide active-slide">
+                                    <img src="public/img/about-carousel-1.jpg" class="d-block w-100" alt="bg-img">
+
+                                </li>
+                                <li class="carousel-about-slide">
+                                    <img src="public/img/about-carousel-2.jpg" class="d-block w-100" alt="bg-img">
+                                    <div class="random-thought">
+
+                                    </div>
+                                </li>
+                                <li class="carousel-about-slide">
+                                    <img src="public/img/about-carousel-3.png" class="d-block w-100" alt="bg-img">
+                                </li>
+                                <li class="carousel-about-slide">
+                                    <img src="public/img/about-carousel-4.jpg" class="d-block w-100" alt="bg-img">
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tracks-navbar">
+                            <button class="indicator active-dot"></button>
+                            <button class="indicator"></button>
+                            <button class="indicator"></button>
+                            <button class="indicator"></button>
+                        </div>
+                        <div class="pause-button-container">
+                            <button class="pause-n-play-btn pause-button"></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-8">
+                <div>
+                    <h3 class="pt-lg-ok4">WHO WE ARE ?</h3>
+                    <p class="mt-4">Our family staunchly endeavours to eradicate ignorance and strives hard to attain gender equality. We promote symbiotic relationships and are highly motivated, ignited and enthusiastic towards our dreams, duly standing by our motto
+                        of "We Care, We Serve".
+                    </p>
+                    <div>
+                        <div class="row mt-4">
+                            <div class="col-6 text-center">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <div class="mt-3">Selfless</div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <i class="fas fa-check"></i>
+                                <div class="mt-3">
+                                    Trustworthy
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-6 text-center">
+                                <i class="fas fa-thumbs-up"></i>
+                                <div class="mt-3">Responsible</div>
+                            </div>
+                            <div class="col-6  text-center">
+                                <i class="fas fa-globe-asia"></i>
+                                <div class="mt-3">Diverse</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-we-started">
+        <div class="container">
+            <div class="text-center pb-5">
+                <h2> HOW WE STARTED</h2>
+            </div>
+            <div class="row mb-5 d-flex align-items-center">
+                <div class="col-lg-3 order-1 text-center pb-4"><img src="public/img/icons/plant.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-9 order-2">It all started on February 2nd, 2015 by an under-grad student Md. Akramuddin Ansari of NIT Rourkela as 'Helping Hands' with the goal of educating under-priviledged children.
+                </div>
+            </div>
+            <div class="row mb-5 d-flex align-items-center">
+                <div class="col-lg-3 order-lg-2 text-lg-right text-center pb-4"><img src="public/img/icons/help.svg" class="img-fluid" alt=""></div>
+                <div class="col-lg-9 order-lg-1">By July 2015, our family increased to 70 helping enthusiasts as well as expanded in number of other critical concerns such as gender equality, women's safety and providing basic amenities to the poor.
+                </div>
+            </div>
+            <div class="row mb-5  d-flex align-items-center">
+                <div class="col-lg-3 order-1 text-center pb-4"><img src="public/img/icons/goal.svg" class="img-fluid" alt=""></div>
+                <div class="col-lg-9 order-2">With lot of financial support and donations pouring in from NIT students and the local people, Helping Hands was officially registered as BLESS 'n' BLISS on November 18th, 2015.
+                </div>
+            </div>
+            <div class="row mb-5 d-flex align-items-center">
+                <div class="col-lg-3 order-lg-2 text-lg-right text-center pb-4"><img src="public/img/icons/stars.svg" class="img-fluid" alt=""></div>
+                <div class="col-lg-9 order-lg-1">
+                    Now we are operational in 3 cities that are Rourkela, Jajpur, Ranchi and will continue to work hard for our causes.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="board">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2>BOARD OF TRUSTEES</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 pb-4 pb-lg-0 col-md-6">
+                    <div class="card" style="width: 18rem; height: 375px;">
+                        <img src="https://images.unsplash.com/photo-1522925875192-02df6922c92f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Md. Akramuddin Ansari</h5>
+                            <p class="lead m-0 pb-2 description">Founder & Chairman</p>
+                            <p class="card-text">"Never tell your dream how big the obstacle is, always tell the obstacle how big your dream is"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pb-4 pb-lg-0  col-md-6">
+                    <div class="card" style="width: 18rem; height: 375px;">
+                        <img src="https://images.unsplash.com/photo-1522925875192-02df6922c92f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Aakar Kapoor</h5>
+                            <p class="lead m-0 pb-2 description">Treasurer</p>
+                            <p class="card-text">"Nasrun min Allahi, wa fat'hun qareeb!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pb-4 pb-lg-0 col-md-6">
+                    <div class="card" style="width: 18rem; height: 375px;">
+                        <img src="https://images.unsplash.com/photo-1522925875192-02df6922c92f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Aakar Kapoor</h5>
+                            <p class="lead m-0 pb-2 description">Treasurer</p>
+                            <p class="card-text">"Nasrun min Allahi, wa fat'hun qareeb!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="central-co-ordinators" class="my-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>CENTRAL CO-ORDINATORS</h2>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title">Sagar Hingal</h5>
+                                    <p class="card-text"><small class="text-muted">Technical Head</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title">Aayush Kumar</h5>
+                                    <p class="card-text"><small class="text-muted">Creative Head</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title">Poulami Banerjee</h5>
+                                    <p class="card-text"><small class="text-muted">Content Head</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title">
+                                        Amit Sahoo</h5>
+                                    <p class="card-text"><small class="text-muted">PR Head</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title">Shaswata Bisi</h5>
+                                    <p class="card-text"><small class="text-muted">Sponsorship Managert</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title">Sulagna Sivprava</h5>
+                                    <p class="card-text"><small class="text-muted">Consultant</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="text-center mt-4 mb-5">CO-ORDINATORS</h2>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Ranchi</th>
+                    <th scope="col">Rourkela</th>
+                    <th scope="col">Jaipur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sima Kumari (Chief Co-ordinator)</td>
+                    <td>Soumya Das (Chief Co-ordinator)</td>
+                    <td>Lovely Sahoo (Chief Co-ordinator)</td>
+                </tr>
+                <tr>
+                    <td>Rahul Singh (Chief Co-ordinator)</td>
+                    <td>Barnali Priyadarshini</td>
+                    <td>Gagan Muduli</td>
+                </tr>
+                <tr>
+                    <td>Karan</td>
+                    <td>Nikhil Patwarii </td>
+                    <td>Kajal Nayak</td>
+                </tr>
+                <tr>
+                    <td>Varsha Sharma</td>
+                    <td>Deepa Kumari </td>
+                    <td>Sunita Kinnar</td>
+                </tr>
+                <tr>
+                    <td>Ashwin</td>
+                    <td>Sumit </td>
+                    <td>Bebi Kinnar</td>
+                </tr>
+                <tr>
+                    <td>Prerna Kumari</td>
+                    <td>Kumar Krishanjeet </td>
+                    <td>Jhansi Sahoo</td>
+                </tr>
+                <tr>
+                    <td>Suraj Kumar</td>
+                    <td>Ashutosh </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Lipika Adhikari</td>
+                    <td>Srimoy Mund </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Amit Modi</td>
+                    <td>Medha Rath</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Neha Singh</td>
+                    <td>Surya Narayan</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Yuvraj Pradhan</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Richa Verma</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Saloni Singh</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mohita Choudharyh</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Kumari Deepshika</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Rahul Munda</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Akshay Kumar Pathak</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tabassum</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Surbhi Kumari</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ravi Kumar</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sam</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="contact-us" class="my-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>CONTACT-US</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p class="font-weight-bold">Postal address:</p>
+                    <hr>
+                    <p>Qtr No: - AM 16, Basanti Colony</p>
+                    <p>Rourkela, Odisha</p>
+                    <p>India - 769012</p>
+                    <p class="text-muted m-0 p-0">We are open 24 hours 7 days a week.</p>
+                    <p class="text-muted m-0 p-0">Feel free to reach us at any time</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="font-weight-bold">Phone:</p>
+                    <hr>
+                    <div class="pb-3">
+                        <i class="fas fa-mobile-alt"></i> +91 80 181 32259
+                    </div>
+                    <div>
+                        <i class="fas fa-mobile-alt"></i> +91 80 181 32259
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="font-weight-bold">E-mail:</p>
+                    <hr>
+                    <div class="pb-3">
+                        <i class="fas fa-envelope mr-1"></i> info@blessnbliss.org
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope mr-1"></i> akram@blessnbliss.org
+                    </div>
+                    <button class="btn btn-primary btn-block mt-5">Talk to us</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- <section id="co-ordinators" class="mb-5">
+\
+
+                <div class="row mb-2">
+                    <div class="col-4">Kumari Deepshika</div>
+
+                </div>
+                <div class="row mb-2">
+                    <div class="col-4">Rahul Munda</div>
+
+                </div>
+                <div class="row mb-2">
+                    <div class="col-4">Akshay Kumar Pathak</div>
+
+                </div>
+                <div class="row mb-2">
+                    <div class="col-4">Tabassum</div>
+
+                </div>
+                <div class="row mb-2">
+                    <div class="col-4">Surbhi Kumari</div>
+
+                </div>
+                <div class="row mb-2">
+                    <div class="col-4">Ravi Kumar</div>
+
+                </div>
+                <div class="row mb-2">
+                    <div class="col-4">Sam</div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+    <!-- <section id="carousel" class="carousel photo-carousel">
+        <div class="carousel-container from-y-axis">
+            <div class="tracks-container">
+                <ul class="tracks-ul">
+                    <li class="carousel-slide active-slide">
+                        <img class="bg-img" src="public/img/banner-1.png" alt="bg-img">
+                        <div class="random-thought">
+                            <h2 class="head">WE CARE, WE SERVE</h3>
+                                <p class="body">Our motto, our mantra, our desire..</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img class="bg-img" src="public/img/banner-2.png" alt="bg-img">
+                        <div class="random-thought">
+                            <h2 class="head">YOU HELP, THEY SMILE</h3>
+                                <p class="body">A helping hand can spread happiness galore.</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img class="bg-img" src="public/img/banner-3.png" alt="bg-img">
+                        <div class="random-thought">
+                            <h2 class="head">GIVE A LITTLE. HELP A LOT.</h3>
+                                <p class="body">Be part of a change in the World.</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img class="bg-img" src="public/img/old-banner-4.png" alt="bg-img">
+                        <div class="random-thought">
+                            <h2 class="head">YOUR CHANGE CAN MAKE A CHANGE.</h3>
+                                <p class="body">Your contribution can help achieve a solution.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tracks-navbar">
+                <button class="indicator active-dot"></button>
+                <button class="indicator"></button>
+                <button class="indicator"></button>
+                <button class="indicator"></button>
+            </div>
+            <div class="pause-button-container">
+                <button class="pause-n-play-btn pause-button"></button>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <section id="footer">
+        <div class="footer-top">
+            <div class="footer-head">
+                <div class="logo">
+                    <img src="public/img/logo.png" alt="logo" />
+                    <div class="title">
+                        <h3 class="brand-name">Bless 'n' Bliss</h3>
+                        <p class="motto">We care, We serve</p>
+                    </div>
+                </div>
+                <div class="little-about-us">
+                    <p>
+                        We staunchly endeavour to eradicate ignorance and strive hard to attain gender equality by promoting symbiotic relationships and duly standing by our motto of "We Care, We Serve".
+                    </p>
+                </div>
+                <div class="social-media-list">
+                    <ul class="social-menu-links">
+                        <li class="menu-l menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/13255668/">L</a>
+                        </li>
+                        <li class="menu-t menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/bless_n_bliss">T</a>
+                        </li>
+                        <li class="menu-y menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCRXByLV9thNOHSZZoDYZmMg">Y</a>
+                        </li>
+                        <li class="menu-i menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bless.n.bliss/">I</a>
+                        </li>
+                        <li class="menu-f menu-icon">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/BnB.ngo">F</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="locations">
+                    <h3>Locations</h3>
+                    <ul class="location-list">
+                        <li>Ranchi</li>
+                        <li>Rourkela</li>
+                        <li>Jajpur</li>
+                        <li>Bangalore</li>
+                    </ul>
+                </div>
+                <div class="blogs">
+                    <h3>Latest Blogs</h3>
+                    <ul class="blog-list">
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <h3>Contact us</h3>
+                    <div class="contact-us-body">
+                        <div class="address">
+                            <h4>Address</h4>
+                            <p>Shivdayal Nagar, Argora Bypass Road,</p>
+                            <p>Near Amrit Hospital, Ranchi,</p>
+                            <p>Jharkhand, 834002</p>
+                        </div>
+                        <p class="phone"> <strong>Ph:</strong> +91 80181 32259</p>
+                        <p class="email"> <strong>Email:</strong> akram@blessnbliss.org</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">
+                © 2020 <a href="/"><strong>Bless 'n' Bliss</strong></a>. All rights reserved.
+            </p>
+        </div>
+        <div class="dev-section">
+            <div class="maintainer">
+                <h3>Website Maintainer</h3>
+                <a href="https://www.linkedin.com/in/ansuman-nayak-02318a188">Ansuman Nayak</a>
+            </div>
+            <div class="developers">
+                <h3>Website Developers</h3>
+                <a href="https://www.linkedin.com/in/ashutosh-khanduala-4b586b105/">Ashutosh Khanduala</a><br>
+                <a href="https://www.linkedin.com/in/divya-sri-darimisetti-6166a8194">Divya Sri Darimisetti</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
