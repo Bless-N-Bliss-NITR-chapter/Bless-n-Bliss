@@ -1,5 +1,38 @@
 section {
-    &.blog-banner-container {
+   &.blog-banner-container
+    .search-bar {
+            position: absolute;
+            bottom: 72px;
+            left:0;
+            right: 0;
+            margin: 20px 0;
+            .filter-search-container {
+                @include flex-center();
+                .search-bar {
+                    margin: 15px 0px;
+                    position: relative;
+                    #search-input {
+                        outline: 0;
+                        border-style: none;
+                        height: 52px;
+                        width: 70vw;
+                        min-width: 350px;
+                        max-width:600px;
+                        padding: 0px 90px 0px 30px;
+                        border-radius: 45px;
+                        background-color: $light-pink;
+                        position: relative;
+                        z-index: 99;
+                        &:hover {
+                            box-shadow: 0px 2px 2px $grey;
+                        }
+                        &::selection {
+                            background-color: $light-grey;
+                        }
+                    }
+                }
+            }
+        }
         .social-media-list {
             position: absolute;
             bottom: 20px;
@@ -11,34 +44,6 @@ section {
                     }
                     &:hover {
                         border: 1px solid transparent;
-                    }
-                }
-            }
-        }
-    }
-    &#search-bar {
-        margin: 20px 0;
-        .filter-search-container {
-            @include flex-center();
-            .search-bar {
-                margin: 15px 0px;
-                position: relative;
-                #search-input {
-                    border-style: none;
-                    height: 52px;
-                    width: 70vw;
-                    min-width: 350px;
-                    max-width:600px;
-                    padding: 0px 90px 0px 30px;
-                    border-radius: 45px;
-                    background-color: $light-pink;
-                    position: relative;
-                    z-index: 99;
-                    &:hover {
-                        box-shadow: 0px 2px 2px $grey;
-                    }
-                    &::selection {
-                        background-color: $light-grey;
                     }
                 }
             }
