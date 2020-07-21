@@ -1006,6 +1006,21 @@ section.blog-banner-container .social-media-list .social-menu-links .menu-icon:h
   border: 1px solid transparent;
 }
 
+.board-trustee .from-y-axis, .coordinators .from-y-axis {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+.board-trustee .from-y-axis.appear, .coordinators .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.board-trustee .from-x-axis, .coordinators .from-x-axis {
+  transition-delay: 0.1s;
+}
+
 @media (min-width: 768px) {
   .mobile-logo {
     position: absolute;
