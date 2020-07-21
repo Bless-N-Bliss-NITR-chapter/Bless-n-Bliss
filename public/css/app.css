@@ -875,6 +875,7 @@ section#footer .dev-section .developers a:hover {
 .social-media-list .social-menu-links .menu-icon {
   display: inline-block;
   border-radius: 50%;
+  box-sizing: content-box;
   border: 1px solid #3f3f3e;
   text-align: center;
   margin-right: 0.5rem;
@@ -948,7 +949,20 @@ section#footer .dev-section .developers a:hover {
   background-color: #39537b;
 }
 
-section.blog-banner-container .search-bar {
+section.blog-banner-container .tint {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, #ffffff00 50%, rgba(0, 0, 0, 0.7) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, #ffffff00 50%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+section.blog-banner-container h1 {
+  font-weight: 500;
+}
+
+section.blog-banner-container #search-bar {
   position: absolute;
   bottom: 72px;
   left: 0;
@@ -956,18 +970,18 @@ section.blog-banner-container .search-bar {
   margin: 20px 0;
 }
 
-section.blog-banner-container .search-bar .filter-search-container {
+section.blog-banner-container #search-bar .filter-search-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section.blog-banner-container .search-bar .filter-search-container .search-bar {
+section.blog-banner-container #search-bar .filter-search-container .search-bar {
   margin: 15px 0px;
   position: relative;
 }
 
-section.blog-banner-container .search-bar .filter-search-container .search-bar #search-input {
+section.blog-banner-container #search-bar .filter-search-container .search-bar #search-input {
   outline: 0;
   border-style: none;
   height: 52px;
@@ -981,11 +995,11 @@ section.blog-banner-container .search-bar .filter-search-container .search-bar #
   z-index: 99;
 }
 
-section.blog-banner-container .search-bar .filter-search-container .search-bar #search-input:hover {
+section.blog-banner-container #search-bar .filter-search-container .search-bar #search-input:hover {
   box-shadow: 0px 2px 2px #3f3f3e;
 }
 
-section.blog-banner-container .search-bar .filter-search-container .search-bar #search-input::selection {
+section.blog-banner-container #search-bar .filter-search-container .search-bar #search-input::selection {
   background-color: #aaaaaa;
 }
 
@@ -995,11 +1009,23 @@ section.blog-banner-container .social-media-list {
 }
 
 section.blog-banner-container .social-media-list .social-menu-links .menu-icon {
+  margin: 5px;
   border: 1px solid white;
+  margin-right: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 section.blog-banner-container .social-media-list .social-menu-links .menu-icon a {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding-top: 5px;
   color: #f4f4ff;
+}
+
+section.blog-banner-container .social-media-list .social-menu-links .menu-icon a::before {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 section.blog-banner-container .social-media-list .social-menu-links .menu-icon:hover {
