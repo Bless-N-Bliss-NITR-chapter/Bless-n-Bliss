@@ -1,5 +1,6 @@
 .carousel {
     //do not change any contents/property of this class. make a separate class to overwrite the properties of this class.
+    
     --carousel-height: auto;
     //--carousel-max-height: 100vh;
     --carousel-min-height: 100vh;
@@ -97,7 +98,7 @@
     }
 }
 .photo-carousel {
-    //make changes to carousel properties here in this separate class
+     //make changes to carousel class properties here in this separate class to suit your carousel needs
     --carousel-height: auto;
     --carousel-min-height: 100vh;
     --carousel-width: 100%;
@@ -122,6 +123,7 @@
     }
 }
 .photo-carousel2 {
+    //make changes to carousel class properties here in this separate class to suit your carousel needs
     --carousel-height: auto;
     background-color: transparent;
     .carousel-container {
@@ -203,7 +205,7 @@
 
 .project-carousel,
 .testimonial-carousel {
-    //make changes to carousel properties here in this separate class
+    //make changes to carousel class properties here in this separate class to suit your carousel needs
     --carousel-height: auto;
     --carousel-min-height: 100vh;
     --carousel-width: 100%;
@@ -270,6 +272,31 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.about-carousel{
+    //make changes to carousel class properties here in this separate class to suit your carousel needs
+    margin: 0 auto;
+    --carousel-min-height: 170px;
+    --carousel-width: 27vw;
+
+    @media(max-width:992.5px){
+        margin-top:40px;
+        --carousel-min-height: 50vw;
+        --carousel-width: 80vw;
+    }
+    .carousel-container {
+        .tracks-container{
+        }
+        .tracks-navbar{
+            left: 1vw;
+            bottom: 10px;
+        }
+        .pause-button-container{
+            right: 1vw;
+            bottom: 0px;
         }
     }
 }
