@@ -1,0 +1,6 @@
+.board-trustee, .coordinators{
+    @include from-y-axis(50px); //its a scss mixin. see _mixins.scss to see its implementation
+    .from-x-axis{
+        transition-delay: 0.1s;
+    }
+}
