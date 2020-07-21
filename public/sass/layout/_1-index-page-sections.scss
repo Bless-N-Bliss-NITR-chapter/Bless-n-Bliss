@@ -10,7 +10,9 @@ section {
             margin-left: 5px;
             .brand-name {
                 margin-top: 7px;
-                line-height: 0.8;
+                line-height: 0.6;
+                font-size: 1rem;
+                font-weight: 600;
             }
             .motto {
                 font-size: 12px;
@@ -66,14 +68,14 @@ section {
         @include flex-center();
         flex-direction: column;
 
-        .section-title {
-            font-size: 35px;
-            text-align: center;
-        }
+        // .section-title {
+        //     font-size: 35px;
+        //     text-align: center;
+        // }
         .our-mission {
             padding: 30px 0;
             .head {
-                background-color: $blue2;
+                background-color: rgba($color: $blue2, $alpha: 0.95);
                 height: 70px;
                 width: 80vw;
                 max-width: 400px;
@@ -87,10 +89,11 @@ section {
                 }
             }
             .body {
+                overflow-x: hidden;
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
-                @include from-x-axis(150px);
+                @include from-x-axis(+150px);
                 .card {
                     min-height: 270px;
 
@@ -111,8 +114,8 @@ section {
                         rgba(0, 0, 0, 0.2)
                     );
                     .svg {
-                        height: 130px;
-                        width: 250px;
+                        height: 150px;
+                        width: 170px;
                         margin-bottom: 20px;
                     }
                     .title {
@@ -126,16 +129,20 @@ section {
                     background-image: url(../img/background.png);
                     //background-position: center bottom;
                     color: $white;
-                    .svg{
+                    .svg {
                         position: relative;
                         left: 15px;
                     }
                 }
                 .support {
-                    transition-delay: 0.3s;
+                    background-image: url(../img/background3.png);
+                    background-position: 40% 0%;
+                    transition-delay: 0.2s;
                 }
                 .equality {
-                    transition-delay: 0.5s;
+                    background-image: url(../img/background3.png);
+                    background-position: 0% 25.5%;
+                    transition-delay: 0.4s;
                 }
             }
         }
@@ -144,9 +151,9 @@ section {
             width: 97%;
             margin: 0 auto;
             max-width: 700px;
-            padding: 30px 0;
+            padding: 30px 0 70px;
             .title {
-                background-color: $blue2;
+                background-color: rgba($color: $blue2, $alpha: 0.95);
                 height: 70px;
                 width: 80vw;
                 max-width: 400px;
@@ -162,7 +169,85 @@ section {
         }
     }
 
+    &.cyclothon {
+        background-color: rgba($color: $light-pink, $alpha: 0.9);
+        padding: 20px 0;
+        @media(max-width:500px){
+            padding: 20px 0 0;
+        }
+        .title {
+            background-color: rgba($color: $blue2, $alpha: 1);
+            height: 70px;
+            width: 80vw;
+            max-width: 400px;
+            margin: 30px auto 0;
+            @include flex-center();
+            border-radius: 45px;
+            position: relative;
+            @include from-y-axis(40px);
+            h2 {
+                color: $white;
+            }
+        }
+        div {
+            &#cyclothon {
+                margin: 15px auto;
+                display: flex;
+                justify-content: center;
+                .fb-video {
+                    height: 375px;
+                    width: 500px;
+                    margin-right: 20px;
+                    background-color: lightgrey;
+                    transition: all 0.5s ease;
+                    blockquote{
+                        padding:15px;
+                        .head{
+                            font-size:20px;
+                            text-decoration:none;
+                        }
+                    }
+                }
+                .photo-carousel2 {
+                    --carousel-width: 600px;
+                    --carousel-min-height: 375px;
+                }
+            }
+            @media (max-width: 1130px) {
+                &#cyclothon {
+                    .fb-video {
+                        display: none;
+                        margin-right: 0;
+                    }
+                    .photo-carousel2 {
+                        --carousel-width: 100vw;
+                        --carousel-min-height: 90vh;
+                        .tracks-container {
+                            .bg-img {
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+            @media (max-width: 500px) {
+                &#cyclothon {
+                    .fb-video {
+                        display: none;
+                    }
+                    .photo-carousel2 {
+                        --carousel-width: 100vw;
+                        --carousel-min-height: 80vh;
+                        .bg-img {
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
     &#thanks {
+        margin-top:50px;
         .thanks {
             margin: 15px 10px 0;
             padding: 25px 15px;
@@ -394,6 +479,7 @@ section {
         .menu-icon {
             display: inline-block;
             border-radius: 50%;
+            box-sizing: content-box;
             border: 1px solid $grey;
             text-align: center;
             margin-right: 0.5rem;

@@ -1,9 +1,31 @@
 section {
-   &.blog-banner-container
-    .search-bar {
+    &.blog-banner-container {
+        .tint {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(
+                    to right,
+                    rgba(0, 0, 0, 0.7) 0%,
+                    #ffffff00 50%,
+                    rgba(0, 0, 0, 0.7) 100%
+                ),
+                linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.7) 0%,
+                    #ffffff00 50%,
+                    rgba(0, 0, 0, 0.7) 100%
+                );
+        }
+        h1 {
+            font-weight: 500;
+        }
+        #search-bar {
             position: absolute;
             bottom: 72px;
-            left:0;
+            left: 0;
             right: 0;
             margin: 20px 0;
             .filter-search-container {
@@ -17,7 +39,7 @@ section {
                         height: 52px;
                         width: 70vw;
                         min-width: 350px;
-                        max-width:600px;
+                        max-width: 600px;
                         padding: 0px 90px 0px 30px;
                         border-radius: 45px;
                         background-color: $light-pink;
@@ -38,9 +60,20 @@ section {
             bottom: 20px;
             .social-menu-links {
                 .menu-icon {
+                    margin: 5px;
                     border: 1px solid $white;
+                    margin-right: 0.5rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
                     a {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        padding-top: 5px;
                         color: $light-pink;
+                    }
+                    a::before {
+                        font-size: 1.5rem;
+                        line-height: 1.8rem;
                     }
                     &:hover {
                         border: 1px solid transparent;
