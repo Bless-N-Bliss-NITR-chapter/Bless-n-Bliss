@@ -274,7 +274,9 @@ section .mobile-logo .title {
 section .logo .title .brand-name,
 section .mobile-logo .title .brand-name {
   margin-top: 7px;
-  line-height: 0.8;
+  line-height: 0.6;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 section .logo .title .motto,
@@ -946,6 +948,47 @@ section#footer .dev-section .developers a:hover {
   background-color: #39537b;
 }
 
+section.blog-banner-container .search-bar {
+  position: absolute;
+  bottom: 72px;
+  left: 0;
+  right: 0;
+  margin: 20px 0;
+}
+
+section.blog-banner-container .search-bar .filter-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.blog-banner-container .search-bar .filter-search-container .search-bar {
+  margin: 15px 0px;
+  position: relative;
+}
+
+section.blog-banner-container .search-bar .filter-search-container .search-bar #search-input {
+  outline: 0;
+  border-style: none;
+  height: 52px;
+  width: 70vw;
+  min-width: 350px;
+  max-width: 600px;
+  padding: 0px 90px 0px 30px;
+  border-radius: 45px;
+  background-color: #f4f4ff;
+  position: relative;
+  z-index: 99;
+}
+
+section.blog-banner-container .search-bar .filter-search-container .search-bar #search-input:hover {
+  box-shadow: 0px 2px 2px #3f3f3e;
+}
+
+section.blog-banner-container .search-bar .filter-search-container .search-bar #search-input::selection {
+  background-color: #aaaaaa;
+}
+
 section.blog-banner-container .social-media-list {
   position: absolute;
   bottom: 20px;
@@ -961,42 +1004,6 @@ section.blog-banner-container .social-media-list .social-menu-links .menu-icon a
 
 section.blog-banner-container .social-media-list .social-menu-links .menu-icon:hover {
   border: 1px solid transparent;
-}
-
-section#search-bar {
-  margin: 20px 0;
-}
-
-section#search-bar .filter-search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section#search-bar .filter-search-container .search-bar {
-  margin: 15px 0px;
-  position: relative;
-}
-
-section#search-bar .filter-search-container .search-bar #search-input {
-  border-style: none;
-  height: 52px;
-  width: 70vw;
-  min-width: 350px;
-  max-width: 600px;
-  padding: 0px 90px 0px 30px;
-  border-radius: 45px;
-  background-color: #f4f4ff;
-  position: relative;
-  z-index: 99;
-}
-
-section#search-bar .filter-search-container .search-bar #search-input:hover {
-  box-shadow: 0px 2px 2px #3f3f3e;
-}
-
-section#search-bar .filter-search-container .search-bar #search-input::selection {
-  background-color: #aaaaaa;
 }
 
 @media (min-width: 768px) {

@@ -26,7 +26,7 @@
 #about-header .header-content {
     color: white;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -88,7 +88,6 @@
     margin-top: 40px;
 }
 
-
 /* overriding the padding property to make image full covered in background */
 
 @media (max-width: 767px) {
@@ -106,3 +105,26 @@
         height: 100px;
     }
 }
+
+/* bootstrap.css override + responsiveness improvements */
+h1,h2,h3,h4,h5,h6{
+    margin: 0rem;
+}
+section#navbar {
+    padding-top: 0px;
+}
+section .logo .title .brand-name, section .mobile-logo .title .brand-name {
+    margin-top: 22px;
+}
+.c-us-child{
+    margin-top: 25px;
+}
+.board-trustee{
+    display:flex;
+    justify-content: center;
+}
+@media (max-width: 982px){
+    .hws-quote{
+        text-align: center;
+    }
+} 
