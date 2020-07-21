@@ -8,7 +8,7 @@
 
 /*Banner styles */
 .blog-banner-container{
-    position: relative;
+   /* position: relative;*/
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
     font-size: 7rem;
     letter-spacing: 2vw;
     color: #ffffff;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -37,40 +37,68 @@
 @media screen and (max-width: 800px) {
     .blog-banner-container h1 {
         position: absolute;
-        font-size: 3rem;
-        top: 6%;
+        font-size: 5rem;
+        top: 25%;
     }
 }
 
 /* Blogs Section */
 .blog-container {
-    /*margin-left:100px;
-    margin-right:100px;*/
     margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     height: auto;
 }
 .blog-wrapper {
-    margin-left: 15vw;
-    margin-right: 15vw;
+    width: 60%;
+    margin: 0 auto;
+    min-width: 340px;
 }
 .blogs {
     position: relative;
 }
 .blog-container .blog-wrapper img {
     object-fit: cover;
-    object-position: 50% 0%;
+    object-position: 50% 30%;
+    height: 450px;
 }
 .author {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #ffffff;
     left: 0;
     right: 0;
-    text-align: center;
-    bottom: 0;
+    width: 90%;
+   /* max-width: 500px;
+    min-width: 300px;*/
+    margin:0 auto;
+    text-align: left;
+    padding-left: 2em;
+    bottom: -7em;
 }
-.blog-container article {
+.blog-container .blog-wrapper .blog-content  article {
     font-size: 15px;
-    padding: 8px;
-    overflow-y: scroll;
+    padding: 6px;
+    margin-top: 8em;
+
 }
+.blog-container .blogs .author .s1{
+    color: #fa0404; 
+    margin-top: 1em; 
+    font-weight: 600;
+}
+.blog-container .blogs .author .s2{
+    color: black;
+     margin-top: 1em;
+     font-weight: 650;
+}
+.blog-container .blogs .author .Date-of-publish{
+     margin-top: 0.5em;
+}
+@media screen and (max-width: 767px){
+ .author {
+     bottom: -10em;
+ }
+ .blog-container .blog-wrapper .blog-content  article{
+     margin-top: 10em;
+ }
+}
+/* end Blogs Section */
