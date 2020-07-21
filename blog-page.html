@@ -94,7 +94,7 @@
                         </ul>
                     </li>
                     <li class="list-item">
-                        <a class="list-anchor" href="about.html">About</a>
+                        <a class="list-anchor" href="about.html">About Us</a>
                     </li>
                     <li class="list-item">
                         <a id="donateMini" class="list-anchor" href="https://www.payumoney.com/paybypayumoney/#/132939" target="_blank" _ngcontent-c0="">Donate Us</a>
@@ -108,7 +108,20 @@
                 src="public\img\blog-page-img\banner-photo.jpg"
                 alt="banner-image"
             />
+            <div class="tint"></div>
             <h1>Blogs</h1>
+            <section id="search-bar">
+                <div class="container filter-search-container">
+                    <div class="search-bar">
+                        <form class="search-form" action="/" method="post">   <!--'/' represents 'root' route. (required when get request is called upon root route) -->
+                            <input type="text" id="search-input" class="pseudo-b-shadow" name="searchInput" placeholder="Blog title or Author name..." onkeyup="filterList();">
+                            <!-- <button class="search-button" type="submit">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button> -->
+                        </form>
+                    </div>  
+                </div>
+            </section>
             <div class="social-media-list">
                 <ul class="social-menu-links">
                     <li class="menu-l menu-icon">
@@ -152,19 +165,6 @@
                         >
                     </li>
                 </ul>
-            </div>
-        </section>
-
-        <section id="search-bar">
-            <div class="container filter-search-container">
-                <div class="search-bar">
-                    <form class="search-form" action="/" method="post">   <!--'/' represents 'root' route. (required when get request is called upon root route) -->
-                        <input type="text" id="search-input" class="pseudo-b-shadow" name="searchInput" placeholder="Blog title or Author name..." onkeyup="filterList();">
-                        <!-- <button class="search-button" type="submit">
-                            <i class="fas fa-search" aria-hidden="true"></i>
-                        </button> -->
-                    </form>
-                </div>  
             </div>
         </section>
 

@@ -479,6 +479,7 @@ section {
         .menu-icon {
             display: inline-block;
             border-radius: 50%;
+            box-sizing: content-box;
             border: 1px solid $grey;
             text-align: center;
             margin-right: 0.5rem;
