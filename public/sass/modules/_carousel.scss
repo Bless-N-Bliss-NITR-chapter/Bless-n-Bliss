@@ -10,19 +10,15 @@
     background-color: $grey;
     height: var(--carousel-height);
     width: var(--carousel-width);
-
     //max-height: var(--carousel-max-height);
     .carousel-container {
         min-height: var(--carousel-min-height);
         position: relative;
-
         .tracks-container {
             min-height: var(--carousel-min-height);
-
             .tracks-ul {
                 min-height: var(--carousel-min-height);
                 position: relative;
-
                 .carousel-slide {
                     min-height: var(--carousel-min-height);
                     position: absolute;
@@ -30,7 +26,6 @@
                     bottom: 0;
                     transition: opacity ease-out 1s;
                     opacity: 0;
-
                     .bg-img {
                         min-height: var(--carousel-min-height);
                         //max-height: var(--carousel-max-height);
@@ -40,7 +35,6 @@
                         object-fit: cover;
                         object-position: 40% 0%;
                     }
-
                     &.active-slide {
                         z-index: 10;
                         opacity: 1;
@@ -49,42 +43,40 @@
                 }
             }
         }
-
         .tracks-navbar {
             position: absolute;
             left: 5vw;
             bottom: 20px;
-            z-index: 11;
-
+            z-index: 12;
             .indicator {
-                @include circular-button(rgba($color: #000000, $alpha: 0.3),
+                @include circular-button(
+                    rgba($color: #000000, $alpha: 0.3),
                     5px,
-                    20px);
+                    20px
+                );
                 border: solid 2px $pink;
             }
-
             .active-dot {
                 transition: ease-in 0.5s;
                 background-color: $light-pink;
             }
         }
-
         .pause-button-container {
             position: absolute;
             bottom: 10px;
             right: 5vw;
             z-index: 13;
             text-align: center;
-
             .pause-button,
             .play-button {
-                @include circular-button(rgba($color: #000000, $alpha: 0.3),
+                @include circular-button(
+                    rgba($color: #000000, $alpha: 0.3),
                     0px,
-                    40px);
+                    40px
+                );
                 border-style: none;
                 font-size: 40px;
                 position: relative;
-
                 &::before {
                     content: "\f28b";
                     font-family: FontAwesome;
@@ -96,7 +88,6 @@
                     left: 0;
                 }
             }
-
             .play-button {
                 &::before {
                     content: "\f144";
@@ -105,13 +96,11 @@
         }
     }
 }
-
 .photo-carousel {
     //make changes to carousel properties here in this separate class
     --carousel-height: auto;
     --carousel-min-height: 100vh;
     --carousel-width: 100%;
-
     .carousel-container {
         .tracks-container {
             .tracks-ul {
@@ -121,12 +110,90 @@
                         object-position: 55% 0%;
                         width: 100vw;
                     }
-
                     .random-thought {
                         position: absolute;
                         top: 50%;
                         left: 5vw;
                         color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+.photo-carousel2 {
+    --carousel-height: auto;
+    background-color: transparent;
+    .carousel-container {
+        .tracks-container {
+            .tracks-ul {
+                .carousel-slide {
+                    .bg-img {
+                        object-fit: cover;
+                        object-position: 50% 50px;
+                        width: var(--carousel-width);
+                    }
+                }
+            }
+        }
+        .tracks-navbar-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba($color: lightpink, $alpha: 0.7);
+            z-index: 11;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            border-radius: 0 25px 0 0;
+
+            .tracks-navbar {
+                margin-left: 30px;
+                position: static;
+                z-index: 12;
+                .indicator {
+                    @include circular-button(
+                        rgba($color: #000000, $alpha: 0.3),
+                        5px,
+                        20px
+                    );
+                    border: solid 2px $pink;
+                }
+                .active-dot {
+                    transition: ease-in 0.5s;
+                    background-color: $light-pink;
+                }
+            }
+            .pause-button-container {
+                margin-top: 3px;
+                margin-right: 5px;
+                position: static;
+                .pause-button,
+                .play-button {
+                    @include circular-button(
+                        rgba($color: #000000, $alpha: 0.3),
+                        0px,
+                        40px
+                    );
+                    border-style: none;
+                    font-size: 40px;
+                    position: relative;
+                    &::before {
+                        content: "\f28b";
+                        font-family: FontAwesome;
+                        color: rgba($color: $light-pink, $alpha: 0.7);
+                        text-decoration: none;
+                        position: absolute;
+                        font-size: 45px;
+                        top: -17px;
+                        left: 0;
+                    }
+                }
+                .play-button {
+                    &::before {
+                        content: "\f144";
                     }
                 }
             }
@@ -144,7 +211,6 @@
     margin: 0 auto;
     border-radius: 25px;
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
-
     .carousel-container {
         .tracks-container {
             .tracks-ul {
@@ -153,14 +219,16 @@
                         object-fit: cover;
                         object-position: 40% 0%;
                     }
-
                     .tint {
                         position: absolute;
                         top: 0;
                         left: 0;
-                        background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, #ffffff00 100%);
+                        background: linear-gradient(
+                            to right,
+                            rgba(0, 0, 0, 0.95) 0%,
+                            #ffffff00 100%
+                        );
                     }
-
                     .about {
                         min-height: 120px;
                         min-width: 140px;
@@ -176,13 +244,10 @@
                         box-sizing: content-box;
                         padding: 25px;
                         border-radius: 25px;
-
                         .head {
                             margin-bottom: 20px;
                         }
-
                         @include scale-up(1.3, 1);
-
                         .learn-more {
                             display: block;
                             position: absolute;
@@ -198,7 +263,6 @@
                             padding: 25px 10px 10px 0;
                             font-size: 15px;
                             font-weight: 600;
-
                             &:hover {
                                 color: $blue2;
                             }
