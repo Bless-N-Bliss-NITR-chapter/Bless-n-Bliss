@@ -35,10 +35,6 @@
     display: flex;
 }
 
-#carouselExampleControls {
-    min-height: 300px;
-}
-
 #how-we-started {
     margin-top: 100px;
 }
@@ -64,28 +60,6 @@
 #how-we-started img {
     width: 120px;
     height: 120px;
-}
-
-.about-carousel {
-    height: 45vh !important;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-top: 40px;
-}
-
-.carousel-about-slide {
-    height: 45vh !important;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-top: 40px;
 }
 
 /* overriding the padding property to make image full covered in background */

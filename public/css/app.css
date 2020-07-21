@@ -1637,4 +1637,28 @@ section.blog-banner-container .social-media-list .social-menu-links .menu-icon:h
 .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .about .learn-more:hover {
   color: #3C39CC;
 }
+
+.about-carousel {
+  margin: 0 auto;
+  --carousel-min-height: 170px;
+  --carousel-width: 27vw;
+}
+
+@media (max-width: 992.5px) {
+  .about-carousel {
+    margin-top: 40px;
+    --carousel-min-height: 50vw;
+    --carousel-width: 80vw;
+  }
+}
+
+.about-carousel .carousel-container .tracks-navbar {
+  left: 1vw;
+  bottom: 10px;
+}
+
+.about-carousel .carousel-container .pause-button-container {
+  right: 1vw;
+  bottom: 0px;
+}
 /*# sourceMappingURL=app.css.map */
