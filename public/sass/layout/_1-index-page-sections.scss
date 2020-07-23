@@ -67,6 +67,7 @@ section {
         padding-top: 40px;
         @include flex-center();
         flex-direction: column;
+        overflow-x: hidden;
 
         // .section-title {
         //     font-size: 35px;
@@ -89,7 +90,6 @@ section {
                 }
             }
             .body {
-                overflow-x: hidden;
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
