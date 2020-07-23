@@ -10,10 +10,11 @@
     width: $dia;
     height: $dia;
     border-radius: 100%;
+    border: none;
     outline: none;//to remove the outline when you touch the key in mobile browsers
 }
 
-@mixin pseudo-b-shadow($horizontal-length, $vertical-length, $blur, $color){
+@mixin pseudo-b-shadow($horizontal-length:5px, $vertical-length:5px, $blur:50px, $color:rgba(0, 0, 0, 0.2)){
     &::before {
         content: "";
         position: absolute;

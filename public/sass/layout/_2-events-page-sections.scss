@@ -1,0 +1,245 @@
+.puller-btn {
+    box-shadow: 0 0 60px $grey;
+    position: absolute;
+    bottom: -30px;
+    right: 50vw;
+    transform: translateX(50%);
+    cursor: pointer;
+    @include circular-button($orange, 0, 40px);
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &::before {
+        display: block;
+        content: "\f078";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        color: $white;
+        text-decoration: none;
+        transform: translate(13px, 11px);
+    }
+    &:checked {
+        transition: all 0.2s cubic-bezier(0.9, 0, 0.33, 1);
+        transform: rotateZ(180deg) translate(-50%, 25px);
+    }
+    &:not(checked) {
+        transition: all 0.2s cubic-bezier(0.9, 0, 0.33, 1);
+    }
+}
+
+section {
+    &.events {
+        transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+        text-align: center;
+        margin-top: 50px;
+        .container {
+            background-color: $white;
+            // @include from-y-axis(50px);
+            .head,
+            .events-ul {
+                max-width: 400px;
+                width: 25vw;
+                min-width: 300px;
+            }
+            .head {
+                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                box-sizing: border-box;
+                box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+                padding: 25px;
+                background-color: $blue;
+                color: white;
+                margin: 0 auto;
+                border-radius: 5px 5px 0 0;
+                h1 {
+                    transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                }
+            }
+            .body {
+                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                background-color: $blue;
+                @include pseudo-b-shadow(0, 0, 50px, rgba(0, 0, 0, 1));
+                padding-bottom: 20px;
+                position: relative;
+                .events-ul {
+                    transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+                    height: 70vh;
+                    max-height: 500px;
+                    overflow-y: scroll;
+                    margin: 0 auto;
+                    background-color: $white;
+                    padding: 20px 5px;
+                    border-radius: 0 0 5px 5px;
+                    // @include from-y-axis(50px);
+                    .date {
+                        padding-right: 5px;
+                        border-right: solid 3px $light-grey;
+                        margin: 5px 0;
+                        width: 50px;
+                    }
+                    .event {
+                        display: flex;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        width: auto;
+                        margin: 5px 10px;
+                        border-style: none;
+                        background-color: $light-pink;
+                        min-height: 30px;
+                    }
+                }
+                //puller-btn is made global. see end
+            }
+        }
+    }
+    &.close {
+        transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+        margin-top: 0;
+        .container {
+            .head {
+                box-sizing: content-box;
+                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                border-radius: 0 0 5px 5px;
+                padding: 0px;
+                width: 90vw;
+                max-width: unset;
+                h1 {
+                    transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                    margin: 0px;
+                    padding: 5px;
+                }
+            }
+            .body {
+                border-radius: 20% 20% 50% 50%;
+                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                padding-bottom: 0;
+                .events-ul {
+                    transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                    height: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    &#events-happened {
+        margin-top: 100px;
+        .some-year {
+            padding-bottom: 25px;
+            margin: 70px auto 0;
+            width: 90vw;
+            box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.05),;
+            border-radius: 15px 75px 5px 5px;
+            @media(min-width:767px){
+                border-radius: 15px 50% 5px 5px;
+            }
+            .year-events-head {
+                position: relative;
+                border-bottom: 5px solid $light-grey;
+                .event-year {
+                    color: $black;
+                    margin: 0;
+                    padding-left: 43px;
+                    font-size: 50px;
+                }
+                .puller-btn {
+                    box-shadow: 0 5px 10px rgba($color: $light-grey, $alpha: 0.5);
+                    border-radius: 0 0 50% 50%;
+                    height: 30px;
+                    bottom: -30px;
+                    background-color: $light-grey;
+                    right: 5vw;
+                    &::before {
+                        transform: translate(13px, 5px);
+                    }
+                }
+            }
+
+            .year-events-body {
+                counter-reset: event-number-counter;
+                background:linear-gradient(to bottom, $light-pink 0%, $white 100%);
+                max-height: 900px;
+                overflow-y: auto;
+                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                box-shadow: inset 0 -20px 10px rgba($color: $grey, $alpha: 0.1);
+                .year-event {
+                    .about-event {
+                        &::before {
+                            content: counter(event-number-counter);
+                            counter-increment: event-number-counter;
+                            float: left;
+                            background-color: $light-grey;
+                            height: 29px;
+                            width: 31px;
+                            border-radius: 50%;
+                            margin: 7px 4px;
+                            text-align: center;
+                            padding-top: 2px;
+                            color: $white;
+                            font-size: 17px;
+                            font-weight: 500;
+                        }
+                        .event-name {
+                            margin-left: 43px;
+                            margin-bottom: 10px;
+                            color: $blue1;
+                        }
+                        .event-description {
+                            margin: 30px 25px 0 35px;
+                            padding: 10px;
+                            max-height: 140px;
+                            overflow-y: auto;
+                            background: linear-gradient(
+                                to top,
+                                rgba($color: $grey, $alpha: 0.1) 0%,
+                                transparent 25%,
+                                transparent 100%
+                            );
+                        }
+                    }
+                    .scrollable-viewer {
+                        margin: 50px auto;
+                        width: 85%;
+                        background-color: rgba($color: $grey, $alpha: 0.1);
+                        .lenghty-box {
+                            height: 230px;
+                            display: flex;
+                            align-items: center;
+                            overflow-x: auto;
+                            box-shadow: inset 20px 0 10px
+                                    rgba($color: $grey, $alpha: 0.1),
+                                inset -20px 0 10px rgba($color: $grey, $alpha: 0.1);
+                            .content {
+                                height: 200px;
+                                min-width: 260px;
+                                margin: 0 5px;
+                                background-color: $grey;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .close {
+                max-height: 0;
+                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+            }
+        }
+    }
+}
+
+
+// .year-event {
+//     .about-event {
+//         .event-name {
+//         }
+//         .event-description {
+//         }
+//     }
+//     .scrollable-view {
+//         .content {
+//         }
+//     }
+// }
