@@ -953,7 +953,7 @@ section#footer .dev-section .developers a:hover {
   box-shadow: 0 0 60px #3f3f3e;
   position: absolute;
   bottom: -30px;
-  right: 50vw;
+  right: 50%;
   transform: translateX(50%);
   cursor: pointer;
   background-color: #f9b31c;
@@ -1025,6 +1025,8 @@ section.events .container .body {
   background-color: #0090c4;
   padding-bottom: 20px;
   position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 
 section.events .container .body::before {
@@ -1091,9 +1093,10 @@ section.close .container .head h1 {
 }
 
 section.close .container .body {
-  border-radius: 20% 20% 50% 50%;
+  border-radius: 100%;
   transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
   padding-bottom: 0;
+  width: 50%;
 }
 
 section.close .container .body .events-ul {
@@ -1107,11 +1110,12 @@ section#events-happened {
 }
 
 section#events-happened .some-year {
+  background-color: white;
   padding-bottom: 25px;
   margin: 70px auto 0;
   width: 90vw;
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.05);
-  border-radius: 15px 75px 5px 5px;
+  border-radius: 15px 75px 10px 10px;
 }
 
 @media (min-width: 767px) {
@@ -1147,8 +1151,8 @@ section#events-happened .some-year .year-events-head .puller-btn::before {
 
 section#events-happened .some-year .year-events-body {
   counter-reset: event-number-counter;
-  background: linear-gradient(to bottom, #f4f4ff 0%, white 100%);
-  max-height: 900px;
+  background-color: rgba(32, 63, 74, 0.96);
+  max-height: 1800px;
   overflow-y: auto;
   transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
   box-shadow: inset 0 -20px 10px rgba(63, 63, 62, 0.1);
@@ -1162,7 +1166,8 @@ section#events-happened .some-year .year-events-body .year-event .about-event::b
   height: 29px;
   width: 31px;
   border-radius: 50%;
-  margin: 7px 4px;
+  margin: 7px;
+  margin-right: 4px;
   text-align: center;
   padding-top: 2px;
   color: white;
@@ -1171,23 +1176,36 @@ section#events-happened .some-year .year-events-body .year-event .about-event::b
 }
 
 section#events-happened .some-year .year-events-body .year-event .about-event .event-name {
+  font-weight: 500;
   margin-left: 43px;
   margin-bottom: 10px;
+  padding-left: 10px;
   color: #0069D9;
+  background-color: white;
+  width: 50%;
+  min-width: 250px;
+  border-radius: 5px 25px 25px 5px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 }
 
 section#events-happened .some-year .year-events-body .year-event .about-event .event-description {
   margin: 30px 25px 0 35px;
   padding: 10px;
-  max-height: 140px;
+  padding-bottom: 25px;
+  max-height: 400px;
   overflow-y: auto;
-  background: linear-gradient(to top, rgba(63, 63, 62, 0.1) 0%, transparent 25%, transparent 100%);
+  color: white;
+  background: linear-gradient(to top, rgba(32, 63, 74, 0.99) 0%, transparent 75%, transparent 25%, rgba(32, 63, 74, 0.5) 100%);
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer {
   margin: 50px auto;
   width: 85%;
   background-color: rgba(63, 63, 62, 0.1);
+  border: 7px solid #f0f0f0;
+  border-radius: 15px;
+  border-bottom-width: 3px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box {
@@ -1207,7 +1225,11 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
 
 section#events-happened .some-year .close {
   max-height: 0;
-  transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+  transition: all 0.7s cubic-bezier(0.33, 1, 0.33, 1);
+}
+
+section.event-footer {
+  box-shadow: 0 -10px 50px rgba(63, 63, 62, 0.07);
 }
 
 section.blog-banner-container .tint {
