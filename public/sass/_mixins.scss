@@ -29,26 +29,26 @@
     }
 }
 
-@mixin from-y-axis($translateY:-150px){
+@mixin from-y-axis($translateY:-150px, $opacity-timing:0.3s, $transform-timing:0.7s){
     .from-y-axis{
         opacity: 0;
         transform: translateY($translateY);
         transition: 
-            opacity 0.3s ease,
-            transform  0.7s ease,
+            opacity $opacity-timing ease,
+            transform  $transform-timing ease,
     }
     .from-y-axis.appear{
         opacity: 1;
         transform: translateY(0px);
     }
 }
-@mixin from-x-axis($translateX: 150px){
+@mixin from-x-axis($translateX: 150px, $opacity-timing:0.3s, $transform-timing:0.7s){
     .from-x-axis{
         opacity: 0;
         transform: translateX($translateX);
         transition: 
-            opacity 0.3s ease,
-            transform  0.7s ease,
+            opacity $opacity-timing ease,
+            transform  $transform-timing ease,
     }
     .from-x-axis.appear{
         opacity: 1;

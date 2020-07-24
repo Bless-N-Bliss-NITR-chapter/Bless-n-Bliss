@@ -356,7 +356,7 @@ section#what-we-do .our-mission .head {
 
 section#what-we-do .our-mission .head .from-y-axis {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.7s ease;
 }
 
@@ -472,7 +472,7 @@ section#what-we-do .our-projects .title {
 
 section#what-we-do .our-projects .title .from-y-axis {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.7s ease;
 }
 
@@ -511,7 +511,7 @@ section.cyclothon .title {
 
 section.cyclothon .title .from-y-axis {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.7s ease;
 }
 
@@ -1018,7 +1018,7 @@ section.events .container .head {
 
 section.events .container .head .from-y-axis {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.7s ease;
 }
 
@@ -1131,6 +1131,17 @@ section#events-happened {
   margin-top: 100px;
 }
 
+section#events-happened .from-y-axis {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+section#events-happened .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 section#events-happened .some-year {
   background-color: white;
   padding-bottom: 25px;
@@ -1173,7 +1184,7 @@ section#events-happened .some-year .year-events-head .puller-btn::before {
 
 section#events-happened .some-year .year-events-body {
   counter-reset: event-number-counter;
-  background-color: rgba(32, 63, 74, 0.96);
+  background-color: rgba(60, 57, 204, 0.96);
   max-height: 1800px;
   overflow-y: auto;
   transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
@@ -1217,7 +1228,7 @@ section#events-happened .some-year .year-events-body .year-event .about-event .e
   max-height: 400px;
   overflow-y: auto;
   color: white;
-  background: linear-gradient(to top, rgba(32, 63, 74, 0.99) 0%, transparent 75%, transparent 25%, rgba(32, 63, 74, 0.5) 100%);
+  background: linear-gradient(to top, rgba(60, 57, 204, 0.99) 0%, transparent 75%, transparent 25%, rgba(60, 57, 204, 0.5) 100%);
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer {
@@ -1239,7 +1250,19 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
   border-radius: 7px;
 }
 
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .from-x-axis {
+  opacity: 0;
+  transform: translateX(150px);
+  transition: opacity 0.5s ease, transform 1.5s ease;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .from-x-axis.appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content {
+  display: block;
   height: 200px;
   min-width: 260px;
   margin: 0 5px;
