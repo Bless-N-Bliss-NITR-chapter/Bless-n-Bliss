@@ -173,49 +173,57 @@
         }
     }
 
-    .navbar-open {
-        width: 100%;
-        border-radius: 0% 1% 1% 0%;
-        overflow-y: scroll;
-        .logo {
-            img {    
-                transform: rotateY(0);
+    &#navbar{
+        .navbar-open {
+            width: 100%;
+            border-radius: 0% 1% 1% 0%;
+            overflow-y: scroll;
+            .logo {
+                img {    
+                    transform: rotateY(0);
+                }
+                .title{
+                    color: $black;
+                    transform: rotateY(0deg);   
+                }
             }
-            .title{
-                transform: rotateY(0deg);   
+            .hamburger {
+                width: 40px;
+                height: 40px;
+                padding: 5px;
+                top: 230px;
+                left: 5vw;
+                background-color: rgb(241, 241, 241);
+                box-shadow: 0 0px 40px rgb(218, 218, 218);
+                box-sizing: content-box;
+                border-radius: 50%;
+                position: fixed;
+                .bar {
+                    top: 50%;
+                    left: calc(50% - 15px);
+                    width: 30px;
+                }
+                .top-bar {
+                    transform: rotate(405deg);
+                }
+                .middle-bar {
+                    transform: rotateY(-90deg);
+                }
+                .bottom-bar {
+                    transform: rotate(135deg);
+                }
             }
-        }
-        .hamburger {
-            width: 40px;
-            height: 40px;
-            padding: 5px;
-            top: 230px;
-            left: 5vw;
-            background-color: rgb(241, 241, 241);
-            box-shadow: 0 0px 40px rgb(218, 218, 218);
-            box-sizing: content-box;
-            border-radius: 50%;
-            position: fixed;
-            .bar {
-                top: 50%;
-                left: calc(50% - 15px);
-                width: 30px;
+            .menu-ul {
+                width: 50vw;
+                opacity: 1;
+                visibility: visible;
+                transform: rotateY(0deg) translateX(-50px);
+                .list-item{
+                    .list-anchor{
+                        color: $black;
+                    }
+                }
             }
-            .top-bar {
-                transform: rotate(405deg);
-            }
-            .middle-bar {
-                transform: rotateY(-90deg);
-            }
-            .bottom-bar {
-                transform: rotate(135deg);
-            }
-        }
-        .menu-ul {
-            width: 50vw;
-            opacity: 1;
-            visibility: visible;
-            transform: rotateY(0deg) translateX(-50px);
         }
     }
 }
