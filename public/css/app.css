@@ -1016,6 +1016,17 @@ section.events .container .head {
   border-radius: 5px 5px 0 0;
 }
 
+section.events .container .head .from-y-axis {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+section.events .container .head .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 section.events .container .head h1 {
   transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
 }
@@ -1052,6 +1063,17 @@ section.events .container .body .events-ul {
   background-color: white;
   padding: 20px 5px;
   border-radius: 0 0 5px 5px;
+}
+
+section.events .container .body .events-ul .from-y-axis {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+section.events .container .body .events-ul .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 section.events .container .body .events-ul .date {
@@ -1201,7 +1223,7 @@ section#events-happened .some-year .year-events-body .year-event .about-event .e
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer {
   margin: 50px auto;
   width: 85%;
-  background-color: rgba(63, 63, 62, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border: 7px solid #f0f0f0;
   border-radius: 15px;
   border-bottom-width: 3px;
@@ -1213,7 +1235,8 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
   display: flex;
   align-items: center;
   overflow-x: auto;
-  box-shadow: inset 20px 0 10px rgba(63, 63, 62, 0.1), inset -20px 0 10px rgba(63, 63, 62, 0.1);
+  box-shadow: inset 20px 0 10px rgba(255, 255, 255, 0.1), inset -20px 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content {
