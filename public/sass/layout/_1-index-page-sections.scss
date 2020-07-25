@@ -67,6 +67,7 @@ section {
         padding-top: 40px;
         @include flex-center();
         flex-direction: column;
+        overflow-x: hidden;
 
         // .section-title {
         //     font-size: 35px;
@@ -83,13 +84,12 @@ section {
                 @include flex-center();
                 border-radius: 45px;
                 position: relative;
-                @include from-y-axis(50px);
+                @include from-y-axis(20px);
                 h2 {
                     color: $white;
                 }
             }
             .body {
-                overflow-x: hidden;
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
@@ -161,7 +161,7 @@ section {
                 @include flex-center();
                 border-radius: 45px;
                 position: relative;
-                @include from-y-axis(40px);
+                @include from-y-axis(20px);
                 h2 {
                     color: $white;
                 }
@@ -184,7 +184,7 @@ section {
             @include flex-center();
             border-radius: 45px;
             position: relative;
-            @include from-y-axis(40px);
+            @include from-y-axis(20px);
             h2 {
                 color: $white;
             }
