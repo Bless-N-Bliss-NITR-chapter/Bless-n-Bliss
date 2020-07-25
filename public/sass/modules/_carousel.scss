@@ -1,11 +1,9 @@
 .carousel {
     //do not change any contents/property of this class. make a separate class to overwrite the properties of this class.
-    
     --carousel-height: auto;
     //--carousel-max-height: 100vh;
     --carousel-min-height: 100vh;
     --carousel-width: 100%;
-
     overflow: hidden;
     min-height: var(--carousel-min-height);
     background-color: $grey;
@@ -50,11 +48,7 @@
             bottom: 20px;
             z-index: 12;
             .indicator {
-                @include circular-button(
-                    rgba($color: #000000, $alpha: 0.3),
-                    5px,
-                    20px
-                );
+                @include circular-button(rgba($color: #000000, $alpha: 0.3), 5px, 20px);
                 border: solid 2px $pink;
             }
             .active-dot {
@@ -70,11 +64,7 @@
             text-align: center;
             .pause-button,
             .play-button {
-                @include circular-button(
-                    rgba($color: #000000, $alpha: 0.3),
-                    0px,
-                    40px
-                );
+                @include circular-button(rgba($color: #000000, $alpha: 0.3), 0px, 40px);
                 border-style: none;
                 font-size: 40px;
                 position: relative;
@@ -97,8 +87,9 @@
         }
     }
 }
+
 .photo-carousel {
-     //make changes to carousel class properties here in this separate class to suit your carousel needs
+    //make changes to carousel class properties here in this separate class to suit your carousel needs
     --carousel-height: auto;
     --carousel-min-height: 100vh;
     --carousel-width: 100%;
@@ -122,6 +113,7 @@
         }
     }
 }
+
 .photo-carousel2 {
     //make changes to carousel class properties here in this separate class to suit your carousel needs
     --carousel-height: auto;
@@ -150,17 +142,12 @@
             align-items: center;
             padding: 5px 0;
             border-radius: 0 25px 0 0;
-
             .tracks-navbar {
                 margin-left: 30px;
                 position: static;
                 z-index: 12;
                 .indicator {
-                    @include circular-button(
-                        rgba($color: #000000, $alpha: 0.3),
-                        5px,
-                        20px
-                    );
+                    @include circular-button(rgba($color: #000000, $alpha: 0.3), 5px, 20px);
                     border: solid 2px $pink;
                 }
                 .active-dot {
@@ -174,11 +161,7 @@
                 position: static;
                 .pause-button,
                 .play-button {
-                    @include circular-button(
-                        rgba($color: #000000, $alpha: 0.3),
-                        0px,
-                        40px
-                    );
+                    @include circular-button(rgba($color: #000000, $alpha: 0.3), 0px, 40px);
                     border-style: none;
                     font-size: 40px;
                     position: relative;
@@ -209,7 +192,6 @@
     --carousel-height: auto;
     --carousel-min-height: 100vh;
     --carousel-width: 100%;
-
     margin: 0 auto;
     border-radius: 25px;
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
@@ -225,11 +207,7 @@
                         position: absolute;
                         top: 0;
                         left: 0;
-                        background: linear-gradient(
-                            to right,
-                            rgba(0, 0, 0, 0.95) 0%,
-                            #ffffff00 100%
-                        );
+                        background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, #ffffff00 100%);
                     }
                     .about {
                         min-height: 120px;
@@ -276,25 +254,23 @@
     }
 }
 
-.about-carousel{
+.about-carousel {
     //make changes to carousel class properties here in this separate class to suit your carousel needs
     margin: 0 auto;
-    --carousel-min-height: 170px;
+    --carousel-min-height: 280px;
     --carousel-width: 27vw;
-
-    @media(max-width:992.5px){
-        margin-top:40px;
+    @media(max-width: 992.5px) {
+        margin-top: 40px;
         --carousel-min-height: 50vw;
         --carousel-width: 80vw;
     }
     .carousel-container {
-        .tracks-container{
-        }
-        .tracks-navbar{
+        .tracks-container {}
+        .tracks-navbar {
             left: 1vw;
             bottom: 10px;
         }
-        .pause-button-container{
+        .pause-button-container {
             right: 1vw;
             bottom: 0px;
         }
