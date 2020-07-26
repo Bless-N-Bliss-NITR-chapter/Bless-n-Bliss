@@ -3,7 +3,6 @@
     position: absolute;
     bottom: -30px;
     right: 50%;
-    transform: translateX(50%);
     cursor: pointer;
     @include circular-button($orange, 0, 40px);
 
@@ -22,7 +21,7 @@
     }
     &:checked {
         transition: all 0.2s cubic-bezier(0.9, 0, 0.33, 1);
-        transform: rotateZ(180deg) translate(-50%, 25px);
+        transform: rotateZ(180deg) translate(-50%, 25px) !important;
     }
     &:not(checked) {
         transition: all 0.2s cubic-bezier(0.9, 0, 0.33, 1);
@@ -92,7 +91,11 @@ section {
                         min-height: 30px;
                     }
                 }
-                //puller-btn is made global. see end
+                //puller-btn is made global. see top
+                @include wiggleY(50%,3px,5s); //animation for .puller-btn
+                .wiggle-y.appear{
+                    animation: wiggleY 4s ease-in-out infinite;
+                }
             }
         }
     }
