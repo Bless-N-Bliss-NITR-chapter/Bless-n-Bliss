@@ -1448,7 +1448,6 @@ section#blogs .blog-container .blog-wrapper .blogs .sliding-carousel .slides-con
 
 section#blogs .blog-container .blog-wrapper .blogs .about-blog {
   position: absolute;
-  z-index: 12;
   background-color: #ffffff;
   left: 0;
   right: 0;
@@ -2170,31 +2169,33 @@ section#blogs .blog-container .blog-wrapper .blog-content article {
   position: relative;
 }
 
-.sliding-carousel .slides-container {
+.sliding-carousel .carousel-wrapper {
+  overflow: hidden;
   height: 100%;
 }
 
-.sliding-carousel .slides-container .slide {
+.sliding-carousel .carousel-wrapper .slides-container {
+  position: relative;
+  height: 100%;
+  transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+.sliding-carousel .carousel-wrapper .slides-container .slide {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
-.sliding-carousel .slides-container .slide img {
+.sliding-carousel .carousel-wrapper .slides-container .slide img {
   object-fit: cover;
   object-position: 50% 30%;
   height: 100%;
   width: 100%;
 }
 
-.sliding-carousel .slides-container .slide.active-slide {
-  z-index: 10;
-}
-
 .sliding-carousel .slide-button {
   bottom: 48%;
   position: absolute;
-  z-index: 11;
   box-shadow: 0 0 10px #bac964;
   height: 2rem;
   width: 1.5rem;

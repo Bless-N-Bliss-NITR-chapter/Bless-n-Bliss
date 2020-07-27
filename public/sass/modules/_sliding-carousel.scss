@@ -4,27 +4,31 @@
     width: var(--sliding-carousel-width);
     height: var(--sliding-carousel-height);
     position: relative;
-    .slides-container {
+    .carousel-wrapper{
+        overflow: hidden;
         height: 100%;
-        .slide {
-            position: absolute;
+        .slides-container {
+            position: relative;
             height: 100%;
-            width: 100%;
-            img {
-                object-fit: cover;
-                object-position: 50% 30%;
+            transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+            .slide {
+                position: absolute;
                 height: 100%;
                 width: 100%;
-            }
-            &.active-slide{
-                z-index:10
+                img {
+                    object-fit: cover;
+                    object-position: 50% 30%;
+                    height: 100%;
+                    width: 100%;
+                }
+                // &.active-slide{
+                // }
             }
         }
     }
     .slide-button {
         bottom: 48%;
         position: absolute;
-        z-index: 11;
         box-shadow: 0 0 10px $green;
 
         height: 2rem;
