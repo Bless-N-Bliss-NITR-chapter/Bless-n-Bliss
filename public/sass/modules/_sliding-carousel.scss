@@ -8,6 +8,7 @@
         overflow: hidden;
         height: 100%;
         .slides-container {
+            color:$green;
             position: relative;
             height: 100%;
             transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
@@ -65,4 +66,10 @@
             content: "\f054";
         }
     }
+}
+
+//your custom carousel settings here>>>
+.sliding-photo-carousel1{
+    --sliding-carousel-width: 100%;
+    --sliding-carousel-height: 450px;
 }

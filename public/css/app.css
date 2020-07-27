@@ -2175,6 +2175,7 @@ section#blogs .blog-container .blog-wrapper .blog-content article {
 }
 
 .sliding-carousel .carousel-wrapper .slides-container {
+  color: #bac964;
   position: relative;
   height: 100%;
   transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
@@ -2234,5 +2235,10 @@ section#blogs .blog-container .blog-wrapper .blog-content article {
 
 .sliding-carousel .rt-button::before {
   content: "\f054";
+}
+
+.sliding-photo-carousel1 {
+  --sliding-carousel-width: 100%;
+  --sliding-carousel-height: 450px;
 }
 /*# sourceMappingURL=app.css.map */

@@ -43,6 +43,6 @@ slidingCarousels.forEach(slidingCarousel => {
         const nextSlide = slidesContainer.querySelector('.active-slide');
 
         //move the slidesContainer equal to "left" property value of nextSlide
-        slidesContainer.style.transform = `translateX(${nextSlide.style.left})`
+        slidesContainer.style.transform = `translateX(-${nextSlide.style.left})`
     });
 });
