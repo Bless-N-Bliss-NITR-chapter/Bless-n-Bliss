@@ -1,11 +1,15 @@
 const fromYAxis = document.querySelectorAll('.from-y-axis');
 const fromXAxis = document.querySelectorAll('.from-x-axis');
 const scaleUps = document.querySelectorAll('.scale-up');
+const xWigglers = document.querySelectorAll('.wiggle-x');
+const yWigglers = document.querySelectorAll('.wiggle-y');
 
 let animationObjects  = [];
 animationObjects.push.apply(animationObjects, fromYAxis);//refer https://stackoverflow.com/questions/14665295/merging-two-object-nodelist-arrays-in-javascript to learn this method functionality
 animationObjects.push.apply(animationObjects, fromXAxis);
 animationObjects.push.apply(animationObjects, scaleUps);
+animationObjects.push.apply(animationObjects, xWigglers);
+animationObjects.push.apply(animationObjects, yWigglers);
 console.log(animationObjects);
 
 let observerOptions = {// refer https://youtu.be/huVJW23JHKQ for basics on intObs

@@ -70,6 +70,40 @@
         100%{transform: scale($push-up-final);}
     }
 }
+@mixin wiggleY($translateX:0%, $translateY:5px, $delay:0.5s){
+    .wiggle-y{        
+        display: inline-block;
+        animation: none;
+    }
+    .wiggle-y.appear{
+        animation: wiggleY 0.7s ease-in-out forwards;
+        animation-delay: $delay;
+    }
+    @keyframes wiggleY{
+        0%{transform: translate($translateX, 0);}
+        //10%{transform: translate($translateX, -$translateY);}
+        10%{transform: translate($translateX, 2 * $translateY);}
+        20%{transform: translate($translateX, -$translateY)}
+        100%{transform: translate($translateX, -$translateY);}
+    }
+}
+@mixin wiggleX($translateX:10px, $translateY:0%, $delay:0.5s){
+    .wiggle-x{        
+        display: inline-block;
+        animation: none;
+    }
+    .wiggle-x.appear{
+        animation: wiggleX 0.7s ease-in-out forwards;
+        animation-delay: $delay;
+    }
+    @keyframes wiggleX{
+        0%{transform: translate(0, $translateY);}
+        //10%{transform: translate($translateX, $translateY);}
+        10%{transform: translate(-2 * $translateX, $translateY);}
+        20%{transform: translate($translateX, $translateY) }
+        100%{transform: translate($translateX, $translateY);}
+    }
+}
 
 @mixin statement-quotes($top, $left){
     .statement::before{
