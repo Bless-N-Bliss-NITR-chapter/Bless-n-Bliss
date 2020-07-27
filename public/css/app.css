@@ -1309,12 +1309,19 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video {
+  background-color: rgba(170, 170, 170, 0.7);
   transition: all 0.5s ease;
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video blockquote {
   padding: 15px;
   font-size: 12px;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video blockquote h3 {
+  margin: 0;
+  padding: 0;
+  display: inline;
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 3).from-x-axis {

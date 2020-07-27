@@ -254,10 +254,16 @@ section {
                                     height: 100%;
                                 }
                                 .fb-video {
+                                    background-color: rgba($color: $light-grey, $alpha: 0.7);
                                     transition: all 0.5s ease;
                                     blockquote {
                                         padding: 15px;
                                         font-size: 12px;
+                                        h3{
+                                            margin:0;
+                                            padding:0;
+                                            display:inline
+                                        }
                                     }
                                 }
                             }
