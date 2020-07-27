@@ -1133,7 +1133,7 @@ section.close .container .head {
   border-radius: 0 0 5px 5px;
   padding: 0px;
   width: 90vw;
-  max-width: unset;
+  max-width: 90vw;
 }
 
 section.close .container .head h1 {
@@ -1280,8 +1280,8 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .from-x-axis {
   opacity: 0;
-  transform: translateX(150px);
-  transition: opacity 0.5s ease, transform 1.5s ease;
+  transform: translateX(50px);
+  transition: opacity 0.2s ease, transform 1.5s ease;
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .from-x-axis.appear {
@@ -1295,6 +1295,50 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
   min-width: 260px;
   margin: 0 5px;
   background-color: #3f3f3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content img {
+  cursor: pointer;
+  object-fit: cover;
+  object-position: 50% 30%;
+  width: 100%;
+  height: 100%;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video {
+  background-color: rgba(170, 170, 170, 0.7);
+  transition: all 0.5s ease;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video blockquote {
+  padding: 15px;
+  font-size: 12px;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video blockquote h3 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 3).from-x-axis {
+  transform: translateX(10px);
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 3).from-x-axis.appear {
+  transform: translateX(0px);
+}
+
+@media (max-width: 360px) {
+  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 2).from-x-axis {
+    transform: translateX(10px);
+  }
+  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 2).from-x-axis.appear {
+    transform: translateX(0px);
+  }
 }
 
 section#events-happened .some-year .close {
@@ -1446,6 +1490,13 @@ section#blogs .blog-container .blog-wrapper .blogs .sliding-carousel .slides-con
   height: 450px;
 }
 
+section#blogs .blog-container .blog-wrapper .blogs img {
+  object-fit: cover;
+  object-position: 50% 30%;
+  height: 450px;
+  width: 100%;
+}
+
 section#blogs .blog-container .blog-wrapper .blogs .about-blog {
   position: absolute;
   background-color: #ffffff;
@@ -1476,10 +1527,64 @@ section#blogs .blog-container .blog-wrapper .blogs .about-blog .Date-of-publish 
   color: #FF006C;
 }
 
-section#blogs .blog-container .blog-wrapper .blog-content article {
+section#blogs .blog-container .blog-wrapper .blog-content {
+  position: relative;
+}
+
+section#blogs .blog-container .blog-wrapper .blog-content .article {
   text-align: justify;
   font-size: 15px;
   margin-top: 8rem;
+  max-height: 170px;
+  transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+  overflow-y: hidden;
+}
+
+section#blogs .blog-container .blog-wrapper .blog-content .article span {
+  font-size: 45px;
+  padding-right: 10px;
+  float: left;
+  line-height: 1.06;
+  font-weight: 600;
+}
+
+section#blogs .blog-container .blog-wrapper .blog-content .continue-reading {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 75%);
+}
+
+section#blogs .blog-container .blog-wrapper .blog-content .continue-reading .puller-btn {
+  background-color: rgba(249, 179, 28, 0.8);
+  margin: 0px 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 30px #f9b31c;
+  bottom: 10px;
+}
+
+section#blogs .blog-container .blog-wrapper .blog-content .continue-reading .puller-btn:checked {
+  transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+  transform: rotateZ(180deg) translate(-50%, 10px) !important;
+}
+
+section#blogs .blog-container .blog-wrapper .blog-content .continue-reading .puller-btn:not(checked) {
+  transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+  transform: translate(50%, 10px) !important;
+}
+
+section#blogs .blog-container .blog-wrapper .close .article {
+  max-height: 2000px;
+}
+
+section#blogs .blog-container .blog-wrapper .close .continue-reading {
+  bottom: -58px;
 }
 
 .board-trustee .from-y-axis, .coordinators .from-y-axis {
@@ -2243,5 +2348,60 @@ section#blogs .blog-container .blog-wrapper .blog-content article {
 .sliding-photo-carousel1 {
   --sliding-carousel-width: 100%;
   --sliding-carousel-height: 450px;
+}
+
+@media (min-width: 400px) {
+  .modal-background {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-background .modal {
+    z-index: 102;
+    height: 80vh;
+    width: 80vw;
+    position: relative;
+    background-color: rgba(170, 170, 170, 0.7);
+  }
+  .modal-background .modal img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: 50% 30%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 550px) {
+  .modal-background .modal img {
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 400px) {
+  .modal-background .modal .fa-window-close-button {
+    z-index: 111;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 28px;
+    height: 28px;
+    border-style: none;
+    color: rgba(244, 244, 255, 0.75);
+    background-color: transparent;
+    border-radius: 50%;
+  }
+  .hide {
+    display: none;
+  }
 }
 /*# sourceMappingURL=app.css.map */
