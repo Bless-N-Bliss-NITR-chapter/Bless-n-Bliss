@@ -109,7 +109,7 @@ section {
                 border-radius: 0 0 5px 5px;
                 padding: 0px;
                 width: 90vw;
-                max-width: unset;
+                max-width: 90vw;
                 h1 {
                     transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
                     margin: 0px;
@@ -235,13 +235,27 @@ section {
                             box-shadow: inset 20px 0 10px rgba($color: $white, $alpha: 0.1),
                                 inset -20px 0 10px rgba($color: $white, $alpha: 0.1);
                             border-radius: 7px;
-                            @include from-x-axis(150px, 0.5s, 1.5s);
+                            @include from-x-axis(50px, 0.2s, 1.5s);
                             .content {
                                 display: block;
                                 height: 200px;
                                 min-width: 260px;
                                 margin: 0 5px;
                                 background-color: $grey;
+                            }
+                            .content:nth-of-type(n+3).from-x-axis{
+                                transform: translateX(10px);
+                                &.appear{
+                                    transform: translateX(0px);
+                                }
+                            }
+                            @media ( max-width: 360px ){
+                                .content:nth-of-type(n+2).from-x-axis{
+                                    transform: translateX(10px);
+                                    &.appear{
+                                        transform: translateX(0px);
+                                    }
+                                }
                             }
                         }
                     }
