@@ -5,3 +5,4 @@ pullerButtons.forEach((pullerButton, index) => {
         document.querySelector(`.drop-list-${index}`).classList.toggle('close');
     })
 });
+

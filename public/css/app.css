@@ -1295,21 +1295,41 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
   min-width: 260px;
   margin: 0 5px;
   background-color: #3f3f3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n+3).from-x-axis {
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content img {
+  cursor: pointer;
+  object-fit: cover;
+  object-position: 50% 30%;
+  width: 100%;
+  height: 100%;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video {
+  transition: all 0.5s ease;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video blockquote {
+  padding: 15px;
+  font-size: 12px;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 3).from-x-axis {
   transform: translateX(10px);
 }
 
-section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n+3).from-x-axis.appear {
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 3).from-x-axis.appear {
   transform: translateX(0px);
 }
 
 @media (max-width: 360px) {
-  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n+2).from-x-axis {
+  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 2).from-x-axis {
     transform: translateX(10px);
   }
-  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n+2).from-x-axis.appear {
+  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 2).from-x-axis.appear {
     transform: translateX(0px);
   }
 }
@@ -2321,5 +2341,60 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 .sliding-photo-carousel1 {
   --sliding-carousel-width: 100%;
   --sliding-carousel-height: 450px;
+}
+
+@media (min-width: 400px) {
+  .modal-background {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-background .modal {
+    z-index: 102;
+    height: 80vh;
+    width: 80vw;
+    position: relative;
+    background-color: rgba(170, 170, 170, 0.7);
+  }
+  .modal-background .modal img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: 50% 30%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 550px) {
+  .modal-background .modal img {
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 400px) {
+  .modal-background .modal .fa-window-close-button {
+    z-index: 111;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 28px;
+    height: 28px;
+    border-style: none;
+    color: rgba(244, 244, 255, 0.75);
+    background-color: transparent;
+    border-radius: 50%;
+  }
+  .hide {
+    display: none;
+  }
 }
 /*# sourceMappingURL=app.css.map */

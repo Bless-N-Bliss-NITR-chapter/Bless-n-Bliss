@@ -17,8 +17,8 @@
             href="public/img/favicon.png"
             type="image/x-icon"
         />
-        <link rel="stylesheet" href="public/css/app.min.css" /><!--css stylesheet: committed by @ashuvssut* -->
-        
+        <link rel="stylesheet" href="public/css/app.min.css" />
+        <!--css stylesheet: committed by @ashuvssut* -->
 
         <!--Fonts -->
         <link
@@ -32,6 +32,11 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
         />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+            integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+            crossorigin="anonymous"
+        ></script>
 
         <!--js scripts-->
         <script defer src="public/js/navbar.js"></script>
@@ -39,9 +44,21 @@
         <script defer src="public/js/intersectionObservers.js"></script>
         <script defer src="public/js/onscroll.js"></script>
         <script defer src="public/js/button-click.js"></script>
-        <!-- <script defer src="public/js/carousel.js"></script> -->
+        <script defer src="public/js/carousel.js"></script>
+        <script defer src="public/js/modal.js"></script>
     </head>
-    <body style="background-color:#f4f4ff; position: relative; z-index: -100;">
+    <body style="background-color: #f4f4ff; position: relative; z-index: -100;">
+        <!-- FB JS SDK -->
+        <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"
+            nonce="RyncBX6Y"
+        ></script>
+        <!-- FB JS SDK end-->
+
         <section id="navbar" class="navbar-initial /*navbar-after*/">
             <!--* navbar-initial is to give a transparent background to navbar.
                 * navbar-after gives it a light-pink background-->
@@ -74,7 +91,7 @@
                         <a class="list-anchor active-anchor" href="#">Events</a>
                     </li>
                     <li class="list-item">
-                        <a class="list-anchor " href="blog-page.html">Blogs</a>
+                        <a class="list-anchor" href="blog-page.html">Blogs</a>
                     </li>
                     <li class="list-item dropdown-toggler">
                         <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
@@ -94,31 +111,54 @@
                         </ul>
                     </li>
                     <li class="list-item">
-                        <a class="list-anchor " href="about.html">About Us</a>
+                        <a class="list-anchor" href="about.html">About Us</a>
                     </li>
                     <li class="list-item">
-                        <a id="donateMini" class="list-anchor" href="https://www.payumoney.com/paybypayumoney/#/132939" target="_blank" _ngcontent-c0="">Donate Us</a>
+                        <a
+                            id="donateMini"
+                            class="list-anchor"
+                            href="https://www.payumoney.com/paybypayumoney/#/132939"
+                            target="_blank"
+                            _ngcontent-c0=""
+                            >Donate Us</a
+                        >
                     </li>
                 </ul>
             </nav>
         </section>
-        
+
         <section id="carousel" class="carousel photo-carousel">
             <div class="carousel-container from-y-axis">
                 <div class="tracks-container">
                     <ul class="tracks-ul">
-                        <li class="carousel-slide active-slide" >                 
-                            <img class="bg-img" src="public/img/banner-1.png" alt="bg-img">                                    
+                        <li class="carousel-slide active-slide">
+                            <img
+                                class="bg-img"
+                                src="public/img/banner-1.png"
+                                alt="bg-img"
+                            />
                         </li>
-                        <li class="carousel-slide" >
-                            <img class="bg-img" src="public/img/banner-2.png" alt="bg-img">                           
+                        <li class="carousel-slide">
+                            <img
+                                class="bg-img"
+                                src="public/img/banner-2.png"
+                                alt="bg-img"
+                            />
                         </li>
-                        <li class="carousel-slide" >
-                            <img class="bg-img" src="public/img/banner-3.png" alt="bg-img">
+                        <li class="carousel-slide">
+                            <img
+                                class="bg-img"
+                                src="public/img/banner-3.png"
+                                alt="bg-img"
+                            />
                         </li>
-                        <li class="carousel-slide" >
-                            <img class="bg-img" src="public/img/old-banner-4.png" alt="bg-img">
-                        </li>                        
+                        <li class="carousel-slide">
+                            <img
+                                class="bg-img"
+                                src="public/img/old-banner-4.png"
+                                alt="bg-img"
+                            />
+                        </li>
                     </ul>
                 </div>
                 <div class="tracks-navbar">
@@ -130,12 +170,12 @@
                 <div class="pause-button-container">
                     <button class="pause-n-play-btn pause-button"></button>
                 </div>
-            </div>            
+            </div>
         </section>
-        
+
         <section id="upcoming-event" class="events drop-list-0 close">
             <div class="container">
-                <div class="head ">
+                <div class="head">
                     <h1 class="from-y-axis">Upcoming Events</h1>
                 </div>
                 <div class="body">
@@ -143,7 +183,7 @@
                         <div class="event from-y-axis">
                             <h3 class="date">1 JULY</h3>
                             <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div>        
+                        </div>
                         <div class="event from-y-axis">
                             <h3 class="date">2 JULY</h3>
                             <div class="event">Lorem ipsum dolor sit amet.</div>
@@ -169,7 +209,11 @@
                             <div class="event">Lorem ipsum dolor sit amet.</div>
                         </div>
                     </div>
-                    <input class="puller-btn wiggle-y" type="checkbox" autocomplete="off"></input>
+                    <input
+                        class="puller-btn wiggle-y"
+                        type="checkbox"
+                        autocomplete="off"
+                    />
                 </div>
             </div>
         </section>
@@ -178,26 +222,90 @@
             <div class="some-year from-y-axis">
                 <div class="year-events-head">
                     <h1 class="event-year">2020</h1>
-                    <input class="puller-btn" type="checkbox" autocomplete="off"></input>
+                    <input
+                        class="puller-btn"
+                        type="checkbox"
+                        autocomplete="off"
+                    />
                 </div>
                 <div class="year-events-body drop-list-1">
                     <div class="year-event">
                         <div class="about-event">
                             <h1 class="event-name">CYCLOTHON 3.0</h1>
                             <div class="event-description">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia culpa dolorum, iure excepturi, ab quidem atque voluptatum sint repudiandae cumque consequatur magni quia laudantium enim! Maxime culpa, consequuntur atque cumque corporis similique magnam repudiandae, ullam distinctio, accusamus aspernatur exercitationem odit. Maiores nihil reprehenderit quod provident porro quasi temporibus, corporis unde.</p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Mollitia culpa dolorum,
+                                    iure excepturi, ab quidem atque voluptatum
+                                    sint repudiandae cumque consequatur magni
+                                    quia laudantium enim! Maxime culpa,
+                                    consequuntur atque cumque corporis similique
+                                    magnam repudiandae, ullam distinctio,
+                                    accusamus aspernatur exercitationem odit.
+                                    Maiores nihil reprehenderit quod provident
+                                    porro quasi temporibus, corporis unde.
+                                </p>
                             </div>
                         </div>
                         <div class="scrollable-viewer">
                             <div class="lenghty-box">
                                 <div class="content from-x-axis">
-                                    item1
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/smile"
+                                        alt=""
+                                    />
                                 </div>
-                                <div class="content from-x-axis" style="transition-delay: 0.3s;">
-                                    item2
+                                <div
+                                    class="content from-x-axis"
+                                    style="transition-delay: 0.3s;"
+                                >
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/gaze"
+                                        alt=""
+                                    />
                                 </div>
-                                <div class="content from-x-axis" style="transition-delay: 0.6s;">
-                                    item3
+                                <div
+                                    class="content from-x-axis"
+                                    style="
+                                        transition-delay: 0.6s;
+                                        background-color: transparent;
+                                    "
+                                >
+                                    <div
+                                        class="fb-video"
+                                        data-width="260"
+                                        data-href="https://m.facebook.com/BnB.ngo/videos/481725212398771/"
+                                        data-allowfullscreen="true"
+                                        data-show-text="false"
+                                    >
+                                        <blockquote
+                                            cite="https://developers.facebook.com/BnB.ngo/videos/481725212398771/"
+                                            class="fb-xfbml-parse-ignore"
+                                        >
+                                            <a
+                                                href="https://developers.facebook.com/BnB.ngo/videos/481725212398771/"
+                                                >ETV Bharat Odisha broadcasting
+                                                about Bless &#039;n&#039; Bliss
+                                                Swabhimaan project</a
+                                            >
+                                            <p>
+                                                Our deepest gratitude to ETV
+                                                Bharat Odisha for showing about
+                                                our #BnB #Swabhimaan project,
+                                                #skill #training for
+                                                #transgender and helping us to
+                                                get more love and support.
+                                            </p>
+                                            Posted by
+                                            <a
+                                                href="https://www.facebook.com/BnB.ngo/"
+                                                >Bless &#039;n&#039; Bliss</a
+                                            >
+                                            on Thursday, 18 July 2019
+                                        </blockquote>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -206,19 +314,48 @@
                         <div class="about-event">
                             <h1 class="event-name">CYCLOTHON 3.0</h1>
                             <div class="event-description">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia culpa dolorum, iure excepturi, ab quidem atque voluptatum sint repudiandae cumque consequatur magni quia laudantium enim! Maxime culpa, consequuntur atque cumque corporis similique magnam repudiandae, ullam distinctio, accusamus aspernatur exercitationem odit. Maiores nihil reprehenderit quod provident porro quasi temporibus, corporis unde.</p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Mollitia culpa dolorum,
+                                    iure excepturi, ab quidem atque voluptatum
+                                    sint repudiandae cumque consequatur magni
+                                    quia laudantium enim! Maxime culpa,
+                                    consequuntur atque cumque corporis similique
+                                    magnam repudiandae, ullam distinctio,
+                                    accusamus aspernatur exercitationem odit.
+                                    Maiores nihil reprehenderit quod provident
+                                    porro quasi temporibus, corporis unde.
+                                </p>
                             </div>
                         </div>
                         <div class="scrollable-viewer">
                             <div class="lenghty-box">
                                 <div class="content from-x-axis">
-                                    item1
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/spiderman"
+                                        alt=""
+                                    />
                                 </div>
-                                <div class="content from-x-axis" style="transition-delay: 0.3s;">
-                                    item2
+                                <div
+                                    class="content from-x-axis"
+                                    style="transition-delay: 0.3s;"
+                                >
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/mark"
+                                        alt=""
+                                    />
                                 </div>
-                                <div class="content from-x-axis" style="transition-delay: 0.6s;">
-                                    item3
+                                <div
+                                    class="content from-x-axis"
+                                    style="transition-delay: 0.6s;"
+                                >
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/avenger"
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -228,26 +365,54 @@
             <div class="some-year from-y-axis">
                 <div class="year-events-head">
                     <h1 class="event-year">2019</h1>
-                    <input class="puller-btn " type="checkbox" checked autocomplete="off"></input>
+                    <input
+                        class="puller-btn"
+                        type="checkbox"
+                        checked
+                        autocomplete="off"
+                    />
                 </div>
                 <div class="year-events-body drop-list-2 close">
                     <div class="year-event">
                         <div class="about-event">
                             <h1 class="event-name">CYCLOTHON 3.0</h1>
                             <div class="event-description">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia culpa dolorum, iure excepturi, ab quidem atque voluptatum sint repudiandae cumque consequatur magni quia laudantium enim! Maxime culpa, consequuntur atque cumque corporis similique magnam repudiandae, ullam distinctio, accusamus aspernatur exercitationem odit. Maiores nihil reprehenderit quod provident porro quasi temporibus, corporis unde.</p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Mollitia culpa dolorum,
+                                    iure excepturi, ab quidem atque voluptatum
+                                    sint repudiandae cumque consequatur magni
+                                    quia laudantium enim! Maxime culpa,
+                                    consequuntur atque cumque corporis similique
+                                    magnam repudiandae, ullam distinctio,
+                                    accusamus aspernatur exercitationem odit.
+                                    Maiores nihil reprehenderit quod provident
+                                    porro quasi temporibus, corporis unde.
+                                </p>
                             </div>
                         </div>
                         <div class="scrollable-viewer">
                             <div class="lenghty-box">
                                 <div class="content">
-                                    item1
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/natasha"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="content">
-                                    item2
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/romanoff"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="content">
-                                    item3
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/bicycle"
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -256,19 +421,42 @@
                         <div class="about-event">
                             <h1 class="event-name">CYCLOTHON 3.0</h1>
                             <div class="event-description">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia culpa dolorum, iure excepturi, ab quidem atque voluptatum sint repudiandae cumque consequatur magni quia laudantium enim! Maxime culpa, consequuntur atque cumque corporis similique magnam repudiandae, ullam distinctio, accusamus aspernatur exercitationem odit. Maiores nihil reprehenderit quod provident porro quasi temporibus, corporis unde.</p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Mollitia culpa dolorum,
+                                    iure excepturi, ab quidem atque voluptatum
+                                    sint repudiandae cumque consequatur magni
+                                    quia laudantium enim! Maxime culpa,
+                                    consequuntur atque cumque corporis similique
+                                    magnam repudiandae, ullam distinctio,
+                                    accusamus aspernatur exercitationem odit.
+                                    Maiores nihil reprehenderit quod provident
+                                    porro quasi temporibus, corporis unde.
+                                </p>
                             </div>
                         </div>
                         <div class="scrollable-viewer">
                             <div class="lenghty-box">
                                 <div class="content">
-                                    item1
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/bike"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="content">
-                                    item2
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/runway"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="content">
-                                    item3
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/jogging"
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -278,26 +466,54 @@
             <div class="some-year from-y-axis">
                 <div class="year-events-head">
                     <h1 class="event-year">2018</h1>
-                    <input class="puller-btn " type="checkbox" checked autocomplete="off"></input>
+                    <input
+                        class="puller-btn"
+                        type="checkbox"
+                        checked
+                        autocomplete="off"
+                    />
                 </div>
                 <div class="year-events-body drop-list-3 close">
                     <div class="year-event">
                         <div class="about-event">
                             <h1 class="event-name">CYCLOTHON 3.0</h1>
                             <div class="event-description">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia culpa dolorum, iure excepturi, ab quidem atque voluptatum sint repudiandae cumque consequatur magni quia laudantium enim! Maxime culpa, consequuntur atque cumque corporis similique magnam repudiandae, ullam distinctio, accusamus aspernatur exercitationem odit. Maiores nihil reprehenderit quod provident porro quasi temporibus, corporis unde.</p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Mollitia culpa dolorum,
+                                    iure excepturi, ab quidem atque voluptatum
+                                    sint repudiandae cumque consequatur magni
+                                    quia laudantium enim! Maxime culpa,
+                                    consequuntur atque cumque corporis similique
+                                    magnam repudiandae, ullam distinctio,
+                                    accusamus aspernatur exercitationem odit.
+                                    Maiores nihil reprehenderit quod provident
+                                    porro quasi temporibus, corporis unde.
+                                </p>
                             </div>
                         </div>
                         <div class="scrollable-viewer">
                             <div class="lenghty-box">
                                 <div class="content">
-                                    item1
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/creation"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="content">
-                                    item2
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/invention"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="content">
-                                    item3
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/avenger"
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -306,19 +522,42 @@
                         <div class="about-event">
                             <h1 class="event-name">CYCLOTHON 3.0</h1>
                             <div class="event-description">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia culpa dolorum, iure excepturi, ab quidem atque voluptatum sint repudiandae cumque consequatur magni quia laudantium enim! Maxime culpa, consequuntur atque cumque corporis similique magnam repudiandae, ullam distinctio, accusamus aspernatur exercitationem odit. Maiores nihil reprehenderit quod provident porro quasi temporibus, corporis unde.</p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Mollitia culpa dolorum,
+                                    iure excepturi, ab quidem atque voluptatum
+                                    sint repudiandae cumque consequatur magni
+                                    quia laudantium enim! Maxime culpa,
+                                    consequuntur atque cumque corporis similique
+                                    magnam repudiandae, ullam distinctio,
+                                    accusamus aspernatur exercitationem odit.
+                                    Maiores nihil reprehenderit quod provident
+                                    porro quasi temporibus, corporis unde.
+                                </p>
                             </div>
                         </div>
                         <div class="scrollable-viewer">
                             <div class="lenghty-box">
                                 <div class="content">
-                                    item1
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/truck"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="content">
-                                    item2
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/iron"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="content">
-                                    item3
+                                    <img
+                                        class="modal-opener"
+                                        src="https://source.unsplash.com/featured/stark"
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -339,7 +578,10 @@
                     </div>
                     <div class="little-about-us">
                         <p>
-                            We staunchly endeavour to eradicate ignorance and strive hard to attain gender equality by promoting symbiotic relationships and duly standing by our motto of "We Care, We Serve".
+                            We staunchly endeavour to eradicate ignorance and
+                            strive hard to attain gender equality by promoting
+                            symbiotic relationships and duly standing by our
+                            motto of "We Care, We Serve".
                         </p>
                     </div>
                     <div class="social-media-list">
@@ -397,7 +639,7 @@
                             <li>Bangalore</li>
                         </ul>
                     </div>
-                    blog<div class="blogs">
+                    <div class="blogs">
                         <h3>Latest Blogs</h3>
                         <ul class="blog-list">
                             <li><a href="#">Lorem, ipsum dolor.</a></li>
@@ -415,28 +657,51 @@
                                 <p>Near Amrit Hospital, Ranchi,</p>
                                 <p>Jharkhand, 834002</p>
                             </div>
-                            <p class="phone"> <strong>Ph:</strong> +91 80181 32259</p>
-                            <p class="email"> <strong>Email:</strong> akram@blessnbliss.org</p>
+                            <p class="phone">
+                                <strong>Ph:</strong> +91 80181 32259
+                            </p>
+                            <p class="email">
+                                <strong>Email:</strong> akram@blessnbliss.org
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p class="copyright">
-                    © 2020 <a href="/"><strong>Bless 'n' Bliss</strong></a>. All rights reserved.
+                    © 2020 <a href="/"><strong>Bless 'n' Bliss</strong></a
+                    >. All rights reserved.
                 </p>
             </div>
             <div class="dev-section">
                 <div class="maintainer">
                     <h3>Website Maintainer</h3>
-                    <a href="https://www.linkedin.com/in/ansuman-nayak-02318a188">Ansuman Nayak</a>
+                    <a
+                        href="https://www.linkedin.com/in/ansuman-nayak-02318a188"
+                        >Ansuman Nayak</a
+                    >
                 </div>
                 <div class="developers">
                     <h3>Website Developers</h3>
-                    <a href="https://www.linkedin.com/in/ashutosh-khanduala-4b586b105/">Ashutosh Khanduala</a><br>
-                    <a href="https://www.linkedin.com/in/divya-sri-darimisetti-6166a8194">Divya Sri Darimisetti</a>
+                    <a
+                        href="https://www.linkedin.com/in/ashutosh-khanduala-4b586b105/"
+                        >Ashutosh Khanduala</a
+                    ><br />
+                    <a
+                        href="https://www.linkedin.com/in/divya-sri-darimisetti-6166a8194"
+                        >Divya Sri Darimisetti</a
+                    >
                 </div>
             </div>
         </section>
+
+        <div class="modal-background hide">
+            <div class="modal">
+                <img class="modal-image" src="" alt="magnified image" />
+                <button class="fa-window-close-button">
+                    <i class="fas fa-times-circle fa-2x"></i>
+                </button>
+            </div>
+        </div>
     </body>
 </html>
