@@ -1,0 +1,64 @@
+.sliding-carousel {
+    --sliding-carousel-width: 100%;
+    --sliding-carousel-height: 450px;
+    width: var(--sliding-carousel-width);
+    height: var(--sliding-carousel-height);
+    position: relative;
+    .slides-container {
+        height: 100%;
+        .slide {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            img {
+                object-fit: cover;
+                object-position: 50% 30%;
+                height: 100%;
+                width: 100%;
+            }
+            &.active-slide{
+                z-index:10
+            }
+        }
+    }
+    .slide-button {
+        bottom: 48%;
+        position: absolute;
+        z-index: 11;
+        box-shadow: 0 0 10px $green;
+
+        height: 2rem;
+        width: 1.5rem;
+        &::before {
+            position: absolute;
+            color: $white;
+            background-color: rgba($color: $green, $alpha: 1);
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 20%;
+            box-sizing: border-box;
+            border-radius: inherit;
+            cursor: pointer;
+        }
+    }
+    .lt-button {
+        border-radius: 50% 5px 5px 50%;
+        
+        left: -10px;
+        &::before {
+            content: "\f053";
+        }
+    }
+    .rt-button {
+        border-radius: 5px 50% 50% 5px;
+        right: -10px;
+        &::before {
+            content: "\f054";
+        }
+    }
+}
