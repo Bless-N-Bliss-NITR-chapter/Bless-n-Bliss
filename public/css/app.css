@@ -2175,7 +2175,7 @@ section#blogs .blog-container .blog-wrapper .blog-content article {
 }
 
 .sliding-carousel .carousel-wrapper .slides-container {
-  color: #bac964;
+  background-color: #bac964;
   position: relative;
   height: 100%;
   transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
@@ -2185,6 +2185,9 @@ section#blogs .blog-container .blog-wrapper .blog-content article {
   position: absolute;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sliding-carousel .carousel-wrapper .slides-container .slide img {
@@ -2197,7 +2200,7 @@ section#blogs .blog-container .blog-wrapper .blog-content article {
 .sliding-carousel .slide-button {
   bottom: 48%;
   position: absolute;
-  box-shadow: 0 0 10px #bac964;
+  box-shadow: 0 0 10px rgba(63, 63, 62, 0.35);
   height: 2rem;
   width: 1.5rem;
 }

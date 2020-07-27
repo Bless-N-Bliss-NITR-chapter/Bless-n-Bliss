@@ -8,7 +8,7 @@
         overflow: hidden;
         height: 100%;
         .slides-container {
-            color:$green;
+            background-color:$green;
             position: relative;
             height: 100%;
             transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
@@ -16,6 +16,7 @@
                 position: absolute;
                 height: 100%;
                 width: 100%;
+                @include flex-center();
                 img {
                     object-fit: cover;
                     object-position: 50% 30%;
@@ -30,7 +31,7 @@
     .slide-button {
         bottom: 48%;
         position: absolute;
-        box-shadow: 0 0 10px $green;
+        box-shadow: 0 0 10px rgba($color: $grey, $alpha: 0.35);
 
         height: 2rem;
         width: 1.5rem;
