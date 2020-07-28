@@ -1,0 +1,25 @@
+//FB video Loader
+.fb-video {
+    background-color: rgba(
+        $color: $white,
+        $alpha: 0.95
+    );
+    transition: all 0.5s ease;
+    blockquote {
+        padding: 15px;
+        font-size: 12px;
+        h3 {
+            margin: 0;
+            padding: 0;
+            display: inline;
+        }
+    }
+}
+.fb-video[fb-xfbml-state="parsed"], .fb-video[fb-xfbml-state="none"]{
+    background-image: url("../img/loader-Dual-Ring-1s-207px.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fb-video[fb-xfbml-state="rendered"] {
+    background-image: none;
+}
