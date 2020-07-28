@@ -68,12 +68,15 @@
     .navbar {
         padding: 0 !important;
     }
+
     #central-co-ordinators h5 {
         font-size: 14px;
     }
+
     #central-co-ordinators p {
         font-size: 14px;
     }
+
     #how-we-started img {
         width: 100px;
         height: 100px;
@@ -81,24 +84,202 @@
 }
 
 /* bootstrap.css override + responsiveness improvements */
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0rem;
 }
+
 section#navbar {
     padding-top: 0px;
 }
-section .logo .title .brand-name, section .mobile-logo .title .brand-name {
+
+section .logo .title .brand-name,
+section .mobile-logo .title .brand-name {
     margin-top: 22px;
 }
-.c-us-child{
+
+.c-us-child {
     margin-top: 25px;
 }
-.board-trustee{
-    display:flex;
+
+.board-trustee {
+    display: flex;
     justify-content: center;
 }
-@media (max-width: 982px){
-    .hws-quote{
+
+@media (max-width: 982px) {
+    .hws-quote {
         text-align: center;
     }
-} 
+}
+
+/* project page styles */
+#project-description {
+    position: relative;
+
+}
+
+#project-description .project-bg {
+    width: 100%;
+}
+
+#project-description .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about-header {
+    width: 100%;
+    height: 350px;
+    background: url('../img/about-header.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+
+#about-header .header-content {
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about-header .header-content .subtitle {
+    display: flex;
+}
+
+#how-we-started {
+    margin-top: 100px;
+}
+
+.card {
+    -webkit-box-shadow: 0px 11px 24px -12px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 0px 11px 24px -12px rgba(0, 0, 0, 0.73);
+    box-shadow: 0px 11px 24px -12px rgba(0, 0, 0, 0.6);
+}
+
+#board {
+    margin: 1em 1.3em;
+}
+
+.co-ordinators-container {
+    background-color: #f1f1f1;
+}
+
+.bright {
+    background-color: aqua;
+}
+
+#how-we-started img {
+    width: 120px;
+    height: 120px;
+}
+
+/* overriding the padding property to make image full covered in background */
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0 !important;
+    }
+
+    #central-co-ordinators h5 {
+        font-size: 14px;
+    }
+
+    #central-co-ordinators p {
+        font-size: 14px;
+    }
+
+    #how-we-started img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* bootstrap.css override + responsiveness improvements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0rem;
+}
+
+section#navbar {
+    padding-top: 0px;
+}
+
+section .logo .title .brand-name,
+section .mobile-logo .title .brand-name {
+    margin-top: 22px;
+}
+
+.c-us-child {
+    margin-top: 25px;
+}
+
+.board-trustee {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 982px) {
+    .hws-quote {
+        text-align: center;
+    }
+}
+
+/* project page styles */
+#project-description {
+    position: relative;
+
+}
+
+
+
+#project-description .project-bg {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+#project-description .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    #project-description h1 {
+        font-size: 2em;
+    }
+
+    #project-description p {
+        font-size: .8em;
+    }
+
+    #project-description .content {
+        margin-top: 30px;
+    }
+
+    #kripa-content {
+        margin-top: 35px !important;
+    }
+
+    #kripa-content p {
+        font-size: .575em !important;
+    }
+}
