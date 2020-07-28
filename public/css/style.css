@@ -68,12 +68,15 @@
     .navbar {
         padding: 0 !important;
     }
+
     #central-co-ordinators h5 {
         font-size: 14px;
     }
+
     #central-co-ordinators p {
         font-size: 14px;
     }
+
     #how-we-started img {
         width: 100px;
         height: 100px;
@@ -81,24 +84,35 @@
 }
 
 /* bootstrap.css override + responsiveness improvements */
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0rem;
 }
+
 section#navbar {
     padding-top: 0px;
 }
-section .logo .title .brand-name, section .mobile-logo .title .brand-name {
+
+section .logo .title .brand-name,
+section .mobile-logo .title .brand-name {
     margin-top: 22px;
 }
-.c-us-child{
+
+.c-us-child {
     margin-top: 25px;
 }
-.board-trustee{
-    display:flex;
+
+.board-trustee {
+    display: flex;
     justify-content: center;
 }
-@media (max-width: 982px){
-    .hws-quote{
+
+@media (max-width: 982px) {
+    .hws-quote {
         text-align: center;
     }
-} 
+}

@@ -17,9 +17,10 @@
             href="public/img/favicon.png"
             type="image/x-icon"
         />
-        <link rel="stylesheet" href="public/css/app.min.css" /><!--css stylesheet: committed by @ashuvssut* -->
-        <link rel="stylesheet" href="public/css/blog-page-style.css" /><!--css stylesheet: committed by @ansuman* -->
-        
+        <link rel="stylesheet" href="public/css/app.min.css" />
+        <!--css stylesheet: committed by @ashuvssut* -->
+        <link rel="stylesheet" href="public/css/blog-page-style.css" />
+        <!--css stylesheet: committed by @ansuman* -->
 
         <!--Fonts -->
         <link
@@ -39,8 +40,9 @@
         <script defer src="public/js/sidebar.js"></script>
         <script defer src="public/js/intersectionObservers.js"></script>
         <script defer src="public/js/onscroll.js"></script>
-        <script defer src="public/js/carousel.js"></script>
+        <script defer src="public/js/slidingCarousel.js"></script>
         <script defer src="public/js/filter.js"></script>
+        <script defer src="public/js/button-click.js"></script>
     </head>
 
     <body>
@@ -97,7 +99,14 @@
                         <a class="list-anchor" href="about.html">About Us</a>
                     </li>
                     <li class="list-item">
-                        <a id="donateMini" class="list-anchor" href="https://www.payumoney.com/paybypayumoney/#/132939" target="_blank" _ngcontent-c0="">Donate Us</a>
+                        <a
+                            id="donateMini"
+                            class="list-anchor"
+                            href="https://www.payumoney.com/paybypayumoney/#/132939"
+                            target="_blank"
+                            _ngcontent-c0=""
+                            >Donate Us</a
+                        >
                     </li>
                 </ul>
             </nav>
@@ -113,13 +122,21 @@
             <section id="search-bar">
                 <div class="container filter-search-container">
                     <div class="search-bar">
-                        <form class="search-form" action="/" method="post">   <!--'/' represents 'root' route. (required when get request is called upon root route) -->
-                            <input type="text" id="search-input" class="pseudo-b-shadow" name="searchInput" placeholder="Blog title or Author name..." onkeyup="filterList();">
+                        <form class="search-form" action="/" method="post">
+                            <!--'/' represents 'root' route. (required when get request is called upon root route) -->
+                            <input
+                                type="text"
+                                id="search-input"
+                                class="pseudo-b-shadow"
+                                name="searchInput"
+                                placeholder="Blog title or Author name..."
+                                onkeyup="filterList();"
+                            />
                             <!-- <button class="search-button" type="submit">
                                 <i class="fas fa-search" aria-hidden="true"></i>
                             </button> -->
                         </form>
-                    </div>  
+                    </div>
                 </div>
             </section>
             <div class="social-media-list">
@@ -172,66 +189,96 @@
             <div class="blog-container">
                 <div class="blog-wrapper">
                     <div class="blogs">
-                        <img
-                            src="https://randomwordgenerator.com/img/picture-generator/54e6d1464e51aa14f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg"
-                            width="100%"
-                            height="500px"
-                        />
-                        <div class="author">
-                            <h1  class='s1'>SKY ON THE HEAVEN</h1>
-                            <h3 class="name">Author:<i class="s2"> Ansuman Nayak</i></h3>
-                            <p class="Date-of-publish">Date of publish: 17th june 2020</p>
+                        <div class="sliding-carousel sliding-photo-carousel1">
+                            <div class="carousel-wrapper">
+                                <div class="slides-container">
+                                    <div class="slide active-slide">
+                                        <img src="https://source.unsplash.com/featured/excited" />
+                                    </div>
+                                    <div class="slide">
+                                        <img src="https://source.unsplash.com/featured/pleasure" />
+                                    </div>
+                                    <div class="slide">
+                                        <img src="https://source.unsplash.com/featured/happy" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-button rt-button"></div>
+                            <div class="slide-button lt-button"></div>
+                        </div>
+                        <div class="about-blog">
+                            <h1 class="title s1">SKY ON THE HEAVEN</h1>
+                            <h3 class="name">
+                                Author:<i class="s2"> Ansuman Nayak</i>
+                            </h3>
+                            <p class="Date-of-publish">
+                                Date of publish: <i>17th june 2020</i>
+                            </p>
                         </div>
                     </div>
-                    <div class="blog-content">
-                        <article>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever sin ce the
-                            1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. It
-                            has survived not only five centuries, but also the
-                            lea p into electronic typesetting, remaining
+                    <div class="blog-content drop-list-0">
+                        <div class="article">
+                            <span>L</span>orem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever sin ce
+                            the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries, but also
+                            the lea p into electronic typesetting, remaining
                             essentially unchanged. It was popularised in the
                             1960s with the release of Letraset sheets containing
                             Lorem Ipsum passages, and more recently with desktop
                             publishing software like Aldus PageMaker including
                             versions of Loreme years sometimes by accident,
                             sometimes on purpose (injected humour and the like).
-                        </article>
+                        </div>
+                        <div class="continue-reading">
+                            <input
+                                class="puller-btn"
+                                type="checkbox"
+                                autocomplete="off"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="blog-container">
                 <div class="blog-wrapper">
                     <div class="blogs">
-                        <img
-                            src="https://randomwordgenerator.com/img/picture-generator/54e6d1464e51aa14f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg"
-                            width="100%"
-                            height="500px"
-                        />
-                        <div class="author">
-                            <h1 class='s1'>SKY ON THE HEAVEN</h1>
-                            <h3 class="name">Author:<i class="s2"> Ansuman Nayak</i></h3>
-                            <p class="Date-of-publish">Date of publish: 17th june 2020</p>
+                        <img src="https://source.unsplash.com/featured/smile" alt="">
+                        <div class="about-blog">
+                            <h1 class="title s1">SKY ON THE HEAVEN</h1>
+                            <h3 class="name">
+                                Author:<i class="s2"> Ansuman Nayak</i>
+                            </h3>
+                            <p class="Date-of-publish">
+                                Date of publish: <i>17th june 2020</i>
+                            </p>
                         </div>
                     </div>
-                    <div class="blog-content">
-                        <article>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever sin ce the
-                            1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. It
-                            has survived not only five centuries, but also the
-                            lea p into electronic typesetting, remaining
+                    <div class="blog-content drop-list-1">
+                        <div class="article">
+                            <span>L</span>orem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever sin ce
+                            the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries, but also
+                            the lea p into electronic typesetting, remaining
                             essentially unchanged. It was popularised in the
                             1960s with the release of Letraset sheets containing
                             Lorem Ipsum passages, and more recently with desktop
                             publishing software like Aldus PageMaker including
                             versions of Loreme years sometimes by accident,
                             sometimes on purpose (injected humour and the like).
-                        </article>
+                        </div>
+                        <div class="continue-reading">
+                            <input
+                                class="puller-btn"
+                                type="checkbox"
+                                autocomplete="off"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -365,6 +412,6 @@
                     >
                 </div>
             </div>
-        </section> 
+        </section>
     </body>
 </html>

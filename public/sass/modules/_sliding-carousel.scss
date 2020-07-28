@@ -1,0 +1,76 @@
+.sliding-carousel {
+    --sliding-carousel-width: 100%;
+    --sliding-carousel-height: 450px;
+    width: var(--sliding-carousel-width);
+    height: var(--sliding-carousel-height);
+    position: relative;
+    .carousel-wrapper{
+        overflow: hidden;
+        height: 100%;
+        .slides-container {
+            background-color:$green;
+            position: relative;
+            height: 100%;
+            transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+            .slide {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                @include flex-center();
+                img {
+                    object-fit: cover;
+                    object-position: 50% 30%;
+                    height: 100%;
+                    width: 100%;
+                }
+                // &.active-slide{
+                // }
+            }
+        }
+    }
+    .slide-button {
+        bottom: 48%;
+        position: absolute;
+        box-shadow: 0 0 10px rgba($color: $grey, $alpha: 0.35);
+
+        height: 2rem;
+        width: 1.5rem;
+        &::before {
+            position: absolute;
+            color: $white;
+            background-color: rgba($color: $green, $alpha: 1);
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 20%;
+            box-sizing: border-box;
+            border-radius: inherit;
+            cursor: pointer;
+        }
+    }
+    .lt-button {
+        border-radius: 50% 5px 5px 50%;
+        
+        left: -10px;
+        &::before {
+            content: "\f053";
+        }
+    }
+    .rt-button {
+        border-radius: 5px 50% 50% 5px;
+        right: -10px;
+        &::before {
+            content: "\f054";
+        }
+    }
+}
+
+//your custom carousel settings here>>>
+.sliding-photo-carousel1{
+    --sliding-carousel-width: 100%;
+    --sliding-carousel-height: 450px;
+}

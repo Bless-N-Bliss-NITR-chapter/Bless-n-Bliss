@@ -1,5 +1,19 @@
 section {
     &.blog-banner-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: 50% 50%;
+            height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
+        }
         .tint {
             height: 100vh;
             width: 100%;
@@ -20,7 +34,20 @@ section {
                 );
         }
         h1 {
+            position: absolute;
+            font-size: 7rem;
+            letter-spacing: 2vw;
+            color: #ffffff;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
             font-weight: 500;
+            @media (max-width: 800px) {
+                position: absolute;
+                font-size: 5rem;
+                top: 25%;
+            }
         }
         #search-bar {
             position: absolute;
@@ -38,7 +65,7 @@ section {
                         border-style: none;
                         height: 52px;
                         width: 70vw;
-                        min-width: 350px;
+                        min-width: 330px;
                         max-width: 600px;
                         padding: 0px 90px 0px 30px;
                         border-radius: 45px;
@@ -77,6 +104,117 @@ section {
                     }
                     &:hover {
                         border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+    &#blogs {
+        .blog-container {
+            margin-top: 40px;
+            background-color: rgba(255, 255, 255, 0.6);
+            top: 25%;
+            .blog-wrapper {
+                width: 60%;
+                margin: 0 auto;
+                min-width: 340px;
+                padding: 15px;
+                .blogs {
+                    position: relative;
+                    .sliding-carousel {
+                        //see its implementation in sliding-carousel.scss
+                        .slides-container {
+                            .slide {
+                                img {
+                                    object-fit: cover;
+                                    object-position: 50% 30%;
+                                    height: 450px;
+                                }
+                            }
+                        }
+                    }
+                    img {
+                        object-fit: cover;
+                        object-position: 50% 30%;
+                        height: 450px;
+                        width: 100%;
+                    }
+                    .about-blog {
+                        position: absolute;
+                        background-color: #ffffff;
+                        left: 0;
+                        right: 0;
+                        width: 80%;
+                        margin: 0 auto;
+                        text-align: left;
+                        bottom: -7rem;
+                        padding: 1rem;
+                        .title {
+                            margin: 0;
+                            color: $raspberry-red;
+                            font-weight: 500;
+                        }
+                        .name {
+                            color: black;
+                            margin-top: 1rem;
+                            font-weight: 600;
+                        }
+                        .Date-of-publish {
+                            margin-top: 0.5rem;
+                            font-weight: 600;
+                            color: $raspberry-red;
+                        }
+                    }
+                }
+                .blog-content {
+                    position: relative;
+                    .article {
+                        text-align: justify;
+                        font-size: 15px;
+                        margin-top: 8rem;
+                        max-height: 170px;
+                        transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                        overflow-y: hidden;
+                        span {
+                            font-size: 45px;
+                            padding-right: 10px;
+                            float: left;
+                            line-height: 1.06;
+                            font-weight: 600;
+                        }
+                    }
+                    .continue-reading {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        height: 80px;
+                        transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                        background: linear-gradient(
+                            to top,
+                            rgba(255, 255, 255, 0.9) 0%,
+                            rgba(0, 0, 0, 0) 75%
+                        );
+                        .puller-btn{
+                            @include circular-button(rgba($color:$orange, $alpha:0.8), 0, 40px);
+                            box-shadow: 0 0 30px $orange;
+                            bottom: 10px;
+                            &:checked {
+                                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                                transform: rotateZ(180deg) translate(-50%, 10px) !important;
+                            }
+                            &:not(checked) {
+                                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
+                                transform: translate(50%, 10px) !important;
+                            }
+                        }
+                    }
+                }
+                .close {
+                    .article {
+                        max-height: 2000px;
+                    }
+                    .continue-reading {
+                        bottom: -58px;
                     }
                 }
             }
