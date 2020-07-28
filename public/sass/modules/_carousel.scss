@@ -1,36 +1,32 @@
 .carousel {
     //do not change any contents/property of this class. make a separate class to overwrite the properties of this class.
-    --carousel-height: auto;
-    //--carousel-max-height: 100vh;
-    --carousel-min-height: 100vh;
+    --carousel-height: 100vh;
     --carousel-width: 100%;
     overflow: hidden;
-    min-height: var(--carousel-min-height);
     background-color: $grey;
+
     height: var(--carousel-height);
     width: var(--carousel-width);
-    //max-height: var(--carousel-max-height);
     .carousel-container {
-        min-height: var(--carousel-min-height);
+        height: 100%;
         position: relative;
         .tracks-container {
-            min-height: var(--carousel-min-height);
+            height: 100%;
             .tracks-ul {
-                min-height: var(--carousel-min-height);
+                height: 100%;
                 position: relative;
                 .carousel-slide {
-                    min-height: var(--carousel-min-height);
+                    width: 100%;
+                    height: 100%;
                     position: absolute;
                     top: 0;
                     bottom: 0;
                     transition: opacity ease-out 1s;
                     opacity: 0;
                     .bg-img {
-                        min-height: var(--carousel-min-height);
-                        //max-height: var(--carousel-max-height);
+                        height: 100%;
                         display: block;
-                        height: var(--carousel-height);
-                        width: var(--carousel-width);
+                        width: 100%;
                         object-fit: cover;
                         object-position: 40% 0%;
                     }
@@ -90,8 +86,7 @@
 
 .photo-carousel {
     //make changes to carousel class properties here in this separate class to suit your carousel needs
-    --carousel-height: auto;
-    --carousel-min-height: 100vh;
+    --carousel-height: 100vh;
     --carousel-width: 100%;
     .carousel-container {
         .tracks-container {
@@ -116,7 +111,6 @@
 
 .photo-carousel2 {
     //make changes to carousel class properties here in this separate class to suit your carousel needs
-    --carousel-height: auto;
     background-color: transparent;
     .carousel-container {
         .tracks-container {
@@ -125,7 +119,6 @@
                     .bg-img {
                         object-fit: cover;
                         object-position: 50% 50px;
-                        width: var(--carousel-width);
                     }
                 }
             }
@@ -189,8 +182,7 @@
 .project-carousel,
 .testimonial-carousel {
     //make changes to carousel class properties here in this separate class to suit your carousel needs
-    --carousel-height: auto;
-    --carousel-min-height: 100vh;
+    --carousel-height:  100vh;
     --carousel-width: 100%;
     margin: 0 auto;
     border-radius: 25px;
@@ -202,6 +194,7 @@
                     .bg-img {
                         object-fit: cover;
                         object-position: 40% 0%;
+                        width:100%
                     }
                     .tint {
                         position: absolute;
@@ -256,12 +249,11 @@
 
 .about-carousel {
     //make changes to carousel class properties here in this separate class to suit your carousel needs
-    margin: 0 auto;
-    --carousel-min-height: 280px;
-    --carousel-width: 27vw;
+    margin: 3.99rem auto 0;
+    --carousel-height: 250px;
+    --carousel-width: 30vw;
     @media(max-width: 992.5px) {
-        margin-top: 40px;
-        --carousel-min-height: 50vw;
+        --carousel-height: 50vw;
         --carousel-width: 80vw;
     }
     .carousel-container {

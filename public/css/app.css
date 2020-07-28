@@ -1922,32 +1922,31 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 }
 
 .carousel {
-  --carousel-height: auto;
-  --carousel-min-height: 100vh;
+  --carousel-height: 100vh;
   --carousel-width: 100%;
   overflow: hidden;
-  min-height: var(--carousel-min-height);
   background-color: #3f3f3e;
   height: var(--carousel-height);
   width: var(--carousel-width);
 }
 
 .carousel .carousel-container {
-  min-height: var(--carousel-min-height);
+  height: 100%;
   position: relative;
 }
 
 .carousel .carousel-container .tracks-container {
-  min-height: var(--carousel-min-height);
+  height: 100%;
 }
 
 .carousel .carousel-container .tracks-container .tracks-ul {
-  min-height: var(--carousel-min-height);
+  height: 100%;
   position: relative;
 }
 
 .carousel .carousel-container .tracks-container .tracks-ul .carousel-slide {
-  min-height: var(--carousel-min-height);
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1956,10 +1955,9 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 }
 
 .carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img {
-  min-height: var(--carousel-min-height);
+  height: 100%;
   display: block;
-  height: var(--carousel-height);
-  width: var(--carousel-width);
+  width: 100%;
   object-fit: cover;
   object-position: 40% 0%;
 }
@@ -2032,8 +2030,7 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 }
 
 .photo-carousel {
-  --carousel-height: auto;
-  --carousel-min-height: 100vh;
+  --carousel-height: 100vh;
   --carousel-width: 100%;
 }
 
@@ -2051,14 +2048,12 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 }
 
 .photo-carousel2 {
-  --carousel-height: auto;
   background-color: transparent;
 }
 
 .photo-carousel2 .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img {
   object-fit: cover;
   object-position: 50% 50px;
-  width: var(--carousel-width);
 }
 
 .photo-carousel2 .carousel-container .tracks-navbar-container {
@@ -2135,8 +2130,7 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 
 .project-carousel,
 .testimonial-carousel {
-  --carousel-height: auto;
-  --carousel-min-height: 100vh;
+  --carousel-height:  100vh;
   --carousel-width: 100%;
   margin: 0 auto;
   border-radius: 25px;
@@ -2147,6 +2141,7 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 .testimonial-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img {
   object-fit: cover;
   object-position: 40% 0%;
+  width: 100%;
 }
 
 .project-carousel .carousel-container .tracks-container .tracks-ul .carousel-slide .tint,
@@ -2227,15 +2222,14 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 }
 
 .about-carousel {
-  margin: 0 auto;
-  --carousel-min-height: 280px;
-  --carousel-width: 27vw;
+  margin: 3.99rem auto 0;
+  --carousel-height: 250px;
+  --carousel-width: 30vw;
 }
 
 @media (max-width: 992.5px) {
   .about-carousel {
-    margin-top: 40px;
-    --carousel-min-height: 50vw;
+    --carousel-height: 50vw;
     --carousel-width: 80vw;
   }
 }
