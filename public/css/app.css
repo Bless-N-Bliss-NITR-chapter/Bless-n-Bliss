@@ -2048,6 +2048,7 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 }
 
 .photo-carousel2 {
+  --carousel-height: 375px;
   background-color: transparent;
 }
 

@@ -111,6 +111,7 @@
 
 .photo-carousel2 {
     //make changes to carousel class properties here in this separate class to suit your carousel needs
+    --carousel-height: 375px;
     background-color: transparent;
     .carousel-container {
         .tracks-container {
