@@ -1294,7 +1294,7 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
   height: 200px;
   min-width: 260px;
   margin: 0 5px;
-  background-color: #3f3f3e;
+  background-color: rgba(170, 170, 170, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1306,22 +1306,6 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
   object-position: 50% 30%;
   width: 100%;
   height: 100%;
-}
-
-section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video {
-  background-color: rgba(170, 170, 170, 0.7);
-  transition: all 0.5s ease;
-}
-
-section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video blockquote {
-  padding: 15px;
-  font-size: 12px;
-}
-
-section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content .fb-video blockquote h3 {
-  margin: 0;
-  padding: 0;
-  display: inline;
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 3).from-x-axis {
@@ -2403,5 +2387,31 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
   .hide {
     display: none;
   }
+}
+
+.fb-video {
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: all 0.5s ease;
+}
+
+.fb-video blockquote {
+  padding: 15px;
+  font-size: 12px;
+}
+
+.fb-video blockquote h3 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.fb-video[fb-xfbml-state="parsed"], .fb-video[fb-xfbml-state="none"] {
+  background-image: url("../img/loader-Dual-Ring-1s-207px.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fb-video[fb-xfbml-state="rendered"] {
+  background-image: none;
 }
 /*# sourceMappingURL=app.css.map */
