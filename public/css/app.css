@@ -399,12 +399,13 @@ section#what-we-do .our-mission .body .card {
   margin: 15px 15px 0;
   padding: 25px 15px;
   border-radius: 25px;
+  position: relative;
 }
 
 section#what-we-do .our-mission .body .card::before {
   content: "";
   position: absolute;
-  border-radius: 25px;
+  border-radius: inherit;
   top: 0;
   left: 0;
   right: 0;
@@ -656,12 +657,13 @@ section#thanks .thanks .donor-list .body .card {
   margin: 15px 5px 0;
   padding: 25px 15px;
   border-radius: 25px;
+  position: relative;
 }
 
 section#thanks .thanks .donor-list .body .card::before {
   content: "";
   position: absolute;
-  border-radius: 25px;
+  border-radius: inherit;
   top: 0;
   left: 0;
   right: 0;
@@ -1033,6 +1035,7 @@ section.events .container .head h1 {
 section.events .container .body {
   transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
   background-color: #0090c4;
+  position: relative;
   padding-bottom: 20px;
   position: relative;
   width: 100%;
@@ -1042,7 +1045,7 @@ section.events .container .body {
 section.events .container .body::before {
   content: "";
   position: absolute;
-  border-radius: 25px;
+  border-radius: inherit;
   top: 0;
   left: 0;
   right: 0;
@@ -1334,25 +1337,24 @@ section.event-footer {
   box-shadow: 0 -10px 50px rgba(63, 63, 62, 0.07);
 }
 
-section.blog-banner-container {
+section.banner-container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-section.blog-banner-container img {
+section.banner-container img {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   object-position: 50% 50%;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
-section.blog-banner-container .tint {
+section.banner-container .tint {
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -1361,7 +1363,7 @@ section.blog-banner-container .tint {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, #ffffff00 50%, rgba(0, 0, 0, 0.7) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, #ffffff00 50%, rgba(0, 0, 0, 0.7) 100%);
 }
 
-section.blog-banner-container h1 {
+section.banner-container h1 {
   position: absolute;
   font-size: 7rem;
   letter-spacing: 2vw;
@@ -1374,14 +1376,14 @@ section.blog-banner-container h1 {
 }
 
 @media (max-width: 800px) {
-  section.blog-banner-container h1 {
+  section.banner-container h1 {
     position: absolute;
     font-size: 5rem;
     top: 25%;
   }
 }
 
-section.blog-banner-container #search-bar {
+section.banner-container #search-bar {
   position: absolute;
   bottom: 72px;
   left: 0;
@@ -1389,18 +1391,18 @@ section.blog-banner-container #search-bar {
   margin: 20px 0;
 }
 
-section.blog-banner-container #search-bar .filter-search-container {
+section.banner-container #search-bar .filter-search-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section.blog-banner-container #search-bar .filter-search-container .search-bar {
+section.banner-container #search-bar .filter-search-container .search-bar {
   margin: 15px 0px;
   position: relative;
 }
 
-section.blog-banner-container #search-bar .filter-search-container .search-bar #search-input {
+section.banner-container #search-bar .filter-search-container .search-bar #search-input {
   outline: 0;
   border-style: none;
   height: 52px;
@@ -1414,20 +1416,20 @@ section.blog-banner-container #search-bar .filter-search-container .search-bar #
   z-index: 99;
 }
 
-section.blog-banner-container #search-bar .filter-search-container .search-bar #search-input:hover {
+section.banner-container #search-bar .filter-search-container .search-bar #search-input:hover {
   box-shadow: 0px 2px 2px #3f3f3e;
 }
 
-section.blog-banner-container #search-bar .filter-search-container .search-bar #search-input::selection {
+section.banner-container #search-bar .filter-search-container .search-bar #search-input::selection {
   background-color: #aaaaaa;
 }
 
-section.blog-banner-container .social-media-list {
+section.banner-container .social-media-list {
   position: absolute;
   bottom: 20px;
 }
 
-section.blog-banner-container .social-media-list .social-menu-links .menu-icon {
+section.banner-container .social-media-list .social-menu-links .menu-icon {
   margin: 5px;
   border: 1px solid white;
   margin-right: 0.5rem;
@@ -1435,19 +1437,19 @@ section.blog-banner-container .social-media-list .social-menu-links .menu-icon {
   height: 2.5rem;
 }
 
-section.blog-banner-container .social-media-list .social-menu-links .menu-icon a {
+section.banner-container .social-media-list .social-menu-links .menu-icon a {
   width: 2.5rem;
   height: 2.5rem;
   padding-top: 5px;
   color: #f4f4ff;
 }
 
-section.blog-banner-container .social-media-list .social-menu-links .menu-icon a::before {
+section.banner-container .social-media-list .social-menu-links .menu-icon a::before {
   font-size: 1.5rem;
   line-height: 1.8rem;
 }
 
-section.blog-banner-container .social-media-list .social-menu-links .menu-icon:hover {
+section.banner-container .social-media-list .social-menu-links .menu-icon:hover {
   border: 1px solid transparent;
 }
 
@@ -1584,6 +1586,236 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
 
 .board-trustee .from-x-axis, .coordinators .from-x-axis {
   transition-delay: 0.1s;
+}
+
+section.banner-container .project-name {
+  font-size: 40px;
+  top: 27%;
+}
+
+section.banner-container .quote-container {
+  background-color: rgba(244, 244, 255, 0.8);
+  z-index: 1;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em 3em;
+  border-radius: 5px;
+}
+
+section.banner-container .quote-container .quote {
+  font-weight: 500;
+  position: relative;
+  min-width: 220px;
+}
+
+section.banner-container .quote-container .quote::before {
+  content: open-quote;
+  font-size: 130px;
+  position: absolute;
+  top: -5.4rem;
+  left: -4rem;
+  color: #696969;
+  filter: drop-shadow(0 0 2px white);
+}
+
+section.banner-container .quote-container .underline {
+  margin-top: 5px;
+  color: #aaaaaa;
+}
+
+section .from-y-axis {
+  opacity: 0;
+  transform: translateY(-150px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+section .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+section#project-description {
+  width: 80vw;
+  min-width: 340px;
+  margin: 60px auto 0;
+}
+
+section#project-description .title {
+  margin: 0;
+  padding: 15px 25px;
+  width: 55%;
+  min-width: 300px;
+  font-weight: 300;
+  background-color: rgba(244, 244, 255, 0.95);
+  border-radius: 5px 100px 0 0;
+  color: #0090c4;
+  position: relative;
+}
+
+section#project-description .title::before {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.1);
+}
+
+section#project-description .body {
+  background-color: rgba(60, 57, 204, 0.8);
+  padding: 50px 25px;
+  border-radius: 0 5px 5px 5px;
+  color: white;
+  position: relative;
+}
+
+section#project-description .body::before {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+  box-shadow: 10px -15px 15px rgba(0, 0, 0, 0.2);
+}
+
+section#project-description .body .overview {
+  font-weight: 600;
+}
+
+section#project-description .body .location-tags {
+  margin: 15px 0 10px;
+}
+
+section#project-description .body .location-tags .tag {
+  display: inline-block;
+  padding: 0.3em 1em;
+  border-radius: 25px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+section#project-description .body .detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+@media (max-width: 500px) {
+  section#project-description .body .detail {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
+section#project-description .body .detail .item {
+  border-radius: 25px;
+  border: 1px solid #ffc3c3;
+  width: max-content;
+  padding: 0.3em 1em;
+  margin-top: 10px;
+}
+
+section#project-description .body .detail .item .key {
+  font-weight: 600;
+}
+
+section#project-description .body .detail .item .key .value {
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+section#project-details {
+  margin: 0px auto;
+  padding: 10vw;
+  padding-bottom: 0;
+}
+
+section#project-details .frags-container {
+  background-color: rgba(60, 57, 204, 0.8);
+  box-shadow: 10px -15px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+section#project-details .frags-container .frag {
+  padding: 5px;
+}
+
+section#project-details .frags-container .frag img {
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+section#project-details .frags-container .frag .content {
+  color: white;
+  font-weight: 600;
+}
+
+section#project-details .frags-container .frag .left.from-x-axis {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.3s ease, transform  0.7s ease;
+}
+
+section#project-details .frags-container .frag .left.from-x-axis.appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+section#project-details .frags-container .frag .right.from-x-axis {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.3s ease, transform  0.7s ease;
+}
+
+section#project-details .frags-container .frag .right.from-x-axis.appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+@media (min-width: 767px) {
+  section#project-details .frags-container .frag img {
+    margin: 5px 20px 10px;
+    max-width: 350px;
+    width: 50%;
+  }
+  section#project-details .frags-container .frag .content {
+    margin: 5px 20px 10px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 767px) {
+  section#project-details .frags-container .frag {
+    display: flex;
+    flex-direction: column;
+  }
+  section#project-details .frags-container .frag img {
+    margin: 15px auto 10px;
+    float: none !important;
+    width: 100%;
+    max-width: 350px;
+  }
+  section#project-details .frags-container .frag .content {
+    margin: 15px auto 10px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {

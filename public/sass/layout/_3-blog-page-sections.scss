@@ -1,5 +1,5 @@
 section {
-    &.blog-banner-container {
+    &.banner-container {
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -10,9 +10,8 @@ section {
             left: 0;
             object-fit: cover;
             object-position: 50% 50%;
-            height: 100vh;
+            height: 100%;
             width: 100%;
-            overflow-x: hidden;
         }
         .tint {
             height: 100vh;
