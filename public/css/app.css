@@ -1732,6 +1732,7 @@ section#project-details {
 }
 
 section#project-details .frags-container {
+  width: 80vw;
   min-width: 320px;
   margin: 0px auto;
   background-color: rgba(60, 57, 204, 0.8);
