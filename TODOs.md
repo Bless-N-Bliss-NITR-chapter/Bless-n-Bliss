@@ -1,5 +1,7 @@
 # TODOs
 
+- [ ] a website loader gif needed.
+
 ## index.html
 
 - [ ] project-carousel has old photos of projects.

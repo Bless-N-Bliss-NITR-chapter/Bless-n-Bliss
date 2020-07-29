@@ -15,10 +15,11 @@
 }
 
 @mixin pseudo-b-shadow($horizontal-length:5px, $vertical-length:5px, $blur:50px, $color:rgba(0, 0, 0, 0.2)){
+    position: relative;
     &::before {
         content: "";
         position: absolute;
-        border-radius: 25px;
+        border-radius: inherit;
         top: 0;
         left: 0;
         right: 0;
