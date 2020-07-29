@@ -1625,17 +1625,6 @@ section.banner-container .quote-container .underline {
   color: #aaaaaa;
 }
 
-section .from-y-axis {
-  opacity: 0;
-  transform: translateY(-150px);
-  transition: opacity 0.3s ease, transform 0.7s ease;
-}
-
-section .from-y-axis.appear {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 section#project-description {
   width: 80vw;
   min-width: 340px;
