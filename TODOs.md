@@ -2,6 +2,8 @@
 
 - [ ] a website loader gif needed.
 
+- [ ] remove useless JS scripts loading
+
 ## index.html
 
 - [ ] project-carousel has old photos of projects.

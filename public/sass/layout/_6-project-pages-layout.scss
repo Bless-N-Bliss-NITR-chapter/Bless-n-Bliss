@@ -34,7 +34,6 @@ section {
             }
         }
     }
-    @include  from-y-axis();
     &#project-description{
         width: 80vw;
         min-width: 340px;
@@ -102,10 +101,10 @@ section {
     }
 
     &#project-details{
-        margin:0px auto;
-        padding: 10vw;
-        padding-bottom:0;
+        padding: 40px 10px 0;
         .frags-container{
+            min-width: 320px;
+            margin:0px auto;
             background-color: rgba($color: $blue2, $alpha: 0.8);
             box-shadow: 10px -15px 15px rgba(0,0,0,0.2);
             border-radius: 5px;
@@ -119,6 +118,7 @@ section {
                 //     height: 0; 
                 //     clear: both;
                 // }
+                // //see line 186 for changes
                 img{
                     height: 200px;
                     object-fit: cover;
@@ -176,12 +176,13 @@ section {
                     img{
                         margin: 15px auto 10px;
                         float:none !important;
-                        width: 100%;
+                        width: 90%;
                         max-width: 350px;
                     }
                     .content{
                         margin: 15px auto 10px;
-                        text-align: center;
+                        width: 90%;
+                        text-align: left;//u can change to 'justify or maybe 'center' or keep as it is. so do whichever feels right.
                     }
                 }
             }

@@ -1625,17 +1625,6 @@ section.banner-container .quote-container .underline {
   color: #aaaaaa;
 }
 
-section .from-y-axis {
-  opacity: 0;
-  transform: translateY(-150px);
-  transition: opacity 0.3s ease, transform 0.7s ease;
-}
-
-section .from-y-axis.appear {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 section#project-description {
   width: 80vw;
   min-width: 340px;
@@ -1739,12 +1728,12 @@ section#project-description .body .detail .item .key .value {
 }
 
 section#project-details {
-  margin: 0px auto;
-  padding: 10vw;
-  padding-bottom: 0;
+  padding: 40px 10px 0;
 }
 
 section#project-details .frags-container {
+  min-width: 320px;
+  margin: 0px auto;
   background-color: rgba(60, 57, 204, 0.8);
   box-shadow: 10px -15px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -1809,12 +1798,13 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
   section#project-details .frags-container .frag img {
     margin: 15px auto 10px;
     float: none !important;
-    width: 100%;
+    width: 90%;
     max-width: 350px;
   }
   section#project-details .frags-container .frag .content {
     margin: 15px auto 10px;
-    text-align: center;
+    width: 90%;
+    text-align: left;
   }
 }
 
