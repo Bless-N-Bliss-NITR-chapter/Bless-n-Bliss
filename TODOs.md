@@ -1,6 +1,6 @@
 # TODOs
 
-- [ ] a website loader gif needed.
+- [x] a website loader gif needed.
 
 - [ ] remove useless JS scripts loading
 
@@ -36,4 +36,4 @@
 
 ## centers.html
 
-- has to be same as the old website's projects page layout. But, this layout must look next-level
+- [ ] content+images to be added.
