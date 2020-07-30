@@ -1,0 +1,45 @@
+section{
+    &.banner-container{
+        //styles for img, .tint and the .banner-container are present in "_3-blog-page-sections.scss" (i should have created it in modules folder to use it globally :\ )
+        .project-name.title{
+            top: 35%;
+        }
+        .project-name.location{
+            top: 75%;
+        }
+    }
+
+    &.all-projects{
+        .projects-container{ 
+            section#project-description{
+                //all style already defined in _6-project-pages-layout.scss for this section
+                .title{
+                    width: 100%;
+                }
+
+                .body{
+                    .sliding-project-carousel{
+                        margin: 0px auto 20px;
+                        //see carousel.scss for its child elements style implementation
+                    }
+                    .learn-more{
+                        margin: 15px 0 10px;
+                        a{
+                            display: inline-block;
+                            padding: 0.5em 1em;
+                            border-radius: 25px;
+                            font-weight: 900;
+                            letter-spacing: 1px;
+                            margin-right:10px;
+                            margin-top: 15px;
+                            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+                            background-color: rgba($color: $orange, $alpha: 0.8);
+                            text-decoration: none;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
