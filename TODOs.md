@@ -6,7 +6,7 @@
 
 - [ ] implement background that HK gives.
 
-- [ ] update footer's 'latest blog' with real blog titles and IDed links to that particular blog. [ref](##blog-page.html)
+- [x] update footer's 'latest blog' with real blog titles and IDed links to that particular blog. [ref](##blog-page.html)
 
 - [ ] hammer.js to be implemented for mobile swipe functionality on sliding-carousel
 
@@ -24,15 +24,15 @@
 
 - [ ] update upcoming events
 
-- [ ] Learn more buttons.
+- [x] Learn more buttons.
 
 ## blog-page.html
 
-- [ ] [ref here:](#nowhere) give 'id' each and every blog title.
+- [x] [ref here:](#nowhere) give 'id' each and every blog title.
 
 - [x] need that long wordpress button
 
-- [ ] content+images to be added.
+- [x] content+images to be added.
 
 ## about.html
 
