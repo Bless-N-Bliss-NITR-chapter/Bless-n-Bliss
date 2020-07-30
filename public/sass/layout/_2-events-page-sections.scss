@@ -219,6 +219,23 @@ section {
                                 rgba($color: $blue2, $alpha: 0.5) 100%
                             );
                         }
+                        .learn-more{
+                            margin: 15px 0 10px 35px;
+                            a{
+                                display: inline-block;
+                                padding: 0.5em 1em;
+                                border-radius: 25px;
+                                font-weight: 900;
+                                letter-spacing: 1px;
+                                margin-right:10px;
+                                margin-top: 15px;
+                                box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+                                background-color: rgba($color: $orange, $alpha: 0.9);
+                                text-decoration: none;
+                                color: $white;
+                            }
+                        }
+
                     }
                     .scrollable-viewer {
                         margin: 50px auto;
