@@ -1355,7 +1355,7 @@ section.banner-container img {
 }
 
 section.banner-container .tint {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -1573,6 +1573,40 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
   bottom: -58px;
 }
 
+section.banner-container .project-name.title {
+  top: 35%;
+}
+
+section.banner-container .project-name.location {
+  top: 75%;
+}
+
+section.all-projects .projects-container section#project-description .title {
+  width: 100%;
+}
+
+section.all-projects .projects-container section#project-description .body .sliding-project-carousel {
+  margin: 0px auto 20px;
+}
+
+section.all-projects .projects-container section#project-description .body .learn-more {
+  margin: 15px 0 10px;
+}
+
+section.all-projects .projects-container section#project-description .body .learn-more a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(249, 179, 28, 0.8);
+  text-decoration: none;
+  color: white;
+}
+
 .board-trustee .from-y-axis, .coordinators .from-y-axis {
   opacity: 0;
   transform: translateY(50px);
@@ -1623,6 +1657,17 @@ section.banner-container .quote-container .quote::before {
 section.banner-container .quote-container .underline {
   margin-top: 5px;
   color: #aaaaaa;
+}
+
+section .from-y-axis {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+section .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 section#project-description {
@@ -1747,7 +1792,7 @@ section#project-details .frags-container .frag {
 }
 
 section#project-details .frags-container .frag img {
-  height: 200px;
+  height: 240px;
   object-fit: cover;
   object-position: 50% 30%;
 }
@@ -1881,6 +1926,7 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
     text-decoration: none;
   }
   .navbar .menu-ul .dropdown-toggler .dropdown-menu-ul {
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 50px;
     opacity: 1;
@@ -1889,7 +1935,6 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
   .navbar .menu-ul .dropdown-toggler .dropdown-menu-ul .drop-item {
     padding: 0.625rem 2.3125rem 1.25rem;
     width: max-content;
-    background-color: white;
   }
   .navbar .menu-ul .dropdown-toggler .dropdown-menu-ul .drop-item a {
     color: #000000;
@@ -1898,7 +1943,7 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
     position: relative;
     left: 0;
   }
-  .navbar .menu-ul .dropdown-toggler .dropdown-menu-ul .drop-item a:hover {
+  .navbar .menu-ul .dropdown-toggler .dropdown-menu-ul .drop-item a:hover, .navbar .menu-ul .dropdown-toggler .dropdown-menu-ul .drop-item .active-drop-item {
     position: relative;
     left: 8px;
     color: #f9b31c;
@@ -2550,6 +2595,12 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
 .sliding-photo-carousel1 {
   --sliding-carousel-width: 100%;
   --sliding-carousel-height: 450px;
+}
+
+.sliding-project-carousel {
+  --sliding-carousel-width: 100%;
+  --sliding-carousel-height: 300px;
+  max-width: 470px;
 }
 
 @media (min-width: 400px) {
