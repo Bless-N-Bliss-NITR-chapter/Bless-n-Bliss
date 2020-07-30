@@ -8,7 +8,7 @@
 
 - [x] update footer's 'latest blog' with real blog titles and IDed links to that particular blog. [ref](##blog-page.html)
 
-- [ ] hammer.js to be implemented for mobile swipe functionality on sliding-carousel
+- [x] hammer.js to be implemented for mobile swipe functionality on sliding-carousel
 
 - [x] no excess animation
 
