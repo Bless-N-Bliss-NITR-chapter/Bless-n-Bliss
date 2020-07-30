@@ -253,7 +253,10 @@
     margin: 3.99rem auto 0;
     --carousel-height: 250px;
     --carousel-width: 30vw;
+
+    max-width: 410px;
     @media(max-width: 992.5px) {
+        max-width: unset;
         --carousel-height: 50vw;
         --carousel-width: 80vw;
     }
