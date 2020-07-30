@@ -2,13 +2,15 @@
 
 - [x] a website loader gif needed.
 
-- [ ] remove useless JS scripts loading
+- [x] remove useless JS scripts loading
 
 - [ ] implement background that HK gives.
 
 - [ ] update footer's 'latest blog' with real blog titles and IDed links to that particular blog. [ref](##blog-page.html)
 
-- [ ] hammer.js to be implemented for mobile swipe functionality on carousel
+- [ ] hammer.js to be implemented for mobile swipe functionality on sliding-carousel
+
+- [x] no excess animation
 
 ## index.html
 
@@ -21,6 +23,8 @@
 - [ ] content+images to be added.
 
 - [ ] update upcoming events
+
+- [ ] Learn more buttons.
 
 ## blog-page.html
 
