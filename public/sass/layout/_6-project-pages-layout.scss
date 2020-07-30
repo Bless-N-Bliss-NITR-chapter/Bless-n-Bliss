@@ -34,6 +34,7 @@ section {
             }
         }
     }
+    @include from-y-axis(100px);
     &#project-description{
         width: 80vw;
         min-width: 340px;
