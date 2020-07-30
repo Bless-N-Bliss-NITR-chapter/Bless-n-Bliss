@@ -1,0 +1,193 @@
+section {
+    &.banner-container {
+        //styles for img, .tint and the .banner-container are present in "_3-blog-page-sections.scss" (i should have created it in modules folder to use it globally :\ )
+        .project-name {
+            font-size: 40px;
+            top: 27%;
+        }
+        .quote-container {
+            background-color: rgba($color: $light-pink, $alpha: 0.8);
+            z-index: 1;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 1em 3em;
+            border-radius: 5px;
+            .quote {
+                font-weight: 500;
+                position: relative;
+                min-width: 220px;
+                &::before {
+                    content: open-quote;
+                    font-size: 130px;
+                    position: absolute;
+                    top: -5.4rem;
+                    left: -4rem;
+                    color: $dimgrey;
+                    filter: drop-shadow(0 0 2px $white);
+                }
+            }
+            .underline{
+                margin-top: 5px;
+                color: $light-grey;
+            }
+        }
+    }
+    @include from-y-axis(100px);
+    &#project-description{
+        width: 80vw;
+        min-width: 340px;
+        margin: 60px auto 0;
+        .title{
+            margin:0;
+            padding: 15px 25px;
+            width: 55%;
+            min-width: 300px;
+            font-weight: 300;
+            background-color: rgba($color: $light-pink, $alpha: 0.95);
+            border-radius: 5px 100px 0 0;
+            color: $blue;
+            @include pseudo-b-shadow(10px, -10px, 10px, rgba(0,0,0,0.1)) ;
+
+        }
+        .body{
+            background-color: rgba($color: $blue2, $alpha: 0.8);
+            padding: 50px 25px;
+            border-radius: 0 5px 5px 5px;
+            color: $white;
+            @include pseudo-b-shadow(10px, -15px, 15px, rgba(0,0,0,0.2)) ;
+            .overview{
+                font-weight: 600;
+            }
+            .location-tags{
+                margin: 15px 0 10px;
+                .tag{
+                    display: inline-block;
+                    padding: 0.3em 1em;
+                    border-radius: 25px;
+                    font-weight: 900;
+                    letter-spacing: 1px;
+                    margin-right:10px;
+                    margin-top: 15px;
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+                }
+            }
+            .detail{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+                @media ( max-width: 500px ){
+                    align-items: flex-end;
+                    flex-direction: column;
+                }
+                .item{
+                    border-radius: 25px;
+                    border: 1px solid rgb(255, 195, 195);
+                    width: max-content;
+                    padding: 0.3em 1em;
+                    margin-top:10px;
+
+                    .key{
+                        font-weight: 600;
+                        .value{
+                            font-weight: 500;
+                            letter-spacing: 2px;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &#project-details{
+        padding: 40px 10px 0;
+        .frags-container{
+            width: 80vw;
+            min-width: 320px;
+            margin:0px auto;
+            background-color: rgba($color: $blue2, $alpha: 0.8);
+            box-shadow: 10px -15px 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            padding: 30px 0;
+            overflow: hidden;
+            .frag{
+                padding:5px;
+                // &::after { //this code preserves height to fit in the floating image
+                //     content: " ";
+                //     display: block; 
+                //     height: 0; 
+                //     clear: both;
+                // }
+                // //see line 186 for changes
+                img{
+                    height: 240px;
+                    object-fit: cover;
+                    object-position: 50% 30%;
+                }
+                .content{
+                    color: $white;
+                    font-weight: 600;
+                }
+                
+                //animations part
+                .left.from-x-axis{
+                    opacity: 0;
+                    transform: translateX(100px);
+                    transition: 
+                        opacity 0.3s ease,
+                        transform  0.7s ease;
+    
+                    &.appear{
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+                }
+                .right.from-x-axis{
+                    opacity: 0;
+                    transform: translateX(-100px);
+                    transition: 
+                        opacity 0.3s ease,
+                        transform  0.7s ease;
+    
+                    &.appear{
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+                }
+            }
+            @media ( min-width: 767px ){ //767px to infinite
+                .frag{
+                    img{
+                        margin: 5px 20px 10px;
+                        //float is defined inline
+                        max-width: 350px;
+                        width: 50%;
+                    }
+                    .content{
+                        margin: 5px 20px 10px;
+                        text-align: justify;
+                    }
+                }
+            }
+            @media ( max-width: 767px ){ //0px to 767px
+                .frag{
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        margin: 15px auto 10px;
+                        float:none !important;
+                        width: 90%;
+                        max-width: 350px;
+                    }
+                    .content{
+                        margin: 15px auto 10px;
+                        width: 90%;
+                        text-align: left;//u can change to 'justify or maybe 'center' or keep as it is. so do whichever feels right.
+                    }
+                }
+            }
+        }
+    }
+}

@@ -68,6 +68,7 @@
                     text-decoration: none;
                 }
                 .dropdown-menu-ul {
+                    background-color: rgba($color: $white, $alpha: 0.9);
                     position: absolute;
                     top: 50px;
                     opacity: 1;
@@ -75,7 +76,7 @@
                     .drop-item {
                         padding: 0.625rem 2.3125rem 1.25rem;
                         width: max-content;
-                        background-color: $white;
+                        
                         a {
                             color: $black;
                             text-decoration: none;
@@ -83,7 +84,7 @@
                             position: relative;
                             left: 0;
                         }
-                        a:hover {
+                        a:hover, .active-drop-item {
                             position: relative;
                             left: 8px;
                             color: $orange;
