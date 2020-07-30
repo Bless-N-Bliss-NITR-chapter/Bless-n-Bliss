@@ -1573,6 +1573,26 @@ section#blogs .blog-container .blog-wrapper .close .continue-reading {
   bottom: -58px;
 }
 
+section#external-links {
+  width: 100%;
+}
+
+section#external-links .wordpress-link {
+  margin: 60px auto 30px;
+  display: block;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  width: 80vw;
+  max-width: 600px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 144, 196, 0.8);
+  text-decoration: none;
+  color: white;
+}
+
 section.banner-container .project-name.title {
   top: 35%;
 }

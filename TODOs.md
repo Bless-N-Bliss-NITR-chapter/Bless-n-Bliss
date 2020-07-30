@@ -30,7 +30,7 @@
 
 - [ ] [ref here:](#nowhere) give 'id' each and every blog title.
 
-- [ ] need that long wordpress button
+- [x] need that long wordpress button
 
 - [ ] content+images to be added.
 
