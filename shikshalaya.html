@@ -22,6 +22,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
 
     <!--js scripts-->
+
+    <script defer src="public/js/loader.js"></script>
     <script defer src="public/js/navbar.js"></script>
     <script defer src="public/js/sidebar.js"></script>
     <script defer src="public/js/intersectionObservers.js"></script>
@@ -30,6 +32,9 @@
 </head>
 
 <body>
+    <!-- preloader -->
+    <div class="preloader"></div>
+    <!-- preloader end-->
     <!-- FB JS SDK -->
     <!-- <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"
@@ -72,9 +77,7 @@
                 <li class="list-item dropdown-toggler">
                     <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
                     <a class="list-anchor" href="#">Our Centers</a>
-                    <ul
-                        class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide"
-                    >
+                    <ul class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide">
                         <li class="drop-item">
                             <a class="" href="center-rkl.html">Rourkela</a>
                         </li>
