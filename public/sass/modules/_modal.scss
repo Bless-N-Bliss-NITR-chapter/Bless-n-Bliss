@@ -1,48 +1,49 @@
-@media ( min-width: 400px ){
-    .modal-background {
-        background-color: rgba($color: #000000, $alpha: 0.8);
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        z-index: 101;
+.modal-background {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    @include flex-center();
+
+    .modal {
+        z-index: 102;
+        height: 80vh;
+        width: 80vw;
+        position: relative;
+        background-color: rgba($color: $light-grey, $alpha: 0.7);
         @include flex-center();
-    
-        .modal {
-            z-index: 102;
-            height: 80vh;
-            width: 80vw;
-            position: relative;
-            background-color: rgba($color: $light-grey, $alpha: 0.7);
-            img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                object-fit: cover;
-                @media ( max-width: 550px ){
-                    object-fit: contain;
-                }
-                object-position: 50% 30%;
-                width:100%;
-                height:100%;
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            @media (max-width: 550px) {
+                object-fit: contain;
             }
-    
-            .fa-window-close-button {
-                z-index: 111;
-                position: absolute;
-                top: 5px;
-                right: 5px;
-                width: 28px;
-                height: 28px;
-                border-style: none;
-                color: rgba($color: $light-pink, $alpha: 0.75);
-                background-color: transparent;
-                border-radius: 50%;
-            }
+            object-position: 50% 30%;
+            width: 100%;
+        }
+
+        .fa-window-close-button {
+            z-index: 111;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 28px;
+            height: 28px;
+            border-style: none;
+            color: rgba($color: $light-pink, $alpha: 0.75);
+            background-color: transparent;
+            border-radius: 50%;
         }
     }
-    .hide {
-        display: none;
-    }    
+}
+.hide {
+    display: none;
+    .modal {
+        .fa-window-close-button {
+            display: none;
+        }
+    }
 }
