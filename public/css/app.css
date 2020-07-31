@@ -1262,6 +1262,24 @@ section#events-happened .some-year .year-events-body .year-event .about-event .e
   background: linear-gradient(to top, rgba(60, 57, 204, 0.99) 0%, transparent 75%, transparent 25%, rgba(60, 57, 204, 0.5) 100%);
 }
 
+section#events-happened .some-year .year-events-body .year-event .about-event .learn-more {
+  margin: 15px 0 10px 35px;
+}
+
+section#events-happened .some-year .year-events-body .year-event .about-event .learn-more a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(249, 179, 28, 0.9);
+  text-decoration: none;
+  color: white;
+}
+
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer {
   margin: 50px auto;
   width: 85%;
@@ -1320,10 +1338,10 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
 }
 
 @media (max-width: 360px) {
-  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 2).from-x-axis {
+  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 1).from-x-axis {
     transform: translateX(10px);
   }
-  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 2).from-x-axis.appear {
+  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 1).from-x-axis.appear {
     transform: translateX(0px);
   }
 }
@@ -2340,9 +2358,56 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
   background-color: transparent;
 }
 
+.photo-carousel2 .carousel-container .tracks-container .tracks-ul {
+  position: relative;
+}
+
 .photo-carousel2 .carousel-container .tracks-container .tracks-ul .carousel-slide .bg-img {
   object-fit: cover;
   object-position: 50% 50px;
+}
+
+.photo-carousel2 .carousel-container .tracks-container .scale-up {
+  display: inline-block;
+  animation: none;
+}
+
+.photo-carousel2 .carousel-container .tracks-container .scale-up.appear {
+  animation: scale-up-down 0.7s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes scale-up-down {
+  0% {
+  }
+  70% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.photo-carousel2 .carousel-container .tracks-container .learn-more {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 11;
+  background-color: rgba(255, 165, 0, 0.95);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 25px 10px 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.photo-carousel2 .carousel-container .tracks-container .learn-more:hover {
+  color: #3C39CC;
 }
 
 .photo-carousel2 .carousel-container .tracks-navbar-container {
@@ -2625,59 +2690,62 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
   max-width: 470px;
 }
 
-@media (min-width: 400px) {
-  .modal-background {
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 101;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .modal-background .modal {
-    z-index: 102;
-    height: 80vh;
-    width: 80vw;
-    position: relative;
-    background-color: rgba(170, 170, 170, 0.7);
-  }
-  .modal-background .modal img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    object-position: 50% 30%;
-    width: 100%;
-    height: 100%;
-  }
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width: 400px) and (max-width: 550px) {
+.modal-background .modal {
+  z-index: 102;
+  height: 80vh;
+  width: 80vw;
+  position: relative;
+  background-color: rgba(170, 170, 170, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modal-background .modal img {
+  object-fit: cover;
+  object-position: 50% 30%;
+  width: 100%;
+}
+
+@media (max-width: 550px) {
   .modal-background .modal img {
     object-fit: contain;
   }
 }
 
-@media (min-width: 400px) {
-  .modal-background .modal .fa-window-close-button {
-    z-index: 111;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 28px;
-    height: 28px;
-    border-style: none;
-    color: rgba(244, 244, 255, 0.75);
-    background-color: transparent;
-    border-radius: 50%;
-  }
-  .hide {
-    display: none;
-  }
+.modal-background .modal .fa-window-close-button {
+  z-index: 111;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 28px;
+  height: 28px;
+  border-style: none;
+  color: rgba(244, 244, 255, 0.75);
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.hide .modal .fa-window-close-button {
+  display: none;
 }
 
 .preloader {
