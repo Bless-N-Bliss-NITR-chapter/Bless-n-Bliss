@@ -280,7 +280,7 @@ section {
                                 }
                             }
                             @media (max-width: 360px) {
-                                .content:nth-of-type(n + 2).from-x-axis {
+                                .content:nth-of-type(n + 1).from-x-axis {
                                     transform: translateX(10px);
                                     &.appear {
                                         transform: translateX(0px);
