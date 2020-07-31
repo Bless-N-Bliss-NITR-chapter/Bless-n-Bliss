@@ -4,7 +4,7 @@
 
 - [x] remove useless JS scripts loading
 
-- [ ] implement background that HK gives.
+- [x] implement background
 
 - [x] update footer's 'latest blog' with real blog titles and IDed links to that particular blog. [ref](##blog-page.html)
 
@@ -21,8 +21,6 @@
 ## events.html
 
 - [ ] content+images to be added.
-
-- [ ] update upcoming events
 
 - [x] Learn more buttons.
 
