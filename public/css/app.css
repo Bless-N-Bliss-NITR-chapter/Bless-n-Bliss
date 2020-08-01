@@ -342,7 +342,7 @@ section#what-we-do .our-mission {
 }
 
 section#what-we-do .our-mission .head {
-  background-color: rgba(60, 57, 204, 0.95);
+  background-color: rgba(60, 57, 204, 0.75);
   height: 70px;
   width: 80vw;
   max-width: 400px;
@@ -459,7 +459,7 @@ section#what-we-do .our-projects {
 }
 
 section#what-we-do .our-projects .title {
-  background-color: rgba(60, 57, 204, 0.95);
+  background-color: rgba(60, 57, 204, 0.75);
   height: 70px;
   width: 80vw;
   max-width: 400px;
@@ -487,7 +487,7 @@ section#what-we-do .our-projects .title h2 {
 }
 
 section.cyclothon {
-  background-color: rgba(244, 244, 255, 0.9);
+  background-color: rgba(244, 244, 255, 0.75);
   padding: 20px 0;
 }
 
@@ -498,7 +498,7 @@ section.cyclothon {
 }
 
 section.cyclothon .title {
-  background-color: #3c39cc;
+  background-color: rgba(60, 57, 204, 0.75);
   height: 70px;
   width: 80vw;
   max-width: 400px;
@@ -2358,6 +2358,10 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
   background-color: transparent;
 }
 
+.photo-carousel2 .carousel-container .tracks-container {
+  position: relative;
+}
+
 .photo-carousel2 .carousel-container .tracks-container .tracks-ul {
   position: relative;
 }
@@ -2391,8 +2395,8 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
 .photo-carousel2 .carousel-container .tracks-container .learn-more {
   display: block;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 10%;
+  left: 10%;
   z-index: 11;
   background-color: rgba(255, 165, 0, 0.95);
   height: 100px;
@@ -2804,5 +2808,12 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
 
 .fb-video[fb-xfbml-state="rendered"] {
   background-image: none;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
 }
 /*# sourceMappingURL=app.css.map */
