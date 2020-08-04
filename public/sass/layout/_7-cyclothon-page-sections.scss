@@ -1,0 +1,71 @@
+section {
+    &.banner-container {
+        //styles for img, .tint and the .banner-container are present in "_3-blog-page-sections.scss" (i should have created it in modules folder to use it globally :\ )
+        // .project-name {
+        //     font-size: 40px;
+        //     top: 27%;
+        // }
+        .quote-container {
+            background-color: rgba($color: $light-pink, $alpha: 0.8);
+            z-index: 1;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 1em 3em;
+            border-radius: 5px;
+            .quote {
+                font-weight: 500;
+                position: relative;
+                min-width: 220px;
+                &::before {
+                    content: open-quote;
+                    font-size: 130px;
+                    position: absolute;
+                    top: -5.4rem;
+                    left: -4rem;
+                    color: $dimgrey;
+                    filter: drop-shadow(0 0 2px $white);
+                }
+            }
+            .underline{
+                margin-top: 5px;
+                color: $light-grey;
+            }
+        }
+    }
+    @include from-y-axis(100px);
+    &#latest-events {
+        //see _2-events-pages-layout.scss for all of the styles
+        .body {
+            .sliding-events-carousel {
+                //see _carousel.scss for other properties
+                .carousel-wrapper {
+                    .slides-container {
+                        counter-reset: slide-number-counter;
+                        .cyclothon-slide {
+                            &::before{
+                                content: counter(slide-number-counter);
+                                counter-increment: slide-number-counter;
+                                position:absolute;
+                                z-index:1;
+                                left: 10px;
+                                top:10px;
+                                background-color: $light-pink;
+                                border: solid 5px $light-grey;
+                                height: 30px;
+                                width: 31px;
+                                border-radius: 5px;
+                                text-align: center;
+                                padding-top: 2px;
+                                color:$light-grey;
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //see _6-project-pages-layout.scss for all remaining of the styles
+}
