@@ -1005,7 +1005,7 @@ section#latest-events .head {
   font-weight: 500;
   color: #0069D9;
   border-radius: 5px 25px 25px 5px;
-  box-shadow: -15px 0 15px rgba(225, 225, 225, 0.05);
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
 }
 
 section#latest-events .head .from-y-axis {
@@ -1161,7 +1161,7 @@ section#events-happened .some-year .year-events-head .puller-btn::before {
 
 section#events-happened .some-year .year-events-body {
   counter-reset: event-number-counter;
-  background-color: rgba(60, 57, 204, 0.96);
+  background-color: rgba(60, 57, 204, 0.8);
   max-height: 1800px;
   overflow-y: auto;
   transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
@@ -1205,7 +1205,7 @@ section#events-happened .some-year .year-events-body .year-event .about-event .e
   max-height: 400px;
   overflow-y: auto;
   color: white;
-  background: linear-gradient(to top, rgba(60, 57, 204, 0.99) 0%, transparent 75%, transparent 25%, rgba(60, 57, 204, 0.5) 100%);
+  background: linear-gradient(to top, rgba(60, 57, 204, 0.3) 0%, transparent 75%, transparent 25%, rgba(60, 57, 204, 0.3) 100%);
 }
 
 section#events-happened .some-year .year-events-body .year-event .about-event .learn-more {
@@ -1567,30 +1567,109 @@ section.banner-container .project-name.location {
   top: 75%;
 }
 
-section.all-projects .projects-container section#project-description .title {
-  width: 100%;
+section#project-details .head {
+  width: 80vw;
+  min-width: 320px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1;
 }
 
-section.all-projects .projects-container section#project-description .body .sliding-project-carousel {
-  margin: 0px auto 20px;
+section#project-details .head .title {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 65%;
+  min-width: 320px;
+  margin: 30px auto 10px 0;
+  padding: 5px 0 5px 20px;
+  font-weight: 500;
+  color: #0069D9;
+  border-radius: 5px 25px 25px 5px;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
 }
 
-section.all-projects .projects-container section#project-description .body .learn-more {
-  margin: 15px 0 10px;
+section#project-details .head .title .from-y-axis {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
 }
 
-section.all-projects .projects-container section#project-description .body .learn-more a {
+section#project-details .head .title .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+section#project-details .frags-container .center-pg-frag {
+  padding: 5px;
+}
+
+section#project-details .frags-container .center-pg-frag .title {
   display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 50px;
+  width: 40%;
+  min-width: 250px;
+  padding: 8px;
+  font-weight: 500;
+  color: #0069D9;
+  border-radius: 5px 25px 25px 5px;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+  margin: 0 auto 10px 0px;
+}
+
+section#project-details .frags-container .center-pg-frag .title .from-y-axis {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+section#project-details .frags-container .center-pg-frag .title .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media (max-width: 767px) {
+  section#project-details .frags-container .center-pg-frag .title {
+    margin-left: 20px;
+  }
+}
+
+section#project-details .frags-container .center-pg-frag .title.left {
+  margin-left: 20px;
+}
+
+section#project-details .frags-container .center-pg-frag::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+section#project-details .frags-container .center-pg-frag img {
+  height: 240px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+section#project-details .frags-container .center-pg-frag .content {
+  color: white;
+  font-weight: 600;
+}
+
+section#project-details .frags-container .learn-more a {
+  display: block;
+  width: 40%;
+  min-width: 250px;
+  text-align: center;
   padding: 0.5em 1em;
   border-radius: 25px;
   font-weight: 900;
   letter-spacing: 1px;
-  margin-right: 10px;
-  margin-top: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  background-color: rgba(249, 179, 28, 0.8);
+  background-color: #bac964;
   text-decoration: none;
   color: white;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .board-trustee .from-y-axis, .coordinators .from-y-axis {
@@ -1838,6 +1917,71 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
     width: 90%;
     text-align: left;
   }
+}
+
+section.banner-container .quote-container {
+  background-color: rgba(244, 244, 255, 0.8);
+  z-index: 1;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em 3em;
+  border-radius: 5px;
+}
+
+section.banner-container .quote-container .quote {
+  font-weight: 500;
+  position: relative;
+  min-width: 220px;
+}
+
+section.banner-container .quote-container .quote::before {
+  content: open-quote;
+  font-size: 130px;
+  position: absolute;
+  top: -5.4rem;
+  left: -4rem;
+  color: #696969;
+  filter: drop-shadow(0 0 2px white);
+}
+
+section.banner-container .quote-container .underline {
+  margin-top: 5px;
+  color: #aaaaaa;
+}
+
+section .from-y-axis {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+section .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+section#latest-events .body .sliding-events-carousel .carousel-wrapper .slides-container {
+  counter-reset: slide-number-counter;
+}
+
+section#latest-events .body .sliding-events-carousel .carousel-wrapper .slides-container .cyclothon-slide::before {
+  content: counter(slide-number-counter);
+  counter-increment: slide-number-counter;
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 10px;
+  background-color: #f4f4ff;
+  border: solid 5px #aaaaaa;
+  height: 30px;
+  width: 31px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  color: #aaaaaa;
+  font-size: 17px;
 }
 
 @media (min-width: 768px) {

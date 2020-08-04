@@ -44,7 +44,7 @@ section {
             font-weight: 500;
             color: $blue1;
             border-radius: 5px 25px 25px 5px;
-            box-shadow: -15px 0 15px rgba(225,225,225,0.05);
+            box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
         }
         .body {
             min-width: 340px;
@@ -160,7 +160,7 @@ section {
             .year-events-body {
                 counter-reset: event-number-counter;
                 //background:linear-gradient(to bottom, $light-pink 0%, $white 100%);
-                background-color: rgba($color: $blue2, $alpha: 0.96);
+                background-color: rgba($color: $blue2, $alpha: 0.8);
                 max-height: 1800px;
                 overflow-y: auto;
                 transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
@@ -204,10 +204,10 @@ section {
                             color: $white;
                             background: linear-gradient(
                                 to top,
-                                rgba($color: $blue2, $alpha: 0.99) 0%,
+                                rgba($color: $blue2, $alpha: 0.3) 0%,
                                 transparent 75%,
                                 transparent 25%,
-                                rgba($color: $blue2, $alpha: 0.5) 100%
+                                rgba($color: $blue2, $alpha: 0.3) 100%
                             );
                         }
                         .learn-more {

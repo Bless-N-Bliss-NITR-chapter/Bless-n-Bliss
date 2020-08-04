@@ -17,13 +17,13 @@ function developCarousel() {
         //add eventListeners to slide buttons
         rtButton.addEventListener('click', (event) => {
             let activeSlide = slidesContainer.querySelector('.active-slide');
-            if (activeSlide === slidesArray[0]) {
+            
+            if (activeSlide === slidesArray[slidesArray.length - 1]) {
                 activeSlide.classList.remove('active-slide');
-                slidesArray[slidesArray.length - 1].classList.add('active-slide');
-
+                slidesArray[0].classList.add('active-slide');
             } else {
                 activeSlide.classList.remove('active-slide');
-                activeSlide.previousElementSibling.classList.add('active-slide');
+                activeSlide.nextElementSibling.classList.add('active-slide');
             }
             const nextSlide = slidesContainer.querySelector('.active-slide');
 
@@ -33,12 +33,13 @@ function developCarousel() {
 
         ltButton.addEventListener('click', (event) => {
             let activeSlide = slidesContainer.querySelector('.active-slide');
-            if (activeSlide === slidesArray[slidesArray.length - 1]) {
+            if (activeSlide === slidesArray[0]) {
                 activeSlide.classList.remove('active-slide');
-                slidesArray[0].classList.add('active-slide');
+                slidesArray[slidesArray.length - 1].classList.add('active-slide');
+
             } else {
                 activeSlide.classList.remove('active-slide');
-                activeSlide.nextElementSibling.classList.add('active-slide');
+                activeSlide.previousElementSibling.classList.add('active-slide');
             }
             const nextSlide = slidesContainer.querySelector('.active-slide');
 
