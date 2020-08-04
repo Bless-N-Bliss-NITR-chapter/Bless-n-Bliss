@@ -39,12 +39,16 @@
         ></script>
 
         <!--js scripts-->
+        <script defer src="public/js/loader.js"></script>
         <script defer src="public/js/navbar.js"></script>
         <script defer src="public/js/sidebar.js"></script>
         <script defer src="public/js/intersectionObservers.js"></script>
         <script defer src="public/js/onscroll.js"></script>
         <script defer src="public/js/button-click.js"></script>
         <script defer src="public/js/carousel.js"></script>
+        <script defer src="public/js/slidingCarousel.js"></script>
+        <script defer src="public/js/hammerjs/hammer.js"></script>
+        <script defer src="public/js/hammerjs/swipe.js"></script>
         <script defer src="public/js/modal.js"></script>
     </head>
     <body style="background-color: #f4f4ff; position: relative; z-index: -100;">
@@ -59,11 +63,15 @@
         ></script> -->
         <!-- FB JS SDK end-->
 
+        <!-- preloader -->
+        <div class="preloader"></div>
+        <!-- preloader end-->
+
          <!-- dynamic background start -->
-    <div class="background-container" style="width: 100%; height: 100vh;">
-        <img style="object-position: 50% 50%; object-fit: cover;" src="public/img/bg-dynamic/bubble.svg" alt="">
-    </div>
-    <!-- end -->
+        <div class="background-container"">
+            <img src="public/img/bg-dynamic/bubble.svg" alt="">
+        </div>
+        <!-- end -->
 
         <section id="navbar" class="navbar-initial /*navbar-after*/">
             <!--* navbar-initial is to give a transparent background to navbar.
@@ -182,49 +190,61 @@
             </div>
         </section>
 
-        <section id="upcoming-event" class="events drop-list-0 close">
-            <div class="container">
-                <div class="head">
-                    <h1 class="from-y-axis">Upcoming Events</h1>
-                </div>
-                <div class="body">
-                    <div class="events-ul">
-                        <div class="event from-y-axis">
-                            <h3 class="date">1 JULY</h3>
-                            <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div>
-                        <div class="event from-y-axis">
-                            <h3 class="date">2 JULY</h3>
-                            <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div>
-                        <div class="event from-y-axis">
-                            <h3 class="date">1 JULY</h3>
-                            <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div>
-                        <div class="event from-y-axis">
-                            <h3 class="date">1 JULY</h3>
-                            <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div>
-                        <div class="event from-y-axis">
-                            <h3 class="date">1 JULY</h3>
-                            <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div>
-                        <div class="event from-y-axis">
-                            <h3 class="date">1 JULY</h3>
-                            <div class="event">Lorem ipsum dolor sit amet.</div>
-                        </div>
-                        <div class="event from-y-axis">
-                            <h3 class="date">1 JULY</h3>
-                            <div class="event">Lorem ipsum dolor sit amet.</div>
+        <section id="latest-events">
+            <h1 class="head">Recent Events</h1>
+            <div class="body">
+                <div class="sliding-carousel sliding-events-carousel">
+                    <div class="carousel-wrapper">
+                        <div class="slides-container">
+                            <div class="slide active-slide">
+                                <div class="top-wrap">
+                                    <img src="https://source.unsplash.com/random/<dimensions>" />
+                                    <div class="about-event">
+                                        <h1 class="title">Cyclothon 3.0</h1>
+                                        <div class="location-tags">
+                                            <div class="tag" style="background-color: #5d5d5f; color:white;">Rourkela</div>
+                                            <div class="tag" style="background-color: rgb(0, 191, 255); color:white">Ranchi</div>
+                                            <div class="tag" style="background-color: white; color: black;">Jajpur</div>
+                                        </div>
+                                        <p class="date-organized">
+                                            <i>7th july 2020</i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-wrap">
+                                    <article class="description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores inventore non laudantium consequuntur eligendi quod quam itaque accusamus suscipit reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquid maiores iste ex, asperiores odit nobis veritatis eveniet id numquam consequuntur harum quam. Repellat quisquam quia doloremque ducimus provident placeat.  
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="top-wrap">
+                                    <img src="https://source.unsplash.com/random/<dimensions>" />
+                                    <div class="about-event">
+                                        <h1 class="title">Cyclothon 3.0</h1>
+                                        <div class="location-tags">
+                                            <div class="tag" style="background-color: #5d5d5f; color:white;">Rourkela</div>
+                                            <div class="tag" style="background-color: rgb(0, 191, 255); color:white">Ranchi</div>
+                                            <div class="tag" style="background-color: white; color: black;">Jajpur</div>
+                                        </div>
+                                        <p class="date-organized">
+                                            <i>7th july 2020</i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-wrap">
+                                    <article class="description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores inventore non laudantium consequuntur eligendi quod quam itaque accusamus suscipit reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquid maiores iste ex, asperiores odit nobis veritatis eveniet id numquam consequuntur harum quam. Repellat quisquam quia doloremque ducimus provident placeat.  
+                                    </article>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <input
-                        class="puller-btn wiggle-y"
-                        type="checkbox"
-                        autocomplete="off"
-                    />
+                    <div class="slide-button rt-button"></div>
+                    <div class="slide-button lt-button"></div>
                 </div>
             </div>
+            
         </section>
 
         <section id="events-happened">
@@ -238,7 +258,7 @@
                         autocomplete="off"
                     />
                 </div>
-                <div class="year-events-body drop-list-1">
+                <div class="year-events-body drop-list-0">
                     <div class="year-event">
                         <div class="about-event">
                             <h1 class="event-name">
@@ -414,7 +434,7 @@
                         autocomplete="off"
                     />
                 </div>
-                <div class="year-events-body drop-list-2 close">
+                <div class="year-events-body drop-list-1 close">
                     <div class="year-event">
                         <div class="about-event">
                             <h1 class="event-name">KRIPA</h1>
@@ -744,7 +764,7 @@
                         autocomplete="off"
                     />
                 </div>
-                <div class="year-events-body drop-list-3 close">
+                <div class="year-events-body drop-list-2 close">
                     <div class="year-event">
                         <div class="about-event">
                             <h1 class="event-name">SWABHIMAN</h1>

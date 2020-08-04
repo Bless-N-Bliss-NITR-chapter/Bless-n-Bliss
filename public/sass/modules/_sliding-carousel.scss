@@ -5,7 +5,7 @@
     height: var(--sliding-carousel-height);
     position: relative;
     .carousel-wrapper{
-        overflow: hidden;
+        overflow-x: hidden;
         height: 100%;
         .slides-container {
             background-color:$green;
