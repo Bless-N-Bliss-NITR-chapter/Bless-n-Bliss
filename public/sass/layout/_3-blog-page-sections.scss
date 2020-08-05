@@ -112,6 +112,8 @@ section {
         .blog-container {
             margin-top: 40px;
             background-color: rgba(255, 255, 255, 0.6);
+            box-shadow:0 0 10px rgba(255, 255, 255, 0.8);
+            padding-bottom: 80px;
             top: 25%;
             .blog-wrapper {
                 width: 60%;
@@ -140,7 +142,7 @@ section {
                     }
                     .about-blog {
                         position: absolute;
-                        background-color: #ffffff;
+                        background-color: rgba($color: #ffffff, $alpha: .95);
                         left: 0;
                         right: 0;
                         width: 80%;

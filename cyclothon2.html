@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="Spread Knowledge. Time to change our perception from Ignorance is Bliss to Knowledge is Power. Support Fellow Brethren. A step taken ..." />
@@ -8,7 +5,7 @@
     <meta name="author" content="@ashuvssut" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bless 'n' Bliss, Bangalore</title>
+    <title>Cyclothon | Bless 'n' Bliss</title>
 
     <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="public/css/app.min.css" />
@@ -18,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&display=swap" rel="stylesheet" />
 
     <!--font-awesome -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
 
     <!--js scripts-->
 
@@ -28,24 +25,22 @@
     <script defer src="public/js/sidebar.js"></script>
     <script defer src="public/js/intersectionObservers.js"></script>
     <script defer src="public/js/onscroll.js"></script>
-    <script defer src="public/js/slidingCarousel.js"></script>
-    <script defer src="public/js/hammerjs/hammer.js"></script>
-    <script defer src="public/js/hammerjs/swipe.js"></script>
+    <script defer src="public/js/button-click.js"></script>
 </head>
 
 <body>
-    <!-- FB JS SDK -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="GtxMgJyw"></script>
-    <!-- FB JS SDK end-->
-
     <!-- preloader -->
     <div class="preloader"></div>
     <!-- preloader end-->
+    <!-- FB JS SDK -->
+    <!-- <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"
+        nonce="GtxMgJyw"></script> -->
+    <!-- FB JS SDK end-->
 
     <section id="navbar" class="navbar-initial /*navbar-after*/">
         <!--* navbar-initial is to give a transparent background to navbar.
-                * navbar-after gives it a light-pink background-->
+            * navbar-after gives it a light-pink background-->
         <div class="mobile-logo">
             <img src="public/img/logo.png" alt="logo" />
             <div class="title">
@@ -79,10 +74,10 @@
                 </li>
                 <li class="list-item dropdown-toggler">
                     <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
-                    <a class="list-anchor active-anchor" href="#">Our Centers</a>
+                    <a class="list-anchor" href="#">Our Centers</a>
                     <ul class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide">
                         <li class="drop-item">
-                            <a class="" href="#">Rourkela</a>
+                            <a class="" href="center-rkl.html">Rourkela</a>
                         </li>
                         <li class="drop-item">
                             <a class='' href="center-ranchi.html">Ranchi</a>
@@ -91,7 +86,7 @@
                             <a class='' href="center-jajpur.html">Jajpur</a>
                         </li>
                         <li class="drop-item">
-                            <a class='active-drop-item' href="#">Bangalore</a>
+                            <a class='' href="center-blr.html">Bangalore</a>
                         </li>
                     </ul>
                 </li>
@@ -106,128 +101,58 @@
     </section>
 
     <section class="banner-container">
-        <img src="https://source.unsplash.com/featured/poverty" alt="Samarthan image">
+        <img src="public/img/Cyclothon.jpeg" style="object-position: 50% 0%;" alt="Saksham image">
         <div class="tint"></div>
         <!--black-tint -->
-        <center>
-            <h1 class="project-name title">BLESS <br> 'n' <br> BLISS</h1>
-        </center>
-        <h1 class="project-name location">BANGALORE</h1>
+        <h1 class="project-name">CYCLOTHON</h1>
+        <div class="quote-container">
+            <h3 class="quote">It never gets easier, you just go faster.</h3>
+            <hr class="underline">
+        </div>
     </section>
 
-    <section class="all-projects">
-        <div class="projects-container">
-            <section id="project-description" class="from-y-axis">
-                <h1 class="title">SAMARTHAN</h1>
-                <div class="body">
-
-                    <div class="sliding-carousel sliding-project-carousel">
-                        <div class="carousel-wrapper">
-                            <div class="slides-container">
-                                <div class="slide active-slide">
-                                    <img src="https://source.unsplash.com/featured/excited" />
-                                </div>
-                                <div class="slide">
-                                    <img src="https://source.unsplash.com/featured/pleasure" />
-                                </div>
-                                <div class="slide">
-                                    <img src="https://source.unsplash.com/featured/happy" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-button rt-button"></div>
-                        <div class="slide-button lt-button"></div>
-                    </div>
-
-                    <p class="overview">BnB Samarthan focuses on collaboration with financially weak institutions, which impart knowledge to the underprivileged children, by either sponsoring their education or providing them with basic amenities such as seating arrangements,
-                        stationery items, and water, electricity and sanitation facilities.</p>
-                    <div class="learn-more">
-                        <a href="samarthan.html" target="_blank">Learn more...</a>
-                    </div>
-                    <div class="detail">
-                        <div class="item">
-                            <p class="key">Raised: <span class="value">05,75,000 ₹</span></p>
-                        </div>
-                        <div class="item">
-                            <p class="key">Volunteers: <span class="value">12</span></p>
-                        </div>
-                    </div>
+    <section id="project-description">
+        <h1 class="title">CYCLOTHON</h1>
+        <div class="body">
+            <p class="overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, dolorem, eveniet nulla voluptas rem, vero sed dolore praesentium odit dicta ex qui minus. Magni adipisci quia cumque ut ipsa sapiente, eveniet perspiciatis amet eos, in,
+                voluptatibus doloribus veritatis placeat accusantium.
+            </p>
+            <div class="location-tags">
+                <div class="tag" style="background-color: rgb(0, 191, 255); color:white">Rourkela</div>
+                <div class="tag" style="background-color: white; color: black;">Ranchi</div>
+            </div>
+            <div class="detail">
+                <div class="item">
+                    <p class="key">Raised: <span class="value">01,00,000 ₹</span></p>
                 </div>
-            </section>
-            <section id="project-description" class="from-y-axis">
-                <h1 class="title">SAMARTHAN</h1>
-                <div class="body">
-
-                    <div class="sliding-carousel sliding-project-carousel">
-                        <div class="carousel-wrapper">
-                            <div class="slides-container">
-                                <div class="slide active-slide">
-                                    <img src="https://source.unsplash.com/featured/excited" />
-                                </div>
-                                <div class="slide">
-                                    <img src="https://source.unsplash.com/featured/pleasure" />
-                                </div>
-                                <div class="slide">
-                                    <img src="https://source.unsplash.com/featured/happy" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-button rt-button"></div>
-                        <div class="slide-button lt-button"></div>
-                    </div>
-
-                    <p class="overview">BnB Samarthan focuses on collaboration with financially weak institutions, which impart knowledge to the underprivileged children, by either sponsoring their education or providing them with basic amenities such as seating arrangements,
-                        stationery items, and water, electricity and sanitation facilities.</p>
-                    <div class="learn-more">
-                        <a href="samarthan.html" target="_blank">Learn more...</a>
-                    </div>
-                    <div class="detail">
-                        <div class="item">
-                            <p class="key">Raised: <span class="value">05,75,000 ₹</span></p>
-                        </div>
-                        <div class="item">
-                            <p class="key">Volunteers: <span class="value">12</span></p>
-                        </div>
-                    </div>
+                <div class="item">
+                    <p class="key">Volunteers: <span class="value">15</span></p>
                 </div>
-            </section>
-            <section id="project-description" class="from-y-axis">
-                <h1 class="title">SAMARTHAN</h1>
-                <div class="body">
+            </div>
+        </div>
+    </section>
 
-                    <div class="sliding-carousel sliding-project-carousel">
-                        <div class="carousel-wrapper">
-                            <div class="slides-container">
-                                <div class="slide active-slide">
-                                    <img src="https://source.unsplash.com/featured/excited" />
-                                </div>
-                                <div class="slide">
-                                    <img src="https://source.unsplash.com/featured/pleasure" />
-                                </div>
-                                <div class="slide">
-                                    <img src="https://source.unsplash.com/featured/happy" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-button rt-button"></div>
-                        <div class="slide-button lt-button"></div>
-                    </div>
+    <section id="project-details">
+        <div class="frags-container">
+            <div class="frag">
+                <img class="left from-x-axis" style="float:right" src="public/img/background3.png" alt="saksham1">
+                <p class="/*right*/ content from-x-axis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora fuga obcaecati itaque provident ratione necessitatibus reprehenderit ut voluptate omnis nisi quo ullam suscipit repudiandae amet sequi distinctio, magni cumque sapiente
+                    nihil dignissimos culpa nostrum laboriosam?
+                </p>
+            </div>
 
-                    <p class="overview">BnB Samarthan focuses on collaboration with financially weak institutions, which impart knowledge to the underprivileged children, by either sponsoring their education or providing them with basic amenities such as seating arrangements,
-                        stationery items, and water, electricity and sanitation facilities.</p>
-                    <div class="learn-more">
-                        <a href="samarthan.html" target="_blank">Learn more...</a>
-                    </div>
-                    <div class="detail">
-                        <div class="item">
-                            <p class="key">Raised: <span class="value">05,75,000 ₹</span></p>
-                        </div>
-                        <div class="item">
-                            <p class="key">Volunteers: <span class="value">12</span></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="frag">
+                <img class="right from-x-axis" style="float:left" src="public/img/background3.png" alt="saksham2">
+                <p class="/*left*/ content from-x-axis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quasi odit sunt soluta. Ex modi iure, quia eius asperiores tempora dolor, incidunt ullam nobis vitae provident totam ipsum maiores esse harum a sapiente, perferendis commodi
+                    natus quae similique enim? Impedit architecto corporis aperiam doloribus atque quia natus quod minima, ut odio. Aut, distinctio cupiditate qui commodi tenetur quidem non quaerat obcaecati suscipit eos. Eum deserunt, dignissimos sint
+                    doloremque alias illo totam odio dolorem tempore tempora tenetur optio consequatur omnis vitae. </p>
+            </div>
+
+            <div class="frag">
+                <img class="left from-x-axis" style="float:right" src="public/img/background3.png" alt="saksham3">
+                <p class="/*right*/ content from-x-axis"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia dolores aspernatur cum perferendis excepturi fugit nemo similique eaque voluptas neque veritatis officia necessitatibus qui consectetur deserunt, cumque dignissimos,
+                    incidunt praesentium? Nobis repellat eveniet ullam beatae atque soluta excepturi enim! </p>
+            </div>
         </div>
     </section>
 
@@ -315,8 +240,8 @@
             </div>
             <div class="developers">
                 <h3>Website Developers</h3>
-                <a href="https://www.linkedin.com/in/ashutosh-khanduala-4b586b105/">Ashutosh Khanduala</a><br />
-                <a href="https://www.linkedin.com/in/divya-sri-darimisetti-6166a8194">Divya Sri Darimisetti</a>
+                <a href="https://www.linkedin.com/in/divya-sri-darimisetti-6166a8194">Divya Sri Darimisetti</a> <br>
+                <a href="https://www.linkedin.com/in/ashutosh-khanduala-4b586b105/">Ashutosh Khanduala</a><br>
             </div>
         </div>
     </section>

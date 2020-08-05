@@ -9,37 +9,84 @@ section{
         }
     }
 
-    &.all-projects{
-        .projects-container{ 
-            section#project-description{
-                //all style already defined in _6-project-pages-layout.scss for this section
+    &#project-details{
+        .head{
+            width: 80vw;
+            min-width: 320px;
+            margin:0px auto;
+            position: relative;
+            z-index: 1;
+            .title{
+                background-color: rgba($color: $white, $alpha: 0.8);
+                width: 65%;
+                min-width: 320px;
+                margin: 30px auto 10px 0;
+                @include from-y-axis(20px);
+                padding:5px 0 5px 20px;
+                font-weight: 500;
+                color: $blue1;
+                border-radius: 5px 25px 25px 5px;
+                box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+            }
+        }
+        //styles aready defined in _6-project-pages-layout.scss
+        .frags-container{
+            .center-pg-frag{
                 .title{
-                    width: 100%;
+                    display:inline-block;
+                    background-color: rgba($color: $white, $alpha: 0.9);
+                    height: 50px;
+                    width: 40%;
+                    min-width: 250px;
+                    padding: 8px;
+                    @include from-y-axis(20px);
+                    font-weight: 500;
+                    color: $blue1;
+                    border-radius: 5px 25px 25px 5px;
+                    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+                    margin: 0 auto 10px 0px;
+                    @media ( max-width: 767px ){
+                        margin-left: 20px;
+                    }
+                    &.left{
+                        margin-left: 20px;
+                    }
                 }
-
-                .body{
-                    .sliding-project-carousel{
-                        margin: 0px auto 20px;
-                        //see carousel.scss for its child elements style implementation
-                    }
-                    .learn-more{
-                        margin: 15px 0 10px;
-                        a{
-                            display: inline-block;
-                            padding: 0.5em 1em;
-                            border-radius: 25px;
-                            font-weight: 900;
-                            letter-spacing: 1px;
-                            margin-right:10px;
-                            margin-top: 15px;
-                            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-                            background-color: rgba($color: $orange, $alpha: 0.8);
-                            text-decoration: none;
-                            color: $white;
-                        }
-                    }
+                padding:5px;
+                &::after { //this code preserves height to fit in the floating image
+                    content: " ";
+                    display: block; 
+                    height: 0; 
+                    clear: both;
+                }
+                img{
+                    height: 240px;
+                    object-fit: cover;
+                    object-position: 50% 30%;
+                }
+                .content{
+                    color: $white;
+                    font-weight: 600;
                 }
             }
-        }    
+            .learn-more{
+                a{
+                    display: block;
+                    width: 40%;
+                    min-width: 250px;
+                    text-align: center;
+                    padding: 0.5em 1em;
+                    border-radius: 25px;
+                    font-weight: 900;
+                    letter-spacing: 1px;
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+                    background-color: $green;
+                    text-decoration: none;
+                    color: $white;
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                }
+            }
+        }
     }
 }

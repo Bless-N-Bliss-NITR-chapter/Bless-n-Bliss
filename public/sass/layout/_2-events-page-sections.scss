@@ -29,102 +29,93 @@
 }
 
 section {
-    &.events {
-        transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-        text-align: center;
-        margin-top: 50px;
-        .container {
-            background-color: $white;
-            .head,
-            .events-ul {
-                max-width: 400px;
-                width: 25vw;
-                min-width: 300px;
-            }
-            .head {
-                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-                box-sizing: border-box;
-                box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
-                padding: 25px;
-                background-color: $blue;
-                color: $white;
-                margin: 0 auto;
-                border-radius: 5px 5px 0 0;
-                @include from-y-axis(20px);
-                h1 {
-                    transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-                }
-            }
-            .body {
-                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-                background-color: $blue;
-                @include pseudo-b-shadow(0, 0, 50px, rgba(0, 0, 0, 1));
-                padding-bottom: 20px;
-                position: relative;
-                width: 100%;
-                margin: 0 auto;
-                .events-ul {
-                    transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-                    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-                    height: 70vh;
-                    max-height: 500px;
-                    overflow-y: scroll;
-                    margin: 0 auto;
-                    background-color: $white;
-                    padding: 20px 5px;
-                    border-radius: 0 0 5px 5px;
-                    @include from-y-axis(50px);
-                    .date {
-                        padding-right: 5px;
-                        border-right: solid 3px $light-grey;
-                        margin: 5px 0;
-                        width: 50px;
-                    }
-                    .event {
-                        display: flex;
-                        padding: 5px 10px;
-                        border-radius: 5px;
-                        width: auto;
-                        margin: 5px 10px;
-                        border-style: none;
-                        background-color: $light-pink;
-                        min-height: 30px;
-                    }
-                }
-                //puller-btn is made global. see top
-                @include wiggleY(50%, 3px, 5s); //animation for .puller-btn
-                .wiggle-y.appear {
-                    animation: wiggleY 4s ease-in-out infinite;
-                }
-            }
+    &#latest-events {
+        margin:80px auto 0;
+        width: 60%;
+        min-width:340px;
+        .head {
+            background-color: rgba($color: $white, $alpha: 0.8);
+            height: 70px;
+            width: 65%;
+            min-width: 250px;
+            margin: 30px auto 10px 0;
+            @include from-y-axis(20px);
+            padding:10px;
+            font-weight: 500;
+            color: $blue1;
+            border-radius: 5px 25px 25px 5px;
+            box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
         }
-    }
-    &.close {
-        transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-        margin-top: 0;
-        .container {
-            .head {
-                box-sizing: content-box;
-                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-                border-radius: 0 0 5px 5px;
-                padding: 0px;
-                width: 90vw;
-                max-width: 90vw;
-                h1 {
-                    transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-                    margin: 0px;
-                    padding: 5px;
-                }
-            }
-            .body {
-                border-radius: 100%;
-                transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-                padding-bottom: 0;
-                width: 50%;
-                .events-ul {
-                    transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
-                    height: 0;
-                    padding: 0;
+        .body {
+            min-width: 340px;
+            box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+            border-radius:5px;
+            .sliding-events-carousel {
+                width: 100%;
+                height: 600px;
+                //see _carousel.scss for other properties
+                .carousel-wrapper {
+                    overflow:hidden;
+                    .slides-container {
+                        background-color:transparent;
+                        .slide {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            .top-wrap{
+                                min-height: 430px;
+                                width:100%; 
+                                position:relative;
+                                display: flex;
+                                justify-content: center;
+                                img {
+                                    object-fit: cover;
+                                    object-position: 50% 20%;
+                                    height: 350px;
+                                    width: 100%;
+                                }
+                                .about-event {
+                                    position: absolute;
+                                    background-color: rgba(#ffffff,0.8);
+                                    width: 80%;
+                                    margin: 0 auto;
+                                    text-align: left;
+                                    bottom: 0rem;
+                                    padding: 1rem;
+                                    .title, .date-organized {
+                                        margin: 0;
+                                        color: $raspberry-red;
+                                        font-weight: 500;
+                                    }
+                                    .date-organized{
+                                        text-align:right;
+                                    }
+                                    .location-tags {
+                                        margin: 15px 0 10px;
+                                        .tag {
+                                            display: inline-block;
+                                            padding: 0.3em 1em;
+                                            border-radius: 25px;
+                                            font-weight: 900;
+                                            letter-spacing: 1px;
+                                            margin-right: 10px;
+                                            margin-bottom: 15px;
+                                            box-shadow: 5px 5px 10px
+                                                rgba(0, 0, 0, 0.2);
+                                        }
+                                    }
+                                }
+                            }
+                            .bottom-wrap{
+                                padding:15px;
+                                .description{
+                                    max-height: 140px;
+                                    overflow-y: auto;
+                                    color:rgba($color: $grey, $alpha: 0.7);
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -134,7 +125,7 @@ section {
         margin-top: 100px;
         @include from-y-axis(50px);
         .some-year {
-            background-color: $white;
+            background-color: rgba(255, 255, 255, 0.5);
             padding-bottom: 25px;
             margin: 70px auto 0;
             width: 90vw;
@@ -169,7 +160,7 @@ section {
             .year-events-body {
                 counter-reset: event-number-counter;
                 //background:linear-gradient(to bottom, $light-pink 0%, $white 100%);
-                background-color: rgba($color: $blue2, $alpha: 0.96);
+                background-color: rgba($color: $blue2, $alpha: 0.8);
                 max-height: 1800px;
                 overflow-y: auto;
                 transition: all 0.5s cubic-bezier(0.9, 0, 0.33, 1);
@@ -213,29 +204,31 @@ section {
                             color: $white;
                             background: linear-gradient(
                                 to top,
-                                rgba($color: $blue2, $alpha: 0.99) 0%,
+                                rgba($color: $blue2, $alpha: 0.3) 0%,
                                 transparent 75%,
                                 transparent 25%,
-                                rgba($color: $blue2, $alpha: 0.5) 100%
+                                rgba($color: $blue2, $alpha: 0.3) 100%
                             );
                         }
-                        .learn-more{
+                        .learn-more {
                             margin: 15px 0 10px 35px;
-                            a{
+                            a {
                                 display: inline-block;
                                 padding: 0.5em 1em;
                                 border-radius: 25px;
                                 font-weight: 900;
                                 letter-spacing: 1px;
-                                margin-right:10px;
+                                margin-right: 10px;
                                 margin-top: 15px;
-                                box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-                                background-color: rgba($color: $orange, $alpha: 0.9);
+                                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+                                background-color: rgba(
+                                    $color: $orange,
+                                    $alpha: 0.9
+                                );
                                 text-decoration: none;
                                 color: $white;
                             }
                         }
-
                     }
                     .scrollable-viewer {
                         margin: 50px auto;
@@ -250,15 +243,16 @@ section {
                             display: flex;
                             align-items: center;
                             overflow-x: auto;
-                            box-shadow: 
-                                inset 20px 0 10px rgba($color: $white, $alpha: 0.1),
-                                inset -20px 0 10px rgba($color: $white, $alpha: 0.1);
+                            box-shadow: inset 20px 0 10px
+                                    rgba($color: $white, $alpha: 0.1),
+                                inset -20px 0 10px rgba($color: $white, $alpha:
+                                            0.1);
                             border-radius: 7px;
                             @include from-x-axis(50px, 0.2s, 1.5s);
                             .content {
                                 height: 200px;
                                 min-width: 260px;
-                                max-width:320px;
+                                max-width: 320px;
                                 margin: 0 5px;
                                 background-color: rgba(
                                     $color: $light-grey,
@@ -271,7 +265,7 @@ section {
                                     object-position: 50% 20%;
                                     width: 100%;
                                     height: 100%;
-                                }                               
+                                }
                             }
                             .content:nth-of-type(n + 3).from-x-axis {
                                 transform: translateX(10px);

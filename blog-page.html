@@ -36,17 +36,29 @@
         />
 
         <!--js scripts-->
+        <script defer src="public/js/loader.js"></script>
         <script defer src="public/js/navbar.js"></script>
         <script defer src="public/js/sidebar.js"></script>
         <script defer src="public/js/onscroll.js"></script>
         <script defer src="public/js/slidingCarousel.js"></script>
-        <script defer src="public/js/hammer.js/hammer.js"></script>
-        <script defer src="public/js/hammer.js/swipe.js"></script>
+        <script defer src="public/js/hammerjs/hammer.js"></script>
+        <script defer src="public/js/hammerjs/swipe.js"></script>
         <script defer src="public/js/filter.js"></script>
         <script defer src="public/js/button-click.js"></script>
     </head>
 
     <body>
+
+        <!-- preloader -->
+        <div class="preloader"></div>
+        <!-- preloader end-->
+        
+        <!-- dynamic background start -->
+        <div class="background-container">
+            <img style="object-fit:cover;" src="public/img/bg-static/body_3.svg" alt="">
+        </div>
+        <!-- end -->
+
         <section id="navbar">
             <div class="mobile-logo">
                 <img src="public/img/logo.png" alt="logo" />
@@ -245,7 +257,7 @@
             <div id="bleeding-eyes" class="blog-container">
                 <div class="blog-wrapper">
                     <div class="blogs">
-                        <img src="public\img\blog-page-img\bleeding eyes.jpg" alt="bleeding eyes">
+                        <img src="public\img\blog-page-img\bleeding eyes.jpg" style="object-position: 50% 0%;" alt="bleeding eyes">
                         <div class="about-blog">
                             <h1 class="title s1">THE BLEEDING EYES</h1>
                             <h3 class="name">
@@ -339,10 +351,10 @@
             </a>
         </section>
 
-        <section id="footer">
+        <section id="footer" style="background-color: rgba(244,244,255,0.9);">
             <div class="footer-top">
                 <div class="footer-head">
-                    <div class="logo">
+                    <div class="logo" style="color: black;">
                         <img src="public/img/logo.png" alt="logo" />
                         <div class="title">
                             <h3 class="brand-name">Bless 'n' Bliss</h3>
