@@ -4,3 +4,24 @@
         transition-delay: 0.1s;
     }
 }
+
+#how-we-started, #board, #central-co-ordinators, #coordinators{
+    width: 80vw;
+    min-width: 335px;
+    margin: 0 auto !important;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 100px !important;
+    .title{
+        background-color: rgba($color: $blue2, $alpha: 0.75);
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto 20px;
+        @include flex-center();
+        border-radius: 45px;
+        padding: 10px 15px;
+    
+        color: $white;
+    }
+}

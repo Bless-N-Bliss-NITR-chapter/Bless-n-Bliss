@@ -1687,6 +1687,29 @@ section#project-details .frags-container .learn-more a {
   transition-delay: 0.1s;
 }
 
+#how-we-started, #board, #central-co-ordinators, #coordinators {
+  width: 80vw;
+  min-width: 335px;
+  margin: 0 auto !important;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 100px !important;
+}
+
+#how-we-started .title, #board .title, #central-co-ordinators .title, #coordinators .title {
+  background-color: rgba(60, 57, 204, 0.75);
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  padding: 10px 15px;
+  color: white;
+}
+
 section.banner-container .project-name {
   font-size: 40px;
   top: 27%;
