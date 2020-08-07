@@ -581,11 +581,13 @@ section.cyclothon div#cyclothon .photo-carousel2 {
 }
 
 section#thanks {
-  margin-top: 50px;
+  margin: 50px 10px 0;
 }
 
 section#thanks .thanks {
-  margin: 15px 10px 0;
+  margin: 0 auto;
+  width: 80vw;
+  min-width: 320px;
   padding: 25px 15px;
   border-radius: 25px;
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
@@ -792,6 +794,8 @@ section#footer .footer-top .footer-content .blogs {
 section#footer .footer-top .footer-content .locations h3,
 section#footer .footer-top .footer-content .contact-us h3,
 section#footer .footer-top .footer-content .blogs h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
   margin-bottom: 20px;
   color: #D384A3;
 }
@@ -1565,6 +1569,116 @@ section.banner-container .project-name.title {
 
 section.banner-container .project-name.location {
   top: 75%;
+}
+
+section#about-center {
+  width: 80%;
+  min-width: 330px;
+  margin: 80px auto 0;
+  padding: 25px 15px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+}
+
+section#about-center .title {
+  background-color: rgba(60, 57, 204, 0.75);
+  height: 70px;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  position: relative;
+}
+
+section#about-center .title .from-y-axis {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+
+section#about-center .title .from-y-axis.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+section#about-center .title h2 {
+  color: white;
+}
+
+section#about-center .about {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  section#about-center .about {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+section#about-center .about .img {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+section#about-center .about .img img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+section#about-center .about .para {
+  display: grid;
+  align-items: center;
+}
+
+section#about-center .about .para p {
+  text-align: left;
+  margin: 15px 10px;
+}
+
+@media (max-width: 767px) {
+  section#about-center .about .para p {
+    text-align: center;
+  }
+}
+
+section#about-center .about .para p span {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+section#about-center .content {
+  display: grid;
+}
+
+section#about-center .content .sub-heading {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  padding: 5px 15px;
+  display: inline-block;
+  margin: 40px auto 20px;
+  font-weight: 600;
+}
+
+section#about-center .content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+section#about-center .content ul li {
+  list-style: disclosure-closed;
+  text-align: left;
+  margin: 5px 20px;
 }
 
 section#project-details .head {
