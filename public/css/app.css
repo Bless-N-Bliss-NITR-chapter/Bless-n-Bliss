@@ -794,6 +794,8 @@ section#footer .footer-top .footer-content .blogs {
 section#footer .footer-top .footer-content .locations h3,
 section#footer .footer-top .footer-content .contact-us h3,
 section#footer .footer-top .footer-content .blogs h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
   margin-bottom: 20px;
   color: #D384A3;
 }
