@@ -9,6 +9,87 @@ section{
         }
     }
 
+    &#about-center{
+        width:80%;
+        min-width: 330px;
+        margin: 80px auto 0;
+        padding: 25px 15px;
+        border-radius: 25px;
+        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+        .title {
+            background-color: rgba($color: $blue2, $alpha: 0.75);
+            height: 70px;
+            width: 100%;
+            max-width: 400px;
+            margin: 30px auto 35px;
+            @include flex-center();
+            border-radius: 45px;
+            position: relative;
+            @include from-y-axis(20px);
+            h2 {
+                color: $white;
+            }
+        }
+        .about {
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            @media ( max-width: 767px ){
+                display:grid;
+                justify-content: center;
+                align-items: center;
+            }
+            .img{
+                display:flex;
+                align-items: center;
+                margin: 15px;
+                img{
+                    width :100px;
+                    margin: 0 auto;
+                }
+            }
+            .para{
+                display:grid;
+                align-items: center;
+                p{
+                    text-align:left;
+                    margin: 15px 10px;
+                    @media ( max-width: 767px ){
+                        text-align:center;
+                    }
+
+                    span{
+                        text-transform: capitalize;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .content{
+            display: grid;
+            .sub-heading{
+                border: 1px solid rgba(0,0,0,0.7);
+                border-radius: 25px;
+                padding: 5px 15px;
+                display: inline-block;
+                margin: 40px auto 20px;
+                font-weight: 600;               
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 40px;
+                li{
+                    list-style: disclosure-closed;
+                    text-align: left;
+                    margin: 5px 20px;
+                }
+            }
+        }
+    }
+
     &#project-details{
         .head{
             width: 80vw;
