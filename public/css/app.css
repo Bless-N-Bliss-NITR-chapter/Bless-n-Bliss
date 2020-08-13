@@ -1245,7 +1245,7 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .from-x-axis {
   opacity: 0;
   transform: translateX(50px);
-  transition: opacity 0.2s ease, transform 1.5s ease;
+  transition: opacity adress 0.2s ease, transform 1.5s ease;
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .from-x-axis.appear {
@@ -1771,22 +1771,28 @@ section#project-details .frags-container .learn-more a {
   margin-bottom: 40px;
 }
 
-.board-trustee .from-y-axis, .coordinators .from-y-axis {
+.board-trustee .from-y-axis,
+.coordinators .from-y-axis {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.3s ease, transform 0.7s ease;
 }
 
-.board-trustee .from-y-axis.appear, .coordinators .from-y-axis.appear {
+.board-trustee .from-y-axis.appear,
+.coordinators .from-y-axis.appear {
   opacity: 1;
   transform: translateY(0px);
 }
 
-.board-trustee .from-x-axis, .coordinators .from-x-axis {
+.board-trustee .from-x-axis,
+.coordinators .from-x-axis {
   transition-delay: 0.1s;
 }
 
-#how-we-started, #board, #central-co-ordinators, #coordinators {
+#how-we-started,
+#board,
+#central-co-ordinators,
+#coordinators {
   width: 80vw;
   min-width: 335px;
   margin: 0 auto !important;
@@ -1796,7 +1802,10 @@ section#project-details .frags-container .learn-more a {
   margin-top: 100px !important;
 }
 
-#how-we-started .title, #board .title, #central-co-ordinators .title, #coordinators .title {
+#how-we-started .title,
+#board .title,
+#central-co-ordinators .title,
+#coordinators .title {
   background-color: rgba(60, 57, 204, 0.75);
   width: 100%;
   max-width: 400px;
