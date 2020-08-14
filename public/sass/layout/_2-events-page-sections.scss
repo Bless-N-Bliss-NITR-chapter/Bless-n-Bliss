@@ -237,6 +237,7 @@ section {
                         }
                     }
                     .scrollable-viewer {
+                        overflow-x: hidden;
                         margin: 50px auto;
                         width: 85%;
                         background-color: rgba($color: $white, $alpha: 0.1);
@@ -244,6 +245,7 @@ section {
                         border-radius: 15px;
                         border-bottom-width: 3px;
                         box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+                        @include from-x-axis(50px, 0.2s, 1.5s);
                         .lenghty-box {
                             height: 230px;
                             display: flex;
@@ -254,7 +256,7 @@ section {
                                 inset -20px 0 10px rgba($color: $white, $alpha:
                                             0.1);
                             border-radius: 7px;
-                            @include from-x-axis(50px, 0.2s, 1.5s);
+                            // @include from-x-axis(50px, 0.2s, 1.5s);
                             .content {
                                 height: 200px;
                                 min-width: 260px;
@@ -273,20 +275,20 @@ section {
                                     height: 100%;
                                 }
                             }
-                            .content:nth-of-type(n + 3).from-x-axis {
-                                transform: translateX(10px);
-                                &.appear {
-                                    transform: translateX(0px);
-                                }
-                            }
-                            @media (max-width: 360px) {
-                                .content:nth-of-type(n + 1).from-x-axis {
-                                    transform: translateX(10px);
-                                    &.appear {
-                                        transform: translateX(0px);
-                                    }
-                                }
-                            }
+                            // .content:nth-of-type(n + 3).from-x-axis {
+                            //     transform: translateX(10px);
+                            //     &.appear {
+                            //         transform: translateX(0px);
+                            //     }
+                            // }
+                            // @media (max-width: 360px) {
+                            //     .content:nth-of-type(n + 1).from-x-axis {
+                            //         transform: translateX(10px);
+                            //         &.appear {
+                            //             transform: translateX(0px);
+                            //         }
+                            //     }
+                            // }
                         }
                     }
                 }

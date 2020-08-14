@@ -1021,7 +1021,8 @@ section#footer .dev-section .developers {
 
 section#footer .dev-section .maintainer h3,
 section#footer .dev-section .developers h3 {
-  margin-bottom: px;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 section#footer .dev-section .maintainer a,
@@ -1437,6 +1438,7 @@ section#events-happened .some-year .year-events-body .year-event .about-event .l
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer {
+  overflow-x: hidden;
   margin: 50px auto;
   width: 85%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1445,6 +1447,17 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
   border-bottom-width: 3px;
   -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .from-x-axis {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity adress 0.2s ease, transform 1.5s ease;
+}
+
+section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .from-x-axis.appear {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box {
@@ -2100,7 +2113,8 @@ section#project-details .frags-container .learn-more a {
   margin-bottom: 40px;
 }
 
-.board-trustee .from-y-axis, .coordinators .from-y-axis {
+.board-trustee .from-y-axis,
+.coordinators .from-y-axis {
   opacity: 0;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
@@ -2110,7 +2124,8 @@ section#project-details .frags-container .learn-more a {
   transition: opacity 0.3s ease, transform 0.7s ease, -webkit-transform 0.7s ease;
 }
 
-.board-trustee .from-y-axis.appear, .coordinators .from-y-axis.appear {
+.board-trustee .from-y-axis.appear,
+.coordinators .from-y-axis.appear {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
@@ -2121,7 +2136,10 @@ section#project-details .frags-container .learn-more a {
           transition-delay: 0.1s;
 }
 
-#how-we-started, #board, #central-co-ordinators, #coordinators {
+#how-we-started,
+#board,
+#central-co-ordinators,
+#coordinators {
   width: 80vw;
   min-width: 335px;
   margin: 0 auto !important;
@@ -2132,7 +2150,10 @@ section#project-details .frags-container .learn-more a {
   margin-top: 100px !important;
 }
 
-#how-we-started .title, #board .title, #central-co-ordinators .title, #coordinators .title {
+#how-we-started .title,
+#board .title,
+#central-co-ordinators .title,
+#coordinators .title {
   background-color: rgba(60, 57, 204, 0.75);
   width: 100%;
   max-width: 400px;
@@ -2359,10 +2380,15 @@ section#project-details .frags-container .frag .left.from-x-axis {
   opacity: 0;
   -webkit-transform: translateX(100px);
           transform: translateX(100px);
-  -webkit-transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease, transform  0.7s ease;
-  transition: opacity 0.3s ease, transform  0.7s ease, -webkit-transform  0.7s ease;
+  -webkit-transition: opacity 0.3s ease,
+ -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease,
+ -webkit-transform  0.7s ease;
 }
 
 section#project-details .frags-container .frag .left.from-x-axis.appear {
@@ -2375,10 +2401,15 @@ section#project-details .frags-container .frag .right.from-x-axis {
   opacity: 0;
   -webkit-transform: translateX(-100px);
           transform: translateX(-100px);
-  -webkit-transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease, transform  0.7s ease;
-  transition: opacity 0.3s ease, transform  0.7s ease, -webkit-transform  0.7s ease;
+  -webkit-transition: opacity 0.3s ease,
+ -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease,
+ -webkit-transform  0.7s ease;
 }
 
 section#project-details .frags-container .frag .right.from-x-axis.appear {
