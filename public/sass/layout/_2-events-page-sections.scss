@@ -209,6 +209,12 @@ section {
                                 transparent 25%,
                                 rgba($color: $blue2, $alpha: 0.3) 100%
                             );
+                            p{
+                                width: 90%;
+                                min-width: 230px;
+                                text-align: justify;
+                                margin:5px 0;
+                            }
                         }
                         .learn-more {
                             margin: 15px 0 10px 35px;
