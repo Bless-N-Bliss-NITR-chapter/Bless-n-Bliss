@@ -59,7 +59,7 @@ tracksContainers.forEach(trackContainer => {
                 });
             }
             else {
-                timerID = setInterval(() => nextSlide(), 4000);
+                timerID = setInterval(() => nextSlide(), 7000);
                 inResumeMode = true;
                 pauseButtons.forEach(pauseButton => {
                     pauseButton.classList.remove('play-button');
@@ -70,7 +70,7 @@ tracksContainers.forEach(trackContainer => {
     })
 
 
-    let timerID = setInterval(() => nextSlide(), 4000);
+    let timerID = setInterval(() => nextSlide(), 7000);
 
 
 })
