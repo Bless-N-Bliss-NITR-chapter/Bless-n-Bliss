@@ -1451,13 +1451,18 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .from-x-axis {
   opacity: 0;
-  transform: translateX(50px);
-  transition: opacity adress 0.2s ease, transform 1.5s ease;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 1.5s ease;
+  transition: opacity 0.2s ease, -webkit-transform 1.5s ease;
+  transition: opacity 0.2s ease, transform 1.5s ease;
+  transition: opacity 0.2s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .from-x-axis.appear {
   opacity: 1;
-  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box {
@@ -1472,22 +1477,6 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
   -webkit-box-shadow: inset 20px 0 10px rgba(255, 255, 255, 0.1), inset -20px 0 10px rgba(255, 255, 255, 0.1);
           box-shadow: inset 20px 0 10px rgba(255, 255, 255, 0.1), inset -20px 0 10px rgba(255, 255, 255, 0.1);
   border-radius: 7px;
-}
-
-section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .from-x-axis {
-  opacity: 0;
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-  -webkit-transition: opacity 0.2s ease, -webkit-transform 1.5s ease;
-  transition: opacity 0.2s ease, -webkit-transform 1.5s ease;
-  transition: opacity 0.2s ease, transform 1.5s ease;
-  transition: opacity 0.2s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-}
-
-section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .from-x-axis.appear {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
 }
 
 section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content {
@@ -1515,27 +1504,6 @@ section#events-happened .some-year .year-events-body .year-event .scrollable-vie
      object-position: 50% 20%;
   width: 100%;
   height: 100%;
-}
-
-section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 3).from-x-axis {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
-}
-
-section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 3).from-x-axis.appear {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-@media (max-width: 360px) {
-  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 1).from-x-axis {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
-  section#events-happened .some-year .year-events-body .year-event .scrollable-viewer .lenghty-box .content:nth-of-type(n + 1).from-x-axis.appear {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
 }
 
 section#events-happened .some-year .close {
@@ -2131,7 +2099,8 @@ section#project-details .frags-container .learn-more a {
           transform: translateY(0px);
 }
 
-.board-trustee .from-x-axis, .coordinators .from-x-axis {
+.board-trustee .from-x-axis,
+.coordinators .from-x-axis {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
@@ -2380,15 +2349,10 @@ section#project-details .frags-container .frag .left.from-x-axis {
   opacity: 0;
   -webkit-transform: translateX(100px);
           transform: translateX(100px);
-  -webkit-transition: opacity 0.3s ease,
- -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease,
- -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease,
- transform  0.7s ease;
-  transition: opacity 0.3s ease,
- transform  0.7s ease,
- -webkit-transform  0.7s ease;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease, transform  0.7s ease;
+  transition: opacity 0.3s ease, transform  0.7s ease, -webkit-transform  0.7s ease;
 }
 
 section#project-details .frags-container .frag .left.from-x-axis.appear {
@@ -2401,15 +2365,10 @@ section#project-details .frags-container .frag .right.from-x-axis {
   opacity: 0;
   -webkit-transform: translateX(-100px);
           transform: translateX(-100px);
-  -webkit-transition: opacity 0.3s ease,
- -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease,
- -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease,
- transform  0.7s ease;
-  transition: opacity 0.3s ease,
- transform  0.7s ease,
- -webkit-transform  0.7s ease;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease, transform  0.7s ease;
+  transition: opacity 0.3s ease, transform  0.7s ease, -webkit-transform  0.7s ease;
 }
 
 section#project-details .frags-container .frag .right.from-x-axis.appear {
