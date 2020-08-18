@@ -1705,6 +1705,7 @@ section#project-details .head .title .from-y-axis.appear {
 }
 
 section#project-details .frags-container .center-pg-frag {
+  margin-top: 30px;
   padding: 5px;
 }
 
@@ -1759,6 +1760,10 @@ section#project-details .frags-container .center-pg-frag img {
 section#project-details .frags-container .center-pg-frag .content {
   color: white;
   font-weight: 600;
+}
+
+section#project-details .frags-container .learn-more {
+  display: none;
 }
 
 section#project-details .frags-container .learn-more a {
@@ -1855,6 +1860,10 @@ section.banner-container .quote-container .quote::before {
   left: -4rem;
   color: #696969;
   filter: drop-shadow(0 0 2px white);
+}
+
+section.banner-container .quote-container .quote span {
+  font-weight: 600;
 }
 
 section.banner-container .quote-container .underline {

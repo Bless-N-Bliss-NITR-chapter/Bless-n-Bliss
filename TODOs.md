@@ -12,15 +12,9 @@
 
 - [x] no excess animation
 
-## index.html
-
-- [ ] project-carousel has old photos of projects.
-
-- [x] links to individual projects page to be updates
-
 ## events.html
 
-- [ ] content+images to be added.
+- [x] content+images to be added.
 
 - [x] Learn more buttons.
 
@@ -32,10 +26,28 @@
 
 - [x] content+images to be added.
 
+## index.html
+
+- [x] project-carousel has old photos of projects.
+
+- [x] links to individual projects page to be updates
+
+- [ ] donations and amounts to be inserted
+
 ## about.html
 
 - [ ] coordinators n trustees images to be updated.
 
+- [ ] page background
+
 ## centers.html
 
-- [ ] content+images to be added.
+- [ ] banner images to be added.
+
+- [ ] 2nd section (OUR PROJECTS) to be updated.
+
+- [ ] page background
+
+## projects.html
+
+- [ ] page background
