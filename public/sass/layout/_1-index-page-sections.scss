@@ -84,7 +84,7 @@ section {
                 @include flex-center();
                 border-radius: 45px;
                 position: relative;
-                @include from-y-axis(20px);
+                @include from-y-axis(20px, 0.1s, 0.3s);
                 h2 {
                     color: $white;
                 }
@@ -161,7 +161,7 @@ section {
                 @include flex-center();
                 border-radius: 45px;
                 position: relative;
-                @include from-y-axis(20px);
+                @include from-y-axis(20px,0.1s, 0.3s);
                 h2 {
                     color: $white;
                 }
@@ -184,7 +184,7 @@ section {
             @include flex-center();
             border-radius: 45px;
             position: relative;
-            @include from-y-axis(20px);
+            @include from-y-axis(20px,0.1s, 0.3s);
             h2 {
                 color: $white;
             }
