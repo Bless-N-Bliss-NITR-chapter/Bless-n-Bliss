@@ -2658,7 +2658,7 @@ section#latest-events .body .sliding-events-carousel .carousel-wrapper .slides-c
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 182, 193, 0.7);
+  background-color: #e3a83d;
   z-index: 11;
   display: flex;
   justify-content: space-between;

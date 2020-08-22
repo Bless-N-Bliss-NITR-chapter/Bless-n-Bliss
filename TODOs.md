@@ -32,7 +32,7 @@
 
 - [x] links to individual projects page to be updates
 
-- [ ] donations and amounts to be inserted
+- [x] donations list to be inserted
 
 ## about.html
 
