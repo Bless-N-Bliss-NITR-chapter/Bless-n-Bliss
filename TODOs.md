@@ -36,7 +36,7 @@
 
 ## about.html
 
-- [ ] coordinators n trustees images to be updated.
+- [ ] coordinators names to be updated.
 
 - [ ] page background
 
@@ -44,7 +44,7 @@
 
 - [x] banner images to be added.
 
-- [x] 2nd section (OUR PROJECTS) to be updated.
+- [ ] 2nd section (OUR PROJECTS) to be updated.
 
 - [ ] page background
 
