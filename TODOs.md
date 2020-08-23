@@ -36,9 +36,9 @@
 
 ## about.html
 
-- [ ] coordinators names to be updated.
+- [x] coordinators names to be updated.
 
-- [ ] page background
+- [x] page background
 
 ## centers.html
 
