@@ -1802,7 +1802,7 @@ section#project-details .frags-container .learn-more a {
 }
 
 .coord-card {
-  height: 180px;
+  min-height: 180px;
   justify-content: center;
 }
 
@@ -2015,6 +2015,14 @@ section#project-details .frags-container .frag .content {
   font-weight: 600;
 }
 
+section#project-details .frags-container .frag .content span {
+  font-weight: 700;
+}
+
+section#project-details .frags-container .frag .content p {
+  margin: 5px 0;
+}
+
 section#project-details .frags-container .frag .left.from-x-axis {
   opacity: 0;
   transform: translateX(100px);
@@ -2054,11 +2062,14 @@ section#project-details .frags-container .frag .right.from-x-axis.appear {
     display: flex;
     flex-direction: column;
   }
-  section#project-details .frags-container .frag img {
+  section#project-details .frags-container .frag img, section#project-details .frags-container .frag .carousel-container {
     margin: 15px auto 10px;
     float: none !important;
     width: 90%;
     max-width: 350px;
+  }
+  section#project-details .frags-container .frag .carousel-container {
+    margin: 0 auto !important;
   }
   section#project-details .frags-container .frag .content {
     margin: 15px auto 10px;
@@ -2923,6 +2934,11 @@ section#latest-events .body .sliding-events-carousel .carousel-wrapper .slides-c
   --sliding-carousel-width: 100%;
   --sliding-carousel-height: 300px;
   max-width: 470px;
+}
+
+.sliding-photo-carousel-sm {
+  --sliding-carousel-width: 345px;
+  --sliding-carousel-height: 240px;
 }
 
 .modal-background {
