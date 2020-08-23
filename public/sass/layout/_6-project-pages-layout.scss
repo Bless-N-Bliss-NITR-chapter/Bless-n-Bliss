@@ -6,7 +6,7 @@ section {
             top: 27%;
         }
         .quote-container {
-            background-color: rgba($color: $light-pink, $alpha: 0.8);
+            background-color: rgba(125, 125, 125, 0.6);;
             z-index: 1;
             position: absolute;
             top: 80%;
@@ -14,18 +14,22 @@ section {
             transform: translate(-50%, -50%);
             padding: 1em 3em;
             border-radius: 5px;
+            color:white;
             .quote {
                 font-weight: 500;
                 position: relative;
                 min-width: 220px;
-                &::before {
-                    content: open-quote;
-                    font-size: 130px;
-                    position: absolute;
-                    top: -5.4rem;
-                    left: -4rem;
-                    color: $dimgrey;
-                    filter: drop-shadow(0 0 2px $white);
+                // &::before {
+                //     content: open-quote;
+                //     font-size: 130px;
+                //     position: absolute;
+                //     top: -5.4rem;
+                //     left: -4rem;
+                //     color: $dimgrey;
+                //     filter: drop-shadow(0 0 2px $white);
+                // }
+                span{
+                    font-weight: 600;
                 }
             }
             .underline{
