@@ -5,7 +5,14 @@
         transition-delay: 0.1s;
     }
 }
-
+.coord-card{
+    height: 180px;
+    justify-content: center;
+}
+.card-img{
+    align-self: flex-start;
+    margin-top: 21px;
+}
 #how-we-started,
 #board,
 #central-co-ordinators,

@@ -113,6 +113,7 @@ section{
         //styles aready defined in _6-project-pages-layout.scss
         .frags-container{
             .center-pg-frag{
+                margin-top: 30px;
                 .title{
                     display:inline-block;
                     background-color: rgba($color: $white, $alpha: 0.9);
@@ -151,6 +152,7 @@ section{
                 }
             }
             .learn-more{
+                display: none;
                 a{
                     display: block;
                     width: 40%;
