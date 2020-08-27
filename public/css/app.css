@@ -430,7 +430,7 @@ section#what-we-do .our-mission .body .card .detail {
 }
 
 section#what-we-do .our-mission .body .knowledge {
-  background-image: url(../img/background.png);
+  background-image: url(../img/misc/background.png);
   color: white;
 }
 
@@ -440,13 +440,13 @@ section#what-we-do .our-mission .body .knowledge .svg {
 }
 
 section#what-we-do .our-mission .body .support {
-  background-image: url(../img/background3.png);
+  background-image: url(../img/misc/background3.png);
   background-position: 40% 0%;
   transition-delay: 0.2s;
 }
 
 section#what-we-do .our-mission .body .equality {
-  background-image: url(../img/background3.png);
+  background-image: url(../img/misc/background3.png);
   background-position: 0% 25.5%;
   transition-delay: 0.4s;
 }
