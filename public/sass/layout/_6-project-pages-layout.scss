@@ -133,6 +133,12 @@ section {
                 .content{
                     color: $white;
                     font-weight: 600;
+                    span{
+                        font-weight: 700;
+                    }
+                    p{
+                        margin: 5px 0;
+                    }
                 }
                 
                 //animations part
@@ -179,11 +185,14 @@ section {
                 .frag{
                     display: flex;
                     flex-direction: column;
-                    img{
+                    img, .carousel-container{
                         margin: 15px auto 10px;
                         float:none !important;
                         width: 90%;
                         max-width: 350px;
+                    }
+                    .carousel-container{   
+                        margin: 0 auto !important
                     }
                     .content{
                         margin: 15px auto 10px;
