@@ -221,8 +221,10 @@ section {
                         margin-right: 0;
                     }
                     .photo-carousel2 {
-                        --carousel-width: 100vw;
+                        --carousel-width: 80vw;
                         --carousel-min-height: 90vh;
+                        border-radius: 15px 25px 15px 15px;
+                        box-shadow: 5px 5px 50px rgba(0,0,0,0.2);
                         .tracks-container {
                             .bg-img {
                                 object-fit: contain;
