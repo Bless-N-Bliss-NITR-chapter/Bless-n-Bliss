@@ -126,7 +126,7 @@ section {
                     }
                 }
                 .knowledge {
-                    background-image: url(../img/background.png);
+                    background-image: url(../img/misc/background.png);
                     //background-position: center bottom;
                     color: $white;
                     .svg {
@@ -135,12 +135,12 @@ section {
                     }
                 }
                 .support {
-                    background-image: url(../img/background3.png);
+                    background-image: url(../img/misc/background3.png.webp);
                     background-position: 40% 0%;
                     transition-delay: 0.2s;
                 }
                 .equality {
-                    background-image: url(../img/background3.png);
+                    background-image: url(../img/misc/background3.png.webp);
                     background-position: 0% 25.5%;
                     transition-delay: 0.4s;
                 }
@@ -221,8 +221,10 @@ section {
                         margin-right: 0;
                     }
                     .photo-carousel2 {
-                        --carousel-width: 100vw;
+                        --carousel-width: 80vw;
                         --carousel-min-height: 90vh;
+                        border-radius: 15px 25px 15px 15px;
+                        box-shadow: 5px 5px 50px rgba(0,0,0,0.2);
                         .tracks-container {
                             .bg-img {
                                 object-fit: contain;

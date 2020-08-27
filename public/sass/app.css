@@ -501,14 +501,14 @@ section#what-we-do .our-mission .body .knowledge .svg {
 }
 
 section#what-we-do .our-mission .body .support {
-  background-image: url(../img/background3.png);
+  background-image: url(../img/background3.png.webp);
   background-position: 40% 0%;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
 section#what-we-do .our-mission .body .equality {
-  background-image: url(../img/background3.png);
+  background-image: url(../img/background3.png.webp);
   background-position: 0% 25.5%;
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
@@ -2167,10 +2167,15 @@ section#project-details .frags-container .frag .left.from-x-axis {
   opacity: 0;
   -webkit-transform: translateX(100px);
           transform: translateX(100px);
-  -webkit-transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease, transform  0.7s ease;
-  transition: opacity 0.3s ease, transform  0.7s ease, -webkit-transform  0.7s ease;
+  -webkit-transition: opacity 0.3s ease,
+ -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease,
+ -webkit-transform  0.7s ease;
 }
 
 section#project-details .frags-container .frag .left.from-x-axis.appear {
@@ -2183,10 +2188,15 @@ section#project-details .frags-container .frag .right.from-x-axis {
   opacity: 0;
   -webkit-transform: translateX(-100px);
           transform: translateX(-100px);
-  -webkit-transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease, -webkit-transform  0.7s ease;
-  transition: opacity 0.3s ease, transform  0.7s ease;
-  transition: opacity 0.3s ease, transform  0.7s ease, -webkit-transform  0.7s ease;
+  -webkit-transition: opacity 0.3s ease,
+ -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ -webkit-transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease,
+ -webkit-transform  0.7s ease;
 }
 
 section#project-details .frags-container .frag .right.from-x-axis.appear {

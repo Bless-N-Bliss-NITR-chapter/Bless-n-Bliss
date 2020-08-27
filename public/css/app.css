@@ -430,7 +430,7 @@ section#what-we-do .our-mission .body .card .detail {
 }
 
 section#what-we-do .our-mission .body .knowledge {
-  background-image: url(../img/background.png);
+  background-image: url(../img/misc/background.png);
   color: white;
 }
 
@@ -440,13 +440,13 @@ section#what-we-do .our-mission .body .knowledge .svg {
 }
 
 section#what-we-do .our-mission .body .support {
-  background-image: url(../img/background3.png);
+  background-image: url(../img/misc/background3.png.webp);
   background-position: 40% 0%;
   transition-delay: 0.2s;
 }
 
 section#what-we-do .our-mission .body .equality {
-  background-image: url(../img/background3.png);
+  background-image: url(../img/misc/background3.png.webp);
   background-position: 0% 25.5%;
   transition-delay: 0.4s;
 }
@@ -559,8 +559,10 @@ section.cyclothon div#cyclothon .photo-carousel2 {
     margin-right: 0;
   }
   section.cyclothon div#cyclothon .photo-carousel2 {
-    --carousel-width: 100vw;
+    --carousel-width: 80vw;
     --carousel-min-height: 90vh;
+    border-radius: 15px 25px 15px 15px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
   }
   section.cyclothon div#cyclothon .photo-carousel2 .tracks-container .bg-img {
     object-fit: contain;
@@ -2026,7 +2028,8 @@ section#project-details .frags-container .frag .content p {
 section#project-details .frags-container .frag .left.from-x-axis {
   opacity: 0;
   transform: translateX(100px);
-  transition: opacity 0.3s ease, transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease;
 }
 
 section#project-details .frags-container .frag .left.from-x-axis.appear {
@@ -2037,7 +2040,8 @@ section#project-details .frags-container .frag .left.from-x-axis.appear {
 section#project-details .frags-container .frag .right.from-x-axis {
   opacity: 0;
   transform: translateX(-100px);
-  transition: opacity 0.3s ease, transform  0.7s ease;
+  transition: opacity 0.3s ease,
+ transform  0.7s ease;
 }
 
 section#project-details .frags-container .frag .right.from-x-axis.appear {
