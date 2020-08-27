@@ -44,7 +44,7 @@
 
 - [x] banner images to be added.
 
-- [ ] 2nd section (OUR PROJECTS) to be updated.
+- [x] 2nd section (OUR PROJECTS) to be updated.
 
 - [ ] page background
 
