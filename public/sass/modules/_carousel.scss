@@ -45,11 +45,14 @@
             z-index: 12;
             .indicator {
                 @include circular-button(rgba($color: #000000, $alpha: 0.3), 5px, 20px);
+                transition: ease-in 0.5s;
                 border: solid 2px $pink;
+                transform: scale(0.5);
             }
             .active-dot {
                 transition: ease-in 0.5s;
                 background-color: $light-pink;
+                transform: scale(1);
             }
         }
         .pause-button-container {
