@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/blessnbliss/public_html
+    - /bin/cp -r ./*.html $DEPLOYPATH/
+    - /bin/cp -r ./public/css $DEPLOYPATH/public/css
+    - /bin/cp -r ./public/img $DEPLOYPATH/public/img
+    - /bin/cp -r ./public/js $DEPLOYPATH/public/js
