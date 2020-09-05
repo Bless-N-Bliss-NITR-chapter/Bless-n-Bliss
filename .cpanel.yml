@@ -3,6 +3,9 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/blessnbliss/public_html
     - /bin/cp -r ./*.html $DEPLOYPATH/
+    - mkdir -p $DEPLOYPATH/public/css
+    - mkdir -p $DEPLOYPATH/public/img
+    - mkdir -p $DEPLOYPATH/public/js
     - /bin/cp -r ./public/css $DEPLOYPATH/public/css
     - /bin/cp -r ./public/img $DEPLOYPATH/public/img
     - /bin/cp -r ./public/js $DEPLOYPATH/public/js
