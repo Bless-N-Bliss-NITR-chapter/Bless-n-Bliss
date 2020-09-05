@@ -9,3 +9,4 @@ deployment:
     - /bin/cp -r ./public/css $DEPLOYPATH/public
     - /bin/cp -r ./public/img $DEPLOYPATH/public
     - /bin/cp -r ./public/js $DEPLOYPATH/public
+    - /bin/cp -r ./.neverDelete $DEPLOYPATH/
