@@ -15,6 +15,14 @@ AddType x-font/woff .woff
 AddType image/x-icon .ico
 AddType image/png .png
 
-#Uncomment the code below to turn on the maintennance mode.
-RewriteEngine On
-RewriteRule !^maintenance.html$ /maintenance.html [R=302,L]
+#Uncomment the code below to turn on the maintenance mode.
+
+##Uncomment the code to turn on the maintenance mode.
+#
+#Deny From All
+#<FilesMatch 404-layout.min.css>
+#    Allow From All
+#</FilesMatch>
+#<FilesMatch logo-small-transparent-30.png>
+#    Allow From All
+#</FilesMatch>
