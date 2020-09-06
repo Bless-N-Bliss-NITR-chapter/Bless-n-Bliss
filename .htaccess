@@ -1,3 +1,5 @@
+# https://perishablepress.com/stupid-htaccess-tricks/ :- A useful resource to learn about .htaccess
+
 # compress text, html, javascript, css, xml: (g-zip compression)
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
