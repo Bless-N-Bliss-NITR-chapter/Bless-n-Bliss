@@ -1,4 +1,4 @@
-# compress text, html, javascript, css, xml:
+# compress text, html, javascript, css, xml: (g-zip compression)
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/xml
@@ -14,3 +14,7 @@ AddType x-font/eot .eot
 AddType x-font/woff .woff
 AddType image/x-icon .ico
 AddType image/png .png
+
+#Uncomment the code below to turn on the maintennance mode.
+RewriteEngine On
+RewriteRule !^maintenance.shtml$ /maintenance.shtml [R=302,L]
