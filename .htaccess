@@ -17,4 +17,4 @@ AddType image/png .png
 
 #Uncomment the code below to turn on the maintennance mode.
 RewriteEngine On
-RewriteRule !^maintenance.shtml$ /maintenance.shtml [R=302,L]
+RewriteRule !^maintenance.html$ /maintenance.html [R=302,L]
