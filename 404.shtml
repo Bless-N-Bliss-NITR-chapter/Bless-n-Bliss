@@ -38,7 +38,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href=".neverDelete/css/404-layout.min.css" />
+        <link rel="stylesheet" href=".neverDelete/css/404-layout.min.css" type="text/css"/>
 
         <script defer src=".neverDelete/js/404.js"></script>
     </head>
