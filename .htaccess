@@ -17,8 +17,6 @@ AddType x-font/woff .woff
 AddType image/x-icon .ico
 AddType image/png .png
 
-#Uncomment the code below to turn on the maintenance mode.
-
-##Uncomment the code to turn on the maintenance mode.
+##Uncomment the code below to turn on the maintenance mode.
 #
 #Deny From All
