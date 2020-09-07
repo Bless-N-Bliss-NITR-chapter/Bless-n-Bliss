@@ -22,9 +22,3 @@ AddType image/png .png
 ##Uncomment the code to turn on the maintenance mode.
 #
 #Deny From All
-#<FilesMatch 404-layout.min.css>
-#    Allow From All
-#</FilesMatch>
-#<FilesMatch logo-small-transparent-30.png>
-#    Allow From All
-#</FilesMatch>
