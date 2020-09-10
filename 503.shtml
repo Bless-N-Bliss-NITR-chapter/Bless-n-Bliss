@@ -9,8 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href=".neverDelete/img/favicon.webp" type="image/x-icon" />
         <title>Bless 'n' Bliss</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        />
         <!--slider particle style -->
         <style>
             .background{
@@ -35,16 +37,17 @@
             }
         </style>
         <!--slider particle style end-->
-
-        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"/>
+        <link
+            href="https://fonts.googleapis.com/css?family=Cookie"
+            rel="stylesheet"
+            type="text/css"
+        />
         <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href=".neverDelete/css/404-layout.min.css" type="text/css"/>
-
-        <script defer src=".neverDelete/js/404.js"></script>
+        <link rel="stylesheet" href=".neverDelete/css/404-layout.min.css" type="text/css"./>
     </head>
     <body>
         <!-- slider particle background -->
-        <div class="background" style="bottom: 17vh;">
+        <div class="background">
             <div class="particle-container">
                 <div id="particle-slider">
                     <div class="slides">
@@ -100,73 +103,15 @@
             </div>
         </div>
         <!-- slider particle background end -->
-        <section id="navbar" class="navbar-initial /*navbar-after*/">
-            <!--* navbar-initial is to give a transparent background to navbar.
-                * navbar-after gives it a light-pink background-->
-            <div class="mobile-logo">
-                <img src=".neverDelete/img/logo.png.webp"  />
-                <div class="title">
-                    <h4 class="brand-name">Bless 'n' Bliss</h4>
-                    <p class="motto">We care, We serve</p>
-                </div>
-            </div>
-            <nav class="navbar">
-                <div class="logo">
-                    <img src=".neverDelete/img/logo.png.webp"  />
-                    <div class="title">
-                        <h3 class="brand-name">Bless 'n' Bliss</h3>
-                        <p class="motto">We care, We serve</p>
-                    </div>
-                </div>
-                <div class="hamburger">
-                    <div class="bar top-bar"></div>
-                    <div class="bar middle-bar"></div>
-                    <div class="bar bottom-bar"></div>
-                </div>
-                <ul class="menu-ul">
-                    <li class="list-item">
-                        <!--generate more of them by just copying, no hassle! -->
-                        <a class="list-anchor" href="index.html">Home</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-anchor" href="events.html">Events</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-anchor" href="blog-page.html">Blogs</a>
-                    </li>
-                    <li class="list-item dropdown-toggler">
-                        <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
-                        <a class="list-anchor" href="#">Our Centers</a>
-                        <ul class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide">
-                            <li class="drop-item">
-                                <a class="" href="center-rkl.html">Rourkela</a>
-                            </li>
-                            <li class="drop-item">
-                                <a class='' href="center-ranchi.html">Ranchi</a>
-                            </li>
-                            <li class="drop-item">
-                                <a class='' href="center-jajpur.html">Jajpur</a>
-                            </li>
-                            <li class="drop-item">
-                                <a class='' href="center-blr.html">Bangalore</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-anchor " href="about.html">About Us</a>
-                    </li>
-                    <li class="list-item">
-                        <a id="donateMini" class="list-anchor" href="https://www.payumoney.com/paybypayumoney/#/132939" target="_blank" _ngcontent-c0="">Donate Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+
         <section id="main-404-content">
             <div class="main-content">
-                <h1 class="head" style="font-size:4rem;">Ooops! 404 😕</h1>
+                <h1 class="head">Maintenance Break!</h1>
                 <p>
-                    The page you are looking for might have been removed or that page is temporarily unavailable.
+                    The Server is under maintenance. We will be right back in a
+                    couple of hours.
                 </p>
+                <p>Sorry for the inconvenience.</p>
             </div>
         </section>
 

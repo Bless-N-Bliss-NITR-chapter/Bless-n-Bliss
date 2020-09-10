@@ -163,9 +163,13 @@
         </section>
         <section id="main-404-content">
             <div class="main-content">
-                <h1 class="head" style="font-size:4rem;">Ooops! 404 😕</h1>
+                <h1 class="head" style="font-size:4rem;">403 FORBIDDEN</h1>
+                <h3>You're not permitted to see this</h3>
                 <p>
-                    The page you are looking for might have been removed or that page is temporarily unavailable.
+                    The page you are trying to access has restricted access.
+                </p>
+                <p>
+                    If you think this is a mistake, contact your admin.
                 </p>
             </div>
         </section>
