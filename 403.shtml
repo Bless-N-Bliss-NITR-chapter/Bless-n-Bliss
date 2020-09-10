@@ -104,7 +104,7 @@
             <!--* navbar-initial is to give a transparent background to navbar.
                 * navbar-after gives it a light-pink background-->
             <div class="mobile-logo">
-                <img src="public/img/icons/logo.png.webp"  />
+                <img src=".neverDelete/img/logo.png.webp"  />
                 <div class="title">
                     <h4 class="brand-name">Bless 'n' Bliss</h4>
                     <p class="motto">We care, We serve</p>
@@ -112,7 +112,7 @@
             </div>
             <nav class="navbar">
                 <div class="logo">
-                    <img src="public/img/icons/logo.png.webp"  />
+                    <img src=".neverDelete/img/logo.png.webp"  />
                     <div class="title">
                         <h3 class="brand-name">Bless 'n' Bliss</h3>
                         <p class="motto">We care, We serve</p>
