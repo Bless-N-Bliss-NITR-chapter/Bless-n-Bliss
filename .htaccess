@@ -17,6 +17,12 @@ AddType x-font/woff .woff
 AddType image/x-icon .ico
 AddType image/png .png
 
-##Uncomment the code below to turn on the maintenance mode.
+##for Forbidden 403 ERROR page
 #
 #Deny From All
+
+##Uncomment the code below to turn on the maintenance mode.
+#RewriteEngine On
+#RewriteCond %{REQUEST_URI} !.(css|gif|ico|jpg|js|png|swf|txt)$
+# RewriteCond %{REMOTE_ADDR} !^<YourIP_here_to_see_website_during_maintenance>$ 
+#RewriteRule .* 503.shtml [L]
