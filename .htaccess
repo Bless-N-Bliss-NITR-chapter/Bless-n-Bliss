@@ -1,4 +1,6 @@
-# compress text, html, javascript, css, xml:
+# https://perishablepress.com/stupid-htaccess-tricks/ :- A useful resource to learn about .htaccess
+
+# compress text, html, javascript, css, xml: (g-zip compression)
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/xml
@@ -13,4 +15,16 @@ AddType x-font/ttf .ttf
 AddType x-font/eot .eot
 AddType x-font/woff .woff
 AddType image/x-icon .ico
+AddType image/x-icon .webp
 AddType image/png .png
+
+##for Forbidden 403 ERROR page
+#
+#Deny From All
+
+##Uncomment the code below to turn on the maintenance mode.
+#
+#RewriteEngine On
+#RewriteCond %{REQUEST_URI} !.(css|gif|ico|jpg|js|png|webp|swf|txt)$
+##RewriteCond %{REMOTE_ADDR} !^YourIP_here_to_see_website_during_maintenance$ 
+#RewriteRule .* 503.shtml [L]
