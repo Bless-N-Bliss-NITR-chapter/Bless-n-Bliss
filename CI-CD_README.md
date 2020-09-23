@@ -6,9 +6,12 @@ CI/CD is a cool DevOps stuff that lets you automate code testing and deployment.
 
 ### Steps
 
-1. First you need to generate a pair of SSH private and public key. open git bash. Type in:
+1. First you need to generate a pair of SSH private and public key. *open git bash*. Type in:
 
     ```bash
+    $ cd ~/
+    $ mkdir .ssh
+    $ cd .ssh
     $ ssh-keygen -t rsa -b 4096 -C "yourname@BnBcPanel"
     > Generating public/private rsa key pair.
     ```
