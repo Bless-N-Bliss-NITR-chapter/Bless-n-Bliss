@@ -42,6 +42,11 @@
                 transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
             }
         }
+        @include wiggleX(-3px, 0px, 5s);
+        .wiggle-x, .wiggle-x.appear{
+            animation: wiggleX 5.5s ease-in-out infinite !important;
+            animation-delay: 3s !important;
+        }
         .hamburger {
             height: 40px;
             width: 40px;
@@ -49,10 +54,10 @@
             display: block;
             position: absolute;
             cursor: pointer;
-            top: 34px;
+            top: -5px;
             left: -15px;
             transition: all 0.9s cubic-bezier(0.9, 0.9, 0.33, 1);
-            transform: translateY(-50%);
+            // transform: translateY(-50%);
             background-color: $white;
             box-sizing: content-box;
             border-radius: 0 0 50px 0  ;
