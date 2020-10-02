@@ -2281,6 +2281,32 @@ section#latest-events .body .sliding-events-carousel .carousel-wrapper .slides-c
     transform: rotateY(-90deg);
     transition: all 0.9s cubic-bezier(0.9, 0, 0.33, 1);
   }
+  .navbar .wiggle-x {
+    display: inline-block;
+    animation: none;
+  }
+  .navbar .wiggle-x.appear {
+    animation: wiggleX 0.7s ease-in-out forwards;
+    animation-delay: 5s;
+  }
+  @keyframes wiggleX {
+    0% {
+      transform: translate(0, 0px);
+    }
+    10% {
+      transform: translate(6px, 0px);
+    }
+    20% {
+      transform: translate(-3px, 0px);
+    }
+    100% {
+      transform: translate(-3px, 0px);
+    }
+  }
+  .navbar .wiggle-x, .navbar .wiggle-x.appear {
+    animation: wiggleX 5.5s ease-in-out infinite !important;
+    animation-delay: 3s !important;
+  }
   .navbar .hamburger {
     height: 40px;
     width: 40px;
@@ -2288,10 +2314,9 @@ section#latest-events .body .sliding-events-carousel .carousel-wrapper .slides-c
     display: block;
     position: absolute;
     cursor: pointer;
-    top: 34px;
+    top: -5px;
     left: -15px;
     transition: all 0.9s cubic-bezier(0.9, 0.9, 0.33, 1);
-    transform: translateY(-50%);
     background-color: white;
     box-sizing: content-box;
     border-radius: 0 0 50px 0;
