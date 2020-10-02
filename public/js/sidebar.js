@@ -2,6 +2,9 @@ document.querySelector(".hamburger").addEventListener("click", () => {
     document.querySelector(".navbar").classList.toggle("navbar-open");
 
     document.querySelector(".mobile-logo").classList.toggle('mobile-logo--hide');
+
+    //remove wiggle animation of hamburger
+    document.querySelector(".hamburger").classList.remove('wiggle-x', 'appear');
 });
 
 if (window.innerWidth <= 767) {

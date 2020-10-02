@@ -77,7 +77,7 @@
         animation: none;
     }
     .wiggle-y.appear{
-        animation: wiggleY 0.7s ease-in-out forwards;
+        animation: wiggleY 0.7s ease-in-out infinite;
         animation-delay: $delay;
     }
     @keyframes wiggleY{
