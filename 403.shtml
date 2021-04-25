@@ -12,7 +12,7 @@
       href=".neverDelete/img/favicon.webp"
       type="image/x-icon"
     />
-    <title>Bless N Bliss</title>
+    <title>Bless N Bliss Foundation</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
@@ -125,7 +125,7 @@
       <div class="mobile-logo">
         <img src=".neverDelete/img/logo.png.webp" />
         <div class="title">
-          <h4 class="brand-name">Bless N Bliss</h4>
+          <h4 class="brand-name">Bless N Bliss Foundation</title></h4>
           <p class="motto">We care, We serve</p>
         </div>
       </div>
@@ -133,7 +133,7 @@
         <div class="logo">
           <img src=".neverDelete/img/logo.png.webp" />
           <div class="title">
-            <h3 class="brand-name">Bless N Bliss</h3>
+            <h3 class="brand-name">Bless N Bliss Foundation</title></h3>
             <p class="motto">We care, We serve</p>
           </div>
         </div>
@@ -225,7 +225,7 @@
           ></a>
         </div>
 
-        <p class="name">© 2020 Bless N Bliss. All rights reserved.</p>
+        <p class="name">© 2020 Bless N Bliss Foundation</title>. All rights reserved.</p>
       </div>
 
       <div class="footer-right">
