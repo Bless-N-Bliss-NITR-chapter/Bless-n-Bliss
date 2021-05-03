@@ -195,19 +195,12 @@ section {
                 margin: 15px auto;
                 display: flex;
                 justify-content: center;
-                .fb-video {
+                .yt-video {
                     height: 375px;
                     width: 500px;
                     margin-right: 20px;
                     background-color: lightgrey;
                     transition: all 0.5s ease;
-                    blockquote{
-                        padding:15px;
-                        .head{
-                            font-size:20px;
-                            text-decoration:none;
-                        }
-                    }
                 }
                 .photo-carousel2 {
                     --carousel-width: 600px;
@@ -216,7 +209,7 @@ section {
             }
             @media (max-width: 1130px) {
                 &#cyclothon {
-                    .fb-video {
+                    .yt-video {
                         display: none;
                         margin-right: 0;
                     }
@@ -235,7 +228,7 @@ section {
             }
             @media (max-width: 500px) {
                 &#cyclothon {
-                    .fb-video {
+                    .yt-video {
                         display: none;
                     }
                     .photo-carousel2 {

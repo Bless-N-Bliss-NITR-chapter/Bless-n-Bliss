@@ -18,7 +18,7 @@
 }
 
 //FB video Loader
-.fb-video {
+.yt-video {
     background-color: rgba(
         $color: $white,
         $alpha: 0.95
@@ -34,7 +34,7 @@
         }
     }
 }
-.fb-video[fb-xfbml-state="parsed"], .fb-video[fb-xfbml-state="none"]{
+.yt-video[fb-xfbml-state="parsed"], .yt-video[fb-xfbml-state="none"]{
     position: relative;
     &::before{
         content:url("../img/loader-icons-set/loader-64x/Preloader_2.gif");
@@ -49,6 +49,6 @@
         transform: translate(-50%, -50%);
     }
 }
-.fb-video[fb-xfbml-state="rendered"] {
+.yt-video[fb-xfbml-state="rendered"] {
     background-image: none;
 }
