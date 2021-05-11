@@ -531,21 +531,12 @@ section.cyclothon div#cyclothon {
   justify-content: center;
 }
 
-section.cyclothon div#cyclothon .fb-video {
+section.cyclothon div#cyclothon .yt-video {
   height: 375px;
   width: 500px;
   margin-right: 20px;
   background-color: lightgrey;
   transition: all 0.5s ease;
-}
-
-section.cyclothon div#cyclothon .fb-video blockquote {
-  padding: 15px;
-}
-
-section.cyclothon div#cyclothon .fb-video blockquote .head {
-  font-size: 20px;
-  text-decoration: none;
 }
 
 section.cyclothon div#cyclothon .photo-carousel2 {
@@ -554,7 +545,7 @@ section.cyclothon div#cyclothon .photo-carousel2 {
 }
 
 @media (max-width: 1130px) {
-  section.cyclothon div#cyclothon .fb-video {
+  section.cyclothon div#cyclothon .yt-video {
     display: none;
     margin-right: 0;
   }
@@ -570,7 +561,7 @@ section.cyclothon div#cyclothon .photo-carousel2 {
 }
 
 @media (max-width: 500px) {
-  section.cyclothon div#cyclothon .fb-video {
+  section.cyclothon div#cyclothon .yt-video {
     display: none;
   }
   section.cyclothon div#cyclothon .photo-carousel2 {
@@ -3048,27 +3039,27 @@ section#latest-events .body .sliding-events-carousel .carousel-wrapper .slides-c
   visibility: hidden;
 }
 
-.fb-video {
+.yt-video {
   background-color: rgba(255, 255, 255, 0.95);
   transition: all 0.5s ease;
 }
 
-.fb-video blockquote {
+.yt-video blockquote {
   padding: 15px;
   font-size: 12px;
 }
 
-.fb-video blockquote h3 {
+.yt-video blockquote h3 {
   margin: 0;
   padding: 0;
   display: inline;
 }
 
-.fb-video[fb-xfbml-state="parsed"], .fb-video[fb-xfbml-state="none"] {
+.yt-video[fb-xfbml-state="parsed"], .yt-video[fb-xfbml-state="none"] {
   position: relative;
 }
 
-.fb-video[fb-xfbml-state="parsed"]::before, .fb-video[fb-xfbml-state="none"]::before {
+.yt-video[fb-xfbml-state="parsed"]::before, .yt-video[fb-xfbml-state="none"]::before {
   content: url("../img/loader-icons-set/loader-64x/Preloader_2.gif");
   display: flex;
   justify-content: center;
@@ -3083,7 +3074,7 @@ section#latest-events .body .sliding-events-carousel .carousel-wrapper .slides-c
   transform: translate(-50%, -50%);
 }
 
-.fb-video[fb-xfbml-state="rendered"] {
+.yt-video[fb-xfbml-state="rendered"] {
   background-image: none;
 }
 

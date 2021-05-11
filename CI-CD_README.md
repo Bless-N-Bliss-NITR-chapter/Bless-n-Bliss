@@ -58,10 +58,16 @@ CI/CD is a cool DevOps stuff that lets you automate code testing and deployment.
     git push -u cpanel master
     ```
 
-    in case, if error occurs:
+    **in case, if error occurs:**
 
     ```dos
     git push cpanel master -u --exec=/usr/local/cpanel/3rdparty/bin/git-receive-pack
+    ```
+
+    alternatively run `deploy.bat` ( a batch file that has the above push command in it). Its a shortcut😅.
+
+    ```dos
+    > deploy.bat
     ```
 
 **Voila! You did the deployment on cpanel. check out the website blessnbliss.org if you want to review your changes.**

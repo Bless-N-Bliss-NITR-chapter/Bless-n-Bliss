@@ -1,220 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="author" content="Ashutosh Khanduala @ashuvssut" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href=".neverDelete/img/favicon.webp" type="image/x-icon" />
-        <title>Bless 'n' Bliss</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Ashutosh Khanduala @ashuvssut" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href=".neverDelete/img/favicon.webp"
+      type="image/x-icon"
+    />
+    <title>Bless N Bliss Foundation</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
 
-        <!--slider particle style -->
-        <style>
-            .background{
-                position: absolute;
-                bottom: 25vh;
-                width: 100%;
-            }
-            .particle-container {
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                /* align-items: center; */
-            }
+    <!--slider particle style -->
+    <style>
+      .background {
+        position: absolute;
+        bottom: 25vh;
+        width: 100%;
+      }
+      .particle-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
 
-            #particle-slider {
-                z-index: 10; opacity: 1;
-                height: 100%;
-                min-width: 340px;
-                width: 90vw;
-                max-width: 500px;
-            }
-        </style>
-        <!--slider particle style end-->
+      #particle-slider {
+        z-index: 10;
+        opacity: 1;
+        height: 100%;
+        min-width: 340px;
+        width: 90vw;
+        max-width: 500px;
+      }
+    </style>
+    <!--slider particle style end-->
 
-        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href=".neverDelete/css/404-layout.min.css" type="text/css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href=".neverDelete/css/404-layout.min.css"
+      type="text/css"
+    />
 
-        <script defer src=".neverDelete/js/404.js"></script>
-    </head>
-    <body>
-        <!-- slider particle background -->
-        <div class="background" style="bottom: 17vh;">
-            <div class="particle-container">
-                <div id="particle-slider">
-                    <div class="slides">
-                        <div
-                            class="slide"
-                            data-src=".neverDelete/img/logo-small-transparent-30.png"
-                        ></div>
-                    </div>
-                    <canvas class="draw"></canvas>
-                </div>
-                <script>
-                    var init = function () {
-                        var isMobile =
-                            navigator.userAgent &&
-                            navigator.userAgent.toLowerCase().indexOf("mobile") >= 0;
-                        var isSmall = window.innerWidth < 1000;
-        
-                        var ps = new ParticleSlider({
-                            ptlGap: isMobile || isSmall ? 3 : 1,
-                            ptlSize: isMobile || isSmall ? 3 : 2,
-                            width: 1e9,
-                            height: 1e9,
-                            mouseForce: 400,
-                        });
-        
-                        window.addEventListener
-                            ? window.addEventListener(
-                                    "click",
-                                    function () {
-                                        ps.init(true);
-                                    },
-                                    false
-                                )
-                            : (window.onclick = function () {
-                                    ps.init(true);
-                                });
-                    };
-        
-                    var initParticleSlider = (function () {
-                        var psScript = document.createElement("script");
-                        psScript.addEventListener
-                            ? psScript.addEventListener("load", init, false)
-                            : (psScript.onload = init);
-                        psScript.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/23500/ps-0.9.js';//"assets/js/ps-0.9.js"; //
-                        psScript.setAttribute("type", "text/javascript");
-                        document.body.appendChild(psScript);
-                    })(
-                        window.addEventListener
-                            ? window.addEventListener("load", initParticleSlider, false)
-                            : (window.onload = initParticleSlider)
-                    );
-                </script>
-            </div>
+    <script defer src=".neverDelete/js/404.js"></script>
+  </head>
+  <body>
+    <!-- slider particle background -->
+    <div class="background" style="bottom: 17vh">
+      <div class="particle-container">
+        <div id="particle-slider">
+          <div class="slides">
+            <div
+              class="slide"
+              data-src=".neverDelete/img/logo-small-transparent-30.png"
+            ></div>
+          </div>
+          <canvas class="draw"></canvas>
         </div>
-        <!-- slider particle background end -->
-        <section id="navbar" class="navbar-initial /*navbar-after*/">
-            <!--* navbar-initial is to give a transparent background to navbar.
+        <script>
+          var init = function () {
+            var isMobile =
+              navigator.userAgent &&
+              navigator.userAgent.toLowerCase().indexOf("mobile") >= 0;
+            var isSmall = window.innerWidth < 1000;
+
+            var ps = new ParticleSlider({
+              ptlGap: isMobile || isSmall ? 3 : 1,
+              ptlSize: isMobile || isSmall ? 3 : 2,
+              width: 1e9,
+              height: 1e9,
+              mouseForce: 400,
+            });
+
+            window.addEventListener
+              ? window.addEventListener(
+                  "click",
+                  function () {
+                    ps.init(true);
+                  },
+                  false
+                )
+              : (window.onclick = function () {
+                  ps.init(true);
+                });
+          };
+
+          var initParticleSlider = (function () {
+            var psScript = document.createElement("script");
+            psScript.addEventListener
+              ? psScript.addEventListener("load", init, false)
+              : (psScript.onload = init);
+            psScript.src =
+              "https://s3-us-west-2.amazonaws.com/s.cdpn.io/23500/ps-0.9.js"; //"assets/js/ps-0.9.js"; //
+            psScript.setAttribute("type", "text/javascript");
+            document.body.appendChild(psScript);
+          })(
+            window.addEventListener
+              ? window.addEventListener("load", initParticleSlider, false)
+              : (window.onload = initParticleSlider)
+          );
+        </script>
+      </div>
+    </div>
+    <!-- slider particle background end -->
+    <section id="navbar" class="navbar-initial /*navbar-after*/">
+      <!--* navbar-initial is to give a transparent background to navbar.
                 * navbar-after gives it a light-pink background-->
-            <div class="mobile-logo">
-                <img src=".neverDelete/img/logo.png.webp"  />
-                <div class="title">
-                    <h4 class="brand-name">Bless 'n' Bliss</h4>
-                    <p class="motto">We care, We serve</p>
-                </div>
-            </div>
-            <nav class="navbar">
-                <div class="logo">
-                    <img src=".neverDelete/img/logo.png.webp"  />
-                    <div class="title">
-                        <h3 class="brand-name">Bless 'n' Bliss</h3>
-                        <p class="motto">We care, We serve</p>
-                    </div>
-                </div>
-                <div class="hamburger wiggle-x">
-                    <div class="bar top-bar"></div>
-                    <div class="bar middle-bar"></div>
-                    <div class="bar bottom-bar"></div>
-                </div>
-                <ul class="menu-ul">
-                    <li class="list-item">
-                        <!--generate more of them by just copying, no hassle! -->
-                        <a class="list-anchor" href="index.html">Home</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-anchor" href="events.html">Events</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-anchor" href="blog-page.html">Blogs</a>
-                    </li>
-                    <li class="list-item dropdown-toggler">
-                        <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
-                        <a class="list-anchor" href="#">Our Centers</a>
-                        <ul class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide">
-                            <li class="drop-item">
-                                <a class="" href="center-rkl.html">Rourkela</a>
-                            </li>
-                            <li class="drop-item">
-                                <a class='' href="center-ranchi.html">Ranchi</a>
-                            </li>
-                            <li class="drop-item">
-                                <a class='' href="center-jajpur.html">Jajpur</a>
-                            </li>
-                            <li class="drop-item">
-                                <a class='' href="center-blr.html">Bangalore</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-anchor " href="about.html">About Us</a>
-                    </li>
-                    <li class="list-item">
-                        <a id="donateMini" class="list-anchor" href="https://www.payumoney.com/paybypayumoney/#/132939" target="_blank" _ngcontent-c0="">Donate Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <section id="main-404-content">
-            <div class="main-content">
-                <h1 class="head" style="font-size:4rem;">Ooops! 404 😕</h1>
-                <p>
-                    The page you are looking for might have been removed or that page is temporarily unavailable.
-                </p>
-            </div>
-        </section>
+      <div class="mobile-logo">
+        <img src=".neverDelete/img/logo.png.webp" />
+        <div class="title">
+          <h4 class="brand-name">Bless N Bliss Foundation</title></h4>
+          <p class="motto">We care, We serve</p>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <img src=".neverDelete/img/logo.png.webp" />
+          <div class="title">
+            <h3 class="brand-name">Bless N Bliss Foundation</title></h3>
+            <p class="motto">We care, We serve</p>
+          </div>
+        </div>
+        <div class="hamburger wiggle-x">
+          <div class="bar top-bar"></div>
+          <div class="bar middle-bar"></div>
+          <div class="bar bottom-bar"></div>
+        </div>
+        <ul class="menu-ul">
+          <li class="list-item">
+            <!--generate more of them by just copying, no hassle! -->
+            <a class="list-anchor" href="index.html">Home</a>
+          </li>
+          <li class="list-item">
+            <a class="list-anchor" href="events.html">Events</a>
+          </li>
+          <li class="list-item">
+            <a class="list-anchor" href="blog-page.html">Blogs</a>
+          </li>
+          <li class="list-item dropdown-toggler">
+            <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
+            <a class="list-anchor" href="#">Our Centers</a>
+            <ul
+              class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide"
+            >
+              <li class="drop-item">
+                <a class="" href="center-rkl.html">Rourkela</a>
+              </li>
+              <li class="drop-item">
+                <a class="" href="center-ranchi.html">Ranchi</a>
+              </li>
+              <li class="drop-item">
+                <a class="" href="center-jajpur.html">Jajpur</a>
+              </li>
+              <li class="drop-item">
+                <a class="" href="center-blr.html">Bangalore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-item">
+            <a class="list-anchor" href="about.html">About Us</a>
+          </li>
+          <li class="list-item">
+            <a
+              id="donateMini"
+              class="list-anchor"
+              href="https://www.payumoney.com/paybypayumoney/#/132939"
+              target="_blank"
+              _ngcontent-c0=""
+              >Donate Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section id="main-404-content">
+      <div class="main-content">
+        <h1 class="head" style="font-size: 4rem">Ooops! 404 😕</h1>
+        <p>
+          The page you are looking for might have been removed or that page is
+          temporarily unavailable.
+        </p>
+      </div>
+    </section>
 
-        <footer class="footer">
-            <div class="footer-left">
-                <h3>Bless<span>n</span>Bliss</h3>
-                <p class="about">
-                    We staunchly endeavour to eradicate ignorance and strive
-                    hard to attain gender equality by promoting symbiotic
-                    relationships and duly standing by our motto of "We Care, We
-                    Serve".
-                </p>
+    <footer class="footer">
+      <div class="footer-left">
+        <h3>Bless<span>n</span>Bliss</h3>
+        <p class="about">
+          We staunchly endeavour to eradicate ignorance and strive hard to
+          attain gender equality by promoting symbiotic relationships and duly
+          standing by our motto of "We Care, We Serve".
+        </p>
 
-                <div class="footer-icons">
-                    <a href="https://www.facebook.com/BnB.ngo"><i class="fa fa-facebook"></i></a>
-                    <a href="https://twitter.com/bless_n_bliss"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/13255668/"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://www.youtube.com/channel/UCRXByLV9thNOHSZZoDYZmMg"><i class="fa fa-youtube-play"></i></a>
-                    <a href="https://www.instagram.com/bless.n.bliss/"><i class="fa fa-instagram"></i></a>
-                </div>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/BnB.ngo"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/bless_n_bliss"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/13255668/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCRXByLV9thNOHSZZoDYZmMg"
+            ><i class="fa fa-youtube-play"></i
+          ></a>
+          <a href="https://www.instagram.com/bless.n.bliss/"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </div>
 
-                <p class="name">© 2020 Bless 'n' Bliss. All rights reserved.</p>
-            </div>
+        <p class="name">© 2020 Bless N Bliss Foundation</title>. All rights reserved.</p>
+      </div>
 
-            <div class="footer-right">
-                <div class="content">
-                    <i class="fa fa-map-marker"></i>
-                    <div class="small-container">
-                        <p>Shivdayal Nagar, </p>
-                        <p>Argora Bypass Road, </p>
-                        <p>Near Amrit Hospital,</p>
-                        <p>Ranchi, Jharkhand, 834002</p>
-                    </div>
-                </div>
+      <div class="footer-right">
+        <div class="content">
+          <i class="fa fa-map-marker"></i>
+          <div class="small-container">
+            <p>Shivdayal Nagar,</p>
+            <p>Argora Bypass Road,</p>
+            <p>Near Amrit Hospital,</p>
+            <p>Ranchi, Jharkhand, 834002</p>
+          </div>
+        </div>
 
-                <div class="content">
-                    <i class="fa fa-phone"></i>
-                    <p style="padding: 15px 0;">+91 80181 32259 </p>
-                </div>
+        <div class="content">
+          <i class="fa fa-phone"></i>
+          <p style="padding: 15px 0">+91 80181 32259</p>
+        </div>
 
-                <div class="content">
-                    <i class="fa fa-envelope"></i>
-                    <p style="padding: 15px 0;">
-                        <a href="mailto:akram@blessnbliss.org "
-                            > akram@blessnbliss.org </a
-                        >
-                    </p>
-                </div>
-            </div>
-        </footer>
-    </body>
+        <div class="content">
+          <i class="fa fa-envelope"></i>
+          <p style="padding: 15px 0">
+            <a href="mailto:akram@blessnbliss.org "> akram@blessnbliss.org </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
