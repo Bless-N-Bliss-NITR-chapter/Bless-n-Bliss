@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="public/css/app.min.css" />
     <!--css stylesheet: committed by @ashuvssut* -->
-
+   
     <!--Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&display=swap"
@@ -35,7 +35,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
     />
-
+    
+  <link rel="stylesheet" href="public\css\modalpage.css" type="text/css">
     <!--js scripts-->
     <script defer src="public/js/loader.js"></script>
     <script defer src="public/js/navbar.js"></script>
@@ -43,11 +44,33 @@
     <script defer src="public/js/intersectionObservers.js"></script>
     <script defer src="public/js/onscroll.js"></script>
     <script defer src="public/js/carousel.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+          $(document).ready(function ()  
+          {
+              $(".close").on("click", function () 
+                  {
+                      $("#modal").css("display", "none")
+                  });
+              $("#modal").on("click",function()
+              {
+                  $("#modal").css("display", "none")
+              });
+          });
+   </script>   
   </head>
 
   <body>
-    
-
+    <!-- modal here -->
+    <div class='modal' id='modal'>
+      <div class='content'>
+          <span class="close" id='close'>&times;</span>
+          <img src="public\img\BNB Foundation1.png" alt="" width="100%" height="100%">
+      </div>
+    </div>
     <!-- preloader -->
     <img
       src="public/img/preLoader-icons-set/64x64/Preloader_1.gif"
