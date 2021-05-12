@@ -35,14 +35,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
     />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $("#myModal").modal('show');
-      });
-    </script> -->
+    
+  <link rel="stylesheet" href="public\css\modalpage.css" type="text/css">
     <!--js scripts-->
     <script defer src="public/js/loader.js"></script>
     <script defer src="public/js/navbar.js"></script>
@@ -50,23 +44,33 @@
     <script defer src="public/js/intersectionObservers.js"></script>
     <script defer src="public/js/onscroll.js"></script>
     <script defer src="public/js/carousel.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+          $(document).ready(function ()  
+          {
+              $(".close").on("click", function () 
+                  {
+                      $("#modal").css("display", "none")
+                  });
+              $("#modal").on("click",function()
+              {
+                  $("#modal").css("display", "none")
+              });
+          });
+   </script>   
   </head>
 
   <body>
-    
-    <!-- <div id="myModal" class="modal fade">
-      <div class="modal-dialog mod-wrapper">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <div class="modal-body">
-                  <img src="public\img\BNB Foundation1.png" alt="test" height="100%" width="100%">
-              </div>
-          </div>
+    <!-- modal here -->
+    <div class='modal' id='modal'>
+      <div class='content'>
+          <span class="close" id='close'>&times;</span>
+          <img src="public\img\BNB Foundation1.png" alt="" width="100%" height="100%">
       </div>
-    </div> -->
-
+    </div>
     <!-- preloader -->
     <img
       src="public/img/preLoader-icons-set/64x64/Preloader_1.gif"
