@@ -1,42 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Spread Knowledge. Time to change our perception from Ignorance is Bliss to Knowledge is Power. Support Fellow Brethren. A step taken ..."
-    />
-    <meta
-      name="keywords"
-      content="Bless n Bliss Foundation, official, website, NGO"
-    />
+    <meta name="description" content="Spread Knowledge. Time to change our perception from Ignorance is Bliss to Knowledge is Power. Support Fellow Brethren. A step taken ..." />
+    <meta name="keywords" content="Bless n Bliss Foundation, official, website, NGO" />
     <meta name="author" content="@ashuvssut" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bless N Bliss Foundation - We care, We serve</title>
 
-    <link
-      rel="shortcut icon"
-      href="public/img/icons/favicon.webp"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="public/img/icons/favicon.webp" type="image/x-icon" />
     <link rel="stylesheet" href="public/css/app.min.css" />
     <!--css stylesheet: committed by @ashuvssut* -->
-   
+
     <!--Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;600;900&display=swap" rel="stylesheet" />
 
     <!--font-awesome -->
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-    />
-    
-  <link rel="stylesheet" href="public\css\modalpage.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="public\css\modalpage.css" type="text/css" />
     <!--js scripts-->
     <script defer src="public/js/loader.js"></script>
     <script defer src="public/js/navbar.js"></script>
@@ -44,117 +29,103 @@
     <script defer src="public/js/intersectionObservers.js"></script>
     <script defer src="public/js/onscroll.js"></script>
     <script defer src="public/js/carousel.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
-          $(document).ready(function ()  
-          {
-              $(".close").on("click", function () 
-                  {
-                      $("#modal").css("display", "none")
-                  });
-              $("#modal").on("click",function()
-              {
-                  $("#modal").css("display", "none")
-              });
-          });
-   </script>   
-  </head>
+        $(document).ready(function() {
+            $(".close").on("click", function() {
+                $("#modal").css("display", "none");
+            });
+            $("#modal").on("click", function() {
+                $("#modal").css("display", "none");
+            });
+        });
+    </script>
+</head>
 
-  <body>
+<body>
     <!-- modal here -->
-    <div class='modal' id='modal'>
-      <div class='content'>
-          <span class="close" id='close'>&times;</span>
-          <img src="public\img\BNB Foundation1.png" alt="" width="100%" height="100%">
-      </div>
+    <div class="modal" id="modal">
+        <div class="content">
+            <span class="close" id="close">&times;</span>
+            <img src="public\img\BNB Foundation1.png" alt="" width="100%" height="100%" />
+        </div>
     </div>
     <!-- preloader -->
-    <img
-      src="public/img/preLoader-icons-set/64x64/Preloader_1.gif"
-      style="display: none"
-    />
+    <img src="public/img/preLoader-icons-set/64x64/Preloader_1.gif" style="display: none" />
     <div class="preloader"></div>
     <!-- preloader end-->
 
     <!-- dynamic background start -->
     <div class="background-container">
-      <img
-        style="object-fit: cover"
-        src="public/img/bg-dynamic/wave.svg"
-        alt=""
-      />
+        <img style="object-fit: cover" src="public/img/bg-dynamic/wave.svg" alt="" />
     </div>
     <!-- end -->
 
     <section id="navbar" class="navbar-initial /*navbar-after*/">
-      <!--* navbar-initial is to give a transparent background to navbar.
+        <!--* navbar-initial is to give a transparent background to navbar.
                 * navbar-after gives it a light-pink background-->
-      <div class="mobile-logo">
-        <img src="public/img/icons/logo.png.webp" />
-        <div class="title">
-          <h4 class="brand-name">Bless N Bliss Foundation</h4>
-          <p class="motto">We care, We serve</p>
+        <div class="mobile-logo">
+            <img src="public/img/icons/logo.png.webp" />
+            <div class="title">
+                <h4 class="brand-name">Bless N Bliss Foundation</h4>
+                <p class="motto">We care, We serve</p>
+            </div>
         </div>
-      </div>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="public/img/icons/logo.png.webp" />
-          <div class="title">
-            <h3 class="brand-name">Bless N Bliss Foundation</h3>
-            <p class="motto">We care, We serve</p>
-          </div>
-        </div>
-        <div class="hamburger wiggle-x">
-          <div class="bar top-bar"></div>
-          <div class="bar middle-bar"></div>
-          <div class="bar bottom-bar"></div>
-        </div>
-        <ul class="menu-ul">
-          <li class="list-item">
-            <!--generate more of them by just copying, no hassle! -->
-            <a class="list-anchor active-anchor" href="#">Home</a>
-          </li>
-          <li class="list-item">
-            <a class="list-anchor" href="events.html">Events</a>
-          </li>
-          <li class="list-item">
-            <a class="list-anchor" href="blog-page.html">Blogs</a>
-          </li>
-          <li class="list-item dropdown-toggler">
-            <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
-            <a class="list-anchor" href="#">Our Centers</a>
-            <ul
-              class="dropdown-menu-ul dropdown-menu-ul-index-0 dropdown-menu-ul--hide"
-            >
-              <li class="drop-item">
-                <a class="" href="center-rkl.html">Rourkela</a>
-              </li>
-              <li class="drop-item">
-                <a class="" href="center-ranchi.html">Ranchi</a>
-              </li>
-              <li class="drop-item">
-                <a class="" href="center-jajpur.html">Jajpur</a>
-              </li>
-              <li class="drop-item">
-                <a class="" href="center-blr.html">Bangalore</a>
-              </li>
-            </ul>
-          </li>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="public/img/icons/logo.png.webp" />
+                <div class="title">
+                    <h3 class="brand-name">Bless N Bliss Foundation</h3>
+                    <p class="motto">We care, We serve</p>
+                </div>
+            </div>
+            <div class="hamburger wiggle-x">
+                <div class="bar top-bar"></div>
+                <div class="bar middle-bar"></div>
+                <div class="bar bottom-bar"></div>
+            </div>
+            <ul class="menu-ul">
+                <li class="list-item">
+                    <!--generate more of them by just copying, no hassle! -->
+                    <a class="list-anchor active-anchor" href="#">Home</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor" href="events.html">Events</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-anchor" href="blog-page.html">Blogs</a>
+                </li>
+                <li class="list-item dropdown-toggler">
+                    <!-- copy paste to generate more of these but mind to give it index-number eg..'dropdown-menu-ul-index-2' (number must ne serially indexed) -->
+                    <a class="list-anchor" href="#">Our Centers</a>
+                    <ul class="
+                dropdown-menu-ul dropdown-menu-ul-index-0
+                dropdown-menu-ul--hide
+              ">
+                        <li class="drop-item">
+                            <a class="" href="center-rkl.html">Rourkela</a>
+                        </li>
+                        <li class="drop-item">
+                            <a class="" href="center-ranchi.html">Ranchi</a>
+                        </li>
+                        <li class="drop-item">
+                            <a class="" href="center-jajpur.html">Jajpur</a>
+                        </li>
+                        <li class="drop-item">
+                            <a class="" href="center-blr.html">Bangalore</a>
+                        </li>
+                    </ul>
+                </li>
 
-          <li class="list-item">
-            <a class="list-anchor" href="about.html">About Us</a>
-          </li>
-          <li class="list-item">
-            <a
+                <li class="list-item">
+                    <a class="list-anchor" href="about.html">About Us</a>
+                </li>
+                <li class="list-item">
+                    <!--<a
               id="donateMini"
               class="list-anchor"
-              href="https://www.payumoney.com/paybypayumoney/#/132939"
-              target="_blank"
-              _ngcontent-c0=""
-              >Donate Us</a
+              href="https://www.payumoney.com/paybypayumoney/#/132939"</a>-->
+                    <a id="donateMini" class="list-anchor" href="donor.html" target="_blank" _ngcontent-c0="">Donate Us</a
             >
           </li>
         </ul>
@@ -373,27 +344,27 @@
         <div id="player" class="yt-video"></div>
         <script>
           // 2. This code loads the IFrame Player API code asynchronously.
-          var tag = document.createElement('script');
+          var tag = document.createElement("script");
 
           tag.src = "https://www.youtube.com/iframe_api";
-          var firstScriptTag = document.getElementsByTagName('script')[0];
+          var firstScriptTag = document.getElementsByTagName("script")[0];
           firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
           // 3. This function creates an <iframe> (and YouTube player)
           //    after the API code downloads.
           var player;
           function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-              height: '375',
-              width: '500',
-              videoId: 'cUFOTibZldo',
+            player = new YT.Player("player", {
+              height: "375",
+              width: "500",
+              videoId: "cUFOTibZldo",
               playerVars: {
-                'playsinline': 1
+                playsinline: 1,
               },
               events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-              }
+                onReady: onPlayerReady,
+                onStateChange: onPlayerStateChange,
+              },
             });
           }
 
@@ -563,28 +534,28 @@
             <h3>Latest Blogs</h3>
             <ul class="blog-list">
               <li><a href="blog-page.html#cyclothon">Cyclothon 3.0</a></li>
-              <li><a href="blog-page.html#bleeding-eyes">Bleeding Eyes</a></li>
-              <li><a href="blog-page.html#kaal">Kaal</a></li>
+                <li><a href="blog-page.html#bleeding-eyes">Bleeding Eyes</a></li>
+                <li><a href="blog-page.html#kaal">Kaal</a></li>
             </ul>
-          </div>
-          <div class="contact-us">
-            <h3>Contact us</h3>
-            <div class="contact-us-body">
-              <div class="address">
-                <h4>Address</h4>
-                <p>Shivdayal Nagar, Argora Bypass Road,</p>
-                <p>Near Amrit Hospital, Ranchi,</p>
-                <p>Jharkhand, 834002</p>
-              </div>
-              <p class="phone"><strong>Ph:</strong> +91 80181 32259</p>
-              <p class="email"><strong>Email:</strong> akram@blessnbliss.org</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">
-          © 2020 <a href="/"><strong>Bless N Bliss Foundation</strong></a
+            <div class="contact-us">
+                <h3>Contact us</h3>
+                <div class="contact-us-body">
+                    <div class="address">
+                        <h4>Address</h4>
+                        <p>Shivdayal Nagar, Argora Bypass Road,</p>
+                        <p>Near Amrit Hospital, Ranchi,</p>
+                        <p>Jharkhand, 834002</p>
+                    </div>
+                    <p class="phone"><strong>Ph:</strong> +91 80181 32259</p>
+                    <p class="email"><strong>Email:</strong> akram@blessnbliss.org</p>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2020 <a href="/"><strong>Bless N Bliss Foundation</strong></a
           >. All rights reserved.
         </p>
       </div>
