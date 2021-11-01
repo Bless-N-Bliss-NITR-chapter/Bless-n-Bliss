@@ -15,6 +15,17 @@
         "design",
         "maintenance"
       ]
+    },
+    {
+      "login": "ashuvssut",
+      "name": "Ashutosh Khanduala",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60546840?v=4",
+      "profile": "http://ashuvssut.github.io/my-portfolio/",
+      "contributions": [
+        "code",
+        "design",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
