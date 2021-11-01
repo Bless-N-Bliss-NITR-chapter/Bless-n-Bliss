@@ -1,7 +1,7 @@
-<br />
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 <p align="center">
   <a href="https://github.com/Bless-N-Bliss-NITR-chapter/Bless-n-Bliss/issues">
     <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1635679902/BNB/bnb_orignal_qrcwax.png" alt="Logo" width="130">
