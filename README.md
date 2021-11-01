@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">
@@ -117,6 +117,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://irsayvid.azurewebsites.net/"><img src="https://avatars.githubusercontent.com/u/56034618?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Divya Sri Darimisetti</b></sub></a><br /><a href="https://github.com/Bless-N-Bliss-NITR-chapter/Bless-n-Bliss/commits?author=irsayvid" title="Code">💻</a> <a href="#design-irsayvid" title="Design">🎨</a> <a href="#maintenance-irsayvid" title="Maintenance">🚧</a></td>
     <td align="center"><a href="http://ashuvssut.github.io/my-portfolio/"><img src="https://avatars.githubusercontent.com/u/60546840?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ashutosh Khanduala</b></sub></a><br /><a href="https://github.com/Bless-N-Bliss-NITR-chapter/Bless-n-Bliss/commits?author=ashuvssut" title="Code">💻</a> <a href="#design-ashuvssut" title="Design">🎨</a> <a href="#maintenance-ashuvssut" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/ansuman528"><img src="https://avatars.githubusercontent.com/u/60027681?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ansuman Nayak</b></sub></a><br /><a href="https://github.com/Bless-N-Bliss-NITR-chapter/Bless-n-Bliss/commits?author=ansuman528" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rupesh-Darimisetti"><img src="https://avatars.githubusercontent.com/u/49586865?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rupesh-Darimisetti</b></sub></a><br /><a href="https://github.com/Bless-N-Bliss-NITR-chapter/Bless-n-Bliss/commits?author=Rupesh-Darimisetti" title="Code">💻</a></td>
   </tr>
 </table>
 
