@@ -1,4 +1,7 @@
 <br />
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <p align="center">
   <a href="https://github.com/Bless-N-Bliss-NITR-chapter/Bless-n-Bliss/issues">
     <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1635679902/BNB/bnb_orignal_qrcwax.png" alt="Logo" width="130">
@@ -101,3 +104,23 @@ The project uses static HTML, so you can view the local changes on opening `inde
 
 Project developed and maintained by [Bless N Bliss Foundation](http://www.blessnbliss.org/)
 <img src="public/img/BNB Foundation1.png" alt="Bless N BLiss Misson" />
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://irsayvid.azurewebsites.net/"><img src="https://avatars.githubusercontent.com/u/56034618?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Divya Sri Darimisetti</b></sub></a><br /><a href="https://github.com/Bless-N-Bliss-NITR-chapter/Bless-n-Bliss/commits?author=irsayvid" title="Code">💻</a> <a href="#design-irsayvid" title="Design">🎨</a> <a href="#maintenance-irsayvid" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
