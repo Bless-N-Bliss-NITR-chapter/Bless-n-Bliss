@@ -1,6 +1,5 @@
 /*@anonymous-coder-its-me */
 
-
 /* 
     >>main colors
     orange: #f9b31c
@@ -15,7 +14,7 @@
 #about-header {
     width: 100%;
     height: 350px;
-    background: url('../img/about/about-header.png.webp');
+    background: url("../img/about/about-header.png.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,9 +72,8 @@
     border-radius: 20px;
     -webkit-box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.1)
+    box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.1);
 }
-
 
 /* overriding the padding property to make image full covered in background */
 
@@ -94,7 +92,6 @@
         height: 100px;
     }
 }
-
 
 /* bootstrap.css override + responsiveness improvements */
 
@@ -131,11 +128,49 @@ section .mobile-logo .title .brand-name {
     }
 }
 
-
 /* footer bootstrap override */
 
-.footer-content>div h3 {
+.footer-content > div h3 {
     font-weight: 600;
     margin: 15px 0;
     font-size: 1.25rem;
+}
+
+.member-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.member-list > div {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.member-list > div > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.member-list > div:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 982px) {
+    .member-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .member-list > div:nth-child(4n) {
+        background-color: transparent;
+    }
+    .member-list > div:nth-child(4n-1) {
+        background-color: #f2f2f2;
+    }
+    .member-list > div:nth-child(4n-2) {
+        background-color: #f2f2f2;
+    }
+    .member-list > div:nth-child(4n-3) {
+        background-color: transparent;
+    }
 }
