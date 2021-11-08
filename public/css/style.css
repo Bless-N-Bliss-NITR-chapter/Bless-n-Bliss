@@ -157,6 +157,42 @@ section .mobile-logo .title .brand-name {
     background-color: #f2f2f2;
 }
 
+.workspace {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
+}
+
+.workspace > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.workspace > div:hover {
+    background-color: #f2f2f2;
+    transition: all 0.1s ease;
+}
+
+.workspace > div > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: large;
+}
+
+.workspace > div > p > a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width: 982px) {
     .member-list {
         grid-template-columns: repeat(2, 1fr);
@@ -172,5 +208,12 @@ section .mobile-logo .title .brand-name {
     }
     .member-list > div:nth-child(4n-3) {
         background-color: transparent;
+    }
+    .workspace {
+        margin: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .workspace > div:hover {
+        background-color: white;
     }
 }
